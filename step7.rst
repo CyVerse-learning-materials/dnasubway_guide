@@ -31,11 +31,13 @@ in an R-Shiny app.
 
      .. admonition:: Sample data
 
-       **How to use provided sample data**
-      In this guide, we will use an RNA-Seq dataset (*"Sorghum drought"* );
-      this data compares RNA from both drought-stressed and
-      well-watered Sorghum. You can read more about the experimental conditions
-      `here <https://bmcplantbiol.biomedcentral.com/articles/10.1186/s12870-016-0800-x>`_.
+      **How to use provided sample data**
+
+      In this guide, we will use an RNA-Seq dataset (*"Zika infected hNPCs"*).
+      This experiment compared human neuroprogenetor cells (hNPCs)
+      infected with the Zika virus to non-infected hNPCs. You can read more
+      about the experimental conditions and methods
+      `here <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744>`_.
       Where appropriate, a note (in this orange colored background) in the
       instructions will indicate which options to select to make use of this
       provided dataset.
@@ -47,24 +49,24 @@ in an R-Shiny app.
 
   1. Log-in to DNA Subway - unregistered users may NOT use Green Line.
 
-     .. warning::
-
-        These directions apply to a "Beta Release" of the Green Line.
-        available at: `https://glkallisto.ngrok.io/ <https://glkallisto.ngrok.io/>`_
-        Email dnalcadmin @ cshl.edu for questions.
-
   2. Click on the Green "Next Generation Sequencing" square to start a Green Line project.
 
   3. For 'Select Project Type' select either "Single End Reads" or "Paired End Reads".
 
     .. admonition:: Sample data
 
-      *"Sorghum Drought"* dataset: select **Paired End Reads**
+      *"Zika infected hNPCs"* dataset:
+
+      Select **Paired End Reads**
+
   4. For 'Select an Organism' select a species and genome build.
 
     .. admonition:: Sample data
 
-      *"Sorghum Drought"* dataset: select **Sorghum bicolor - Ensemble 22 Sorbi1**
+      *"Zika infected hNPCs"* dataset:
+
+      Select **Homo sapiens - Ensembl 78 GrCh38**
+
     .. tip::
          If you don't see a desired species/genome `contact us <https://dnasubway.cyverse.org/feedback.html>`_ to have it added
 
@@ -98,42 +100,44 @@ directly to the CyVerse Data Store.
 
      .. admonition:: Sample data
 
-       *"Sorghum Drought"* dataset: select **Sample Data**.
+       *"Zika infected hNPCs"* dataset:
+
+       Select **Sample Data**.
 
   3. Select the sequencing files you want to analyze (either .fastq or .fastq.gz
      format).
 
      .. admonition:: Sample data
 
-       *"Sorghum Drought"* dataset: You will be presented
-       with the following 12 files; check-select all of the files and click the
-       :guilabel:`&Add files` button:
+       *"Zika infected hNPCs"* dataset:
 
-       - IS20351_DS_1_1.fastq.gz
-       - IS20351_DS_1_2.fastq.gz
-       - IS20351_DS_2_1.fastq.gz
-       - IS20351_DS_2_2.fastq.gz
-       - IS20351_DS_3_1.fastq.gz
-       - IS20351_DS_3_2.fastq.gz
-       - IS20351_WW_1_1.fastq.gz
-       - IS20351_WW_1_2.fastq.gz
-       - IS20351_WW_2_1.fastq.gz
-       - IS20351_WW_2_2.fastq.gz
-       - IS20351_WW_3_1.fastq.gz
-       - IS20351_WW_3_2.fastq.gz
+       You will be presented with the following 8 files;
+       **check-select all of the files** and click the :guilabel:`&Add files` button:
 
-       The "DS" files are 3 replicates (paired-end) of the drought-stressed samples
-       and the "WW" files are 3 replicates (paired-end) of the well-watered samples.
+        - SRR3191543_1.fastq.gz
+        - SRR3191543_2.fastq.gz
+        - SRR3191545_1.fastq.gz
+        - SRR3191545_2.fastq.gz
+        - SRR3191542_1.fastq.gz
+        - SRR3191542_2.fastq.gz
+        - SRR3191544_1.fastq.gz
+        - SRR3191544_2.fastq.gz
+
+       The SRR3191542 and SRR3191543 files are 2 replicates (paired-end) of the
+       uninfected cells and the SRR3191544 and SRR3191545 file are from the Zika
+       infected cells.
 
   4. If working with paired-end reads, click the 'Pair Mode' button to toggle to
      on; check each pair of sequencing files to pair them.
 
      .. admonition:: Sample data
 
-       *"Sorghum Drought"* dataset: Right reads end in "_1" and left reads end in
-       "_2". click the :guilabel:`&Pair Mode On` button to turn pairing on, and
-       check-select each of the paired samples (e.g. IS20351_DS_1_1.fastq.gz and
-       IS20351_DS_1_2.fastq.gz).
+       *"Zika infected hNPCs"* dataset:
+
+       Right reads end in "_1" and left reads end in
+       "_2". **Click the** :guilabel:`&Pair Mode On` **button** to turn pairing on,
+       and **check-select each of the paired samples**
+       (e.g. SRR3191543_1.fastq.gz and SRR3191543_2.fastq.gz).
 
 **B. Check sequencing quality with FastQC**
 
@@ -171,8 +175,10 @@ on the trimmed/filtered files.
 
      .. admonition:: Sample data
 
-       *"Sorghum Drought"* dataset: The quality of the reads in this dataset is
-       relatively good. You can skip the FastX Toolkit step for this dataset.
+       *"Zika infected hNPCs"* dataset:
+
+       The quality of the reads in this dataset is
+       relatively good. You can **skip the FastX Toolkit step for this dataset**.
 
      .. tip::
          The 'Basic' setting for FastX Toolkit uses the same settings as the
@@ -216,7 +222,9 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
 
     .. admonition:: Sample data
 
-       *"Sorghum Drought"* dataset: We suggest the following names for this dataset:
+       *"Zika infected hNPCs"* dataset:
+
+       We suggest the following names for this dataset:
 
          .. list-table::
            :header-rows: 1
@@ -224,24 +232,19 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
            * - Left/Right Pair
              - Sample name
              - Condition
-           * - IS20351_DS_1_1.fastq.gz IS20351_DS_1_2.fastq.gz
-             - drought1
-             - drought
-           * - IS20351_DS_2_1.fastq.gz IS20351_DS_2_2.fastq.gz
-             - drought2
-             - drought
-           * - IS20351_DS_3_1.fastq.gz IS20351_DS_3_2.fastq.gz
-             - drought3
-             - drought
-           * - IS20351_WW_1_1.fastq.gz IS20351_WW_1_2.fastq.gz
-             - watered1
-             - watered
-           * - IS20351_WW_2_1.fastq.gz IS20351_WW_2_2.fastq.gz
-             - watered2
-             - watered
-           * - IS20351_WW_3_1.fastq.gz IS20351_WW_3_2.fastq.gz
-             - watered3
-             - watered
+           * - SRR3191543_1.fastq.gz SRR3191543_1.fastq.gz
+             - Mock2-1
+             - Mock
+           * - SRR3191545_1.fastq.gz SRR3191545_2.fastq.gz
+             - ZIKV2-1
+             - Zika
+           * - SRR3191542_1.fastq.gz SRR3191542_2.fastq.gz
+             - Mock1-1
+             - Mock
+           * - SRR3191544_1.fastq.gz,SRR3191544_2.fastq.gz
+             - ZIKV1-1
+             - Zika
+
 
   2. After naming the samples and conditions, click the :guilabel:`&Submit` button
      to submit a job. Typically, within ~1 minute you will be provided with a
@@ -302,7 +305,7 @@ download, and interactive visualization of your differential expression results.
 
      The R Shiny App allows you to explore your differential expression results
      as generated by the `Sleuth R package <https://pachterlab.github.io/sleuth/>`_.
-     We will cover highlights for each menu in the app.
+     We will cover highlights to for each menu in the app.
 
      **Results Menu**
 
