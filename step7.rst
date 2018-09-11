@@ -241,7 +241,7 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
            * - SRR3191542_1.fastq.gz SRR3191542_2.fastq.gz
              - Mock1-1
              - Mock
-           * - SRR3191544_1.fastq.gz,SRR3191544_2.fastq.gz
+           * - SRR3191544_1.fastq.gz SRR3191544_2.fastq.gz
              - ZIKV1-1
              - Zika
 
