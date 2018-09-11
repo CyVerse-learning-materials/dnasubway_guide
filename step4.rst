@@ -87,7 +87,7 @@ are a major class of DNA elements that impact the function of the genome.
            - **Non-autonomous transposons:** Transposons which lack an active
            transposase gene, thus requiring help from another transposon to move.
            - **Autonomous transposons:** Transposons which have a functional
-           tranposase and can move within the genome.
+           transposase and can move within the genome.
 
 
 **Example Exercise - Search Plant Genomes: mPing Mite element**

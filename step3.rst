@@ -395,7 +395,7 @@ You also have the option of adding additional `EST evidence <https://en.wikipedi
      section of the Arabidopsis genome
 
   4. Open 'Web Apollo'. The "Blastn User" track should be loaded. You may move
-     this track to a convienent position on the browser
+     this track to a convenient position on the browser
 
      |apollo_5|
 

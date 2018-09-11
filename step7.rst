@@ -1,4 +1,4 @@
-|CyVerse logo|_
+Environment|CyVerse logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -36,7 +36,7 @@ in an R-Shiny app.
       this data compares RNA from both drought-stressed and
       well-watered Sorghum. You can read more about the experimental conditions
       `here <https://bmcplantbiol.biomedcentral.com/articles/10.1186/s12870-016-0800-x>`_.
-      Where appropriate, a note (in this orange colored backgroud) in the
+      Where appropriate, a note (in this orange colored background) in the
       instructions will indicate which options to select to make use of this
       provided dataset.
 
@@ -263,7 +263,7 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
 *DNA Subway Green Line: Kallisto/Sleuth- Visualize data using IGV and Sleuth*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In the "View Results" steps you have access to alignment visualizations, data
-download, and interactive visualization of your differental expression results.
+download, and interactive visualization of your differential expression results.
 
   1. Click the "View results" step and choose one of the following options:
 
@@ -272,7 +272,7 @@ download, and interactive visualization of your differental expression results.
   1. Click the icon in the "IGV" column to view a visualization of your reads
      pseudoaligned to the reference transcriptome. You will need to click the
      :guilabel:`&Make it public` button (and possibly be re-directed to the
-     CyVerse Discovery Enviornment). Afer making the data "public" which allows
+     CyVerse Discovery Environment). After making the data "public" which allows
      DNA Subway to access your files on the CyVerse Data Store, you must also
      select a memory size to launch this Java application. If you are not sure
      of which value to select, use the default 750MB option.
@@ -285,9 +285,9 @@ download, and interactive visualization of your differental expression results.
 
 **Download Data - Abundance**
 
-  1. Click the folder icon to be redirected to the CyVerse Discovery Enviornment
+  1. Click the folder icon to be redirected to the CyVerse Discovery Environment
      (you may be required to log in). You will be directed to all outputs from
-     you Kallisto analysis. You may preview them in the Discovery Enviornment or
+     you Kallisto analysis. You may preview them in the Discovery Environment or
      use the path listed to download the files using Cyberduck (see
      `Cyberduck download instructions <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html#download-from-data-store-to-local-computer-using-cyberduck>`_).
      A tab-separated file of abundances for each sequence pair is available at
@@ -315,7 +315,7 @@ download, and interactive visualization of your differental expression results.
     - **Target_id**: This is the name of the transcript (gene) from the selected
       reference transcriptome.
     - **qval**: This is a corrected (for multiple testing) p-value indicating the
-      significance test of diffefrential abundance. Lower numbers indicate greater
+      significance test of differential abundance. Lower numbers indicate greater
       significance.
     - **b**: This is an estimate of the fold change between the conditions
     - **ext_gene**: If available, these are gene names pulled from Ensemble
@@ -327,8 +327,8 @@ download, and interactive visualization of your differental expression results.
 
      |sleuth_bootstrap_1|
 
-     This menu will display a boxplot that indicates the difference in expression
-     between conditions. The boxplots themselves indicate variation between
+     This menu will display a box plot that indicates the difference in expression
+     between conditions. The box plots themselves indicate variation between
      replicates as estimated by bootstrap sampling of the reads. A dropbox enables
      you to select any transcript. Clicking the "Show genes" will load alternative
      gene names if available.
@@ -341,7 +341,7 @@ download, and interactive visualization of your differental expression results.
      |sleuth_pca_1|
 
      This graph displays principle components of each of the conditions/replicates.
-     In general replicates of the same condition should cluter closely together.
+     In general replicates of the same condition should cluster closely together.
 
      **Volcano Plot**
 
@@ -357,7 +357,7 @@ download, and interactive visualization of your differental expression results.
 
      |sleuth_loadings_1|
 
-     This barplot indicates which genes/transcripts explain most of the varience
+     This barplot indicates which genes/transcripts explain most of the variance
      computed in the principle components analysis.
 
      **Heatmap**

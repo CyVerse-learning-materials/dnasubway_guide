@@ -1,4 +1,4 @@
-|CyVerse logo|_
+Phylum|CyVerse logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -12,7 +12,7 @@ Walkthrough of DNA Subway Purple Line (alpha testing documentation)
   Purple line is in alpha release. There are several known issues. One common
   issue is that after completing a step, a subsequent step may be blocked.
   To solve, refresh DNA Subway in your browser to unblock this step. Please send
-  feeback to `DNALC Admin <mailto:dnalcadmin@cshl.edu>`_
+  feedback to `DNALC Admin <mailto:dnalcadmin@cshl.edu>`_
 
 
 
@@ -64,7 +64,7 @@ summarized in the metadata.
        **How to use provided sample data**
       In this guide, we will use a microbiome dataset (*"ubiome-test-data"*)
       collected from various water sources in Montana (down-sampled and de-identified).
-      Where appropriate, a note (in this orange colored backgroud) in the
+      Where appropriate, a note (in this orange colored background) in the
       instructions will indicate which options to select to make use of this
       provided dataset.
 
@@ -106,7 +106,7 @@ Sheets to edit and export your metadata files.
   **Sample IDs**
 
   For the sample IDs, there are some simple rules to comply with QIIME 2
-  requirments:
+  requirements:
 
       - IDs may consist of any Unicode characters, with the exception that IDs
         must not start with the pound sign (#), as those rows would be
@@ -179,7 +179,7 @@ Sheets to edit and export your metadata files.
 
     .. tip::
 
-       Purple line can be used to analyze eDNA (Envrionmental DNA). The workflow
+       Purple line can be used to analyze eDNA (Environmental DNA). The workflow
        is largely the same, with eDNA typically using a 12S RNA database of
        sequences for identification.
 
@@ -417,7 +417,7 @@ Once trimming is complete, the following outputs are expected:
 
        Naming of QIIME outputs in Purple Line will often contain a 4-digit
        number corresponding to a job number on the computing system the analysis
-       was completed on. In this documentation four octothorpes (####) will be
+       was completed on. In this documentation four octothorps (####) will be
        used in place of the numbers.
 
   - **####.table-trim####.qzv**: This file summarizes the dataset
@@ -577,7 +577,7 @@ question - "what are the differences in species between samples?".
      .. tip::
 
        Selecting different taxonomic levels allows you to visualize diversity
-       for each sample at different levels (e.g. Kindom, Phylym, Class, etc.)
+       for each sample at different levels (e.g. Kingdom, Phylum, Class, etc.)
 
        |core_matrix|
 

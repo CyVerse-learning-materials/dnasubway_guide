@@ -20,7 +20,7 @@ databases like GenBank.
 
 **Some things to remember about the platform**
 
-- Wetlab protocols and other resources are available at `http://dnabarcoding101.org/ <http://dnabarcoding101.org/>`_
+- Wet lab protocols and other resources are available at `http://dnabarcoding101.org/ <http://dnabarcoding101.org/>`_
 - The DNA Barcoding 101 site also contains information on low-cost sequencing
   for U.S.-based educators.
 
@@ -41,7 +41,7 @@ databases like GenBank.
         bacteria (16S), and fungi (ITS)
 
   3. Under 'Select Sequence Source' select a sequence buy uploading either a
-     FASTA file or AB1 sanger sequencing tracefile; pasting in a sequence in
+     FASTA file or AB1 Sanger sequencing tracefile; pasting in a sequence in
      FASTA format, or selecting and importing a trace file from DNALC. If
      you do not have a file, you may select any of the available sample sequences.
 
