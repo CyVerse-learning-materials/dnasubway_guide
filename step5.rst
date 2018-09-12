@@ -27,6 +27,20 @@ databases like GenBank.
 
 ----
 
+     .. admonition:: Sample data
+
+      **How to use provided sample data**
+
+      In this guide, we will use a mosquito dataset that includes DNA
+      sequences isolated from mosquito larvae collected from Virginia’s
+      Shenandoah Valley (*"Mosquito dataset"*).
+      There is a complete two-hour classroom bioinformatics lab with detailed
+      instructions for instructors and students on QUBES hub
+      `here <https://qubeshub.org/qubesresources/publications/165/2>`_.
+      Where appropriate, a note (in this orange colored background) in the
+      instructions will indicate which options to select to make use of this
+      provided dataset.
+
 *DNA Subway Blue Line - Create a Barcoding Project*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   1. Log-in to `DNA Subway <https://dnasubway.cyverse.org/>`_ - unregistered users may 'Enter as Guest'
@@ -36,32 +50,29 @@ databases like GenBank.
          able to submit sequence to GenBank
 
   2. Choose a project type:
-      - Phlogenetics: build phylogenetic trees from any DNA, protein, or mtDNA sequence)
+      - Phylogenetics: build phylogenetic trees from any DNA, protein, or mtDNA sequence)
       - Barcoding: DNA Barcoding for plants (rbcL), animals (COI),
         bacteria (16S), and fungi (ITS)
+
+     .. admonition:: Sample data
+
+       *"Mosquito"* dataset:
+
+       Select **COI**.
 
   3. Under 'Select Sequence Source' select a sequence buy uploading either a
      FASTA file or AB1 Sanger sequencing tracefile; pasting in a sequence in
      FASTA format, or selecting and importing a trace file from DNALC. If
      you do not have a file, you may select any of the available sample sequences.
 
+     .. admonition:: Sample data
+
+       *"Mosquito"* dataset:
+
+       From **Select a set of sample sequences** select **Intro to Barcoding Bioinformatics: Mosquitoes**.
+
+
   4. Name your project, and give a description if desired; click 'Continue.'
-
-**Example Exercise - Create a Project: Common Trees**
-``````````````````````````````````````````````````````
-This project will contain sample sequences from some common trees.
-
-
-  1. Log-in to `DNA Subway`_ - unregistered users may 'Enter as Guest'
-
-  2. Click ‘Determine Sequence Relationships.’ (Blue Square)
-
-  3. Select project type ‘Barcoding: rbcL.’
-
-  4. Select sample sequence 'rbcL sample1'.
-
-  5. Provide your project with a title, then Click ‘Continue.’
-
 
 ----
 
@@ -96,6 +107,13 @@ display an “R” to indicate the change.
      reads of the same sequence set. Alternatively Select the ‘Auto Pair’
      function and verify the pairs generated.
 
+     .. admonition:: Sample data
+
+       *"Mosquito"* dataset:
+
+       Click **Try Auto Pairing**. One pair of horsefly sequences and 4 pairs
+       of mosquito sequences will be created. Finally, click :guilabel:`&Save`.
+
   5. As necessary, Reverse Compliment sequences that were sequenced in the
      reverse orientation by clicking the ‘F’ next to the sequence name. The
      ‘F’ will become an ‘R’ to indicate the sequence has been reverse
@@ -107,27 +125,25 @@ display an “R” to indicate the change.
 This step remove poor quality areas at the 5’ and/or 3’ ends of the consensus
 sequence.
 
-  1. Click on “Trim Consensus.” Scroll left and right in the consensus editor
-     window to identify what string of nucleotides from the consensus sequence
-     you want to trim.
+  1. Click on “Trim Consensus.” Once the job is ready to view, click "Trim
+     Consensus" again to view the results. Scroll left and right in the
+     consensus editor window to identify what string of nucleotides from the
+     consensus sequence you want to trim.
 
   2. Click on the last consensus sequence nucleotide that you want to trim.
      A red line will indicate what nucleotides will be removed from the
      consensus sequences.
 
-  3. Click “Trim.” A new “Consensus Editor” window will pop up displaying the
+  3. Click :guilabel:`&Trim`. A new “Consensus Editor” window will pop up displaying the
      trimmed sequences.
 
-**Example Exercise - View and Clean Barcoding Sequence Data: Common Trees**
-````````````````````````````````````````````````````````````````````````````
+     .. admonition:: Sample data
 
-Following the Viewing steps for the 'rbcL sample1' sample above, answer
-the following *discussion questions*:
+       *"Mosquito"* dataset:
 
-  1. What do you notice about the electropherogram peaks and quality scores at
-     nucleotide positions labeled “N”?
-
-  2. Where do the ‘N’s’ in the sequence tend to be distributed, and why?
+       All of the sequences in this dataset benefit from trimming. Follow the
+       steps above to trim sequences. We recommending trimming at the first and
+       last "grey" (lower quality) nucleotide on the right and left ends.
 
 ----
 
@@ -148,20 +164,17 @@ published matches in GenBank.
      species name given in the BLAST hit will also give additional
      information/photos of the listed species.
 
-  3. If desired, select the check box next to any hit, and select ‘Add BLAST hits
-     to project’ to add selected sequences to your project.
+  3. If desired, select the check box next to any hit, and click :guilabel:`&Add BLAST hits to project`
+     to add selected sequences to your project.
 
-     |blue_blast|
+       |blue_blast|
 
+     .. admonition:: Sample data
 
-**Example Exercise - Find Matches with BLAST: Common Trees**
-`````````````````````````````````````````````````````````````
+       *"Mosquito"* dataset:
 
-Following the BLAST steps for the 'rbcL sample1' sample above, answer
-the following *discussion questions*:
-
-  1. BLAST will return the closest matches present in GenBank. Will you be able
-     to identify an unknown species using BLAST alone? Why or why not?
+       We recommend performing a BLASTN search for all samples and saving the
+       top 2 matches to your project for additional analysis (as in Step 3).
 
 ----
 
@@ -179,12 +192,13 @@ sequences within the set in the next step.
 
   2. Select sequences of your choice.
 
-  3. Click ‘Add ref data’ to add the data to your project.
+  3. Click :guilabel:`&Add ref data` to add the data to your project.
 
-**Example Exercise - Add Reference Data: Common Trees**
-``````````````````````````````````````````````````````````
+     .. admonition:: Sample data
 
-  1. Complete the 'Reference Data' step using the 'Common Plants' sample data.
+       *"Mosquito"* dataset:
+
+       Select **Common insects** and then click :guilabel:`&Add ref data`.
 
 
 ----
@@ -198,15 +212,26 @@ sequences within the set in the next step.
 
   2. Select any and all sequences you wish to add to your tree.
 
-  3. Click ‘Save.” to select data
+     .. admonition:: Sample data
+
+       *"Mosquito"* dataset:
+
+       We suggest first adding your "user data" and building an alignment and
+       tree. You can return to this step later to build additional trees. Once
+       Selected, click :guilabel:`&Save Selections`. Follow the rest of the
+       steps in this section and section B to create your tree.
+
+  3. Click :guilabel:`&Save Selections` to select data
 
   4. Click ‘MUSCLE.’ to run the MUSCLE program.
 
   5. Click ‘MUSCLE’ again to open the sequence alignment window.
 
-  6. Examine the alignment and then select the 'Trim Alignment' link in the upper-left of the Alignment viewer'
-
     |blue_align|
+
+  6. Examine the alignment and then select the :guilabel:`&Trim Alignment`
+     button in the upper-left of the Alignment viewer'
+
 
 **B. Build phylogenetic tree**
 
@@ -218,19 +243,11 @@ sequences within the set in the next step.
 
     |blue_ml|
 
+     .. admonition:: Sample data
 
-**Example Exercise - Build a Multiple Sequence Alignment and Phylogenetic Tree: Common Trees**
-````````````````````````````````````````````````````````````````````````````````````````````````
-Following the Alignment and Phylogenetic Tree steps for the 'rbcL sample1' sample above, answer
-the following *discussion questions*:
+       *"Mosquito"* dataset:
 
-  1. What relationship do you see between sequences that have more mutations
-     (align less well with majority of sequences) in the alignment and the
-     lengths of a sequences’ branch on the tree?
-
-  2. Do you see differences in the phylogenetic tree generated by the
-     Neighbor-joining vs. Maximum likelihood method?
-
+       We suggest setting "horsefly" as outgroup for both trees.  
 
 ----
 
