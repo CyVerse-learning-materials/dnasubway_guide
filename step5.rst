@@ -41,7 +41,7 @@ databases like GenBank.
       instructions will indicate which options to select to make use of this
       provided dataset.
 
-      Sample data citation:  Williams, J., Enke, R. A., Hyman, O., Lescak, E.,
+      **Sample data citation**:  Williams, J., Enke, R. A., Hyman, O., Lescak, E.,
       Donovan, S. S., Tapprich, W., Ryder, E. F. (2018).
       Using DNA Subway to Analyze Sequence Relationships. (Version 2.0).
       QUBES Educational Resources. `doi:10.25334/Q4J111 <http://dx.doi.org/10.25334/Q4J111>`_
