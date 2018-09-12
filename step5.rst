@@ -119,7 +119,7 @@ display an “R” to indicate the change.
      ‘F’ will become an ‘R’ to indicate the sequence has been reverse
      complimented.
 
-  6.  Save the created pairs.
+  6.  Click :guilabel:`&Save` to save the created pairs.
 
 **C. Build a consensus sequence**
 This step remove poor quality areas at the 5’ and/or 3’ ends of the consensus
@@ -247,7 +247,7 @@ sequences within the set in the next step.
 
        *"Mosquito"* dataset:
 
-       We suggest setting "horsefly" as outgroup for both trees.  
+       We suggest setting "horsefly" as outgroup for both trees.
 
 ----
 
