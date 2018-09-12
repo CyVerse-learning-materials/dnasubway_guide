@@ -43,6 +43,11 @@ in an R-Shiny app.
       instructions will indicate which options to select to make use of this
       provided dataset.
 
+      **Sample data citation**: Yi L, Pimentel H, Pachter L (2017) Zika
+      infection of neural progenitor cells perturbs transcription in
+      neurodevelopmental pathways. PLOS ONE 12(4):
+      e0175744. `10.1371/journal.pone.0175744 <https://doi.org/10.1371/journal.pone.0175744>`_
+
 *DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Expression*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
