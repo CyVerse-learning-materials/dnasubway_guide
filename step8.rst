@@ -184,7 +184,7 @@ Sheets to edit and export your metadata files.
 
         *"ubiome-test-data"* dataset:
 
-         Select **Single End Reads**
+        Select **Single End Reads**
 
 
   4. For 'Select File  Format' select the format the corresponds to your sequence metadata.
@@ -193,7 +193,7 @@ Sheets to edit and export your metadata files.
 
         *"ubiome-test-data"* dataset:
 
-         Select **Illumina Casava 1.8**
+        Select **Illumina Casava 1.8**
 
     .. tip::
          Typically, microbiome/eDNA will be in the form of multiplexed FastQ
@@ -235,7 +235,9 @@ directly to the CyVerse Data Store:
 
     .. admonition:: Sample data
 
-        For sample metadata file in this guide select navigate to:
+        *"ubiome-test-data"* dataset:
+
+        Navigate to:
         Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
 
         Select the **mappingfile_MT_corrected.tsv** and then click
@@ -252,13 +254,13 @@ directly to the CyVerse Data Store:
 
         *"ubiome-test-data"* dataset:
 
-         navigate to:
-         Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
+        Navigate to:
+        Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
 
-         Select all 11 fastq files (they are compressed and will have the
-         fastq.gz file extension). Then click :guilabel:`&Add selected files` or
-         :guilabel:`&Add all files in this directory` (only files with a
-         .fastq.gz extension will be added).
+        Select all 11 fastq files (they are compressed and will have the
+        fastq.gz file extension). Then click :guilabel:`&Add selected files` or
+        :guilabel:`&Add all files in this directory` (only files with a
+        .fastq.gz extension will be added).
 
   5. Click the "add data" link to add the sequencing data to your project. Close
      the "Manage data" window, or repeat this step as appropriate until all your
@@ -398,13 +400,13 @@ sequence quality histogram which can be used to determine parameter for trimming
 
         *"ubiome-test-data"* dataset:
 
-         Based on the histogram for our sample, we recommend the following
-         parameters:
+        Based on the histogram for our sample, we recommend the following
+        parameters:
 
-         - **trimLeft: 17** (this is specific to primers and adaptors in this
-           experiment)
-         - **TruncLen: 200** (this is where low quality sequence begins, in this case
-           because our sequence length is lower than the expected read length)
+        - **trimLeft: 17** (this is specific to primers and adaptors in this
+          experiment)
+        - **TruncLen: 200** (this is where low quality sequence begins, in this case
+          because our sequence length is lower than the expected read length)
 
 **D. Check Results of Trimming**
 Once trimming is complete, the following outputs are expected:
@@ -529,10 +531,10 @@ question - "what are the differences in species between samples?".
 
         *"ubiome-test-data"* dataset:
 
-         We recommend the following parameters:
+        We recommend the following parameters:
 
-         - **Sampling Depth**: 3000
-         - **Classifier**: Grenegenes (16s rRNA)
+        - **Sampling Depth**: 3000
+        - **Classifier**: Grenegenes (16s rRNA)
 
   2. When complete, you should generate several visualization results including:
 
@@ -615,10 +617,10 @@ question - "what are the differences in species between samples?".
 
         *"ubiome-test-data"* dataset:
 
-         We recommend the following parameters:
+        We recommend the following parameters:
 
-         - **Group data by**: CollectionMethod
-         - **Level of taxonomy to summarize**: 5
+        - **Group data by**: CollectionMethod
+        - **Level of taxonomy to summarize**: 5
 
 ----
 
