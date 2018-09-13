@@ -168,13 +168,6 @@ Sheets to edit and export your metadata files.
   1. Log-in to DNA Subway (unregistered
      users may NOT use Purple Line, register for a CyVerse account at `user.cyverse.org`_)
 
-     .. warning::
-
-        These directions apply to a "Alpha Release" of the Purple Line.
-        available at: `https://ubiome-demo.ngrok.io/ <https://ubiome-demo.ngrok.io/>`_
-        Email dnalcadmin @ cshl.edu for questions.
-
-
   2. Click the purple square ("Microbiome Analysis") to begin a project.
 
     .. tip::
