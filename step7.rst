@@ -289,7 +289,7 @@ download, and interactive visualization of your differential expression results.
      .. warning::
         Using IGV requires Java software. Java is increasingly unsupported for
         security reasons on the internet.
-        
+
        .. tip::
 
           **Java Help**
@@ -352,9 +352,9 @@ download, and interactive visualization of your differential expression results.
 
      |sleuth_results_1|
 
-    This menu is an interactive table of your results. You can choose which
-    columns to display in the table using the checkboxes on the left of the screen.
-    Several important values selected by default include:
+     This menu is an interactive table of your results. You can choose which
+     columns to display in the table using the checkboxes on the left of the screen.
+     Several important values selected by default include:
 
     - **Target_id**: This is the name of the transcript (gene) from the selected
       reference transcriptome.
