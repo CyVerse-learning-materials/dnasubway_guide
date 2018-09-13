@@ -291,6 +291,34 @@ download, and interactive visualization of your differential expression results.
         security reasons on the internet. For more info on dealing with Java
         issues see `this page <https://dnasubway.cyverse.org/about/help.html>`_ for tips.
 
+       .. tip::
+
+          **Java Help**
+
+          Java must be available and enabled in your Internet browser to use the
+          IGV function. Java frequently is the source of secruity vulnerabilities
+          and so its not uncommon to experience configuration issues due to
+          safety. Follow the tips below to configure Java for your computer.
+          Alternatively, you can use the Download link (see instructions in the
+          section below) to download your data (you will need the .bam and
+          .bam.bai files) and download and install `IGV Viewer <https://software.broadinstitute.org/software/igv/>`_ yourself.
+
+
+          *Internet Browser*
+
+          We highly recommend using Firefox as your browser for DNA Subway.
+
+          - Verify your Java availability for your browser `here <https://www.java.com/en/download/installed.jsp>`_
+          - Java must be `enabled <https://java.com/en/download/help/enable_browser.xml>`_ in your browser.
+
+          *Java Configuration*
+
+          - Open the Java control panel on your computer.
+            (On Mac, open System Preferences > Java. On PC, open Control Panel > Programs > Java.)
+          - Click the Security tab and check "Enable Java in the browser" and
+            set the security level for applications to "high".
+            Add http://dnasubway.cyverse.org and http://gfx.dnalc.org to
+            the "Exception Site List" in the Java Security tab.
 
 **Download Data - Abundance**
 
