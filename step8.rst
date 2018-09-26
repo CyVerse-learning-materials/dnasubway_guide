@@ -144,8 +144,7 @@ Sheets to edit and export your metadata files.
   values, the column is inferred to be categorical. Missing data (i.e. empty
   cells) are supported in categorical columns as well as numeric columns.
   For more details, and for how to define the nature of the data when needed,
-  see the
-  `QIIME 2 metadata documentation <https://docs.qiime2.org/2018.2/tutorials/metadata/>`_
+  see the |QIIME 2 metadata documentation|.
 
 **A. Create Metadata file**
 
@@ -156,9 +155,9 @@ Sheets to edit and export your metadata files.
 
      .. tip::
 
-        See an example metadata file used for our sample data here:
-        Sample |metadata_file| click the :guilabel:`&Download` button
-        to download the file. (**Note**: This is an Excel version of the
+        See an example metadata file used for our sample data here: |metadata_file|.
+        Click the :guilabel:`&Download` button on the linked page to download
+        and examine the file. (**Note**: This is an Excel version of the
         metadata file, you must save Excel files as .TSV (tab-separated) to be
         compatible with the QIIME 2 workflow.)
 
@@ -698,6 +697,11 @@ Post your question to the user forum:
 .. |unweighted| image:: ./img/dna_subway/unweighted.png
    :width: 350
    :height: 200
+
+.. |QIIME 2 metadata documentation|  raw:: html
+
+    <a href="https://docs.qiime2.org/2018.2/tutorials/metadata/" target="_blank">QIIME 2 metadata documentation</a>
+
 .. |metadata_file| raw:: html
 
     <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank">metadata file</a>
