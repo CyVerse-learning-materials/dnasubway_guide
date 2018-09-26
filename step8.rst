@@ -18,7 +18,7 @@ Walkthrough of DNA Subway Purple Line (alpha testing documentation)
 
 The Purple Line provides the capability for analysis of microbiome and eDNA
 (environmental DNA) by implementing a simplified version of the
-`QIIME 2 <https://qiime2.org/>`_ (pronounced "chime two") workflow. Using the
+|QIIME 2| (pronounced "chime two") workflow. Using the
 Purple Line, you can analyze uploaded high throughput sequencing reads to
 identify species in microbial or environmental DNA samples.
 
@@ -48,10 +48,9 @@ summarized in the metadata.
   HPC computing is subject to queues which may support hundreds of other jobs.
   These systems also undergo regular maintenance and are subject to
   periodic disruption.
-- DNA Subway implements the `QIIME 2`_ software. This software is in continual
+- DNA Subway implements the |QIIME 2| software. This software is in continual
   development. Our version may not be the most current, and our documentation
-  and explanation is not meant to replace the full
-  `QIIME2 documentation <https://docs.qiime2.org/2018.2/>`_
+  and explanation is not meant to replace the full |QIIME2 documentation|.
 - We have made design decisions to create a straightforward classroom-friendly
   workflow. While this Subway Line does not have all possible features of QIIME
   2, we purpose to cover important concepts behind microbiome and eDNA analysis.
@@ -151,7 +150,7 @@ Sheets to edit and export your metadata files.
   1. Using a spreadsheet editor, create a metadata sheet that provides
      descriptions of the sequencing files used in your experiment. Export this
      file as a tab-delimited **.txt** or **.tsv** file. following
-     the `QIIME 2 metadata documentation`_ recommendations.
+     the |QIIME 2 metadata documentation| recommendations.
 
      .. tip::
 
@@ -697,10 +696,17 @@ Post your question to the user forum:
 .. |unweighted| image:: ./img/dna_subway/unweighted.png
    :width: 350
    :height: 200
+.. |QIIME2 documentation|  raw::html
+
+   <a href="https://docs.qiime2.org/2018.8/" target="_blank">QIIME 2 documentation</a>
+
+.. |QIIME 2| raw:: html
+
+   <a href="https://qiime2.org/" target="_blank">QIIME 2</a>
 
 .. |QIIME 2 metadata documentation|  raw:: html
 
-    <a href="https://docs.qiime2.org/2018.2/tutorials/metadata/" target="_blank">QIIME 2 metadata documentation</a>
+    <a href="https://docs.qiime2.org/2018.8/tutorials/metadata/" target="_blank">QIIME 2 metadata documentation</a>
 
 .. |metadata_file| raw:: html
 
