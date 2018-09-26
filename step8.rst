@@ -30,7 +30,7 @@ or 12S or 16S ribosomal RNA genes, and sequence reads identify the variety and
 abundance of species from different samples. The analysis requires specialized
 software, such as QIIME 2.
 
-The Purple Line integrates sequence data and metadata imported from Cyverse's
+The Purple Line integrates sequence data and metadata imported from CyVerse's
 Data Store, demultiplexing of samples, quality control, and taxonomic
 identification and quantitation. Once sequences are analyzed, the results can be
 visualized to allow comparisons between samples and different conditions
@@ -40,7 +40,7 @@ summarized in the metadata.
 **Some things to remember about the platform**
 
 - You must be a registered CyVerse user to use Purple Line (register for a
-  CyVerse account at |CyVerse User Portal|)
+  CyVerse account at |CyVerse User Portal| )
 - The Purple line was designed to make microbiome/eDNA data analysis "simple".
   However, we ask that users very carefully and thoughtfully decide what "jobs"
   they want to submit.
