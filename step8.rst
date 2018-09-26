@@ -40,7 +40,7 @@ summarized in the metadata.
 **Some things to remember about the platform**
 
 - You must be a registered CyVerse user to use Purple Line (register for a
-  CyVerse account at `user.cyverse.org <https://user.cyverse.org/>`_)
+  CyVerse account at |CyVerse User Portal|)
 - The Purple line was designed to make microbiome/eDNA data analysis "simple".
   However, we ask that users very carefully and thoughtfully decide what "jobs"
   they want to submit.
@@ -166,7 +166,7 @@ Sheets to edit and export your metadata files.
 **A. Create a project in Subway**
 
   1. Log-in to DNA Subway (unregistered
-     users may NOT use Purple Line, register for a CyVerse account at `user.cyverse.org`_)
+     users may NOT use Purple Line, register for a CyVerse account at |CyVerse User Portal|)
 
   2. Click the purple square ("Microbiome Analysis") to begin a project.
 
@@ -199,8 +199,8 @@ Sheets to edit and export your metadata files.
          Typically, microbiome/eDNA will be in the form of multiplexed FastQ
          sequences. We support the following formats:
 
-         - `Illumina Casava 1.8 <https://support.illumina.com/content/dam/illumina-support/documents/myillumina/33d66b02-53b5-4f4d-9d8b-f94237c7e44d/casava_qrg_15011197b.pdf>`_
-         - `Earth Microbiome Project <http://www.earthmicrobiome.org/protocols-and-standards/>`_
+         - |Illumina Casava 1.8|
+         - |Earth Microbiome Project|
 
   5. Enter a project title, and description; click :guilabel:`&Continue`.
 
@@ -696,6 +696,10 @@ Post your question to the user forum:
 .. |unweighted| image:: ./img/dna_subway/unweighted.png
    :width: 350
    :height: 200
+.. |CyVerse User Portal|  raw::html
+
+   <a href="https://user.cyverse.org" target="_blank">user.cyverse.org</a>
+
 .. |QIIME2 documentation|  raw::html
 
    <a href="https://docs.qiime2.org/2018.8/" target="_blank">QIIME 2 documentation</a>
@@ -711,3 +715,15 @@ Post your question to the user forum:
 .. |metadata_file| raw:: html
 
     <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank">metadata file</a>
+
+.. |Illumina Casava 1.8| raw::html
+
+   <a href="https://support.illumina.com/content/dam/illumina-support/documents/myillumina/33d66b02-53b5-4f4d-9d8b-f94237c7e44d/casava_qrg_15011197b.pdf" target="_blank">Illumina Casava 1.8</a>
+
+.. |Earth Microbiome Project| raw::html
+
+   <a href="http://www.earthmicrobiome.org/protocols-and-standards/" target="_blank">Earth Microbiome Project</a>
+
+.. |blank_link| raw::html
+
+   <a href="https://url.com" target="_blank">Text as it should appear in link</a>
