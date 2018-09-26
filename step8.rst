@@ -698,7 +698,7 @@ Post your question to the user forum:
    :height: 200
 .. |CyVerse User Portal|  raw::html
 
-   <a href="https://user.cyverse.org" target="_blank">user.cyverse.org</a>
+   <a href="https://user.cyverse.org" target="_blank">"user.cyverse.org"</a>
 
 .. |QIIME2 documentation|  raw::html
 
