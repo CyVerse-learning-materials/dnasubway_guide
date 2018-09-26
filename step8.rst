@@ -157,10 +157,9 @@ Sheets to edit and export your metadata files.
      .. tip::
 
         See an example metadata file used for our sample data here:
-        `Sample |metadata_file|;
-        click the :guilabel:`&Download` button to download the file.
-        (**Note**: This is an Excel version of the metadata file,
-        you must save Excel files as .TSV (tab-separated) to be
+        `Sample |metadata_file|; click the :guilabel:`&Download` button
+        to download the file. (**Note**: This is an Excel version of the
+        metadata file, you must save Excel files as .TSV (tab-separated) to be
         compatible with the QIIME 2 workflow.)
 
 *DNA Subway Purple Line - Create a Microbiome Analysis Project*
