@@ -213,10 +213,8 @@ directly to the CyVerse Data Store:
   1. Upload your
 
      - FASTQ sequence reads
-     - Sample metadata file (.tsv or .txt formatted according to
-       `QIIME2 Metadata requirements <https://docs.qiime2.org/2018.2/tutorials/metadata/>`_)
-       to the CyVerse Data Store using Cyberduck. See instructions:
-       `CyVerse Data Store Guide <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html>`_
+     - Sample metadata file (.tsv or .txt formatted according to |QIIME 2 metadata documentation|).
+       to the CyVerse Data Store using Cyberduck. See instructions:|CyVerse Data Store Guide|.
 
 
 ----
@@ -315,8 +313,7 @@ sequence quality histogram which can be used to determine parameter for trimming
            menus, and interact with several visualizations. Importantly, many files
            and visualizations can be directly download for your use outside of
            DNA Subway, including in report generation, or in your custom QIIME 2
-           analyses. You can view downloaded .qza or .qzv files at
-           `https://view.qiime2.org <https://view.qiime2.org>`_
+           analyses. You can view downloaded .qza or .qzv files at |view.qiime2.org|.
 
 
      .. tip::
@@ -340,8 +337,7 @@ sequence quality histogram which can be used to determine parameter for trimming
 
         **Interactive Quality Plot**
 
-        This is an interactive plot that gives you an average quality
-        `Phred score <https://en.wikipedia.org/wiki/Phred_quality_score>`_
+        This is an interactive plot that gives you an average quality |Phred score|
         (y-axis) by the position along the read (x-axis). This box plot is
         derived from a random sampling of a subset of sequences. The number of
         sequences sampled will be indicated in the plot caption.
@@ -355,7 +351,7 @@ sequence quality histogram which can be used to determine parameter for trimming
 
       On the Interactive Quality Plot you are shown an histogram, plotting the
       average quality (X axis)
-      `Phred Score`_ vs. the
+      |Phred Score| vs. the
       position on the read (y axis) in base pairs for a **subsample** of reads.
 
       **Zooming to determine 3' trim location**
@@ -451,9 +447,9 @@ Once trimming is complete, the following outputs are expected:
 
      .. tip::
 
-       Although the term "feature" can (unfortunately) `have many meanings <https://forum.qiime2.org/t/what-is-a-feature-exactly/2201>`_
+       Although the term "feature" can (unfortunately) |feature|
        as used by the QIIME2 documentation, unless otherwise noted in this
-       documentation it can be thought of as an OTU (`operational taxonomic unit <https://en.wikipedia.org/wiki/Operational_taxonomic_unit>`_);
+       documentation it can be thought of as an OTU (|operational taxonomic unit|);
        another substitution for the word species. OTU is a convenient and common
        terminology for referring to an unclassified or undetermined species.
        Ultimately, we are attempting to identify an organism from a sample of
@@ -698,7 +694,7 @@ Post your question to the user forum:
    :height: 200
 .. |CyVerse User Portal|  raw:: html
 
-  <a href="https://user.cyverse.org" target="_blank">"user.cyverse.org"</a>
+  <a href="https://user.cyverse.org" target="_blank">user.cyverse.org</a>
 
 .. |QIIME2 documentation|  raw:: html
 
@@ -718,12 +714,24 @@ Post your question to the user forum:
 
 .. |Illumina Casava 1.8| raw:: html
 
-  <a href="https://support.illumina.com/content/dam/illumina-support/documents/myillumina/33d66b02-53b5-4f4d-9d8b-f94237c7e44d/casava_qrg_15011197b.pdf" target="_blank">Illumina Casava 1.8</a>
+  <a href="http://illumina.bioinfo.ucr.edu/ht/documentation/data-analysis-docs/CASAVA-FASTQ.pdf/at_download/file" target="_blank">Illumina Casava 1.8</a>
 
 .. |Earth Microbiome Project| raw:: html
 
   <a href="http://www.earthmicrobiome.org/protocols-and-standards/" target="_blank">Earth Microbiome Project</a>
 
-.. |blank_link| raw:: html
+.. |CyVerse Data Store Guide| raw:: html
 
-  <a href="https://url.com" target="_blank">Text as it should appear in link</a>
+  <a href="https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html" target="_blank">CyVerse Data Store Guide</a>
+
+.. |view.qiime2.org| raw:: html
+
+  <a href="https://view.qiime2.org" target="_blank">view.qiime2.org</a>
+
+.. |feature| raw:: html
+
+  <a href="https://forum.qiime2.org/t/what-is-a-feature-exactly/2201" target="_blank">have many meanings</a>
+
+.. |operational taxonomic unit| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Operational_taxonomic_unit" target="_blank">operational taxonomic unit</a>
