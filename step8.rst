@@ -287,7 +287,10 @@ sequences, the index sequences must be defined in the metadata file.
   1. Click the 'Demultiplex reads' stop, then click :guilabel:`&demux reads` to
      demultiplex your sample reads.
 
-  2. When demultiplexing is complete, you will generate a file (.qzv) click
+  2. In 'Random sequences to sample for QC', enter a value (1000 is recommended), 
+     then click demux reads to demultiplex your sample reads.
+
+  3. When demultiplexing is complete, you will generate a file (.qzv) click
      this link to view a visualization and statistics on the sequence and
      metadata for this project.
 
@@ -730,7 +733,7 @@ Post your question to the user forum:
 
 .. |Phred score| raw:: html
 
-  <a href="https://en.wikipedia.org/wiki/Phred_quality_score" target="_blank">Phred score</a>  
+  <a href="https://en.wikipedia.org/wiki/Phred_quality_score" target="_blank">Phred score</a>
 
 .. |feature| raw:: html
 
