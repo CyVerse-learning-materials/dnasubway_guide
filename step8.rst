@@ -700,5 +700,4 @@ Post your question to the user forum:
    :width: 350
    :height: 200
 .. |metadata_file| raw:: html
-
-    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank">"metadata file"</a>
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank"> metadata file</a>
