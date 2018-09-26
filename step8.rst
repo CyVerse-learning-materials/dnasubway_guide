@@ -214,7 +214,7 @@ directly to the CyVerse Data Store:
 
      - FASTQ sequence reads
      - Sample metadata file (.tsv or .txt formatted according to |QIIME 2 metadata documentation|).
-       to the CyVerse Data Store using Cyberduck. See instructions:|CyVerse Data Store Guide|.
+       to the CyVerse Data Store using Cyberduck. See instructions: |CyVerse Data Store Guide|.
 
 
 ----
@@ -727,6 +727,10 @@ Post your question to the user forum:
 .. |view.qiime2.org| raw:: html
 
   <a href="https://view.qiime2.org" target="_blank">view.qiime2.org</a>
+
+.. |Phred score| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Phred_quality_score" target="_blank">Phred score</a>  
 
 .. |feature| raw:: html
 
