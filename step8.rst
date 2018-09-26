@@ -213,8 +213,9 @@ directly to the CyVerse Data Store:
   1. Upload your
 
      - FASTQ sequence reads
-     - Sample metadata file (.tsv or .txt formatted according to |QIIME 2 metadata documentation|).
-       to the CyVerse Data Store using Cyberduck. See instructions: |CyVerse Data Store Guide|.
+     - Sample metadata file (.tsv or .txt formatted according to |QIIME 2 metadata documentation|)
+
+    to the CyVerse Data Store using Cyberduck. See instructions: |CyVerse Data Store Guide|.
 
 
 ----
