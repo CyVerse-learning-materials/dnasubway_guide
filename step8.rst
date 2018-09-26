@@ -1,4 +1,4 @@
-Phylum|CyVerse logo|_
+|CyVerse logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -287,7 +287,7 @@ sequences, the index sequences must be defined in the metadata file.
   1. Click the 'Demultiplex reads' stop, then click :guilabel:`&demux reads` to
      demultiplex your sample reads.
 
-  2. In 'Random sequences to sample for QC', enter a value (1000 is recommended), 
+  2. In 'Random sequences to sample for QC', enter a value (1000 is recommended),
      then click demux reads to demultiplex your sample reads.
 
   3. When demultiplexing is complete, you will generate a file (.qzv) click
@@ -472,9 +472,13 @@ each sample.
      file to examine your results. The QIIME 2 view window will also have a link
      to download a FASTA file of your sequences.
 
-  2. Click on 'Phylogenetic diversity' and then click the "Build phylogenetic
-     diversity". This will not generate a visualization, but the data will be
-     passed on to the next steps.
+  2. Click on 'Alpha rarefaction. Select "run" and designate the minimum and
+     maximum rarefaction depth. A minimum value should be set at 1. The maximum
+     value is specific to your data set. To determine what the maximum value
+     should be set to, open the "Interactive Sample Detail" tab of the
+     "Trim Reads" step. Identify the maximum Sequence Count value and enter
+     that number as the maximum value. Click "submit job".
+
 
 ----
 
