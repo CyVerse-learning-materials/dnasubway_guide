@@ -157,8 +157,11 @@ Sheets to edit and export your metadata files.
      .. tip::
 
         See an example metadata file used for our sample data here:
-        `Sample metadata file <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/eDNAworked/mappingfile.tsv>`_
-
+        `Sample |metadata_file|;
+        click the :guilabel:`&Download` button to download the file.
+        (**Note**: This is an Excel version of the metadata file,
+        you must save Excel files as .TSV (tab-separated) to be
+        compatible with the QIIME 2 workflow.)
 
 *DNA Subway Purple Line - Create a Microbiome Analysis Project*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -696,3 +699,6 @@ Post your question to the user forum:
 .. |unweighted| image:: ./img/dna_subway/unweighted.png
    :width: 350
    :height: 200
+.. |metadata_file| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank">"metadata file"</a>
