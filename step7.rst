@@ -1,21 +1,23 @@
-Environment|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+
+|CyVerse logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Walkthrough of DNA Subway Green Line: Kallisto/Sleuth (*Beta*)
+Walkthrough of DNA Subway Green Line: Kallisto/Sleuth RNA-Seq
 ---------------------------------------------------------------
 The Green line runs within CyVerse DNA Subway and leverages
-powerful computing and data storage infrastructure and uses the `Stampede2 <https://www.tacc.utexas.edu/systems/stampede2>`_
+powerful computing and data storage infrastructure and uses the |Stampede2|
 supercomputer cluster to provide a high performance analytical platform with a
-simple user interface suitable for both teaching and research. `Kallisto <https://pachterlab.github.io/kallisto/about>`_
+simple user interface suitable for both teaching and research. |Kallisto|
 is a quick, highly-efficient software for quantifying transcript abundances in
 an RNA-Seq experiment. Even on a typical laptop, Kallisto can quantify 30
 million reads in less than 3 minutes. Integrated into CyVerse, you can take
 advantage of CyVerse DNA Subway to process your reads, do the
 Kallisto quantification, and analyze reads
-with the Kallisto companion software `Sleuth <https://pachterlab.github.io/sleuth/about>`_
+with the Kallisto companion software |Sleuth|
 in an R-Shiny app.
 
 **Some things to remember about the platform**
@@ -37,8 +39,7 @@ in an R-Shiny app.
       In this guide, we will use an RNA-Seq dataset (*"Zika infected hNPCs"*).
       This experiment compared human neuroprogenetor cells (hNPCs)
       infected with the Zika virus to non-infected hNPCs. You can read more
-      about the experimental conditions and methods
-      `here <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744>`_.
+      about the experimental conditions and methods in this |reference|.
       Where appropriate, a note (in this orange colored background) in the
       instructions will indicate which options to select to make use of this
       provided dataset.
@@ -46,14 +47,29 @@ in an R-Shiny app.
       **Sample data citation**: Yi L, Pimentel H, Pachter L (2017) Zika
       infection of neural progenitor cells perturbs transcription in
       neurodevelopmental pathways. PLOS ONE 12(4):
-      e0175744. `10.1371/journal.pone.0175744 <https://doi.org/10.1371/journal.pone.0175744>`_
+      e0175744. |reference|.
 
-*DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Expression*
+     .. note::
+
+       **Discontinuing support for Tuxedo workflow**
+
+         The Tuxedo workflow previously implemented for the Green Line will be
+         removed in **June 2019**. After that time you will no longer be able
+         to use that workflow to analyze your data. Your data and previously
+         analyzed results will still be available on the CyVerse Data Store.
+
+         Until then, **you can still view and use the Tuexdo workflow** by toggling
+         between Kallisto and Tuexdo by selecting the Workflow button in the
+         Project Information menu at the bottom of the Green Line page.
+
+
+
+*DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Abundance*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **A. Create a project in Subway**
 
-  1. Log-in to DNA Subway - unregistered users may NOT use Green Line.
+  1. Log-in to |DNA Subway| - unregistered users may NOT use Green Line.
 
   2. Click on the Green "Next Generation Sequencing" square to start a Green Line project.
 
@@ -74,7 +90,7 @@ in an R-Shiny app.
       Select **Homo sapiens - Ensembl 78 GrCh38**
 
     .. tip::
-         If you don't see a desired species/genome `contact us <https://dnasubway.cyverse.org/feedback.html>`_ to have it added
+         If you don't see a desired species/genome |contact us| to have it added
 
   5. Enter a project title, and description; click 'Continue'
 
@@ -84,7 +100,7 @@ the Subway internet interface. You must upload your files (either .fastq or .fas
 directly to the CyVerse Data Store.
 
   1. Upload your reads to the CyVerse Data Store using Cyberduck. See instructions:
-     `CyVerse Data Store Guide <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html>`_
+     |Data Store Guide|
 
      .. tip::
          This step is not directly connected with DNA Subway. You can use any
@@ -118,7 +134,7 @@ directly to the CyVerse Data Store.
        *"Zika infected hNPCs"* dataset:
 
        You will be presented with the following 8 files;
-       **check-select all of the files** and click the :guilabel:`&Add files` button:
+       **check-select all of the files** and click the :guilabel:`&+ Add files` button:
 
         - SRR3191543_1.fastq.gz
         - SRR3191543_2.fastq.gz
@@ -133,7 +149,7 @@ directly to the CyVerse Data Store.
        uninfected cells and the SRR3191544 and SRR3191545 file are from the Zika
        infected cells.
 
-  4. If working with paired-end reads, click the 'Pair Mode' button to toggle to
+  4. If working with paired-end reads, click the :guilabel:`&Pair Mode OFF` button to toggle to
      on; check each pair of sequencing files to pair them.
 
      .. admonition:: Sample data
@@ -141,13 +157,13 @@ directly to the CyVerse Data Store.
        *"Zika infected hNPCs"* dataset:
 
        Right reads end in "_1" and left reads end in
-       "_2". **Click the** :guilabel:`&Pair Mode On` **button** to turn pairing on,
+       "_2". **Click the** :guilabel:`&Pair Mode OFF` **button** to turn pairing on,
        and **check-select each of the paired samples**
        (e.g. SRR3191543_1.fastq.gz and SRR3191543_2.fastq.gz).
 
 **B. Check sequencing quality with FastQC**
 
-It is important to only work with high quality data. `FastQC <http://www.bioinformatics.babraham.ac.uk/projects/fastqc/>`_ is a popular tool
+It is important to only work with high quality data. |FastQC| is a popular tool
 for determining sequencing quality.
 
      .. tip::
@@ -159,9 +175,9 @@ for determining sequencing quality.
   2. One the jobs are complete, click the 'View' link to view the results.
 
      .. tip::
-         You can see a description and explanation of the FastQC report `here <https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/#summary>`_
+         You can see a description and explanation of the FastQC report |fastqc quickstart|
          on the CyVerse Learning Center and a more detailed set of explanations
-         on the `FastQC website <https://www.bioinformatics.babraham.ac.uk/projects/fastqc/>`_
+         on the |FastQC| website.
 
 
 ----
@@ -215,7 +231,7 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
 
   .. tip::
      You can find a detailed video series on the science behind the Kallisto
-     software and pseudoalignment `here <https://www.youtube.com/playlist?list=PL-0S9LiUi0vhjynujVZw34RKmUo6vPmVd>`_.
+     software and pseudoalignment: |YouTube|.
 
   1. Click the "Quantification" step and enter a sample and condition name for
      each of your samples. You will typically have several replicates (at least
@@ -263,14 +279,14 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
 
           You can select some of the advanced option for your Kallisto job by
           clicking the "Parameters" link in the Quantification stop. See more
-          about these advanced parameters in the `Kallisto manual <https://pachterlab.github.io/kallisto/manual>`_.
+          about these advanced parameters in the |Kallisto manual|.
 
 
 
 ----
 
-*DNA Subway Green Line: Kallisto/Sleuth- Visualize data using IGV and Sleuth*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*DNA Subway Green Line: Kallisto/Sleuth- Visualize data using IGV*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In the "View Results" steps you have access to alignment visualizations, data
 download, and interactive visualization of your differential expression results.
 
@@ -300,23 +316,23 @@ download, and interactive visualization of your differential expression results.
           safety. Follow the tips below to configure Java for your computer.
           Alternatively, you can use the Download link (see instructions in the
           section below) to download your data (you will need the .bam and
-          .bam.bai files) and download and install `IGV Viewer <https://software.broadinstitute.org/software/igv/>`_ yourself.
+          .bam.bai files) and download and install |IGV Viewer| yourself.
 
 
           *Internet Browser*
 
           We highly recommend using Firefox as your browser for DNA Subway.
 
-          - Verify your Java availability for your browser `here <https://www.java.com/en/download/installed.jsp>`_
-          - Java must be `enabled <https://java.com/en/download/help/enable_browser.xml>`_ in your browser.
+          - Verify your Java availability for your browser: |Java test|
+          - Java must be |enabled| in your browser
 
           *Java Configuration*
 
           - Open the Java control panel on your computer.
             (On Mac, open System Preferences > Java. On PC, open Control Panel > Programs > Java.)
           - Click the Security tab and check "Enable Java in the browser" and
-            set the security level for applications to "high".
-            Add http://dnasubway.cyverse.org and http://gfx.dnalc.org to
+            set the security level for applications to "high". Add
+            "http://dnasubway.cyverse.org" and "http://gfx.dnalc.org" to
             the "Exception Site List" in the Java Security tab.
 
 **Download Data - Abundance**
@@ -324,20 +340,22 @@ download, and interactive visualization of your differential expression results.
   1. Click the folder icon to be redirected to the CyVerse Discovery Environment
      (you may be required to log in). You will be directed to all outputs from
      you Kallisto analysis. You may preview them in the Discovery Environment or
-     use the path listed to download the files using Cyberduck (see
-     `Cyberduck download instructions <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html#download-from-data-store-to-local-computer-using-cyberduck>`_).
+     use the path listed to download the files using Cyberduck (see |Data Store Guide|).
      A tab-separated file of abundances for each sequence pair is available at
      the download link.
 
+*DNA Subway Green Line: Kallisto/Sleuth- Visualize data using Sleuth*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 **Differential analysis - Shiny App**
 
-  1. Click the "Launch Shiny App" link to launch an interactive window which
+  1. Click the "Sleuth R Shiny" link to launch an interactive window which
      contains data and graphics from your analysis.
 
      **R Shiny App Walkthrough**
 
      The R Shiny App allows you to explore your differential expression results
-     as generated by the `Sleuth R package <https://pachterlab.github.io/sleuth/>`_.
+     as generated by the |Sleuth R package|.
      We will cover highlights to for each menu in the app.
 
        .. tip::
@@ -345,8 +363,7 @@ download, and interactive visualization of your differential expression results.
           It can take a few minutes for data to be transferred to the R Shiny
           server after the quantification step completes. If R Shiny does not
           load, try again in a few minutes. If you still have an issue, use the
-          `Contact Us <https://dnasubway.cyverse.org/feedback.html>`_ link and
-          include your project number in the feedback form.
+          |Contact Us| link and include your project number in the feedback form.
 
      **Results Menu**
 
@@ -422,17 +439,17 @@ More help and additional information
     Short description and links to any reading materials
 
 Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
+    |CyVerse Learning Center| or
+    |CyVerse Wiki|
 
 Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
+    |Ask CyVerse|
 
 ----
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/dnasubway_guide>`_
+- On Github: |Repo link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
@@ -463,3 +480,60 @@ Post your question to the user forum:
 .. |sleuth_heatmap_1| image:: ./img/dna_subway/sleuth_heatmap_1.png
     :width: 800
     :height: 400
+
+
+.. |Stampede2| raw:: html
+
+   <a href="https://www.tacc.utexas.edu/systems/stampede2" target="_blank">Stampede 2</a>
+
+.. |Repo link| raw:: html
+
+   <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide" target="_blank">Repo link</a>
+
+.. |Sleuth R package| raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/" target="_blank">Sleuth R package</a>
+
+.. |enabled| raw:: html
+
+   <a href="https://java.com/en/download/help/enable_browser.xml" target="_blank">enabled</a>
+
+.. |Java test| raw:: html
+
+   <a href="https://www.java.com/en/download/installed.jsp" target="_blank">Java test</a>
+
+.. |IGV Viewer| raw:: html
+
+   <a href="https://software.broadinstitute.org/software/igv/" target="_blank">IGV Viewer</a>
+
+.. |Kallisto manual| raw:: html
+
+   <a href="https://pachterlab.github.io/kallisto/manual" target="_blank">Kallisto manual</a>
+
+.. |YouTube| raw:: html
+
+   <a href="https://www.youtube.com/playlist?list=PL-0S9LiUi0vhjynujVZw34RKmUo6vPmVd" target="_blank">YouTube</a>
+
+.. |fastqc quickstart| raw:: html
+
+   <a href="https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/#summary" target="_blank">fastqc quickstart</a>
+
+.. |FastQC| raw:: html
+
+   <a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank">FastQC</a>
+
+.. |contact us| raw:: html
+
+   <a href="https://dnasubway.cyverse.org/feedback.html" target="_blank">contact us</a>
+
+.. |reference| raw:: html
+
+   <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744" target="_blank">reference</a>
+
+.. |Kallisto| raw:: html
+
+   <a href="https://pachterlab.github.io/kallisto/about" target="_blank">Kallisto</a>
+
+.. |Sleuth| raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/about" target="_blank">Sleuth</a>

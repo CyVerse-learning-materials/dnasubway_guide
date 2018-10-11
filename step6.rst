@@ -11,6 +11,20 @@ powerful computing and data storage infrastructure and uses the `Stampede <https
 supercomputer cluster to provide a high performance analytical platform with a
 simple user interface suitable for both teaching and research.
 
+     .. note::
+
+       **Discontinuing support for Tuxedo workflow**
+
+         The Tuxedo workflow previously implemented for the Green Line will be
+         removed in **June 2019**. After that time you will no longer be able
+         to use that workflow to analyze your data. Your data and previously
+         analyzed results will still be available on the CyVerse Data Store.
+
+         Until then, **you can still view and use the Tuexdo workflow** by toggling
+         between Kallisto and Tuexdo by selecting the Workflow button in the
+         Project Information menu at the bottom of the Green Line page. See
+         the next page on the new Kallisto/Sleuth Green Line workflow. 
+
 **Some things to remember about the platform**
 
 - You must be a registered CyVerse user to use Green Line
