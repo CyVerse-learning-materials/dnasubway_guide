@@ -297,11 +297,11 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
 
          Under parameters **uncheck** the *Build pseudo-bam files* option.
 
-       .. tip::
+    .. tip::
 
-          You can select some of the advanced option for your Kallisto job by
-          clicking the "Parameters" link in the Quantification stop. See more
-          about these advanced parameters in the |Kallisto manual|.
+        You can select some of the advanced options for your Kallisto job by
+        clicking the "Parameters" link in the Quantification stop. See more
+        about these advanced parameters in the |Kallisto manual|.
 
 
 
