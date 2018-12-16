@@ -30,7 +30,9 @@ in an R-Shiny app.
   subject to queues which hundreds of other jobs may be staging for. Additionally
   these systems undergo regular maintenance and are subject to periodic disruption.
 
-      .. admonition:: Update - new, faster Green Line.
+      .. note::
+
+      **New, faster Green Line**
 
       Green Line is now running on |JetStream Cloud|. This should greatly reduce
       queue times (The entire running time for this tutorial is about 60 minutes).
@@ -43,13 +45,13 @@ in an R-Shiny app.
 
        **Discontinuing support for Tuxedo workflow**
 
-         The Tuxedo workflow previously implemented for the Green Line will be
-         removed in **June 2019**. After that time you will no longer be able
-         to use that workflow to analyze your data. Your data and previously
-         analyzed results will still be available on the CyVerse Data Store.
-         Until then, **you can still view and use the Tuexdo workflow** by toggling
-         between Kallisto and Tuexdo by selecting the Workflow button in the
-         Project Information menu at the bottom of the Green Line page.
+        The Tuxedo workflow previously implemented for the Green Line will be
+        removed in **June 2019**. After that time you will no longer be able
+        to use that workflow to analyze your data. Your data and previously
+        analyzed results will still be available on the CyVerse Data Store.
+        Until then, **you can still view and use the Tuexdo workflow** by toggling
+        between Kallisto and Tuexdo by selecting the Workflow button in the
+        Project Information menu at the bottom of the Green Line page.
 
 ----
 
