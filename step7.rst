@@ -25,10 +25,31 @@ in an R-Shiny app.
 - You must be a registered CyVerse user to use Green Line.
 - The Green line was designed to make RNA-Seq data analysis "simple". However,
   we ask that users thoughtfully decide what "jobs" they want to submit.
-  **Each user is limited to a maximum of 8 concurrent jobs running on Green or Purple line**.
+  **Each user is limited to a maximum of 4 concurrent jobs running on Green line**.
 - A single Green Line project may take a week to process since HPC computing is
   subject to queues which hundreds of other jobs may be staging for. Additionally
   these systems undergo regular maintenance and are subject to periodic disruption.
+
+      .. admonition:: Update - new, faster Green Line.
+
+      Green Line is now running on |JetStream Cloud|. This should greatly reduce
+      queue times (The entire running time for this tutorial is about 60 minutes).
+      We have designed Green Line for a lower number of concurrent users (<50),
+      and still recommend teaching using jobs you have made public, and only
+      running the entire workflow when you are working with novel data.
+      Please let us know about your experience |Send feedback|.
+
+     .. note::
+
+       **Discontinuing support for Tuxedo workflow**
+
+         The Tuxedo workflow previously implemented for the Green Line will be
+         removed in **June 2019**. After that time you will no longer be able
+         to use that workflow to analyze your data. Your data and previously
+         analyzed results will still be available on the CyVerse Data Store.
+         Until then, **you can still view and use the Tuexdo workflow** by toggling
+         between Kallisto and Tuexdo by selecting the Workflow button in the
+         Project Information menu at the bottom of the Green Line page.
 
 ----
 
@@ -48,20 +69,6 @@ in an R-Shiny app.
       infection of neural progenitor cells perturbs transcription in
       neurodevelopmental pathways. PLOS ONE 12(4):
       e0175744. |reference|.
-
-     .. note::
-
-       **Discontinuing support for Tuxedo workflow**
-
-         The Tuxedo workflow previously implemented for the Green Line will be
-         removed in **June 2019**. After that time you will no longer be able
-         to use that workflow to analyze your data. Your data and previously
-         analyzed results will still be available on the CyVerse Data Store.
-
-         Until then, **you can still view and use the Tuexdo workflow** by toggling
-         between Kallisto and Tuexdo by selecting the Workflow button in the
-         Project Information menu at the bottom of the Green Line page.
-
 
 
 *DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Abundance*
@@ -136,14 +143,14 @@ directly to the CyVerse Data Store.
        You will be presented with the following 8 files;
        **check-select all of the files** and click the :guilabel:`&+ Add files` button:
 
-        - SRR3191543_1.fastq.gz
-        - SRR3191543_2.fastq.gz
-        - SRR3191545_1.fastq.gz
-        - SRR3191545_2.fastq.gz
         - SRR3191542_1.fastq.gz
         - SRR3191542_2.fastq.gz
+        - SRR3191543_1.fastq.gz
+        - SRR3191543_2.fastq.gz
         - SRR3191544_1.fastq.gz
         - SRR3191544_2.fastq.gz
+        - SRR3191545_1.fastq.gz
+        - SRR3191545_2.fastq.gz
 
        The SRR3191542 and SRR3191543 files are 2 replicates (paired-end) of the
        uninfected cells and the SRR3191544 and SRR3191545 file are from the Zika
@@ -172,6 +179,13 @@ for determining sequencing quality.
 
   1. Once files have been loaded, in the 'Manage Data' window, click the 'Run'
      link in the 'QC' column to run FastQC.
+
+     .. tip::
+         There is a limit of 4 concurrent jobs. These jobs should take less than
+         20 minutes to complete (depending on file size) and you may need to
+         let several jobs finish before proceeding. If you have previously
+         processed reads for quality, you can skip the FastQC step.
+
   2. One the jobs are complete, click the 'View' link to view the results.
 
      .. tip::
@@ -254,17 +268,17 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
            * - Left/Right Pair
              - Sample name
              - Condition
-           * - SRR3191543_1.fastq.gz SRR3191543_1.fastq.gz
-             - Mock2-1
-             - Mock
-           * - SRR3191545_1.fastq.gz SRR3191545_2.fastq.gz
-             - ZIKV2-1
-             - Zika
            * - SRR3191542_1.fastq.gz SRR3191542_2.fastq.gz
              - Mock1-1
              - Mock
+           * - SRR3191543_1.fastq.gz SRR3191543_1.fastq.gz
+             - Mock2-1
+             - Mock
            * - SRR3191544_1.fastq.gz SRR3191544_2.fastq.gz
              - ZIKV1-1
+             - Zika
+           * - SRR3191545_1.fastq.gz SRR3191545_2.fastq.gz
+             - ZIKV2-1
              - Zika
 
 
@@ -274,6 +288,12 @@ mapping of RNA-Seq reads to the index. In this tutorial, we have 12 fastQ files
      supercomputing system. You can come back and click the Quantification stop
      to see the status of the job. The indication for the quantification stop
      will show "R" (running) while the job is running.
+
+      .. admonition:: Sample data
+
+         *"Zika infected hNPCs"* dataset:
+
+         Under parameters **uncheck** the *Build pseudo-bam files* option.
 
        .. tip::
 
@@ -293,6 +313,11 @@ download, and interactive visualization of your differential expression results.
   1. Click the "View results" step and choose one of the following options:
 
 **IVG - Integrated Genome Viewer**
+
+       .. tip::
+
+          IGV visualization will only be possible if you have built pseudo-bam
+          files in the Kallisto step.
 
   1. Click the icon in the "IGV" column to view a visualization of your reads
      pseudoaligned to the reference transcriptome. You will need to click the
@@ -537,3 +562,11 @@ Post your question to the user forum:
 .. |Sleuth| raw:: html
 
    <a href="https://pachterlab.github.io/sleuth/about" target="_blank">Sleuth</a>
+
+.. |JetStream Cloud| raw: html
+
+   <a href="https://jetstream-cloud.org/" target="_blank">Jetstream Cloud</a>
+
+.. |Send feedback|
+
+   <a href="https://dnasubway.cyverse.org/feedback.html" target="_blank">Send feedback</a>
