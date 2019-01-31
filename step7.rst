@@ -30,7 +30,7 @@ in an R-Shiny app.
   subject to queues which hundreds of other jobs may be staging for. Additionally
   these systems undergo regular maintenance and are subject to periodic disruption.
 
-    .. note:: 
+    .. note::
 
        **New, faster Green Line**
 
@@ -40,6 +40,10 @@ in an R-Shiny app.
        and still recommend teaching using jobs you have made public, and only
        running the entire workflow when you are working with novel data.
        Please let us know about your experience |Send feedback|.
+
+       .. raw:: html
+
+           <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     .. note::
 
