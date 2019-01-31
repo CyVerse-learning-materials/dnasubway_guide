@@ -8,7 +8,7 @@
 
 Walkthrough of DNA Subway Green Line: Kallisto/Sleuth RNA-Seq
 ---------------------------------------------------------------
-The Green line runs within CyVerse DNA Subway and leverages
+The Green Line runs within CyVerse DNA Subway and leverages
 powerful computing and data storage infrastructure and uses the |Stampede2|
 supercomputer cluster to provide a high performance analytical platform with a
 simple user interface suitable for both teaching and research. |Kallisto|
@@ -23,9 +23,9 @@ in an R-Shiny app.
 **Some things to remember about the platform**
 
 - You must be a registered CyVerse user to use Green Line.
-- The Green line was designed to make RNA-Seq data analysis "simple". However,
+- The Green Line was designed to make RNA-Seq data analysis "simple". However,
   we ask that users thoughtfully decide what "jobs" they want to submit.
-  **Each user is limited to a maximum of 4 concurrent jobs running on Green line**.
+  **Each user is limited to a maximum of 4 concurrent jobs running on Green Line**.
 - A single Green Line project may take a week to process since HPC computing is
   subject to queues which hundreds of other jobs may be staging for. Additionally
   these systems undergo regular maintenance and are subject to periodic disruption.
