@@ -43,8 +43,9 @@ in an R-Shiny app.
 
        .. raw:: html
 
+           <div class="video-container">
            <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+           </div>
     .. note::
 
       **Discontinuing support for Tuxedo workflow**
