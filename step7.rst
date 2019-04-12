@@ -441,8 +441,7 @@ download, and interactive visualization of your differential expression results.
      |sleuth_volcano_1|
 
      This scatter plot displays all transcripts colored by significance of
-     differential abundance. Hovering your mouse over a given point provides
-     additional information. You may also use menu on the left of the screen
+     differential abundance. You may also use menu on the left of the screen
      to highlight specific genes/transcripts or previously set filters from the
      results menu.
 
