@@ -46,6 +46,13 @@ databases like GenBank.
       Using DNA Subway to Analyze Sequence Relationships. (Version 2.0).
       QUBES Educational Resources. `doi:10.25334/Q4J111 <http://dx.doi.org/10.25334/Q4J111>`_
 
+
+  .. tip::
+
+      See a Course Source paper with protocols and recommendations for
+      implementing a Barcoding CURE (course-based undergraduate research
+      experience): |CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum|
+
 *DNA Subway Blue Line - Create a Barcoding Project*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   1. Log-in to `DNA Subway <https://dnasubway.cyverse.org/>`_ - unregistered users may 'Enter as Guest'
@@ -289,3 +296,7 @@ sequences within the set in the next step.
 .. |blue_ml| image:: ./img/dna_subway/blue_ml.png
     :width: 400
     :height: 200
+
+.. |CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum| raw:: html
+
+   <a href="https://www.coursesource.org/courses/cure-all-large-scale-implementation-of-authentic-dna-barcoding-research-into-first-year" target="blank">CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum</a>
