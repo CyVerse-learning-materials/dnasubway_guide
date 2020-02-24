@@ -3,16 +3,14 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-Walkthrough of DNA Subway Purple Line (alpha testing documentation)
+Walkthrough of DNA Subway Purple Line (beta testing documentation)
 ---------------------------------------------------------------------
 
 .. warning::
 
-  **Known alpha-version bugs:**
-  Purple line is in alpha release. There are several known issues. One common
-  issue is that after completing a step, a subsequent step may be blocked.
-  To solve, refresh DNA Subway in your browser to unblock this step. Please send
-  feedback to `DNALC Admin <mailto:dnalcadmin@cshl.edu>`_
+  **Beta Release:**
+  Purple line is in beta release. Please send feedback to
+  `DNALC Admin <mailto:dnalcadmin@cshl.edu>`_
 
 
 
@@ -60,105 +58,128 @@ summarized in the metadata.
 
      .. admonition:: Sample data
 
-       **How to use provided sample data**
+      **How to use provided sample data**
       In this guide, we will use a microbiome dataset (*"ubiome-test-data"*)
-      collected from various water sources in Montana (down-sampled and de-identified).
-      Where appropriate, a note (in this orange colored background) in the
-      instructions will indicate which options to select to make use of this
-      provided dataset.
+      collected from various water sources in Montana (down-sampled and de-
+      identified).Where appropriate, a note (in this orange colored background)
+      in the instructions will indicate which options to select to make use of
+      this provided dataset.
 
 
 *DNA Subway Purple Line - Metadata file and Sequencing Prerequisites*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-For QIIME 2 to run, a valid metadata file is required. This file must conform to
-strict guidelines, or analyses will fail. QIIME 2 metadata is stored in a TSV
-(tab-separated values) file. These files typically have a .tsv or .txt file
-extension, though it doesn't matter to QIIME 2 what file extension is used. TSV
-files are simple text files used to store tabular data, and the format is
-supported by many types of software, such as editing, importing, and exporting
-from spreadsheet programs and databases. Thus, it's usually straightforward to
-manipulate QIIME 2 metadata using the software of your choosing. If in doubt,
-we recommend using a spreadsheet program such as Microsoft Excel or Google
-Sheets to edit and export your metadata files.
 
-.. tip::
+If you are generating data for a project (i.e. sequencing samples), you will
+need to provide the sequencing data (fastq files) as well as a metadata file
+that describes the data contained in these sequencing files. This metadata
+must conform to strict guidelines, or analyses will fail. QIIME 2 metadata is
+stored in a TSV (tab-separated values) file. These files typically have a .tsv
+or .txt file extension, though it doesn't matter to QIIME 2 what file extension
+is used. TSV files are simple text files used to store tabular data, and the
+format is supported by many types of software, such as editing, importing, and
+exporting from spreadsheet programs and databases. Thus, it's usually
+straightforward to manipulate QIIME 2 metadata using the software of your
+choosing. If in doubt, we recommend using a spreadsheet program such as
+Microsoft Excel or Google Sheets to edit and export your metadata files.
 
-  Here are a few reminders for formatting your metadata.
+**Handling Project Metadata**
 
-  **Leading and trailing whitespace characters**
+Before you create your project, you will have generated metadata (as described
+above) for your project. You have two options for preparing this metadata to
+ensure that it conforms to the required QIIME2 parameters. The file must be
+validated (which you can do on your own or using Subway). If there are errors
+in your file (this is common), they must be fixed.
 
-  If any cell in the metadata contains leading or trailing whitespace
-  characters (e.g. spaces, tabs), those characters will be ignored when the
-  file is loaded. Thus, leading and trailing whitespace characters are not
-  significant, so cells containing the values 'gut' and '  gut  ' are
-  equivalent. This rule is applied before any other rules described below
 
-  **ID column**
+  .. tip::
 
-  The first column MUST be the ID column name (i.e. ID header) and the
-  first line of this column should be #SampleID or one of a few alternative.
+    Here are a few reminders for formatting your metadata.
 
-      - Case-insensitive: id; sampleid; sample id; sample-id; featureid;
-        feature id; feature-id.
-      - Case-sensitive: #SampleID; #Sample ID; #OTUID; #OTU ID; sample_name
+    **Leading and trailing whitespace characters**
 
-  **Sample IDs**
+    If any cell in the metadata contains leading or trailing whitespace
+    characters (e.g. spaces, tabs), those characters will be ignored when the
+    file is loaded. Thus, leading and trailing whitespace characters are not
+    significant, so cells containing the values 'gut' and '  gut  ' are
+    equivalent. This rule is applied before any other rules described below
 
-  For the sample IDs, there are some simple rules to comply with QIIME 2
-  requirements:
+    **ID column**
 
-      - IDs may consist of any Unicode characters, with the exception that IDs
-        must not start with the pound sign (#), as those rows would be
-        interpreted as comments and ignored. IDs cannot be empty (i.e. they must
-        consist of at least one character).
-      - IDs must be unique (exact string matching is performed to detect
-        duplicates).
-      - At least one ID must be present in the file.
-      - IDs cannot use any of the reserved ID column names (the sample ID names,
-        above).
-      - The ID column can optionally be followed by additional columns defining
-        metadata associated with each sample or feature ID. Metadata files are
-        not required to have additional metadata columns, so a file containing
-        only an ID column is a valid QIIME 2 metadata file.
+    The first column MUST be the ID column name (i.e. ID header) and the
+    first line of this column should be #SampleID or one of a few alternative.
 
-  **Column names**
+        - Case-insensitive: id; sampleid; sample id; sample-id; featureid;
+          feature id; feature-id.
+        - Case-sensitive: #SampleID; #Sample ID; #OTUID; #OTU ID; sample_name
 
-      - May consist of any Unicode characters.
-      - Cannot be empty (i.e. column names must consist of at least one
-        character).
-      - Must be unique (exact string matching is performed to detect duplicates)
-        .
-      - Column names cannot use any of the reserved ID column names.
+    **Sample IDs**
 
-  **Column values**
+    For the sample IDs, there are some simple rules to comply with QIIME 2
+    requirements:
 
-      - May consist of any Unicode characters.
-      - Empty cells represent missing data. Note that cells consisting solely of
-        whitespace characters are also interpreted as missing data.
+        - IDs may consist of any Unicode characters, with the exception that IDs
+          must not start with the pound sign (#), as those rows would be
+          interpreted as comments and ignored. IDs cannot be empty (i.e. they must
+          consist of at least one character).
+        - IDs must be unique (exact string matching is performed to detect
+          duplicates).
+        - At least one ID must be present in the file.
+        - IDs cannot use any of the reserved ID column names (the sample ID names,
+          above).
+        - The ID column can optionally be followed by additional columns defining
+          metadata associated with each sample or feature ID. Metadata files are
+          not required to have additional metadata columns, so a file containing
+          only an ID column is a valid QIIME 2 metadata file.
 
-  QIIME 2 currently supports categorical and numeric metadata columns. By
-  default, QIIME 2 will attempt to infer the type of each metadata column:
-  if the column consists only of numbers or missing data, the column is
-  inferred to be numeric. Otherwise, if the column contains any non-numeric
-  values, the column is inferred to be categorical. Missing data (i.e. empty
-  cells) are supported in categorical columns as well as numeric columns.
-  For more details, and for how to define the nature of the data when needed,
-  see the |QIIME 2 metadata documentation|.
+    **Column names**
 
-**A. Create Metadata file**
+        - May consist of any Unicode characters.
+        - Cannot be empty (i.e. column names must consist of at least one
+          character).
+        - Must be unique (exact string matching is performed to detect duplicates).
+        - Column names cannot use any of the reserved ID column names.
 
-  1. Using a spreadsheet editor, create a metadata sheet that provides
+    **Column values**
+
+        - May consist of any Unicode characters.
+        - Empty cells represent missing data. Note that cells consisting solely of
+          whitespace characters are also interpreted as missing data.
+
+    QIIME 2 currently supports categorical and numeric metadata columns. By
+    default, QIIME 2 will attempt to infer the type of each metadata column:
+    if the column consists only of numbers or missing data, the column is
+    inferred to be numeric. Otherwise, if the column contains any non-numeric
+    values, the column is inferred to be categorical. Missing data (i.e. empty
+    cells) are supported in categorical columns as well as numeric columns.
+    For more details, and for how to define the nature of the data when needed,
+    see the |QIIME 2 metadata documentation|.
+
+**Working with an existing metadata file**
+
+  .. tip::
+
+   If you have your own metadata file, it will still need to be validated once
+   uploaded to DNA Subway.
+
+     Using a spreadsheet editor, create a metadata sheet that provides
      descriptions of the sequencing files used in your experiment. Export this
      file as a tab-delimited **.txt** or **.tsv** file. following
-     the |QIIME 2 metadata documentation| recommendations.
+     the |QIIME 2 metadata documentation| recommendations. (Optional:
+     if you using your own metadata file you can validate it using
+     DNA Subway and or online QIIME2 validator |Keemei|).
 
-     .. tip::
+  .. tip::
 
         See an example metadata file used for our sample data here: |metadata_file|.
         Click the :guilabel:`&Download` button on the linked page to download
         and examine the file. (**Note**: This is an Excel version of the
         metadata file, you must save Excel files as .TSV (tab-separated) to be
         compatible with the QIIME 2 workflow.)
+
+**Creating a metadata file using DNA Subway**
+
+    See `DNA Subway Purple Line - Metadata and QC`_ section C
+
 
 *DNA Subway Purple Line - Create a Microbiome Analysis Project*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -170,24 +191,19 @@ Sheets to edit and export your metadata files.
 
   2. Click the purple square ("Microbiome Analysis") to begin a project.
 
-    .. tip::
 
-       Purple line can be used to analyze eDNA (Environmental DNA). The workflow
-       is largely the same, with eDNA typically using a 12S RNA database of
-       sequences for identification.
-
-  3. For 'Select Project Type' select either Single End Reads or Paired End
-     Reads
+  3. For 'Select Project Type' select either **Single End Reads** or **Paired End
+     Reads**
 
 
-     .. admonition:: Sample data
+    .. admonition:: Sample data
 
         *"ubiome-test-data"* dataset:
 
         Select **Single End Reads**
 
 
-  4. For 'Select File  Format' select the format the corresponds to your sequence metadata.
+  4. For 'Select File Format' select the format the corresponds to your sequence metadata.
 
     .. admonition:: Sample data
 
@@ -200,7 +216,6 @@ Sheets to edit and export your metadata files.
          sequences. We support the following formats:
 
          - |Illumina Casava 1.8|
-         - |Earth Microbiome Project|
 
   5. Enter a project title, and description; click :guilabel:`&Continue`.
 
@@ -214,9 +229,10 @@ directly to the CyVerse Data Store:
 
      - FASTQ sequence reads
      - Sample metadata file (.tsv or .txt formatted according to |QIIME 2 metadata documentation|)
+       to the CyVerse Data Store using Cyberduck. See instructions: |CyVerse Data Store Guide|.
 
-    to the CyVerse Data Store using Cyberduck. See instructions: |CyVerse Data Store Guide|.
-
+   (Optional: You can edit and change metadata using the Subway interface
+   in the `Manage data` step once the project is created.)
 
 ----
 
@@ -225,16 +241,87 @@ directly to the CyVerse Data Store:
 
 **A. Select files using Manage Data**
 
-  1. Click on the “Manage Data” stop: this opens a window prompting
-     you to "Select your FASTQ files from the Data Store" (if you are not logged
-     in to CyVerse, it will ask you to do so); click the **add data** link.
-  2. Select your metadata file; click on the folder that matches your CyVerse
-     username and Navigate to the folder where your sequencing files are located.
-     Click :guilabel:`&Add selected files` to add your metadata file.
+  1. Click on the 'Manage data stop: this opens a window where you can
+     add your FASTQ and metadata files. Click :guilabel:`&+Add from CyVerse`
+     to add the FASTQ files uploaded to the CyVerse Data Store. Select your
+     files and then click :guilabel:`&Add selected files` or
+     :guilabel:`&Add all FASTQ files in this directory` as appropriate.
 
     .. admonition:: Sample data
 
         *"ubiome-test-data"* dataset:
+
+        Navigate to:
+        Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
+        and click :guilabel:`&Add all FASTQ files in this directory`
+
+  2. To add your metadata file you may use one of three options:
+
+    - *Add from CyVerse*: Add a metadata file you have uploaded to CyVerse Data
+      store
+    - *Upload locally*: Directly upload a metadata file from your local computer
+    - *Create New*: Create a new metadata file using DNA Subway
+
+    .. tip::
+
+      **Creating a metadata file using DNA Subway**
+
+      You can create a metadata file using DNA Subway. Creating the file
+      step-by-step will help you to avoid metadata errors. Be sure you have
+      consulted the |QIIME 2 metadata documentation| so you can anticipate
+      what the required fields are. To use this feature under in the
+      'Manage data' step under 'Metadata Files' click :guilabel:`&Create new`
+
+      **Sample IDs and adding/removing samples**
+
+      These are unique IDs for each of your samples.
+
+      All metadata files must have a column called **#SampleID**.
+      Click :guilabel:`&+Add samples` to add additional rows.
+      In the Subway form, these will be unique, arbitrary names
+      (roughly corresponding to well-positions on a 96-well microplate).
+      You can change these (including pasting in sample names from
+      an existing spreadsheet).
+
+      |metadata_add_samples|
+
+      Right-clicking on a row number allows you to remove or insert rows.
+
+      |metadata_rows|
+
+      **Adding columns, managing sample descriptions and data types**
+
+      The very **last** column must be a sample description. You can
+      click the arrow on the right of this column to add a new column
+      (which will be added to the left). Column names must be unique,
+      must not be empty, cannot contain whitespace, can contain a
+      maximum of 32 characters, cannot match a reserved column name.
+      Notice that when you click on a column name it is colored -
+      pink for columns that have numeric data (e.g. measurements) and
+      cyan for everything else (e.g. categorical descriptions in the form
+      of words (i.e. strings)). Clicking a column name will allow you
+      to change its type.
+
+      |metadata_add_column|
+
+      **Handling errors**
+
+      If you violate one of the rules for metadata formatting, the entry
+      will turn red. Consult the  help and or the |QIIME 2 metadata documentation|
+      to correct the error.
+
+      |metadata_error|
+
+
+      Click :guilabel:`&Save` to save your metadata file, and close
+      the window.
+
+
+    .. admonition:: Sample data
+
+        *"ubiome-test-data"* dataset:
+
+        Click :guilabel:`&Add from CyVerse`
 
         Navigate to:
         Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
@@ -242,34 +329,12 @@ directly to the CyVerse Data Store:
         Select the **mappingfile_MT_corrected.tsv** and then click
         :guilabel:`&Add selected files`.
 
-  3. To validate the metadata file, click "validate sample mapping file", header
-     columns will be displayed. Next, click :guilabel:`&Validate`.
-
-  4. To add sequence data, click the "add data" link. Click on the folder that
-     matches your CyVerse username and navigate to the folder where your
-     sequencing files are located.
-
-    .. admonition:: Sample data
-
-        *"ubiome-test-data"* dataset:
-
-        Navigate to:
-        Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
-
-        Select all 11 fastq files (they are compressed and will have the
-        fastq.gz file extension). Then click :guilabel:`&Add selected files` or
-        :guilabel:`&Add all files in this directory` (only files with a
-        .fastq.gz extension will be added).
-
-  5. Click the "add data" link to add the sequencing data to your project. Close
-     the "Manage data" window, or repeat this step as appropriate until all your
-     sequence data files have been added.
-
-
-  .. warning::
-    **Known alpha-version bug**
-    After adding data, the next stop (Demultiplex reads) will still be blocked.
-    Refresh DNA Subway in your browser to unblock this step.
+  3. As needed, you can edit or rename your metadata file. Before proceeding,
+     you must validate your metadata file. To validate, click
+     the "validate" link to the right of the metadata file you wish to
+     check. Once the validation completed, click :guilabel:`&Run`
+     to proceed. If you have errors, you will be presented with an :guilabel:`&Edit`
+     button so that you can return to the file and edit.
 
 **B. Demultiplex reads**
 
@@ -285,24 +350,29 @@ sequences, the index sequences must be defined in the metadata file.
       your sequence read files appropriately associated with metadata.
 
 
-  1. Click the 'Demultiplex reads' stop, then click :guilabel:`&demux reads` to
-     demultiplex your sample reads.
+  1. Click the 'Demultiplex reads' and choose a number of reads to sample.
+     When the job has completed click `Demultiplexing Summary` to view your
+     results. In 'Random sequences to sample for QC', enter a value
+     (1000 is recommended),
 
-  2. In 'Random sequences to sample for QC', enter a value (1000 is recommended),
-     then click demux reads to demultiplex your sample reads.
+    .. admonition:: Sample data
 
-  3. When demultiplexing is complete, you will generate a file (.qzv) click
+        *"ubiome-test-data"* dataset:
+
+        Use the default of 1000 sequences
+
+  2. When demultiplexing is complete, you will generate a file (.qzv) click
      this link to view a visualization and statistics on the sequence and
      metadata for this project.
 
+     .. tip::
 
-**C. Check sequencing quality and Trim Reads**
-
-It is important to only work with high quality data. This step will generate a
-sequence quality histogram which can be used to determine parameter for trimming.
-
-  1. Click the 'Demultiplex reads' stop, then click the results label ending in
-     **.qzv** will appear. Click this link to view your results.
+        Several jobs on Purple Line will take several minutes to an hour
+        to complete. Each time you launch one of these steps you will get
+        a Job ID. You can click the :guilabel:`&View job info` button
+        to see a detailed status and diagnostic/error messages. If needed
+        There is a `stop this job` link at the bottom of the info page
+        to cancel a job.
 
       .. note::
 
@@ -339,14 +409,20 @@ sequence quality histogram which can be used to determine parameter for trimming
            per sample as indicated by the sample names you provided in your
            metadata sheet.
 
+        |overview_tab|
+
         **Interactive Quality Plot**
 
         This is an interactive plot that gives you an average quality |Phred score|
         (y-axis) by the position along the read (x-axis). This box plot is
         derived from a random sampling of a subset of sequences. The number of
         sequences sampled will be indicated in the plot caption.
+        You can use your mouse drag and zoom in to regions on the plot.
+        Double-click your mouse to zoom out.
 
-  2. Click the "Interactive Quality Plot" tab to view a histogram of sequence
+        |quality_plot|
+
+  3. Click the "Interactive Quality Plot" tab to view a histogram of sequence
      quality. Use this plot at the tip below to determine a location to trim.
 
     .. tip::
@@ -390,11 +466,17 @@ sequence quality histogram which can be used to determine parameter for trimming
 
       |histogram_good|
 
-  3. Click on the 'Trim reads' stop. Click :guilabel:`&run` and then select
-     values for "trimLeft" (the position starting from the left you wish to
+**C. Use DADA2 for Trimming and Error-correction of Reads**
+
+It is important to only work with high quality data. This step will generate a
+sequence quality histogram which can be used to determine parameter for trimming.
+
+  1. Click 'DADA2' and choose the metadata file corresponding to the samples
+     you wish to analyze. Then choose values for trimming of the reads.
+     For "trimLeft" (the position starting from the left you wish to
      trim) and "TruncLen" (this is the position where reads should be trimmed,
      truncating the 3' end of the read. Reads shorter than this length will
-     be discarded). Finally, click the "trim reads" link.
+     be discarded). Finally, click :guilabel:`&Trim reads`.
 
     .. admonition:: Sample data
 
@@ -408,26 +490,31 @@ sequence quality histogram which can be used to determine parameter for trimming
         - **TruncLen: 200** (this is where low quality sequence begins, in this case
           because our sequence length is lower than the expected read length)
 
+
 **D. Check Results of Trimming**
 Once trimming is complete, the following outputs are expected:
 
-  1. Click on the generated result links to view summary statistics on your
-     sequences.
+  1. Click on DADA2 and then click on the links in the *Results*
+     table to examine results.
 
-     .. note::
+  - **Trim Table** (*Metric summary*, *Frequency  per sample*,
+    *Frequency per feature*, ): Summarizes the dataset post-trimming including
+    the number of samples and the number of features per sample. The
+    "Interactive Sample Detail" tab contains a sampling depth tool that will be
+    used in computation of the core matrix.
 
-       **QIIME 2 output names**
+    .. note::
 
-       Naming of QIIME outputs in Purple Line will often contain a 4-digit
-       number corresponding to a job number on the computing system the analysis
-       was completed on. In this documentation four octothorps (####) will be
-       used in place of the numbers.
+      **You will use the maximum frequency value for the Alpha rarefaction step**
+      So you may wish to record this value now for the DNA Subway 'Clustering
+      sequences' step.
 
-  - **####.table-trim####.qzv**: This file summarizes the dataset
-    post-trimming including the number of samples and the number of features
-    per sample. The "Interactive Sample Detail" tab contains a sampling depth
-    tool that will be used in computation of the core matrix.
-  - **####.re-seqs.gzv**: This table contains a listing of features observed in
+  - **Stats**: Sequencing statistics for each of the sample IDs described
+    in the original metadata file.
+
+  - **Representative Sequences**
+    (*Sequence Length Statistics*, *Seven-Number Summary of Sequence Lengths*,
+    *Sequence Table*): This table contains a listing of features observed in
     the sequence data, as well as the DNA sequence that defines a feature.
     Clicking on the DNA sequence will submit that sequence for BLAST at NCBI in
     a separate browser tab.
@@ -449,7 +536,7 @@ Once trimming is complete, the following outputs are expected:
   sequences are short (due to read length or trimming) many BLAST searches
   may not return significant results.
 
-     .. tip::
+    .. tip::
 
        Although the term "feature" can (unfortunately) |feature|
        as used by the QIIME2 documentation, unless otherwise noted in this
@@ -459,60 +546,98 @@ Once trimming is complete, the following outputs are expected:
        Ultimately, we are attempting to identify an organism from a sample of
        DNA which may not be informative enough to reach a definitive conclusion.
 
+    .. tip::
+
+      If you want to redo the DADA2 step with different parameters,
+      click the "New Job" tab on the upper left of a DADA2 window
+      to submit a new job. New jobs appear as tabs on Subway steps that
+      are typically run several times. You can go back an see these
+      jobs which are labeled with a job number.
+
+      |dada_tabs|
+
 ----
 
-*DNA Subway Purple Line - Cluster Sequences*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*DNA Subway Purple Line - Alpha Rarefaction/Clustering Sequences*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**A. Alpha rarefaction**
 
 At this step, you can visualize summaries of the data. A feature table will
 generate summary statistics, including how many sequences are associated with
 each sample.
 
-  1. Click 'Feature table' and then the "Build feature table" link. When
-     processed, you will get a link to a visualization file (.qzv). Open this
-     file to examine your results. The QIIME 2 view window will also have a link
-     to download a FASTA file of your sequences.
-
-  2. Click on 'Alpha rarefaction. Select "run" and designate the minimum and
+  1. Click on 'Alpha rarefaction'. Select "run" and designate the minimum and
      maximum rarefaction depth. A minimum value should be set at 1. The maximum
      value is specific to your data set. To determine what the maximum value
      should be set to, open the "Interactive Sample Detail" tab of the
      "Trim Reads" step. Identify the maximum Sequence Count value and enter
-     that number as the maximum value. Click "submit job".
+     that number as the maximum value. Click :guilabel:`&Submit Job`.
+
+    .. note::
+
+      Since you may want to try Alpha rarefaction using different combinations
+      of results from DADA2 trimming and your choice of rarefaction depths,
+      your trim (DADA2) jobs are displayed on the left, and each new
+      Alpha rarefaction setting will appear as a tab on the top.
+
+      |alpha_tabs|
+
+
+
+    .. admonition:: Sample data
+
+        *"ubiome-test-data"* dataset:
+
+        We recommend the following parameters:
+
+        - **Min. rarefaction depth**: 1
+        - **Max. rarefaction depth**: varies
+
+
+  2. Under 'Results' click on **Alpha Rarefaction Plot** to view the results.
+
+    .. tip::
+
+       **Alpha rarefaction** generates an interactive plot of species
+       diversity by sampling depth by the categorical samplings
+       described in your sample metadata. You can use dropdown menus to
+       change metrics/conditions displayed and also export data as a CSV file.
+
+       |alpha_plot|
+
 
 
 ----
 
-*DNA Subway Purple Line - Calculate Alpha and Beta Diversity*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*DNA Subway Purple Line - Calculate Core Metrics/Alpha and Beta Diversity*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 At this stop, you will examine *Alpha Diversity* (the diversity of species/taxa
 present within a single sample) and *Beta Diversity* (a comparison of
-species/taxa diversity between two or more samples). Alpha diversity answers the
-question - "how many species are in a sample?"; beta diversity answer the
-question - "what are the differences in species between samples?".
+species/taxa diversity between two or more samples).
 
-  .. warning::
-    **Known alpha-version bug**
-    After computing Core matrix, other diversity steps may be blocked.
-    Refresh DNA Subway in your browser to unblock these steps.
+- Alpha diversity answers the question - "How many species are in a sample?"
+- Beta diversity answer the question - "What are the differences in species
+  between samples?"
 
-**A. Calculate core matrix**
 
-  1. Click on 'Core matrix' and then click the "run" link. Choose a sampling
+**A. Calculate core metrics**
+
+  1. Click on 'Core metrics' and then click the "run" link. Choose a sampling
      depth based upon the "Sampling depth" tool (described in Section D Step 1,
-     in the *table-trim####.qzv* output; *Interactive Sample Detail* tab).
+     in the *Trim Table* output; *Interactive Sample Detail* tab).
      Choose an appropriate classifier (see comments in the tip below) and
      click :guilabel:`&Submit job`.
 
-       .. tip::
+    .. tip::
 
-         **Choosing Core matrix parameters**
+         **Choosing Core metrics parameters**
 
          *Sampling Depth*
 
          In downstream steps, you will need to choose a sampling depth for your
-         sample comparisons. You can choose by examining the table generated at the
-         **Trim reads** step. In the *table-trim####.qzv* output,
+         sample comparisons. You can choose by examining the table generated at
+         the **Trim reads** step. In the *Trim Table* output,
          *Interactive Sample Detail* tab, use the "Sampling depth" tool
          to explore how many sequences can be sampled during the Core matrix
          computation. As you slide the bar to the right, more sequences are
@@ -525,11 +650,13 @@ question - "what are the differences in species between samples?".
          samples in the analysis must be found.
 
          *Classifier*
-         Choose a classifier pertaining to your experiment type. For
-         **Microbiome** choose **Grenegenes (16s rRNA)** classifier. For an
-         **eDNA** experiment chose **Custom 12s rRNA, take 3** or if you are
-         specifically looking for marine fishes you may elect to choose the
-         **Mitofish JO** classifier.
+         Choose a classifier pertaining to your experiment type.
+
+         - **Microbiome** choose **Greengenes (515F/806R)** or
+           **Greengenes (full sequences)** or **Sliva (16S rRNA)** classifier
+         - **eDNA** experiment with marine fishes you may elect to choose the
+           **Fish 12S/ecoPrimer** classifier
+
 
     .. admonition:: Sample data
 
@@ -538,84 +665,103 @@ question - "what are the differences in species between samples?".
         We recommend the following parameters:
 
         - **Sampling Depth**: 3000
-        - **Classifier**: Grenegenes (16s rRNA)
+        - **Classifier**: Grenegenes (full sequences)
 
-  2. When complete, you should generate several visualization results including:
+**B. Examine alpha and beta diversity**
 
-     - **####.bray-curtis-emperor.qzv**: Three-dimensional PCoA
-       (principle coordinates analysis) plots
+  2. When core metrics is complete, you should generate several visualization
+     results. Click each of the following to get access:
 
-       |bray|
+     -  **Alpha Diversity:**
 
-     - **####.eveness-correlation.qzva.qzv**: Measure of community evenness using
-       correlation tests
+       - *Pielou's Evenness*
+          - Alpha Correlation: Measure of community evenness using
+            correlation tests
+          - Group Significance: Analysis of differences between
+            features across group
+       - *Faith's Phylogenetic Diversity*
+          - Alpha Correlation: Faith Phylogenetic Diversity (a
+            measure of community richness) with correlation tests
+          - Group Significance: Faith Phylogenetic Diversity (
+            a measure of community richness)
 
-       |even_cor|
+     -  **Beta Diversity:**
 
-     - **####.eveness-group-significance.qzv**: Analysis of differences between
-       features across group
+       - *Bray Curtis Distance*
+          |Bray-Curtis| is a metric for describing the dissimilarity of species
+          in an ecological sampling.
 
-       |group_sig|
+          - Bioenv: Bray-Curtis test metrics
+          - Emperor: Interactive PCoA plot of Bray-Curtis metrics
+       - *Jaccard Distance*
+          - Emperor: Interactive PCoA plot calculated by |Jaccard|
+            similarity index.
+       - *Unweighted UniFrac Distance*
+          |UniFrac| is a metric for describing the similarity of a biological
+          community, taking into account the relatedness of community members.
 
-     - **####.faith-pd-correlation.qzv**: Faith Phylogenetic Diversity (a
-       measure of community richness) with correlation tests
+          - Bioenv:  UniFrac test metrics
+          - Emperor: Unweighted interactive PCoA plot
+       - *Weighted UniFrac Distance*
+         Unweighted UniFrac removes the effect of low-abundance features
+         in the calculation of principal components.
 
-       |faith|
-
-     - **####.faith-pd-group-significance.qzv**: Faith Phylogenetic Diversity (
-       a measure of community richness)
-
-       |faith_group|
-
-     - **####.taxa-bar-plots.qzv**: An interactive stacked bar plot of species
-       diversity
-
-       |taxabar|
-
-     - **####.taxononmy.gzv**: A table indicating the identified "features",
-       their taxa, and an indication of confidence.
-
-       |taxonomy|
-
-     - **####.unweighted unifrac-emporor.qzv**: unweighted interactive PCoA plot
-
-       |unweighted|
-
-     You can download and interact with any of the available plots.
+           - Emperor: Weighted interactive PCoA plot of UniFrac.
 
      .. tip::
 
-       Selecting different taxonomic levels allows you to visualize diversity
-       for each sample at different levels (e.g. Kingdom, Phylum, Class, etc.)
+       **Emperor Plots**
 
-       |core_matrix|
+       These plots are all interactive three-dimensional plots of an
+       analysis using |principal components|.
 
-**B. Calculate Alpha diversity**
+       **Customization**
 
-  1. Click on the 'Alpha diversity' stop. Then click the "Build alpha diversity"
-     link. No visualization will be created.
+       You can customize Emperor plots, including altering
+       the color of and shape points, axes, and other parameters.
+       You can also export images from this visualization.
 
-**C. Calculate Beta diversity**
+       |emperor_plots|
 
-  1. Click on the 'Beta diversity' stop. Then click the "Build beta diversity"
-     link. No visualization will be created.
 
-**D. Calculate Taxonomic diversity**
+       **Bioenv**
 
-  1. Click on the 'Taxonomic diversity' stop and click the "Process diversity"
-     link. Results generated will include several visualizations:
+       These plots are tables of tests and descriptive metrics.
 
-     - **.taxa-bar-plots.qzv**: An interactive stacked bar plot of species
-       diversity.
-     - **.taxononmy.gzv**: A table indicating the identified "features",  their
-       taxa, and an indication of confidence.
-     - **Other expected results**: [MORE INFO]
 
-**E. Calculate differential abundance**
+**C. Taxonomic Diversity:**
+
+    Taxonomic diversity is at the heart of many analyses. We suggest consulting
+    the QIIME |taxonomy overview| for a detailed explanation of how QIIME2
+    calculates taxonomy and additional features of QIIME2 you may wish to
+    explore beyond the functionalities DNA Subway has included.
+
+
+      - *Bar Plots*
+
+        -  An interactive stacked bar plot of species diversity. Dropdown menus
+           allow you to color by seven taxonomic levels 1) kingdom, 2) phylum,
+           3) class, 4) order, 5), family, 6) genus, 7) species. Plots can
+           be further arranged/filtered/sorted accoridng to characteristics in
+           the sample metadata. You may also download images and data used to
+           create the barpot visualization.
+
+          |taxonomic_barplots|
+
+      - *Taxonomy*
+
+        -  A table indicating the identified “features”, their taxa,
+           and an indication of confidence.
+
+     You can download and interact with any of the available plots.
+
+
+**D. Calculate differential abundance**
 
   1. Click on the 'Differential abundance' stop. Then click on the "Submit
      new "Differential abundance" job" link. Choose a metadata category to group
-     by, and a level of taxonomy to summarize by. Then click :guilabel:`&submit job`.
+     by, and a level of taxonomy to summarize by. Then click
+     :guilabel:`&submit job`.
 
     .. admonition:: Sample data
 
@@ -667,11 +813,38 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+.. |metadata_add_samples| image:: ./img/dna_subway/metadata_add_samples.gif
+   :width: 450
+   :height: 250
+.. |metadata_rows| image:: ./img/dna_subway/metadata_rows.gif
+   :width: 450
+   :height: 250
+.. |metadata_add_column| image:: ./img/dna_subway/metadata_add_column.gif
+   :width: 450
+   :height: 250
+.. |metadata_error| image:: ./img/dna_subway/metadata_error.gif
+   :width: 450
+   :height: 250
+.. |quality_plot| image:: ./img/dna_subway/quality_plot.gif
+   :width: 450
+   :height: 250
+.. |overview_tab| image:: ./img/dna_subway/overview_tab.gif
+   :width: 450
+   :height: 250
 .. |histogram_poor| image:: ./img/dna_subway/histogram_poor.png
    :width: 400
    :height: 250
 .. |histogram_good| image:: ./img/dna_subway/histogram_good.png
    :width: 400
+   :height: 250
+.. |dada_tabs| image:: ./img/dna_subway/dada_tabs.gif
+   :width: 450
+   :height: 250
+.. |alpha_tabs| image:: ./img/dna_subway/alpha_tabs.gif
+   :width: 450
+   :height: 250
+.. |alpha_plot| image:: ./img/dna_subway/alpha_plot.gif
+   :width: 450
    :height: 250
 .. |core_matrix| image:: ./img/dna_subway/core_matrix.png
    :width: 400
@@ -679,6 +852,9 @@ Post your question to the user forum:
 .. |bray| image:: ./img/dna_subway/bray.png
    :width: 350
    :height: 200
+.. |emperor_plots| image:: ./img/dna_subway/emperor_plots.gif
+   :width: 550
+   :height: 300
 .. |even_cor| image:: ./img/dna_subway/even_cor.png
    :width: 350
    :height: 200
@@ -697,9 +873,13 @@ Post your question to the user forum:
 .. |taxonomy| image:: ./img/dna_subway/taxonomy.png
    :width: 350
    :height: 200
+.. |taxonomic_barplots| image:: ./img/dna_subway/taxonomic_barplots.gif
+   :width: 550
+   :height: 300
 .. |unweighted| image:: ./img/dna_subway/unweighted.png
    :width: 350
    :height: 200
+
 .. |CyVerse User Portal|  raw:: html
 
   <a href="https://user.cyverse.org" target="_blank">user.cyverse.org</a>
@@ -714,11 +894,15 @@ Post your question to the user forum:
 
 .. |QIIME 2 metadata documentation|  raw:: html
 
-  <a href="https://docs.qiime2.org/2018.8/tutorials/metadata/" target="_blank">QIIME 2 metadata documentation</a>
+  <a href="https://docs.qiime2.org/2019.10/tutorials/metadata/" target="_blank">QIIME 2 metadata documentation</a>
 
 .. |metadata_file| raw:: html
 
   <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank">metadata file</a>
+
+.. |Keemei| raw:: html
+
+  <a href="https://keemei.qiime2.org/" target="_blank">Keemei</a>
 
 .. |Illumina Casava 1.8| raw:: html
 
@@ -747,3 +931,23 @@ Post your question to the user forum:
 .. |operational taxonomic unit| raw:: html
 
   <a href="https://en.wikipedia.org/wiki/Operational_taxonomic_unit" target="_blank">operational taxonomic unit</a>
+
+.. |Jaccard| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank">Jaccard</a>
+
+.. |principal components| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Principal_component_analysis" target="_blank">principal components</a>
+
+.. |UniFrac| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/UniFrac" target="_blank">UniFrac</a>
+
+.. |Bray-Curtis| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity" target="_blank">Bray-Curtis</a>
+
+.. |taxonomy overview| raw:: html
+
+  <a href="https://docs.qiime2.org/2019.1/tutorials/overview/#taxonomy" target="_blank">taxonomy overview</a>
