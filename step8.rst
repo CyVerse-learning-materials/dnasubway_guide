@@ -592,7 +592,7 @@ each sample.
         We recommend the following parameters:
 
         - **Min. rarefaction depth**: 1
-        - **Max. rarefaction depth**: varies
+        - **Max. rarefaction depth**: 2938
 
 
   2. Under 'Results' click on **Alpha Rarefaction Plot** to view the results.
