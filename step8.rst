@@ -772,6 +772,11 @@ species/taxa diversity between two or more samples).
         - **Group data by**: CollectionMethod
         - **Level of taxonomy to summarize**: 5
 
+      .. tip::
+
+        Download the provided CSV files so that you can generate customized
+        plots. 
+
 ----
 
 *DNA Subway Purple Line - Visualize data with PiCrust and PhyloSeq*
