@@ -772,10 +772,10 @@ species/taxa diversity between two or more samples).
         - **Group data by**: CollectionMethod
         - **Level of taxonomy to summarize**: 5
 
-      .. tip::
+    .. tip::
 
         Download the provided CSV files so that you can generate customized
-        plots. 
+        plots.
 
 ----
 
