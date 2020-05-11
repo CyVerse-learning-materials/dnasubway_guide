@@ -46,6 +46,7 @@ in an R-Shiny app.
            <div class="video-container">
            <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            </div>
+
     .. note::
 
       **Discontinuing support for Tuxedo workflow**
@@ -76,6 +77,20 @@ in an R-Shiny app.
       infection of neural progenitor cells perturbs transcription in
       neurodevelopmental pathways. PLOS ONE 12(4):
       e0175744. |reference|.
+
+      **Video Course**
+
+      Here is a video series on analyzing data with DNA Subway using the above
+      Zika dataset and lesson:
+
+        .. raw:: html
+
+            <div class="video-container">
+            <iframe width="560" height="315" align="center"
+            src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTHLTsiCTT8tnA2ZAfMM5AWb"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen>
+            </div>
 
 
 *DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Abundance*
