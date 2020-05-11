@@ -46,6 +46,7 @@ databases like GenBank.
       Using DNA Subway to Analyze Sequence Relationships. (Version 2.0).
       QUBES Educational Resources. `doi:10.25334/Q4J111 <http://dx.doi.org/10.25334/Q4J111>`_
 
+
       **Video Course**
 
       Here is a video series on analyzing data with DNA Subway using the above
@@ -53,12 +54,12 @@ databases like GenBank.
 
          .. raw:: html
 
-          <div class="video-container">
-          <iframe width="560" height="315" align="center"
-          src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-          gyroscope; picture-in-picture" allowfullscreen>
-          </div>
+            <div class="video-container">
+            <iframe width="560" height="315" align="center"
+            src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
 
   .. tip::

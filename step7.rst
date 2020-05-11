@@ -89,7 +89,7 @@ in an R-Shiny app.
             <iframe width="560" height="315" align="center"
             src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTHLTsiCTT8tnA2ZAfMM5AWb"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-            gyroscope; picture-in-picture" allowfullscreen>
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
 
