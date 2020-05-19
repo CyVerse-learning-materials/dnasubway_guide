@@ -10,13 +10,14 @@ DNA Subway
 
 Goal
 ----
-Introduce DNA Subway, an educational bioinformatics platform developed by
+DNA Subway is an educational bioinformatics platform developed by
 CyVerse. It bundles research-grade bioinformatics tools, high-performance
 computing, and databases into workflows with an easy-to-use interface.
 “Riding” DNA Subway lines, students can predict and annotate genes in up to
 150kb of DNA (Red Line), identify homologs in sequenced genomes (Yellow Line),
-identify species using DNA barcodes and phylogenetic trees (Blue Line), and
-examine RNA-Seq datasets for differential transcript abundance (Green Line).
+identify species using DNA barcodes and phylogenetic trees (Blue Line),
+examine RNA-Seq datasets for differential transcript abundance (Green Line), and
+analyze metabarcoding and eDNA samples using QIIME (Purple Line). 
 
 
 
