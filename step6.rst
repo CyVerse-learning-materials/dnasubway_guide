@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -23,7 +26,7 @@ simple user interface suitable for both teaching and research.
          Until then, **you can still view and use the Tuexdo workflow** by toggling
          between Kallisto and Tuexdo by selecting the Workflow button in the
          Project Information menu at the bottom of the Green Line page. See
-         the next page on the new Kallisto/Sleuth Green Line workflow. 
+         the next page on the new Kallisto/Sleuth Green Line workflow.
 
 **Some things to remember about the platform**
 
@@ -236,9 +239,14 @@ Post your question to the user forum:
 
 ----
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/dnasubway_guide>`_
+- Search for an answer:
+   |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----

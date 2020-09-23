@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -448,42 +451,17 @@ in parentheses and can be pasted into the browser):
 
 ----
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/dnasubway_guide>`_
+- Search for an answer:
+   |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
 
   |Home_Icon|_
   `Learning Center Home <http://learning.cyverse.org/>`_
-
-.. |CyVerse logo| image:: ./img/cyverse_rgb.png
-    :width: 500
-    :height: 100
-.. _CyVerse logo: http://learning.cyverse.org/
-.. |Home_Icon| image:: ./img/homeicon.png
-    :width: 25
-    :height: 25
-.. _Home_Icon: http://learning.cyverse.org/
-.. |repeat_results| image:: ./img/dna_subway/repeat_results.png
-   :width: 300
-   :height: 200
-.. |jbrowse| image:: ./img/dna_subway/jbrowse.png
-   :width: 400
-   :height: 250
-.. |apollo_1| image:: ./img/dna_subway/apollo_1.png
-   :width: 400
-   :height: 250
-.. |apollo_2| image:: ./img/dna_subway/apollo_2.png
-    :width: 420
-    :height: 250
-.. |apollo_3| image:: ./img/dna_subway/apollo_3.png
-    :width: 420
-    :height: 250
-.. |apollo_4| image:: ./img/dna_subway/apollo_4.png
-    :width: 420
-    :height: 150
-.. |apollo_5| image:: ./img/dna_subway/apollo_5.png
-    :width: 420
-    :height: 280

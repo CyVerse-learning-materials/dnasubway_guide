@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -101,27 +104,17 @@ are a major class of DNA elements that impact the function of the genome.
 
 ----
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/dnasubway_guide>`_
+- Search for an answer:
+   |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
 
   |Home_Icon|_
   `Learning Center Home <http://learning.cyverse.org/>`_
-
-.. |CyVerse logo| image:: ./img/cyverse_rgb.png
-    :width: 500
-    :height: 100
-.. _CyVerse logo: http://learning.cyverse.org/
-.. |Home_Icon| image:: ./img/homeicon.png
-    :width: 25
-    :height: 25
-.. _Home_Icon: http://learning.cyverse.org/
-.. |yellow_alignment| image:: ./img/dna_subway/yellow_alignment.png
-    :width: 420
-    :height: 150
-.. |yellow_tree| image:: ./img/dna_subway/yellow_tree.png
-    :width: 420
-    :height: 300

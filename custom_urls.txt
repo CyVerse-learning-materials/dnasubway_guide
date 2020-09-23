@@ -1,0 +1,325 @@
+.. Comment: Version 2.0, May 2020
+.. Comment: URLS
+
+
+.. Comment: Fix this link if you are using a quicklaunch button
+
+.. |CyVerse_launch| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/  target="_blank"
+
+
+.. comment: General links
+
+
+.. |CyVerse logo| image:: ./img/cyverse_rgb.png
+    :width: 500
+    :height: 100
+.. _CyVerse logo: http://learning.cyverse.org/
+.. |Home_Icon| image:: ./img/homeicon.png
+    :width: 25
+    :height: 25
+.. _Home_Icon: http://learning.cyverse.org/
+
+.. |Github Repo Link| raw:: html
+
+  <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide" target="_blank">Github Repo Link</a>
+
+
+.. comment: Step1.rest
+
+
+.. comment: Step2.rst
+
+.. |private_projects| image:: ./img/dna_subway/private_projects.png
+    :width: 275
+    :height: 200
+.. |project_info_tab| image:: ./img/dna_subway/project_info_tab.png
+    :width: 150
+    :height: 100
+
+.. comment: Step3.rst
+
+.. |repeat_results| image:: ./img/dna_subway/repeat_results.png
+   :width: 300
+   :height: 200
+.. |jbrowse| image:: ./img/dna_subway/jbrowse.png
+   :width: 400
+   :height: 250
+.. |apollo_1| image:: ./img/dna_subway/apollo_1.png
+   :width: 400
+   :height: 250
+.. |apollo_2| image:: ./img/dna_subway/apollo_2.png
+    :width: 420
+    :height: 250
+.. |apollo_3| image:: ./img/dna_subway/apollo_3.png
+    :width: 420
+    :height: 250
+.. |apollo_4| image:: ./img/dna_subway/apollo_4.png
+    :width: 420
+    :height: 150
+.. |apollo_5| image:: ./img/dna_subway/apollo_5.png
+    :width: 420
+    :height: 280
+
+.. comment: Step4.rst
+
+.. |yellow_alignment| image:: ./img/dna_subway/yellow_alignment.png
+    :width: 420
+    :height: 150
+.. |yellow_tree| image:: ./img/dna_subway/yellow_tree.png
+    :width: 420
+    :height: 300
+
+
+.. comment: Step5.rst
+
+.. |blue_trace| image:: ./img/dna_subway/blue_trace.png
+    :width: 400
+    :height: 200
+.. |blue_blast| image:: ./img/dna_subway/blue_blast.png
+    :width: 400
+    :height: 200
+.. |blue_align| image:: ./img/dna_subway/blue_align.png
+    :width: 400
+    :height: 200
+.. |blue_nj| image:: ./img/dna_subway/blue_nj.png
+    :width: 400
+    :height: 200
+.. |blue_ml| image:: ./img/dna_subway/blue_ml.png
+    :width: 400
+    :height: 200
+
+.. |CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum| raw:: html
+
+   <a href="https://www.coursesource.org/courses/cure-all-large-scale-implementation-of-authentic-dna-barcoding-research-into-first-year" target="blank">CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum</a>
+
+.. comment: Step6.rst
+
+.. comment: step7.rst
+
+.. |sleuth_results_1| image:: ./img/dna_subway/sleuth_results_1.png
+    :width: 800
+    :height: 400
+.. |sleuth_bootstrap_1| image:: ./img/dna_subway/sleuth_bootstrap_1.png
+    :width: 800
+    :height: 400
+.. |sleuth_pca_1| image:: ./img/dna_subway/sleuth_pca_1.png
+    :width: 800
+    :height: 400
+.. |sleuth_volcano_1| image:: ./img/dna_subway/sleuth_volcano_1.png
+    :width: 800
+    :height: 400
+.. |sleuth_loadings_1| image:: ./img/dna_subway/sleuth_loadings_1.png
+    :width: 800
+    :height: 400
+.. |sleuth_heatmap_1| image:: ./img/dna_subway/sleuth_heatmap_1.png
+    :width: 800
+    :height: 400
+
+
+.. |Stampede2| raw:: html
+
+   <a href="https://www.tacc.utexas.edu/systems/stampede2" target="_blank">Stampede 2</a>
+
+.. |Repo link| raw:: html
+
+   <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide" target="_blank">Repo link</a>
+
+.. |Sleuth R package| raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/" target="_blank">Sleuth R package</a>
+
+.. |enabled| raw:: html
+
+   <a href="https://java.com/en/download/help/enable_browser.xml" target="_blank">enabled</a>
+
+.. |Java test| raw:: html
+
+   <a href="https://www.java.com/en/download/installed.jsp" target="_blank">Java test</a>
+
+.. |IGV Viewer| raw:: html
+
+   <a href="https://software.broadinstitute.org/software/igv/" target="_blank">IGV Viewer</a>
+
+.. |Kallisto manual| raw:: html
+
+   <a href="https://pachterlab.github.io/kallisto/manual" target="_blank">Kallisto manual</a>
+
+.. |YouTube| raw:: html
+
+   <a href="https://www.youtube.com/playlist?list=PL-0S9LiUi0vhjynujVZw34RKmUo6vPmVd" target="_blank">YouTube</a>
+
+.. |fastqc quickstart| raw:: html
+
+   <a href="https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/#summary" target="_blank">fastqc quickstart</a>
+
+.. |FastQC| raw:: html
+
+   <a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank">FastQC</a>
+
+.. |contact us| raw:: html
+
+   <a href="https://dnasubway.cyverse.org/feedback.html" target="_blank">contact us</a>
+
+.. |reference| raw:: html
+
+   <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744" target="_blank">reference</a>
+
+.. |Kallisto| raw:: html
+
+   <a href="https://pachterlab.github.io/kallisto/about" target="_blank">Kallisto</a>
+
+.. |Sleuth| raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/about" target="_blank">Sleuth</a>
+
+.. |JetStream Cloud| raw:: html
+
+   <a href="https://jetstream-cloud.org/" target="_blank">Jetstream Cloud</a>
+
+.. |Send feedback| raw:: html
+
+   <a href="https://dnasubway.cyverse.org/feedback.html" target="_blank">Send feedback</a>
+
+.. comment: Step8.rst
+
+.. |metadata_add_samples| image:: ./img/dna_subway/metadata_add_samples.gif
+   :width: 450
+   :height: 250
+.. |metadata_rows| image:: ./img/dna_subway/metadata_rows.gif
+   :width: 450
+   :height: 250
+.. |metadata_add_column| image:: ./img/dna_subway/metadata_add_column.gif
+   :width: 450
+   :height: 250
+.. |metadata_error| image:: ./img/dna_subway/metadata_error.gif
+   :width: 450
+   :height: 250
+.. |quality_plot| image:: ./img/dna_subway/quality_plot.gif
+   :width: 450
+   :height: 250
+.. |overview_tab| image:: ./img/dna_subway/overview_tab.gif
+   :width: 450
+   :height: 250
+.. |histogram_poor| image:: ./img/dna_subway/histogram_poor.png
+   :width: 400
+   :height: 250
+.. |histogram_good| image:: ./img/dna_subway/histogram_good.png
+   :width: 400
+   :height: 250
+.. |dada_tabs| image:: ./img/dna_subway/dada_tabs.gif
+   :width: 450
+   :height: 250
+.. |alpha_tabs| image:: ./img/dna_subway/alpha_tabs.gif
+   :width: 450
+   :height: 250
+.. |alpha_plot| image:: ./img/dna_subway/alpha_plot.gif
+   :width: 450
+   :height: 250
+.. |core_matrix| image:: ./img/dna_subway/core_matrix.png
+   :width: 400
+   :height: 500
+.. |bray| image:: ./img/dna_subway/bray.png
+   :width: 350
+   :height: 200
+.. |emperor_plots| image:: ./img/dna_subway/emperor_plots.gif
+   :width: 550
+   :height: 300
+.. |even_cor| image:: ./img/dna_subway/even_cor.png
+   :width: 350
+   :height: 200
+.. |group_sig| image:: ./img/dna_subway/group_sig.png
+   :width: 350
+   :height: 200
+.. |faith| image:: ./img/dna_subway/faith.png
+   :width: 350
+   :height: 200
+.. |faith_group| image:: ./img/dna_subway/faith_group.png
+   :width: 350
+   :height: 200
+.. |taxabar| image:: ./img/dna_subway/taxabar.png
+   :width: 550
+   :height: 500
+.. |taxonomy| image:: ./img/dna_subway/taxonomy.png
+   :width: 350
+   :height: 200
+.. |taxonomic_barplots| image:: ./img/dna_subway/taxonomic_barplots.gif
+   :width: 550
+   :height: 300
+.. |unweighted| image:: ./img/dna_subway/unweighted.png
+   :width: 350
+   :height: 200
+
+.. |CyVerse User Portal|  raw:: html
+
+  <a href="https://user.cyverse.org" target="_blank">user.cyverse.org</a>
+
+.. |QIIME2 documentation|  raw:: html
+
+  <a href="https://docs.qiime2.org/2018.8/" target="_blank">QIIME 2 documentation</a>
+
+.. |QIIME 2| raw:: html
+
+  <a href="https://qiime2.org/" target="_blank">QIIME 2</a>
+
+.. |QIIME 2 metadata documentation|  raw:: html
+
+  <a href="https://docs.qiime2.org/2019.10/tutorials/metadata/" target="_blank">QIIME 2 metadata documentation</a>
+
+.. |metadata_file| raw:: html
+
+  <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank">metadata file</a>
+
+.. |Keemei| raw:: html
+
+  <a href="https://keemei.qiime2.org/" target="_blank">Keemei</a>
+
+.. |Illumina Casava 1.8| raw:: html
+
+  <a href="http://illumina.bioinfo.ucr.edu/ht/documentation/data-analysis-docs/CASAVA-FASTQ.pdf/at_download/file" target="_blank">Illumina Casava 1.8</a>
+
+.. |Earth Microbiome Project| raw:: html
+
+  <a href="http://www.earthmicrobiome.org/protocols-and-standards/" target="_blank">Earth Microbiome Project</a>
+
+.. |CyVerse Data Store Guide| raw:: html
+
+  <a href="https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html" target="_blank">CyVerse Data Store Guide</a>
+
+.. |view.qiime2.org| raw:: html
+
+  <a href="https://view.qiime2.org" target="_blank">view.qiime2.org</a>
+
+.. |Phred score| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Phred_quality_score" target="_blank">Phred score</a>
+
+.. |feature| raw:: html
+
+  <a href="https://forum.qiime2.org/t/what-is-a-feature-exactly/2201" target="_blank">have many meanings</a>
+
+.. |operational taxonomic unit| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Operational_taxonomic_unit" target="_blank">operational taxonomic unit</a>
+
+.. |Jaccard| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank">Jaccard</a>
+
+.. |principal components| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Principal_component_analysis" target="_blank">principal components</a>
+
+.. |UniFrac| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/UniFrac" target="_blank">UniFrac</a>
+
+.. |Bray-Curtis| raw:: html
+
+  <a href="https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity" target="_blank">Bray-Curtis</a>
+
+.. |taxonomy overview| raw:: html
+
+  <a href="https://docs.qiime2.org/2019.1/tutorials/overview/#taxonomy" target="_blank">taxonomy overview</a>

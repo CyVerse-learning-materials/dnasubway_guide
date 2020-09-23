@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -784,28 +787,18 @@ species/taxa diversity between two or more samples).
 
 **Under Development**
 
-----
 
-
-
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
 
 ----
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/dnasubway_guide>`_
+- Search for an answer:
+   |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
@@ -818,141 +811,3 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-.. |metadata_add_samples| image:: ./img/dna_subway/metadata_add_samples.gif
-   :width: 450
-   :height: 250
-.. |metadata_rows| image:: ./img/dna_subway/metadata_rows.gif
-   :width: 450
-   :height: 250
-.. |metadata_add_column| image:: ./img/dna_subway/metadata_add_column.gif
-   :width: 450
-   :height: 250
-.. |metadata_error| image:: ./img/dna_subway/metadata_error.gif
-   :width: 450
-   :height: 250
-.. |quality_plot| image:: ./img/dna_subway/quality_plot.gif
-   :width: 450
-   :height: 250
-.. |overview_tab| image:: ./img/dna_subway/overview_tab.gif
-   :width: 450
-   :height: 250
-.. |histogram_poor| image:: ./img/dna_subway/histogram_poor.png
-   :width: 400
-   :height: 250
-.. |histogram_good| image:: ./img/dna_subway/histogram_good.png
-   :width: 400
-   :height: 250
-.. |dada_tabs| image:: ./img/dna_subway/dada_tabs.gif
-   :width: 450
-   :height: 250
-.. |alpha_tabs| image:: ./img/dna_subway/alpha_tabs.gif
-   :width: 450
-   :height: 250
-.. |alpha_plot| image:: ./img/dna_subway/alpha_plot.gif
-   :width: 450
-   :height: 250
-.. |core_matrix| image:: ./img/dna_subway/core_matrix.png
-   :width: 400
-   :height: 500
-.. |bray| image:: ./img/dna_subway/bray.png
-   :width: 350
-   :height: 200
-.. |emperor_plots| image:: ./img/dna_subway/emperor_plots.gif
-   :width: 550
-   :height: 300
-.. |even_cor| image:: ./img/dna_subway/even_cor.png
-   :width: 350
-   :height: 200
-.. |group_sig| image:: ./img/dna_subway/group_sig.png
-   :width: 350
-   :height: 200
-.. |faith| image:: ./img/dna_subway/faith.png
-   :width: 350
-   :height: 200
-.. |faith_group| image:: ./img/dna_subway/faith_group.png
-   :width: 350
-   :height: 200
-.. |taxabar| image:: ./img/dna_subway/taxabar.png
-   :width: 550
-   :height: 500
-.. |taxonomy| image:: ./img/dna_subway/taxonomy.png
-   :width: 350
-   :height: 200
-.. |taxonomic_barplots| image:: ./img/dna_subway/taxonomic_barplots.gif
-   :width: 550
-   :height: 300
-.. |unweighted| image:: ./img/dna_subway/unweighted.png
-   :width: 350
-   :height: 200
-
-.. |CyVerse User Portal|  raw:: html
-
-  <a href="https://user.cyverse.org" target="_blank">user.cyverse.org</a>
-
-.. |QIIME2 documentation|  raw:: html
-
-  <a href="https://docs.qiime2.org/2018.8/" target="_blank">QIIME 2 documentation</a>
-
-.. |QIIME 2| raw:: html
-
-  <a href="https://qiime2.org/" target="_blank">QIIME 2</a>
-
-.. |QIIME 2 metadata documentation|  raw:: html
-
-  <a href="https://docs.qiime2.org/2019.10/tutorials/metadata/" target="_blank">QIIME 2 metadata documentation</a>
-
-.. |metadata_file| raw:: html
-
-  <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx" target="_blank">metadata file</a>
-
-.. |Keemei| raw:: html
-
-  <a href="https://keemei.qiime2.org/" target="_blank">Keemei</a>
-
-.. |Illumina Casava 1.8| raw:: html
-
-  <a href="http://illumina.bioinfo.ucr.edu/ht/documentation/data-analysis-docs/CASAVA-FASTQ.pdf/at_download/file" target="_blank">Illumina Casava 1.8</a>
-
-.. |Earth Microbiome Project| raw:: html
-
-  <a href="http://www.earthmicrobiome.org/protocols-and-standards/" target="_blank">Earth Microbiome Project</a>
-
-.. |CyVerse Data Store Guide| raw:: html
-
-  <a href="https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html" target="_blank">CyVerse Data Store Guide</a>
-
-.. |view.qiime2.org| raw:: html
-
-  <a href="https://view.qiime2.org" target="_blank">view.qiime2.org</a>
-
-.. |Phred score| raw:: html
-
-  <a href="https://en.wikipedia.org/wiki/Phred_quality_score" target="_blank">Phred score</a>
-
-.. |feature| raw:: html
-
-  <a href="https://forum.qiime2.org/t/what-is-a-feature-exactly/2201" target="_blank">have many meanings</a>
-
-.. |operational taxonomic unit| raw:: html
-
-  <a href="https://en.wikipedia.org/wiki/Operational_taxonomic_unit" target="_blank">operational taxonomic unit</a>
-
-.. |Jaccard| raw:: html
-
-  <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank">Jaccard</a>
-
-.. |principal components| raw:: html
-
-  <a href="https://en.wikipedia.org/wiki/Principal_component_analysis" target="_blank">principal components</a>
-
-.. |UniFrac| raw:: html
-
-  <a href="https://en.wikipedia.org/wiki/UniFrac" target="_blank">UniFrac</a>
-
-.. |Bray-Curtis| raw:: html
-
-  <a href="https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity" target="_blank">Bray-Curtis</a>
-
-.. |taxonomy overview| raw:: html
-
-  <a href="https://docs.qiime2.org/2019.1/tutorials/overview/#taxonomy" target="_blank">taxonomy overview</a>

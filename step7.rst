@@ -1,6 +1,7 @@
 .. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
 
-|CyVerse logo|_
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -493,9 +494,14 @@ Post your question to the user forum:
 
 ----
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: |Repo link|
+- Search for an answer:
+   |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
@@ -508,86 +514,3 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-.. |sleuth_results_1| image:: ./img/dna_subway/sleuth_results_1.png
-    :width: 800
-    :height: 400
-.. |sleuth_bootstrap_1| image:: ./img/dna_subway/sleuth_bootstrap_1.png
-    :width: 800
-    :height: 400
-.. |sleuth_pca_1| image:: ./img/dna_subway/sleuth_pca_1.png
-    :width: 800
-    :height: 400
-.. |sleuth_volcano_1| image:: ./img/dna_subway/sleuth_volcano_1.png
-    :width: 800
-    :height: 400
-.. |sleuth_loadings_1| image:: ./img/dna_subway/sleuth_loadings_1.png
-    :width: 800
-    :height: 400
-.. |sleuth_heatmap_1| image:: ./img/dna_subway/sleuth_heatmap_1.png
-    :width: 800
-    :height: 400
-
-
-.. |Stampede2| raw:: html
-
-   <a href="https://www.tacc.utexas.edu/systems/stampede2" target="_blank">Stampede 2</a>
-
-.. |Repo link| raw:: html
-
-   <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide" target="_blank">Repo link</a>
-
-.. |Sleuth R package| raw:: html
-
-   <a href="https://pachterlab.github.io/sleuth/" target="_blank">Sleuth R package</a>
-
-.. |enabled| raw:: html
-
-   <a href="https://java.com/en/download/help/enable_browser.xml" target="_blank">enabled</a>
-
-.. |Java test| raw:: html
-
-   <a href="https://www.java.com/en/download/installed.jsp" target="_blank">Java test</a>
-
-.. |IGV Viewer| raw:: html
-
-   <a href="https://software.broadinstitute.org/software/igv/" target="_blank">IGV Viewer</a>
-
-.. |Kallisto manual| raw:: html
-
-   <a href="https://pachterlab.github.io/kallisto/manual" target="_blank">Kallisto manual</a>
-
-.. |YouTube| raw:: html
-
-   <a href="https://www.youtube.com/playlist?list=PL-0S9LiUi0vhjynujVZw34RKmUo6vPmVd" target="_blank">YouTube</a>
-
-.. |fastqc quickstart| raw:: html
-
-   <a href="https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/#summary" target="_blank">fastqc quickstart</a>
-
-.. |FastQC| raw:: html
-
-   <a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank">FastQC</a>
-
-.. |contact us| raw:: html
-
-   <a href="https://dnasubway.cyverse.org/feedback.html" target="_blank">contact us</a>
-
-.. |reference| raw:: html
-
-   <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744" target="_blank">reference</a>
-
-.. |Kallisto| raw:: html
-
-   <a href="https://pachterlab.github.io/kallisto/about" target="_blank">Kallisto</a>
-
-.. |Sleuth| raw:: html
-
-   <a href="https://pachterlab.github.io/sleuth/about" target="_blank">Sleuth</a>
-
-.. |JetStream Cloud| raw:: html
-
-   <a href="https://jetstream-cloud.org/" target="_blank">Jetstream Cloud</a>
-
-.. |Send feedback| raw:: html
-
-   <a href="https://dnasubway.cyverse.org/feedback.html" target="_blank">Send feedback</a>

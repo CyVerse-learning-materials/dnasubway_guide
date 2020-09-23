@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -278,40 +281,17 @@ sequences within the set in the next step.
 
 ----
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/dnasubway_guide>`_
+- Search for an answer:
+   |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
 
   |Home_Icon|_
   `Learning Center Home <http://learning.cyverse.org/>`_
-
-.. |CyVerse logo| image:: ./img/cyverse_rgb.png
-    :width: 500
-    :height: 100
-.. _CyVerse logo: http://learning.cyverse.org/
-.. |Home_Icon| image:: ./img/homeicon.png
-    :width: 25
-    :height: 25
-.. _Home_Icon: http://learning.cyverse.org/
-.. |blue_trace| image:: ./img/dna_subway/blue_trace.png
-    :width: 400
-    :height: 200
-.. |blue_blast| image:: ./img/dna_subway/blue_blast.png
-    :width: 400
-    :height: 200
-.. |blue_align| image:: ./img/dna_subway/blue_align.png
-    :width: 400
-    :height: 200
-.. |blue_nj| image:: ./img/dna_subway/blue_nj.png
-    :width: 400
-    :height: 200
-.. |blue_ml| image:: ./img/dna_subway/blue_ml.png
-    :width: 400
-    :height: 200
-
-.. |CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum| raw:: html
-
-   <a href="https://www.coursesource.org/courses/cure-all-large-scale-implementation-of-authentic-dna-barcoding-research-into-first-year" target="blank">CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum</a>

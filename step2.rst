@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -83,18 +86,3 @@ projects, but may not edit those projects.
 
   |Home_Icon|_
   `Learning Center Home <http://learning.cyverse.org/>`_
-
-.. |CyVerse logo| image:: ./img/cyverse_rgb.png
-    :width: 500
-    :height: 100
-.. _CyVerse logo: http://learning.cyverse.org/
-.. |Home_Icon| image:: ./img/homeicon.png
-    :width: 25
-    :height: 25
-.. _Home_Icon: http://learning.cyverse.org/
-.. |private_projects| image:: ./img/dna_subway/private_projects.png
-    :width: 275
-    :height: 200
-.. |project_info_tab| image:: ./img/dna_subway/project_info_tab.png
-    :width: 150
-    :height: 100

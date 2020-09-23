@@ -1,4 +1,7 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: custom_urls.txt
+
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -17,12 +20,24 @@ computing, and databases into workflows with an easy-to-use interface.
 150kb of DNA (Red Line), identify homologs in sequenced genomes (Yellow Line),
 identify species using DNA barcodes and phylogenetic trees (Blue Line),
 examine RNA-Seq datasets for differential transcript abundance (Green Line), and
-analyze metabarcoding and eDNA samples using QIIME (Purple Line). 
+analyze metabarcoding and eDNA samples using QIIME (Purple Line).
 
 
+Manual Maintainer(s)
+------------------------
 
-.. #### Comment: If the platform has an ICON place it here
-.. #### Comment: Sort description of goal
+Who to contact if this manual needs fixing. You can also email
+`Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+.. list-table::
+   :header-rows: 1
+
+   * - Maintainer
+     - Institution
+     - Contact
+   * - Jason Williams
+     - CyVerse / Cold Spring Harbor Laboratory
+     - Williams@cshl.edu
 
 ----
 
@@ -67,7 +82,12 @@ Downloads, access, and services
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/dnasubway_guide>`_
+- Search for an answer:
+   |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
