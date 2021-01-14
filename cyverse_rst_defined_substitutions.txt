@@ -100,12 +100,16 @@
 
    <a href="https://wiki.cyverse.org" target="blank">CyVerse Wiki</a>
 
+.. |Kallisto Tutorial| raw:: html
+
+   <a href="https://learning.cyverse.org/projects/kallisto_tutorial/en/latest/index.html" target="blank">Kallisto Tutorial</a>
+
 
 .. Comment: images
 
 .. |CyVerse_logo| image:: ./img/cyverse_learning.png
     :width: 500
-    
+
 .. _CyVerse_logo: http://learning.cyverse.org/
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25

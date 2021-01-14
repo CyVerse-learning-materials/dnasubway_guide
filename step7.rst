@@ -135,6 +135,10 @@ directly to the CyVerse Data Store.
          This step is not directly connected with DNA Subway. You can use any
          data uploaded to the CyVerse Data Store.
 
+    .. note::
+
+        There is a limit of 6GB per file for samples on Green Line. For larger file sizes, you may wish to use the Kallisto tools in the CyVerse Discovery Environment. See the |Kallisto Tutorial| for more information. 
+
 ----
 
 *DNA Subway Green Line: Kallisto/Sleuth - Manage Data and Check Quality with FASTQC*
