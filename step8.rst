@@ -570,10 +570,16 @@ each sample.
 
   1. Click on 'Alpha rarefaction'. Select "run" and designate the minimum and
      maximum rarefaction depth. A minimum value should be set at 1. The maximum
-     value is specific to your data set. To determine what the maximum value
-     should be set to, open the "Interactive Sample Detail" tab of the
-     "Trim Reads" step. Identify the maximum Sequence Count value and enter
-     that number as the maximum value. Click :guilabel:`&Submit Job`.
+     value is specific to your data set. The maximum value is specific to your
+     data set. To determine what the maximum value should be set to, open the
+     "Trim Table" from the "DADA2" step. You may not choose a value that is
+     greater than the maximum frequency per sample. In general, choosing a
+     value that is somewhere around the median frequency seems to work well,
+     but you may want to increase that value if the lines in the resulting
+     rarefaction plot don't appear to be leveling out, or decrease that value
+     if you seem to be losing many of your samples due to low total frequencies
+     closer to the minimum sampling depth than the maximum sampling depth.
+     Identify the maximum Sequence Count value and enter that number as the maximum value. Click :guilabel:`&Submit Job`.
 
     .. note::
 
