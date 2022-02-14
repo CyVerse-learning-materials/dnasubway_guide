@@ -1,11 +1,11 @@
 docs_dir: docs/
-repo_name: 'CyVerse-learning-materials/learning-materials-home'
-repo_url: 'https://github.com/CyVerse-learning-materials/learning-materials-home'
+repo_name: 'CyVerse-learning-materials/dnasubway_guide/'
+repo_url: 'https://github.com/CyVerse-learning-materials/dnasubway_guide/'
 
 site_name: 'CyVerse Learning Home'
 site_description: 'Documentation for CyVerse Platforms and Education'
 site_author: 'CyVerse Science Team'
-site_url: https://CyVerse-learning-materials.io/learning-materials-home/
+site_url: https://CyVerse-learning-materials.io/dnasubway_guide/
 
 edit_uri: edit/mkdocs/docs
 
@@ -15,61 +15,14 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 # Navigation Page
 
 nav:
-  - 'Home': index.md 
-  - 'Introduction':
-    - 'What is CyVerse?': what_is_cyverse.md
-    - 'Self-Guided Course': mooc.md
-    - 'FAQ': faq.md
-    - 'Getting Help': getting_help.md
-  - 'Sign Up':
-    - 'CyVerse Account Setup': account.md 
-    - 'Choosing a Platform': choose_platform.md
-  - 'Manage your Data': 
-    - 'Introduction': ds/intro.md
-    - 'Data Transfers with Discovery Environment': de/manage_data.md
-    - 'Data Transfers with Cyberduck Desktop App': ds/cyberduck.md
-    - 'Command Line Data Transfers': ds/icommands.md
-    - 'HTTP Access with WebDAV': ds/webdav.md
-    - 'Adding Metadata': ds/metadata.md
-    - 'Data Sharing': ds/share.md
-  - 'Run Analyses':
-    - 'Introduction': de/intro.md
-    - 'Logging In': de/login.md
-    - 'Managing Data': de/manage_data.md
-    - 'Using Apps': de/using_apps.md
-    - 'Managing Analyses': de/managing_analyses.md
-    - 'Interactive Analysis': vice/about.md
-    - 'Interactive Apps': vice/apps.md
-    - 'Search': de/search.md
-    - 'Sharing and Using Bags': de/bags.md
-  - 'Quick Starts':
-    - 'RStudio in 6 steps': vice/quick-rstudio.md
-    - 'JupyterLab in 6 steps': vice/quick-jupyter.md
-    - 'Cloud Shell in 6 steps': vice/quick-cloudshell.md
-    - 'Data Sharing': de/quick-data-share.md
-    - 'Cloud Virtual Machines': atmo/quick-atmo.md
-  - 'Cloud Services':
-    - 'Introduction': atmo/intro.md
-    - 'Atmosphere': atmo/atmo.md
-    - 'Jetstream': atmo/js.md 
-    - 'Continuous Analyses': atmo/cacao.md
-  - 'Analyze Images':
-    - 'BISQUE': bisque_guide.md
-  - 'For the Classroom':
-     - 'DNA Subway': dna_subway_guide.md
-     - 'Teaching with data science tools': vice/teaching_vice.md
-  - 'Develop':
-    - 'Create DE Apps': de/create_apps.md
-    - 'Extend VICE apps': vice/extend_apps.md
-    - 'Leverage CyVerse Services': powered_by.md
-    - 'Developer Manuals': manuals.md
-  - 'Science Tutorials':
-    - 'Bioinformatics': bioinformatics_tutorials.md
-    - 'Other Topics': other_tutorials.md
-  - 'CyVerse Workshops':
-    - 'Foundational Open Science Skills': foss.md
-    - 'Container Camp': container_camp.md
-  - 'Glossary': glossary.md
+  - 'Home': index.md
+  - 'DNA Subway Basics and Logging in to Subway':step1.md
+  - 'Accessing Saved Private and Public DNA Subway Projects':step2.md
+  - 'Walkthrough of DNA Subway Red Line - Genome Annotation':step3.md
+  - 'Walkthrough of DNA Subway Blue Line - Sequence Detection':step4.md
+  - 'Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics':step5.md
+  - 'Walkthrough of DNA Subway Green Line: Kallisto/Sleuth RNA-Seq':step7.md
+  - 'Walkthrough of DNA Subway Purple Line (beta testing documentation)':step8.md 
 
 # JavaScript for Intercom Widget
 extra_javascript:
