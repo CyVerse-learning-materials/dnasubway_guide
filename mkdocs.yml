@@ -1,6 +1,6 @@
 docs_dir: docs/
 repo_name: 'CyVerse-learning-materials/dnasubway_guide/'
-repo_url: 'https://github.com/CyVerse-learning-materials/dnasubway_guide/'
+repo_url: 'https://github.com/CyVerse-learning-materials/dnasubway_guide/tree/mkdocs'
 
 site_name: 'CyVerse Learning Home'
 site_description: 'Documentation for CyVerse Platforms and Education'
