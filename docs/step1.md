@@ -32,64 +32,7 @@
 
 > \<a
 > href=\"<https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>\"
-> target=\"blank\"\>Atmosphere Guide\</a\>
-
-> \<a href=\"<https://bisque.cyverse.org/client_service/>\"
-> target=\"blank\"\>BisQue\</a\>
-
-> \<a href=\"<https://wiki.cyverse.org/wiki/display/BIS>\"
-> target=\"blank\"\>BisQue Manual\</a\>
-
-> \<a href=\"<http://learning.cyverse.org/en/latest/>\"
-> target=\"blank\"\>BisQue Guide\</a\>
-
-> \<a href=\"<https://dnasubway.cyverse.org/>\" target=\"blank\"\>DNA
-> Subway\</a\>
-
-> \<a
-> href=\"<https://cyverse-dnasubway-guide.readthedocs-hosted.com/en/latest/>\"
-> target=\"blank\"\>DNA Subway Manual\</a\>
-
-> \<a
-> href=\"<https://cyverse-dnasubway-guide.readthedocs-hosted.com/en/latest/>\"
-> target=\"blank\"\>DNA Subway Guide\</a\>
-
-> \<a href=\"<https://agaveapi.co>\" target=\"blank\"\>Agave API\</a\>
-
-> \<a href=\"<https://agaveapi.co>\" target=\"blank\"\>Agave Live
-> Docs\</a\>
-
-> \<a href=\"<http://learning.cyverse.org/en/latest/>\"
-> target=\"blank\"\>Agave Guide\</a\>
-
-> \<a href=\"<https://www.sciapps.org/>\"
-> target=\"blank\"\>SciApps\</a\>
-
-> \<a
-> href=\"<https://cyverse-sciapps-guide.readthedocs-hosted.com/en/latest/index.html>\"
-> target=\"blank\"\>SciApps Manual\</a\>
-
-> \<a
-> href=\"<https://cyverse-sciapps-guide.readthedocs-hosted.com/en/latest/index.html>\"
-> target=\"blank\"\>SciApps Guide\</a\>
-
-> \<a href=\"<http://ask.iplantcollaborative.org/questions>\"
-> target=\"blank\"\>Ask CyVerse\</a\>
-
-> \<a href=\"<http://learning.cyverse.org>\" target=\"blank\"\>CyVerse
-> Learning Center\</a\>
-
-> \<a href=\"<https://wiki.cyverse.org>\" target=\"blank\"\>CyVerse
-> Wiki\</a\>
-
-> \<a
-> href=\"<https://learning.cyverse.org/projects/kallisto_tutorial/en/latest/index.html>\"
-> target=\"blank\"\>Kallisto Tutorial\</a\>
-
-\_
-
-![Home_Icon](./img/homeicon.png){width="25px" height="25px"}\_ [Learning
-Center Home](http://learning.cyverse.org/)
+[Learning Center Home](http://learning.cyverse.org/)
 
 # DNA Subway Basics and Logging in to Subway
 
@@ -179,5 +122,5 @@ grading in a classroom project.
 
 ------------------------------------------------------------------------
 
-> ![Home_Icon](./img/homeicon.png){width="25px" height="25px"}\_
+> ![Home_Icon](./img/homeicon.png){width="25px" height="25px"}
 > [Learning Center Home](http://learning.cyverse.org/)
