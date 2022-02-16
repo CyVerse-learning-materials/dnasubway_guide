@@ -1,37 +1,3 @@
-> \<a href=\"<https://user.cyverse.org/>\" target=\"\_blank\"\>CyVerse
-> User Portal\</a\>
-
-> \<a href=\"<http://www.cyverse.org/data-store>\"
-> target=\"\_blank\"\>Data Store\</a\>
-
-> \<a
-> href=\"<https://wiki.cyverse.org/wiki/display/DS/Data+Store+Table+of+Contents>\"
-> target=\"blank\"\>Data Store Manual\</a\>
-
-> \<a
-> href=\"<https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>\"
-> target=\"blank\"\>Data Store Guide\</a\>
-
-> \<a href=\"<https://de.cyverse.org/de/>\" target=\"blank\"\>Discovery
-> Environment\</a\>
-
-> \<a
-> href=\"<https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>\"
-> target=\"blank\"\>DE Manual\</a\>
-
-> \<a
-> href=\"<http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/>\"
-> target=\"blank\"\>Discovery Environment Guide\</a\>
-
-> \<a href=\"<https://atmo.cyverse.org>\"
-> target=\"blank\"\>Atmosphere\</a\>
-
-> \<a
-> href=\"<https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents>\"
-> target=\"blank\"\>Atmosphere Manual\</a\>
-
-> \<a
-> href=\"<https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>\"
 [Learning Center Home](http://learning.cyverse.org/)
 
 # DNA Subway Basics and Logging in to Subway
