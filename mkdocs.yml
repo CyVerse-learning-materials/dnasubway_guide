@@ -15,14 +15,14 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 # Navigation Page
 
 nav:
-  - 'Home': index.md
-  - 'DNA Subway Basics and Logging in to Subway': step1.md
-  - 'Accessing Saved Private and Public DNA Subway Projects': step2.md
-  - 'Walkthrough of DNA Subway Red Line - Genome Annotation': step3.md
-  - 'Walkthrough of DNA Subway Blue Line - Sequence Detection': step4.md
-  - 'Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics': step5.md
-  - 'Walkthrough of DNA Subway Green Line: Kallisto/Sleuth RNA-Seq': step7.md
-  - 'Walkthrough of DNA Subway Purple Line (beta testing documentation)': step8.md 
+  - Home: index.md
+  - DNA Subway Basics and Logging in to Subway: step1.md
+  - Accessing Saved Private and Public DNA Subway Projects: step2.md
+  - Walkthrough of DNA Subway Red Line - Genome Annotation: step3.md
+  - Walkthrough of DNA Subway Blue Line - Sequence Detection: step4.md
+  - Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics: step5.md
+  - Walkthrough of DNA Subway Green Line: Kallisto/Sleuth RNA-Seq: step7.md
+  - Walkthrough of DNA Subway Purple Line (beta testing documentation): step8.md 
 
 # JavaScript for Intercom Widget
 extra_javascript:
