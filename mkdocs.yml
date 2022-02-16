@@ -1,11 +1,11 @@
 docs_dir: docs/
 repo_name: 'CyVerse-learning-materials/dnasubway_guide/'
-repo_url: 'https://github.com/CyVerse-learning-materials/dnasubway_guide/tree/mkdocs'
+repo_url: 'https://github.com/CyVerse-learning-materials/dnasubway_guide'
 
 site_name: 'DNA Subway'
 site_description: 'Documentation for CyVerse Platforms and Education'
 site_author: 'CyVerse Science Team'
-site_url: https://github.com/CyVerse-learning-materials/dnasubway_guide
+site_url: https://CyVerse-learning-materials.io/dnasubway_guide
 
 edit_uri: edit/mkdocs/docs
 
