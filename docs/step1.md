@@ -56,37 +56,28 @@ grading in a classroom project.
 
 ## *Logging into DNA Subway as a registered user*
 
-> 1.  Access the DNA Subway website at <https://dnasubway.cyverse.org/>
-> 2.  If you wish to use DNA Subway as a guest click \'Enter As Guest\'
->
-> > ::: note
-> > ::: title
-> > Note
-> > :::
-> >
-> > When using DNA Subway as a guest, you will be able to work only on
-> > the Red, Yellow, and Blue lines. Additionally, some Red Line
-> > functionalities will be disabled. Finally, after logging out, or a
-> > period of inactivity (\>\~ 30 min) you work will be discarded.
-> > :::
->
-> 3.  Enter your CyVerse username and CyVerse password.
+1.  Access the DNA Subway website at https://dnasubway.cyverse.org/
+2.  If you wish to use DNA Subway as a guest click 'Enter As Guest'
+
+    !!! Note
+            When using DNA Subway as a guest, you will be able to work only on
+            the Red, Yellow, and Blue lines. Additionally, some Red Line
+            functionalities will be disabled. Finally, after logging out, or a
+            period of inactivity (\>\~ 30 min) you work will be discarded.
+
+3.  Enter your CyVerse username and CyVerse password.
 
 ## *Logging into DNA Subway as a guest user*
 
-> 1.  Access the DNA Subway website at <https://dnasubway.cyverse.org/>
->     ;click \'Enter as Guest\'
+1.  Access the DNA Subway website at https://dnasubway.cyverse.org/; click 'Enter as Guest'
 
 ------------------------------------------------------------------------
 
 **Fix or improve this documentation**
 
--   Search for an answer:
--   Ask us for help: click on the lower right-hand side of the page
--   Report an issue or submit a change:
--   Send feedback: [Tutorials@CyVerse.org](Tutorials@CyVerse.org)
+-   Search for an answer: [CyVerse Learning Center](https://cyverse-learning-materials.github.io/learning-materials-home)
+-   Ask us for help: click the Intercom icon ![Intercom](../assets/intercom.png){ width="25" } on the lower right-hand side of the page
+-   Report an issue or submit a change: [Github Repo](https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide)
+-   Send feedback: [learning@CyVerse.org](learning@CyVerse.org)
 
 ------------------------------------------------------------------------
-
-> ![Home_Icon](./img/homeicon.png){width="25px" height="25px"}
-> [Learning Center Home](http://learning.cyverse.org/)

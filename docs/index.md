@@ -1,5 +1,3 @@
-[Learning Center Home](http://learning.cyverse.org/)
-
 # DNA Subway
 
 ![subway_logo](assets/dna_subway/dnasubway-icon.png)
