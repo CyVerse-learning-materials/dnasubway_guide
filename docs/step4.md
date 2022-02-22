@@ -1,5 +1,3 @@
-[Learning Center Home](http://learning.cyverse.org/)
-
 # Walkthrough of DNA Subway Yellow Line - Sequence Detection
 
 Genome prospecting uses a query sequence (DNA or protein of up to 10,000
@@ -25,95 +23,62 @@ elements (TEs).
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Yellow Line - Create a Yellow Line Project*
+## DNA Subway Yellow Line - Create a Yellow Line Project
 
-> 1.  Log-in to [DNA Subway](https://dnasubway.cyverse.org/) -
->     unregistered users may \'Enter as Guest\'
->
-> 2.  Click 'Prospect Genomes using TARGeT' (Yellow Square)
->
-> 3.  Select a sample sequence, or paste in a sequence to search for.
->
->     ::: note
->     ::: title
->     Note
->     :::
->
->     DNA Subway Yellow Line is only implemented to search a limited set
->     of plant genomes.
->     :::
->
-> 4.  Provide your project with a title, then Click 'Continue'
+1.  Log-in to [DNA Subway](https://dnasubway.cyverse.org/) -
+    unregistered users may \'Enter as Guest\'
+2.  Click 'Prospect Genomes using TARGeT' (Yellow Square)
+3.  Select a sample sequence, or paste in a sequence to search for.
+    
+    !!! Note
+        DNA Subway Yellow Line is only implemented to search a limited set of plant genomes.
 
-### **Example Exercise - Project Creation: mPing Mite element to search plant genomes for an active transposon**
+4.  Provide your project with a title, then Click 'Continue'
 
-The [mPing MITE
-element](https://www.nature.com/nature/journal/v421/n6919/full/nature01214.html)
+### Example Exercise - Project Creation: mPing Mite element to search plant genomes for an active transposon
+
+The [mPing MITE element](https://www.nature.com/nature/journal/v421/n6919/full/nature01214.html)
 is an example of an active transposon in rice.
 [Transposons](http://www.dnaftb.org/32/animation.html) are a major class
 of DNA elements that impact the function of the genome.
 
-> 1.  Create a Yellow Line project following the steps above and using
->     the mPing Mite Element (Oryza sativa/Rice)
+1.  Create a Yellow Line project following the steps above and using the mPing Mite Element (Oryza sativa/Rice)
 
-## *DNA Subway Yellow Line - Search Plant Genomes with TARGeT*
+## DNA Subway Yellow Line - Search Plant Genomes with TARGeT
 
-> 1.  Click and select the genome(s) you wish to search and the click;
->     \'Run\' to search those genomes.
-> 2.  Click the \'Alignment Viewer\' button to view the results of the
->     search as a multiple alignment.
-> 3.  Click the \'Tree Viewer\' button to view a tree that will group
->     results by similarity.
->
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > **Alignment Viewer** Generates an alignment of all search results
-> >
-> > ![yellow_alignment](./img/dna_subway/yellow_alignment.png){width="420px"
-> > height="150px"}
-> >
-> > **Tree Viewer** Displays the results of sequence matches as a tree,
-> > grouped by sequence similarity
-> >
-> > ![yellow_tree](./img/dna_subway/yellow_tree.png){width="420px"
-> > height="300px"}
-> >
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > **Some Useful Definitions** - **Transposons (DNA, Retroviral,
-> > LINES):** Genetic elements which have the ability to be amplified
-> > and redistributed within a genome. - **Non-autonomous transposons:**
-> > Transposons which lack an active transposase gene, thus requiring
-> > help from another transposon to move. - **Autonomous transposons:**
-> > Transposons which have a functional transposase and can move within
-> > the genome.
-> > :::
-> > :::
+1.  Click and select the genome(s) you wish to search and the click;
+    \'Run\' to search those genomes.
+2.  Click the \'Alignment Viewer\' button to view the results of the
+    search as a multiple alignment.
+3.  Click the \'Tree Viewer\' button to view a tree that will group
+    results by similarity.
 
-### **Example Exercise - Search Plant Genomes: mPing Mite element**
+??? tip "Viewer Tips"
+    **Alignment Viewer** Generates an alignment of all search results
+    ![yellow_alignment](./img/dna_subway/yellow_alignment.png){width="420px" height="150px"}
+    **Tree Viewer** Displays the results of sequence matches as a tree, grouped by sequence similarity
+    [yellow_tree](./img/dna_subway/yellow_tree.png){width="420px" height="300px"}
 
-> 1.  After loading the mPing Mite Element as the query, search the
->     Oryza Sativa genome, and examine the results in the Alignment and
->     Tree Viewers.
-> 2.  Repeat this analysis with a new project using the Ping transposase
->     gene and the Ping Transposase protein.
+??? Tip "Useful Definitions"
+    - **Transposons (DNA, Retroviral, LINES):** Genetic elements which have the ability to be amplified and redistributed within a genome. 
+    - **Non-autonomous transposons:** Transposons which lack an active transposase gene, thus requiring help from another transposon to move. 
+    - **Autonomous transposons:** Transposons which have a functional transposase and can move within the genome.
+
+### Example Exercise - Search Plant Genomes: mPing Mite element
+
+1.  After loading the mPing Mite Element as the query, search the
+    Oryza Sativa genome, and examine the results in the Alignment and
+    Tree Viewers.
+2.  Repeat this analysis with a new project using the Ping transposase
+    gene and the Ping Transposase protein.
 
 ------------------------------------------------------------------------
 
 **Fix or improve this documentation**
 
--   Search for an answer:
--   Ask us for help: click on the lower right-hand side of the page
--   Report an issue or submit a change:
--   Send feedback: [Tutorials@CyVerse.org](Tutorials@CyVerse.org)
+-   Search for an answer: [CyVerse Learning Center](https://cyverse-learning-materials.github.io/learning-materials-home)
+-   Ask us for help: click the Intercom icon ![Intercom](../assets/intercom.png){ width="25" } on the lower right-hand side of the page
+-   Report an issue or submit a change: [Github Repo](https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide)
+-   Send feedback: [learning@CyVerse.org](learning@CyVerse.org)
 
 ------------------------------------------------------------------------
-
-> ![Home_Icon](./img/homeicon.png){width="25px" height="25px"} 
-> [Learning Center Home](http://learning.cyverse.org/)
