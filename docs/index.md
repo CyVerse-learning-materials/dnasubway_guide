@@ -34,8 +34,8 @@ Line (Beta) \<step8.rst\>
 *In order to complete this tutorial you will need access to the
 following services/software*
 
-  Prerequisite | Preparation/Notes | Link/Download |
-  ------------------- ----------------------------------------------------------- ----------------------------------------------------------------------------------------
+  | Prerequisite | Preparation/Notes | Link/Download |
+  | --- | --- | --- |
   CyVerse account     You will need a CyVerse account to complete this exercise   [Register](https://user.cyverse.org/)
   DNA Subway Access   DNA Subway access is by request access                      Check or request access: [CyVerse User Portal](https://user.cyverse.org/services/mine)
 
