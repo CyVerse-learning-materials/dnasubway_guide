@@ -45,20 +45,14 @@ not represented in published databases like GenBank.
         Here is a video series on analyzing data with DNA Subway using the
         above mosquito dataset and lesson:
 
-        ```{=html}
-        <div class="video-container">
-        <iframe width="560" height="315" align="center"
-        src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-        gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        ```
+        ![DNA Sub](https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo)
 
-        !!! Tip
 
-                See a Course Source paper with protocols and recommendations for
-                implementing a Barcoding CURE (course-based undergraduate research
-                experience):
+!!! Tip
+
+        See a Course Source paper with protocols and recommendations for
+        implementing a Barcoding CURE (course-based undergraduate research
+        experience): [CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum](https://www.coursesource.org/courses/cure-all-large-scale-implementation-of-authentic-dna-barcoding-research-into-first-year)
 
 ## *DNA Subway Blue Line - Create a Barcoding Project*
 
