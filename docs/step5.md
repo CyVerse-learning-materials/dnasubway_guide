@@ -45,7 +45,7 @@ not represented in published databases like GenBank.
         Here is a video series on analyzing data with DNA Subway using the
         above mosquito dataset and lesson:
 
-        ![DNA Sub](https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo)
+        [DNA Sub](https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo)
 
 
 !!! Tip
