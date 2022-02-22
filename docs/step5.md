@@ -57,27 +57,26 @@ not represented in published databases like GenBank.
 
 1. Log-in to [DNA Subway](https://dnasubway.cyverse.org/) - unregistered users may 'Enter as Guest'
 
-    !!! Note
-        Only registered users submitting novel, high-quality sequences
-        will be able to submit sequence to GenBank
+        !!! Note
+            Only registered users submitting novel, high-quality sequences
+            will be able to submit sequence to GenBank
 2. Choose a project type:
     -   Phylogenetics: build phylogenetic trees from any DNA, protein, or mtDNA sequence)
     -   Barcoding: DNA Barcoding for plants (rbcL), animals (COI), bacteria (16S), and fungi (ITS)
 
-    !!! Warning "Sample Data"
-            
-            *"Mosquito"* dataset: <br>
-            Select **COI**.
+        !!! Warning "Sample Data"
+                
+                *"Mosquito"* dataset: Select **COI**.
 3. Under 'Select Sequence Source' select a sequence buy uploading
     either a FASTA file or AB1 Sanger sequencing tracefile; pasting in
     a sequence in FASTA format, or selecting and importing a trace
     file from DNALC. If you do not have a file, you may select any of
     the available sample sequences.
 
-    !!! Warning "Sample Data"
-            
-            *"Mosquito"* dataset: <br>
-            From **Select a set of sample sequences** select **Intro to Barcoding Bioinformatics: Mosquitoes**.
+        !!! Warning "Sample Data"
+                
+                *"Mosquito"* dataset:
+                From **Select a set of sample sequences** select **Intro to Barcoding Bioinformatics: Mosquitoes**.
 4.  Name your project, and give a description if desired; click 'Continue.'
 
 ------------------------------------------------------------------------
