@@ -141,9 +141,10 @@ visualized gene predictions generated so far.
             - You may also adjust the settings for a particular track by clicking on the track name.
             - Right-click on any gene to view additional details about that gene.
             ![jbrowse](./assets/dna_subway/jbrowse.png){width="400px" height="250px"}
-`&nbsp;3.`  Examine gene details by double-clicking on a gene to select; then
+
+3.  Examine gene details by double-clicking on a gene to select; then
     right-click to open the 'View Details' menu.
-`&nbsp;4.`  To view more tracks, click on 'Full-Screen View' in the
+4.  To view more tracks, click on 'Full-Screen View' in the
     upper-left of the JBrowse window to see any additional tracks
     available.
 
