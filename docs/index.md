@@ -34,7 +34,7 @@ Line (Beta) \<step8.rst\>
 *In order to complete this tutorial you will need access to the
 following services/software*
 
-  Prerequisite        Preparation/Notes                                           Link/Download
+  Prerequisite | Preparation/Notes | Link/Download |
   ------------------- ----------------------------------------------------------- ----------------------------------------------------------------------------------------
   CyVerse account     You will need a CyVerse account to complete this exercise   [Register](https://user.cyverse.org/)
   DNA Subway Access   DNA Subway access is by request access                      Check or request access: [CyVerse User Portal](https://user.cyverse.org/services/mine)
@@ -43,12 +43,9 @@ following services/software*
 
 **Fix or improve this documentation**
 
--   Search for an answer:
--   Ask us for help: click on the lower right-hand side of the page
--   Report an issue or submit a change:
--   Send feedback: [Tutorials@CyVerse.org](Tutorials@CyVerse.org)
+-   Search for an answer: [CyVerse Learning Center](https://cyverse-learning-materials.github.io/learning-materials-home)
+-   Ask us for help: click the Intercom icon ![Intercom](../assets/intercom.png){ width="25" } on the lower right-hand side of the page
+-   Report an issue or submit a change: [Github Repo](https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide)
+-   Send feedback: [learning@CyVerse.org](learning@CyVerse.org)
 
 ------------------------------------------------------------------------
-
-![Home_Icon](./img/homeicon.png){width="25px" height="25px"}\_ [Learning
-Center Home](http://learning.cyverse.org/)
