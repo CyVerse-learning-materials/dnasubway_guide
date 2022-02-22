@@ -133,12 +133,12 @@ visualized gene predictions generated so far.
 1.  Click 'JBrowse' and allow browser to load.
 2.  Zoom into a region (for example, paste the region
     **1:3740638..3749063** into the location window.
-    !!! Tip
-            - JBrowse will load multiple tracks of data. Since the entire genome is loaded, we recommend using the 'highlight a region' feature to help keep your place. You may also wish to record the
-            coordinates you are viewing as shown in the coordinates window.
-            - You may also adjust the settings for a particular track by clicking on the track name.
-            - Right-click on any gene to view additional details about that gene.
-            ![jbrowse](./assets/dna_subway/jbrowse.png){width="400px" height="250px"}
+        !!! Tip
+                - JBrowse will load multiple tracks of data. Since the entire genome is loaded, we recommend using the 'highlight a region' feature to help keep your place. You may also wish to record the
+                coordinates you are viewing as shown in the coordinates window.
+                - You may also adjust the settings for a particular track by clicking on the track name.
+                - Right-click on any gene to view additional details about that gene.
+                ![jbrowse](./assets/dna_subway/jbrowse.png){width="400px" height="250px"}
 3.  Examine gene details by double-clicking on a gene to select; then
     right-click to open the 'View Details' menu.
 4.  To view more tracks, click on 'Full-Screen View' in the
