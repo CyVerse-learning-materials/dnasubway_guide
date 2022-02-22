@@ -58,6 +58,3 @@ ability to view those projects, but may not edit those projects.
 -   Send feedback: [learning@CyVerse.org](learning@CyVerse.org)
 
 ------------------------------------------------------------------------
-
-> ![Home_Icon](./img/homeicon.png){width="25px" height="25px"}
-> [Learning Center Home](http://learning.cyverse.org/)
