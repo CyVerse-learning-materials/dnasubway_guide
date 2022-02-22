@@ -175,10 +175,10 @@ are given in parentheses and can be pasted into the browser):
 
 *Considering the following genes:*
 
--   BFN1-201 (1:3748591..3753070)
--   SCAMP5-201 (1:3744556..3749035)
--   STP1-201 (1:3776366..3780845)
--   At1G11270.2 (1:3780041..3789000)
+    -   BFN1-201 (1:3748591..3753070)
+    -   SCAMP5-201 (1:3744556..3749035)
+    -   STP1-201 (1:3776366..3780845)
+    -   At1G11270.2 (1:3780041..3789000)
 
 1.  Do all the gene predictors agree with each other?
 2.  Which gene predictions seem to match the Ensemble genes most closely?
