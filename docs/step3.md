@@ -1,164 +1,78 @@
-[Learning Center Home](http://learning.cyverse.org/)
-
 # Walkthrough of DNA Subway Red Line - Genome Annotation
-
-Annotation adds features and information to a DNA sequence -- such as
-genes and their locations, structures, and functions. A good
-introduction to annotation can be found in the paper [A beginner's guide
-to eukaryotic genome
-annotation](https://www.nature.com/nrg/journal/v13/n5/full/nrg3174.html).
-We\'ll also suggest the DNA Subway\'s primer on [annotation
-evidence](https://dnasubway.cyverse.org/project/ngs/panel/1946#). This
-guide contains an explanation of basic functions for this line, as well
-as exercises that might be used in the classroom.
-
+Annotation adds features and information to a DNA sequence -- such as genes and their locations, structures, and functions.
+A good introduction to annotation can be found in the paper [A beginner's guide to eukaryotic genome annotation](https://www.nature.com/nrg/journal/v13/n5/full/nrg3174.html).
+We'll also suggest the DNA Subway's primer on [annotation evidence](https://dnasubway.cyverse.org/project/ngs/panel/1946#). 
+This guide contains an explanation of basic functions for this line, as wellas exercises that might be used in the classroom.
 **Some things to remember about the platform**
-
--   On Red Line, you can annotate up to 150KB of your own DNA sequence
--   We provide sample sequence for you to try, or you can upload your
-    own
-
+	@@ -205,156 +164,115 @@ as exercises that might be used in the classroom.
 ------------------------------------------------------------------------
-
-## *DNA Subway Red Line - Create an Annotation Project with Apollo*
-
-> ::: note
-> ::: title
-> Note
-> :::
->
-> DNA Subway is transitioning away from the original Java-based Apollo
-> software as most popular web browsers will no longer support Java. The
-> new Apollo is Java-free.
-> :::
->
-> 1.  Log-in to [DNA Subway](https://dnasubway.cyverse.org/) -
->     unregistered users may \'Enter as Guest\'
->
-> 2.  Click 'Annotate a genomic sequence.' (Red Square); select the
->     \'Web Apollo\' version
->
-> 3.  For \'Select Organism type\' choose \'Animal\' or \'Plant\' and
->     then select the appropriate subtype.
->
->     ::: tip
->     ::: title
->     Tip
->     :::
->
->     The \'Select Organism\' step will load appropriate sample
->     sequences and will also adjust the models used in the de novo gene
->     finding process.
->     :::
->
-> 4.  For \'Select Sequence Source\' select a sample sequence.
->
-> > ::: note
-> > ::: title
-> > Note
-> > :::
-> >
-> > Currently, the Java-free Apollo version of Subway does not support
-> > upload of a custom DNA Sequence. This feature is coming soon, but we
-> > will help you upload custom genomes/regions for your use in the
-> > classroom
-> > :::
->
-> 5.  (Optional) If you have a GFF file of annotated features, you may
->     load these import these annotations from the Green Line, or from a
->     custom GFF file.
-> 6.  Name your project and organism (required) and give a description
->     if desired. Click \'Continue\' to proceed.
-
-### **Example Exercise - Project Creation: Arabidopsis ChrI**
-
-In this and subsequent steps, we will annotate a 75KB section of
-Arabidopsis chromosome I.
-
-> 1.  Log-in to [DNA Subway]() - unregistered users may \'Enter as
->     Guest\'.
-> 2.  Click 'Annotate a genomic sequence.' (Red Square); select the
->     \'Web Apollo\' version.
-> 3.  For \'Select Organism type\' choose \'Plant\' and then
->     \'Dicotyledon\'.
-> 4.  from \'Select a sample sequence\' chose \'Arabidopsis thaliana
->     (mouse-ear cress) chr1, 75.00 kb\'.
-> 5.  Provide your project with a title, then Click 'Continue.'
->
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> You can view your DNA sequence by clicking the \'Sequence\' link in
-> the \'Project Information\' tab at the bottom of the page.
-> :::
-
+## DNA Subway Red Line - Create an Annotation Project with Apollo
+??? tip "transition away from Java"
+    
+    DNA Subway is transitioning away from the original Java-based Apollo software as most popular web browsers will no longer support Java. The new Apollo is Java-free.
+1.  Log-in to [DNA Subway](https://dnasubway.cyverse.org/){target=+blank} -
+    unregistered users may 'Enter as Guest'
+2.  Click 'Annotate a genomic sequence.' (Red Square); select the
+    'Web Apollo' version
+3.  For 'Select Organism type' choose 'Animal' or 'Plant' and
+    then select the appropriate subtype.
+    The 'Select Organism' step will load appropriate sample
+    sequences and will also adjust the models used in the de novo gene
+    finding process.
+    
+4.  For 'Select Sequence Source' select a sample sequence.
+??? tip "Apollo support"
+    
+    Currently, the Java-free Apollo version of Subway does not support upload of a custom DNA Sequence. 
+    
+    This feature is coming soon, but we will help you upload custom genomes/regions for your use in the classroom
+5.  (Optional) If you have a GFF file of annotated features, you may load these import these annotations from the Green Line, or from a
+    custom GFF file.
+6.  Name your project and organism (required) and give a description if desired. Click 'Continue' to proceed.
+### Example Exercise - Project Creation: Arabidopsis ChrI
+In this and subsequent steps, we will annotate a 75KB section of Arabidopsis chromosome I.
+1.  Log-in to [DNA Subway]() - unregistered users may 'Enter as Guest'.
+2.  Click 'Annotate a genomic sequence.' (Red Square); select the 'Web Apollo' version.
+3.  For 'Select Organism type' choose 'Plant' and then 'Dicotyledon'.
+4.  from 'Select a sample sequence' chose 'Arabidopsis thaliana (mouse-ear cress) chr1, 75.00 kb'.
+5.  Provide your project with a title, then Click 'Continue.'
+??? tip "Sequence"
+    You can view your DNA sequence by clicking the 'Sequence' link in the 'Project Information' tab at the bottom of the page.
 ------------------------------------------------------------------------
-
-## *DNA Subway Red Line - Find and Mask Repetitive DNA*
-
-One you have created a Red Line Project, you may begin the process of
-generating and assembling predictions and evidence that can be used to
-annotate genes.
-
-> 1.  Click 'RepeatMasker'
->
-> 2.  When \'RepeatMasker\' turns \'green\' and the icon displays a
->     \'V\' (view); click \'RepeatMasker\' again to view results.
->
->     ![repeat_results](./img/dna_subway/repeat_results.png){width="300px"
->     height="200px"}
-
-### **Example Exercise - Repeat Masking: Arabodopsis ChrI**
-
--   **Example Sequence:** Arabidopsis thaliana (mouse-ear cress) ChrI,
-    75 kb
+## DNA Subway Red Line - Find and Mask Repetitive DNA
+One you have created a Red Line Project, you may begin the process of generating and assembling predictions and evidence that can be used to annotate genes.
+1.  Click 'RepeatMasker'
+2.  When 'RepeatMasker' turns 'green' and the icon displays a 'V' (view); click 'RepeatMasker' again to view results.
+    ![repeat_results](./img/dna_subway/repeat_results.png){width="300px" height="200px"}
+## **Example Exercise - Repeat Masking: Arabodopsis ChrI**
+-   **Example Sequence:** Arabidopsis thaliana (mouse-ear cress) ChrI, 75 kb
 -   **Tool(s):** RepeatMasker
 -   **Concept(s):** Non-coding DNA, sequence repeats, mobile genetic
     elements (transposons)
+Following the RepeatMasking steps for the Arabidopsis ChrI sample above, answer the following *discussion questions*:
+1.  How many hits were detected in your sample?
+2.  RepeatMasker reports the length of the repetitive sequences
+    (Length) as well as the class (Attributes).
+-   What is the average length of sequences identified as "simple
+    repeats"?
+-   What is the average length of sequences identified as "low
+    complexity"?
+3.  What is the total percentage of repetitive DNA in your sequence?
+    (Sum of the length of all repetitive sequence / sequence length
+    (75 kb)
+??? tip "Some Useful Definitions for Repetitive Sequences"
+    -  **Simple repeats:** 1-5bp repeats (e.g. repetitive dinucleotides 'AT' etc.)
+    
+    -  **Low Complexity DNA:** Poly-purine/ poly-pyrimidine stretches, or regions of extremely high AT or GC content.
+    
+    -  **Processed Pseudogenes, SINES, Retrotranscripts:** Non-functional RNAs present within genomic sequence.
+    
+    -  **Transposons (DNA, Retroviral, LINES):** Genetic elements which have the ability to be amplified and redistributed within a genome.
+**Additional Investigation:** In the results table under 'Attributes' each repeat sequence is labeled "RepeatMasker#-XXX" The '#' is the
+ordinal number of the hit, the XXX is the class of DNA element (e.g. "Simple_repeat" or "Low_complexity"). There are other types of
+repetitive elements such as transposons and pseudogenes (e.g. Helitron and COPIA) Use online resources to learn more: (<http://gydb.org/index.php/Main_Page>).
 
-Following the RepeatMasking steps for the Arabidopsis ChrI sample above,
-answer the following *discussion questions*:
-
-> 1.  How many hits were detected in your sample?
-> 2.  RepeatMasker reports the length of the repetitive sequences
->     (Length) as well as the class (Attributes).
->
-> > -   What is the average length of sequences identified as "simple
-> >     repeats"?
-> > -   What is the average length of sequences identified as "low
-> >     complexity"?
->
-> 3.  What is the total percentage of repetitive DNA in your sequence?
->     (Sum of the length of all repetitive sequence / sequence length
->     (75 kb)
-
-::: tip
-::: title
-Tip
-:::
-
-**Some Useful Definitions for Repetitive Sequence**
-
--   **Simple repeats:** 1-5bp repeats (e.g. repetitive dinucleotides
-    'AT' etc.)
--   **Low Complexity DNA:** Poly-purine/ poly-pyrimidine stretches, or
-    regions of extremely high AT or GC content.
--   **Processed Pseudogenes, SINES, Retrotranscripts:** Non-functional
-    RNAs present within genomic sequence.
--   **Transposons (DNA, Retroviral, LINES):** Genetic elements which
-    have the ability to be amplified and redistributed within a genome.
-:::
-
-**Additional Investigation:** In the results table under 'Attributes'
-each repeat sequence is labeled "RepeatMasker#-XXX" The '#' is the
-ordinal number of the hit, the XXX is the class of DNA element (e.g.
-"Simple_repeat" or "Low_complexity"). There are other types of
-repetitive elements such as transposons and pseudogenes (e.g. Helitron
-and COPIA) Use online resources to learn more:
-(<http://gydb.org/index.php/Main_Page>).
-
+------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
 ## *DNA Subway Red Line - Making Gene Predictions*
