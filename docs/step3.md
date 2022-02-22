@@ -43,7 +43,7 @@ In this and subsequent steps, we will annotate a 75KB section of Arabidopsis chr
 One you have created a Red Line Project, you may begin the process of generating and assembling predictions and evidence that can be used to annotate genes.
 1.  Click 'RepeatMasker'
 2.  When 'RepeatMasker' turns 'green' and the icon displays a 'V' (view); click 'RepeatMasker' again to view results.
-    ![repeat_results](./img/dna_subway/repeat_results.png){width="300px" height="200px"}
+    ![repeat_results](./assets/dna_subway/repeat_results.png){width="300px" height="200px"}
 ## **Example Exercise - Repeat Masking: Arabodopsis ChrI**
 -   **Example Sequence:** Arabidopsis thaliana (mouse-ear cress) ChrI, 75 kb
 -   **Tool(s):** RepeatMasker
@@ -80,9 +80,9 @@ De novo gene predictors can be run on a sample sequence to generate
 predictions of gene structure and location based solely on the sequence
 nucleotides.
 
-1.  Click on one or more gene prediction tools under the \'Gene
-    Prediction\' stop. to view the results table, click the gene
-    predictor again once the indicator displays \'V\' (view).
+1.  Click on one or more gene prediction tools under the 'Gene
+    Prediction' stop. to view the results table, click the gene
+    predictor again once the indicator displays 'V' (view).
 
 ### Example Exercise - Predict Genes: Arabidopsis ChrI
 
@@ -124,7 +124,7 @@ Finding'.
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Red Line - Visualize predicted genes in a Genome Browser*
+## DNA Subway Red Line - Visualize predicted genes in a Genome Browser
 
 A genome browser is an essential tool for visualization genomic data in
 context. The integrated JBrowse genome browser will allow you to see the
@@ -133,38 +133,30 @@ visualized gene predictions generated so far.
 1.  Click 'JBrowse' and allow browser to load.
 2.  Zoom into a region (for example, paste the region
     **1:3740638..3749063** into the location window.
-
     !!! Tip
-
-            \- JBrowse will load multiple tracks of data. Since the entire
-            genome is loaded, we recommend using the \'highlight a region\'
-            feature to help keep your place. You may also wish to record the
+            - JBrowse will load multiple tracks of data. Since the entire genome is loaded, we recommend using the 'highlight a region' feature to help keep your place. You may also wish to record the
             coordinates you are viewing as shown in the coordinates window.
-            \- You may also adjust the settings for a particular track by
-            clicking on the track name.
-            -   Right-click on any gene to view additional details about that gene.
-            ![jbrowse](./img/dna_subway/jbrowse.png){width="400px" height="250px"}
+            - You may also adjust the settings for a particular track by clicking on the track name.
+            - Right-click on any gene to view additional details about that gene.
+            ![jbrowse](./assets/dna_subway/jbrowse.png){width="400px" height="250px"}
 3.  Examine gene details by double-clicking on a gene to select; then
-    right-click to open the \'View Details\' menu.
-4.  To view more tracks, click on \'Full-Screen View\' in the
+    right-click to open the 'View Details' menu.
+4.  To view more tracks, click on 'Full-Screen View' in the
     upper-left of the JBrowse window to see any additional tracks
     available.
 
-!!! Tip
+??? tip "Useful Definitions"
+    **Genome Browser:** A GUI (Graphical User Interface) for viewing
+    biological information. GBrowse (DNA Subway's Browser) is "designed to
+    view genomes. It displays a graphical representation of a section of a
+    genome, and shows the positions of genes and other functional elements.
+    It can be configured to show both qualitative data such as the splicing
+    structure of a gene, and quantitative data such as microarray expression
+    levels." [\[citation\]](http://gmod.org/wiki/GBrowse_FAQ)
 
-        **Some Useful Definitions**
-
-        **Genome Browser:** A GUI (Graphical User Interface) for viewing
-        biological information. GBrowse (DNA Subway's Browser) is "designed to
-        view genomes. It displays a graphical representation of a section of a
-        genome, and shows the positions of genes and other functional elements.
-        It can be configured to show both qualitative data such as the splicing
-        structure of a gene, and quantitative data such as microarray expression
-        levels." [\[citation\]](http://gmod.org/wiki/GBrowse_FAQ)
-
-        **Track:** The individual regions of the display where information
-        imported into the browser. For each type (or source) of information,
-        there is usually an associated track.
+    **Track:** The individual regions of the display where information
+    imported into the browser. For each type (or source) of information,
+    there is usually an associated track.
 
 ### Example Exercise - Visualize predicted genes: Arabidopsis ChrI
 
@@ -200,12 +192,12 @@ hypothetical proteins.
 2.  Click 'BLASTN' again to view the results.
 3.  Click 'BLASTX'; wait until the flashing icon displays 'V' (view).
 4.  Click 'BLASTX' again to view the results.
-5.  Click on \'JBrowse\' and then click \'Full-screen View\' in the
+5.  Click on 'JBrowse' and then click 'Full-screen View' in the
     upper-left.
-6.  In the \'Available Tracks\' menu, add the Blastn and Blastx
+6.  In the 'Available Tracks' menu, add the Blastn and Blastx
     tracks.
 
-??? tip "Useful definitions"
+??? tip "Useful Definitions"
         **Some Useful Definitions**
     -   **BLAST:** Basic Local Alignment Search Tool (BLAST) is an
         algorithm that search databases of biological sequence information
@@ -267,8 +259,8 @@ experiment.
     -   Augustus (and other gene predictors: FGenesH, SNAP, etc.)
     -   Blastn
 3.  Double-click on the Blastn result, and drag this transcript into
-    the yellow \'User-created Annotations\' section.
-    ![apollo_1](./img/dna_subway/apollo_1.png){width="400px"
+    the yellow 'User-created Annotations' section.
+    ![apollo_1](./assets/dna_subway/apollo_1.png){width="400px"
     height="250px"}
 
 **B. Select a scaffold model** Use transcriptome evidence (UniGene -
@@ -276,18 +268,18 @@ BLASTN) to select the best possible gene model for a scaffold. If no
 gene model exists or significantly reflects the UniGene model, use the
 UniGene model itself as a scaffold.
 
-1.  Drag a plausible model into the yellow \'User-created
-    Annotations\' - in this case we will choose the Augustus model;
+1.  Drag a plausible model into the yellow 'User-created
+    Annotations' - in this case we will choose the Augustus model;
     double-click the Augustus model to select the entire model and
-    drag into \'User-created Annotations\'.
-2.  Adjust the Augustus model to match the 5\' and 3\' configuration
+    drag into 'User-created Annotations'.
+2.  Adjust the Augustus model to match the 5' and 3' configuration
     of the blastn model
-    -   Delete the extraneous 5\' exon (single-click to select;
+    -   Delete the extraneous 5' exon (single-click to select;
         right-click to delete)
-    -   Adjust the new 5\' end to match the length of the blastn-derived
+    -   Adjust the new 5' end to match the length of the blastn-derived
         transcript
-    -   Adjust the 3\' end of the Augustus-derived model (single-click
-        to select; use your cursor/mouse to adjust the model length) ![apollo_2](./img/dna_subway/apollo_2.png){width="420px" height="250px"}
+    -   Adjust the 3' end of the Augustus-derived model (single-click
+        to select; use your cursor/mouse to adjust the model length) ![apollo_2](./assets/dna_subway/apollo_2.png){width="420px" height="250px"}
 
 **C. Edit model for splice sites and variants** Protein and EST data can
 be used to examine possible alternative transcripts. Proteins give clues
@@ -305,7 +297,7 @@ relevant information about splice variants.
     -   Double-click to select the entire Augustus-derived model
     -   Right-click on the model to duplicate
     -   Make adjustments to the model as desired 
-    ![apollo_3](./img/dna_subway/apollo_3.png){width="420px" height="250px"}
+    ![apollo_3](./assets/dna_subway/apollo_3.png){width="420px" height="250px"}
 
 You also have the option of adding additional [EST evidence](https://en.wikipedia.org/wiki/Expressed_sequence_tag). For the Arabodopsis 75KB section, we have prepared a selection of EST data. You
 will need to **close Apollo to load this data**.
@@ -318,7 +310,7 @@ will need to **close Apollo to load this data**.
     Arabidopsis genome
 4.  Open 'Web Apollo'. The "Blastn User" track should be loaded.
     You may move this track to a convenient position on the browser
-    ![apollo_5](./img/dna_subway/apollo_5.png){width="420px" height="280px"}
+    ![apollo_5](./assets/dna_subway/apollo_5.png){width="420px" height="280px"}
 
 While EST evidence is always incomplete, these sequences can help you
 determine features of the gene model.
@@ -331,15 +323,15 @@ determine features of the gene model.
 adjustments, you can confirm that your gene model(s) represents the
 longest possible transcripts:
 
-1.  Double-click the model; right-click and select \'Set longest ORF\'
+1.  Double-click the model; right-click and select 'Set longest ORF'
 
 **E. Compare gene model(s) with existing annotations** After making your
 gene models you can compare them with existing annotations by turning on
-the \'Ensemble genes\' track. In this case, our work confirms the first
+the 'Ensemble genes' track. In this case, our work confirms the first
 gene model made, but a potential isoform supported by blastx data is
 likely incorrect.
 
-![apollo_4](./img/dna_subway/apollo_4.png){width="420px" height="150px"}
+![apollo_4](./assets/dna_subway/apollo_4.png){width="420px" height="150px"}
 
 ### **Example Exercise - Build Gene Models using Apollo: Arabodopsis ChrI**
 
@@ -353,8 +345,8 @@ the following *discussion questions* (the locations of the genes are
 given in parentheses and can be pasted into the browser):
 
 1.  Try annotation of the following genes and take notes on your
-    annotation ( right-click on the gene model, open the \'Information
-    Editor\' and scroll down to the comments section to enter
+    annotation ( right-click on the gene model, open the 'Information
+    Editor' and scroll down to the comments section to enter
     comments). How do your annotations compare with the Ensembl
     annotations?
     *Genes to try:*
