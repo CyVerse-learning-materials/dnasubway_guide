@@ -26,7 +26,7 @@ elements (TEs).
 ## DNA Subway Yellow Line - Create a Yellow Line Project
 
 1.  Log-in to [DNA Subway](https://dnasubway.cyverse.org/) -
-    unregistered users may \'Enter as Guest\'
+    unregistered users may 'Enter as Guest'
 2.  Click 'Prospect Genomes using TARGeT' (Yellow Square)
 3.  Select a sample sequence, or paste in a sequence to search for.
     
@@ -47,17 +47,17 @@ of DNA elements that impact the function of the genome.
 ## DNA Subway Yellow Line - Search Plant Genomes with TARGeT
 
 1.  Click and select the genome(s) you wish to search and the click;
-    \'Run\' to search those genomes.
-2.  Click the \'Alignment Viewer\' button to view the results of the
+    'Run' to search those genomes.
+2.  Click the 'Alignment Viewer' button to view the results of the
     search as a multiple alignment.
-3.  Click the \'Tree Viewer\' button to view a tree that will group
+3.  Click the 'Tree Viewer' button to view a tree that will group
     results by similarity.
 
 ??? tip "Viewer Tips"
     **Alignment Viewer** Generates an alignment of all search results
-    ![yellow_alignment](./img/dna_subway/yellow_alignment.png){width="420px" height="150px"}
+    ![yellow_alignment](./assets/dna_subway/yellow_alignment.png){width="420px" height="150px"}
     **Tree Viewer** Displays the results of sequence matches as a tree, grouped by sequence similarity
-    [yellow_tree](./img/dna_subway/yellow_tree.png){width="420px" height="300px"}
+    [yellow_tree](./assets/dna_subway/yellow_tree.png){width="420px" height="300px"}
 
 ??? Tip "Useful Definitions"
     - **Transposons (DNA, Retroviral, LINES):** Genetic elements which have the ability to be amplified and redistributed within a genome. 

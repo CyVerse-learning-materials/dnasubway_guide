@@ -1,5 +1,3 @@
-[Learning Center Home](http://learning.cyverse.org/)
-
 # Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics
 
 You can analyze relationships between DNA sequences by comparing them to
@@ -22,51 +20,45 @@ not represented in published databases like GenBank.
 
 ------------------------------------------------------------------------
 
-> ::: admonition
-> Sample data
->
-> **How to use provided sample data**
->
-> In this guide, we will use a mosquito dataset that includes DNA
-> sequences isolated from mosquito larvae collected from Virginia's
-> Shenandoah Valley (*\"Mosquito dataset\"*). There is a complete
-> two-hour classroom bioinformatics lab with detailed instructions for
-> instructors and students on QUBES hub
-> [here](https://qubeshub.org/qubesresources/publications/165/2). Where
-> appropriate, a note (in this orange colored background) in the
-> instructions will indicate which options to select to make use of this
-> provided dataset.
->
-> **Sample data citation**: Williams, J., Enke, R. A., Hyman, O.,
-> Lescak, E., Donovan, S. S., Tapprich, W., Ryder, E. F. (2018). Using
-> DNA Subway to Analyze Sequence Relationships. (Version 2.0). QUBES
-> Educational Resources.
-> [doi:10.25334/Q4J111](http://dx.doi.org/10.25334/Q4J111)
->
-> **Video Course**
->
-> Here is a video series on analyzing data with DNA Subway using the
-> above mosquito dataset and lesson:
->
-> > ```{=html}
-> > <div class="video-container">
-> > <iframe width="560" height="315" align="center"
-> > src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo"
-> > frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-> > gyroscope; picture-in-picture" allowfullscreen></iframe>
-> > </div>
-> > ```
-> :::
->
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> See a Course Source paper with protocols and recommendations for
-> implementing a Barcoding CURE (course-based undergraduate research
-> experience):
-> :::
+!!! Warning "Sample Data"
+
+        **How to use provided sample data**
+
+        In this guide, we will use a mosquito dataset that includes DNA
+        sequences isolated from mosquito larvae collected from Virginia's
+        Shenandoah Valley (*\"Mosquito dataset\"*). There is a complete
+        two-hour classroom bioinformatics lab with detailed instructions for
+        instructors and students on QUBES hub
+        [here](https://qubeshub.org/qubesresources/publications/165/2). Where
+        appropriate, a note (in this orange colored background) in the
+        instructions will indicate which options to select to make use of this
+        provided dataset.
+
+        **Sample data citation**: Williams, J., Enke, R. A., Hyman, O.,
+        Lescak, E., Donovan, S. S., Tapprich, W., Ryder, E. F. (2018). Using
+        DNA Subway to Analyze Sequence Relationships. (Version 2.0). QUBES
+        Educational Resources.
+        [doi:10.25334/Q4J111](http://dx.doi.org/10.25334/Q4J111)
+
+        **Video Course**
+
+        Here is a video series on analyzing data with DNA Subway using the
+        above mosquito dataset and lesson:
+
+        ```{=html}
+        <div class="video-container">
+        <iframe width="560" height="315" align="center"
+        src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTFqyPDG04Ed9EjrjaC_UTQo"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        ```
+
+        !!! Tip
+
+                See a Course Source paper with protocols and recommendations for
+                implementing a Barcoding CURE (course-based undergraduate research
+                experience):
 
 ## *DNA Subway Blue Line - Create a Barcoding Project*
 
