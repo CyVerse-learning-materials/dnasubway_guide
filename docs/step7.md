@@ -29,8 +29,7 @@ software in an R-Shiny app.
     
     **New, faster Green Line**
     
-    Green Line is now running on . This should greatly reduce queue
-    times (The entire running time for this tutorial is about 60
+    Green Line is now running on [Jestream Cloud](https://jetstream-cloud.org/). This should greatly reduce queue times (The entire running time for this tutorial is about 60
     minutes). We have designed Green Line for a lower number of
     concurrent users (<50), and still recommend teaching using jobs
     you have made public, and only running the entire workflow when
@@ -97,7 +96,8 @@ software in an R-Shiny app.
             *"Zika infected hNPCs"* dataset: Select **Homo sapiens - Ensembl 78 GrCh38**
 5.  Enter a project title, and description; click 'Continue'.
 
-    !!! Tip
+!!! Tip
+
         If you don't see a desired species/genome to have it added
 
 **B. Upload Read Data to CyVerse Data Store** The sequence read files
@@ -105,7 +105,7 @@ used in these experiments are too large to upload using the Subway
 internet interface. You must upload your files (either .fastq or
 .fastq.gz) directly to the CyVerse Data Store.
 
-1.  Upload your reads to the CyVerse Data Store using Cyberduck. See instructions: [Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/)
+1.  Upload your reads to the CyVerse Data Store using Cyberduck. See instructions: [Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/).
 
 !!! Note
         This step is not directly connected with DNA Subway. You can use any data uploaded to the CyVerse Data Store.
@@ -146,12 +146,11 @@ internet interface. You must upload your files (either .fastq or
          
          The SRR3191542 and SRR3191543 files are 2 replicates (paired-end) of the uninfected cells and the SRR3191544 and SRR3191545 file are from the Zika infected cells.
 
-
 4.  If working with paired-end reads, click the `Pair Mode OFF`{.interpreted-text role="guilabel"} button to toggle to on; check each pair of sequencing files to pair them.
 
     !!! Warning "Sample Data"
             
-            *"Zika infected hNPCs"* dataset: Right reads end in \"\_1\" and left reads end in \"\_2\". **Click the** `Pair Mode OFF`{.interpreted-text role="guilabel"} **button** to turn pairing on, and **check-select each of the paired samples** (e.g. SRR3191543_1.fastq.gz and SRR3191543_2.fastq.gz).
+            *"Zika infected hNPCs"* dataset: Right reads end in "_1" and left reads end in "_2". **Click the** `Pair Mode OFF`{.interpreted-text role="guilabel"} **button** to turn pairing on, and **check-select each of the paired samples** (e.g. SRR3191543_1.fastq.gz and SRR3191543_2.fastq.gz).
 
 **B. Check sequencing quality with FastQC**
 
@@ -170,7 +169,8 @@ for determining sequencing quality.
             than 20 minutes to complete (depending on file size) and you may need
             to let several jobs finish before proceeding. If you have previously
             processed reads for quality, you can skip the FastQC step.
-2.  One the jobs are complete, click the 'View' link to view the results.
+
+2\.  One the jobs are complete, click the 'View' link to view the results.
 
     !!! Tip
 
@@ -221,7 +221,7 @@ Kallisto analyses.
 
 1.  Click the "Quantification" step and enter a sample and condition name for each of your samples. You will typically have several replicates (at least 3 minimum) for each sample. For your condition, our implementation of the Kallisto/Sleuth workflow supports **two conditions**.
 
-    !!! Warning
+    !!! Danger "Warning"
             When naming your samples and conditions, avoid spaces and special
             characters (e.g. !#\$%\^&/, etc.). Also be sure to be consistent with spelling.
 
@@ -231,10 +231,10 @@ Kallisto analyses.
             We suggest the following names for this dataset:
             | Left/Right Pair | Sample name |Condition |
             | --- | --- | --- |
-            | SRR3191542_1.fastq.gz <br> SRR3191542_2.fastq.gz | Mock1-1 | Mock |
-            | SRR3191543_1.fastq.gz <br> SRR3191543_1.fastq.gz | Mock2-1 | Mock |
-            | SRR3191544_1.fastq.gz <br> SRR3191544_2.fastq.gz | ZIKV1-1 | Zika |
-            | SRR3191545_1.fastq.gz <br> SRR3191545_2.fastq.gz | ZIKV2-1 | Zika |
+            | SRR3191542_1.fastq.gz, SRR3191542_2.fastq.gz | Mock1-1 | Mock |
+            | SRR3191543_1.fastq.gz, SRR3191543_1.fastq.gz | Mock2-1 | Mock |
+            | SRR3191544_1.fastq.gz, SRR3191544_2.fastq.gz | ZIKV1-1 | Zika |
+            | SRR3191545_1.fastq.gz, SRR3191545_2.fastq.gz | ZIKV2-1 | Zika |
 
 2.  After naming the samples and conditions, click the `Submit`{.interpreted-text role="guilabel"} button to submit a job. Typically, within \~1 minute you will be provided with a job number. The job will be entered into the queue at the TACC Stampede supercomputing system. You can come back and click the Quantification stop to see the status of the job. The indication for the quantification stop will show "R" (running) while the job is running.
     
@@ -244,7 +244,6 @@ Kallisto analyses.
 
 !!! Tip
         You can select some of the advanced options for your Kallisto job by clicking the "Parameters" link in the Quantification stop. See more about these advanced parameters in the [Kallisto manual](https://pachterlab.github.io/kallisto/manual).
-
 
 ------------------------------------------------------------------------
 
