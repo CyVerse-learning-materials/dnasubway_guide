@@ -38,16 +38,10 @@ software in an R-Shiny app.
     
     <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-!!! Danger "Important: Discontinuing Support for Tuxedo Workflow"
+!!! Danger "Important: Discontinued Support for Tuxedo Workflow"
     
     The Tuxedo workflow previously implemented for the Green Line will
-    be removed in **June 2019**. After that time you will no longer be
-    able to use that workflow to analyze your data. Your data and
-    previously analyzed results will still be available on the CyVerse
-    Data Store. Until then, **you can still view and use the Tuexdo
-    workflow** by toggling between Kallisto and Tuexdo by selecting
-    the Workflow button in the Project Information menu at the bottom
-    of the Green Line page.
+    has been remove in **June 2019**. Data and previously analyzed results will still be available on the CyVerse Data Store, however it is not possible to execute new analyses which include Tuxuedo.
 
 ------------------------------------------------------------------------
 
@@ -287,20 +281,20 @@ which value to select, use the default 750MB option.
             instructions in the section below) to download your data (you will
             need the .bam and .bam.bai files) and download and install yourself.
 
-    *Internet Browser*
+            *Internet Browser*
 
-    We highly recommend using Firefox as your browser for DNA Subway. <br>
-    -   Verify your Java availability for your browser: [Java test](https://www.java.com/en/download/installed.jsp) <br>
-    -   Java must be [enabled](https://java.com/en/download/help/enable_browser.xml) in your browser
+            We highly recommend using Firefox as your browser for DNA Subway. <br>
+            -   Verify your Java availability for your browser: [Java test](https://www.java.com/en/download/installed.jsp) <br>
+            -   Java must be [enabled](https://java.com/en/download/help/enable_browser.xml) in your browser
 
-    *Java Configuration* <br>
-    -   Open the Java control panel on your computer. (On Mac, open System
-        Preferences > Java. On PC, open Control Panel > Programs >
-        Java.) <br>
-    -   Click the Security tab and check "Enable Java in the browser"
-        and set the security level for applications to "high". Add
-        "<http://dnasubway.cyverse.org>" and "<http://gfx.dnalc.org>"
-        to the "Exception Site List" in the Java Security tab.
+            *Java Configuration* <br>
+            -   Open the Java control panel on your computer. (On Mac, open System
+                Preferences > Java. On PC, open Control Panel > Programs >
+                Java.) <br>
+            -   Click the Security tab and check "Enable Java in the browser"
+                and set the security level for applications to "high". Add
+                "<http://dnasubway.cyverse.org>" and "<http://gfx.dnalc.org>"
+                to the "Exception Site List" in the Java Security tab.
 
 
 **Download Data - Abundance**
@@ -364,7 +358,7 @@ available.
 
 !!! Tip
 
-        Right-click a graph to download this and other images
+        Right-click a graph to download this and other images.
 
 **PCA**
 
