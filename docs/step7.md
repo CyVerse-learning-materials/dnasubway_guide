@@ -89,16 +89,16 @@ software in an R-Shiny app.
             
             *"Zika infected hNPCs"* dataset: Select **Paired End Reads**
 
-4.  For 'Select an Organism' select a species and genome build.
+4\.  For 'Select an Organism' select a species and genome build.
 
     !!! Warning "Sample Data"
             
             *"Zika infected hNPCs"* dataset: Select **Homo sapiens - Ensembl 78 GrCh38**
-5.  Enter a project title, and description; click 'Continue'.
+5\.  Enter a project title, and description; click 'Continue'.
 
 !!! Tip
 
-        If you don't see a desired species/genome to have it added
+        If you don't see a desired species/genome [contact us](https://dnasubway.cyverse.org/feedback.html) to have it added.
 
 **B. Upload Read Data to CyVerse Data Store** The sequence read files
 used in these experiments are too large to upload using the Subway
@@ -174,7 +174,7 @@ for determining sequencing quality.
 
     !!! Tip
 
-            You can see a description and explanation of the FastQC report on the CyVerse Learning Center and a more detailed set of explanations on the website.
+        You can see a description and explanation of the FastQC report on the CyVerse Learning Center and a more detailed set of explanations on the website.
 
 ------------------------------------------------------------------------
 
@@ -202,7 +202,7 @@ trimming and filtering, FastQC is run on the trimmed/filtered files.
          -   **quality_filter: minimum quality**: 20
          -   **quality_filter: minimum quality**: 50
 
-3.  Once the job completes, click the \'View\' link to view a generated FastQC report.
+3.  Once the job completes, click the 'View' link to view a generated FastQC report.
 4.  Since you may trim reads multiple times to achieve the desired quality of data record the job IDs (e.g. fx####) that you wish to use in the subsequent steps.
 
 ------------------------------------------------------------------------
@@ -229,12 +229,13 @@ Kallisto analyses.
             
             *"Zika infected hNPCs"* dataset: <br>
             We suggest the following names for this dataset:
+
             | Left/Right Pair | Sample name | Condition |
             | --- | --- | --- |
-            | SRR3191542_1.fastq.gz, SRR3191542_2.fastq.gz | Mock1-1 | Mock |
-            | SRR3191543_1.fastq.gz, SRR3191543_1.fastq.gz | Mock2-1 | Mock |
-            | SRR3191544_1.fastq.gz, SRR3191544_2.fastq.gz | ZIKV1-1 | Zika |
-            | SRR3191545_1.fastq.gz, SRR3191545_2.fastq.gz | ZIKV2-1 | Zika |
+            | SRR3191542_1.fastq.gz <br> SRR3191542_2.fastq.gz | Mock1-1 | Mock |
+            | SRR3191543_1.fastq.gz <br> SRR3191543_1.fastq.gz | Mock2-1 | Mock |
+            | SRR3191544_1.fastq.gz <br> SRR3191544_2.fastq.gz | ZIKV1-1 | Zika |
+            | SRR3191545_1.fastq.gz <br> SRR3191545_2.fastq.gz | ZIKV2-1 | Zika |
 
 2.  After naming the samples and conditions, click the `Submit`{.interpreted-text role="guilabel"} button to submit a job. Typically, within \~1 minute you will be provided with a job number. The job will be entered into the queue at the TACC Stampede supercomputing system. You can come back and click the Quantification stop to see the status of the job. The indication for the quantification stop will show "R" (running) while the job is running.
     
@@ -264,7 +265,7 @@ differential expression results.
         IGV visualization will only be possible if you have built pseudo-bam
         files in the Kallisto step.
 
-1. Click the icon in the "IGV" column to view a visualization of
+Click the icon in the "IGV" column to view a visualization of
 your reads pseudoaligned to the reference transcriptome. You will need
 to click the `Make it public`{.interpreted-text role="guilabel"}
 button (and possibly be re-directed to the CyVerse Discovery
@@ -279,23 +280,25 @@ which value to select, use the default 750MB option.
             security reasons on the internet.
 
         !!! Tip "**Java Help**"
-        Java must be available and enabled in your Internet browser to use the
-        IGV function. Java frequently is the source of security
-        vulnerabilities and so its not uncommon to experience configuration
-        issues due to safety. Follow the tips below to configure Java for your
-        computer. Alternatively, you can use the Download link (see
-        instructions in the section below) to download your data (you will
-        need the .bam and .bam.bai files) and download and install yourself.
+
+                Java must be available and enabled in your Internet browser to use the
+                IGV function. Java frequently is the source of security
+                vulnerabilities and so its not uncommon to experience configuration
+                issues due to safety. Follow the tips below to configure Java for your
+                computer. Alternatively, you can use the Download link (see
+                instructions in the section below) to download your data (you will
+                need the .bam and .bam.bai files) and download and install yourself.
 
         *Internet Browser*
-        We highly recommend using Firefox as your browser for DNA Subway.
-        -   Verify your Java availability for your browser: [Java test](https://www.java.com/en/download/installed.jsp)
+
+        We highly recommend using Firefox as your browser for DNA Subway. <br>
+        -   Verify your Java availability for your browser: [Java test](https://www.java.com/en/download/installed.jsp) <br>
         -   Java must be [enabled](https://java.com/en/download/help/enable_browser.xml) in your browser
 
-        *Java Configuration*
+        *Java Configuration* <br>
         -   Open the Java control panel on your computer. (On Mac, open System
             Preferences > Java. On PC, open Control Panel > Programs >
-            Java.)
+            Java.) <br>
         -   Click the Security tab and check "Enable Java in the browser"
             and set the security level for applications to "high". Add
             "<http://dnasubway.cyverse.org>" and "<http://gfx.dnalc.org>"
@@ -304,12 +307,12 @@ which value to select, use the default 750MB option.
 
 **Download Data - Abundance**
 
-1.  Click the folder icon to be redirected to the CyVerse Discovery
-    Environment (you may be required to log in). You will be directed
-    to all outputs from you Kallisto analysis. You may preview them in
-    the Discovery Environment or use the path listed to download the
-    files using Cyberduck (see [Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/)). A tab-separated file of abundances
-    for each sequence pair is available at the download link.
+Click the folder icon to be redirected to the CyVerse Discovery
+Environment (you may be required to log in). You will be directed
+to all outputs from you Kallisto analysis. You may preview them in
+the Discovery Environment or use the path listed to download the
+files using Cyberduck (see [Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/)). A tab-separated file of abundances
+for each sequence pair is available at the download link.
 
 ------------------------------------------------------------------------
 
@@ -324,69 +327,68 @@ Click the "Sleuth R Shiny" link to launch an interactive window which contains d
     results as generated by the . We will cover highlights to for each
     menu in the app.
 
-    ??? tip "data transfer timings"
-
-            It can take a few minutes for data to be transferred to the R
-            Shiny server after the quantification step completes. If R Shiny
-            does not load, try again in a few minutes. If you still have an
-            issue, use the link and include your project number in the
-            feedback form.
+??? tip "data transfer timings"
+        It can take a few minutes for data to be transferred to the R
+        Shiny server after the quantification step completes. If R Shiny
+        does not load, try again in a few minutes. If you still have an
+        issue, use the link and include your project number in the
+        feedback form.
 
 **Results Menu**
     ![sleuth_results_1](./assets/dna_subway/sleuth_results_1.png){width="800px" height="400px"}
 
-    This menu is an interactive table of your results. You can choose
-    which columns to display in the table using the checkboxes on the
-    left of the screen. Several important values selected by default
-    include:
+This menu is an interactive table of your results. You can choose
+which columns to display in the table using the checkboxes on the
+left of the screen. Several important values selected by default
+include:
 
-    - **Target_id**: This is the name of the transcript (gene) from the selected reference transcriptome.
-    - **qval**: This is a corrected (for multiple testing) p-value indicating the significance test of differential abundance. Lower numbers indicate greater significance.
-    - **b**: This is an estimate of the fold change between the conditions
-    - **ext_gene**: If available, these are gene names pulled from Ensemble
+- **Target_id**: This is the name of the transcript (gene) from the selected reference transcriptome.
+- **qval**: This is a corrected (for multiple testing) p-value indicating the significance test of differential abundance. Lower numbers indicate greater significance.
+- **b**: This is an estimate of the fold change between the conditions
+- **ext_gene**: If available, these are gene names pulled from Ensemble
 
-    !!! Tip
+!!! Tip
 
-            Click the `Download`{.interpreted-text role="guilabel"} button to download these results.
+        Click the `Download`{.interpreted-text role="guilabel"} button to download these results.
 
 **Bootstrap**
     ![sleuth_bootstrap_1](./assets/dna_subway/sleuth_bootstrap_1.png){width="800px" height="400px"}
 
-    This menu will display a box plot that indicates the difference in
-    expression between conditions. The box plots themselves indicate
-    variation between replicates as estimated by bootstrap sampling of
-    the reads. A dropbox enables you to select any transcript.
-    Clicking the "Show genes" will load alternative gene names if
-    available.
+This menu will display a box plot that indicates the difference in
+expression between conditions. The box plots themselves indicate
+variation between replicates as estimated by bootstrap sampling of
+the reads. A dropbox enables you to select any transcript.
+Clicking the "Show genes" will load alternative gene names if
+available.
 
-    !!! Tip
+!!! Tip
 
-            Right-click a graph to download this and other images
+        Right-click a graph to download this and other images
 
 **PCA**
     ![sleuth_pca_1](./assets/dna_subway/sleuth_pca_1.png){width="800px" height="400px"}
 
-    This graph displays principle components of each of the
-    conditions/replicates. In general replicates of the same condition
-    should cluster closely together.
+This graph displays principle components of each of the
+conditions/replicates. In general replicates of the same condition
+should cluster closely together.
 
 **Volcano Plot**
-    ![sleuth_volcano_1](./img/dna_subway/sleuth_volcano_1.png){width="800px" height="400px"}
+    ![sleuth_volcano_1](./assets/dna_subway/sleuth_volcano_1.png){width="800px" height="400px"}
 
-    This scatter plot displays all transcripts colored by significance
-    of differential abundance. You may also use menu on the left of
-    the screen to highlight specific genes/transcripts or previously
-    set filters from the results menu.
+This scatter plot displays all transcripts colored by significance
+of differential abundance. You may also use menu on the left of
+the screen to highlight specific genes/transcripts or previously
+set filters from the results menu.
 
 **Loadings**
-    ![sleuth_loadings_1](./img/dna_subway/sleuth_loadings_1.png){width="800px" height="400px"}
+    ![sleuth_loadings_1](./assets/dna_subway/sleuth_loadings_1.png){width="800px" height="400px"}
 
-    This barplot indicates which genes/transcripts explain most of the variance computed in the principle components analysis.
+This barplot indicates which genes/transcripts explain most of the variance computed in the principle components analysis.
 
 **Heatmap**
-    ![sleuth_heatmap_1](./img/dna_subway/sleuth_heatmap_1.png){width="800px" height="400px"}
+    ![sleuth_heatmap_1](./assets/dna_subway/sleuth_heatmap_1.png){width="800px" height="400px"}
     
-    This heatmap gives a measure of the similarity between the possible comparison of the samples and their replicates.
+This heatmap gives a measure of the similarity between the possible comparison of the samples and their replicates.
 
 ------------------------------------------------------------------------
 
