@@ -62,6 +62,7 @@ not represented in published databases like GenBank.
 2. Choose a project type: <br>
     **- Phylogenetics**: build phylogenetic trees from any DNA, protein, or mtDNA sequence) <br>
     **- Barcoding**: DNA Barcoding for plants (rbcL), animals (COI), bacteria (16S), and fungi (ITS).
+    
     !!! Warning "Sample Data"
             
             *"Mosquito"* dataset: Select **COI**.
@@ -170,7 +171,6 @@ able to include or exclude individual sequences within the set in the
 next step.
 
 1.  Click 'Reference Data.'
-
 2.  Select sequences of your choice.
 3.  Click `Add ref data`{.interpreted-text role="guilabel"} to add
     the data to your project.
@@ -191,11 +191,12 @@ next step.
     !!! Warning "Sample Data"
 
             *"Mosquito"* dataset: We suggest first adding your \"user data\" and building an alignment and tree. You can return to this step later to build additional trees. Once Selected, click `Save Selections`{.interpreted-text role="guilabel"}. Follow the rest of the steps in this section and section B to create your tree.
+
 3.  Click `Save Selections`{.interpreted-text role="guilabel"} to select data
 4.  Click 'MUSCLE.' to run the MUSCLE program.
 5.  Click 'MUSCLE' again to open the sequence alignment window.
     ![blue_align](./assets/dna_subway/blue_align.png){width="400px" height="200px"}
-6.  Examine the alignment and then select the `Trim Alignment`{.interpreted-text role="guilabel"} button in the upper-left of the Alignment viewer\'
+6.  Examine the alignment and then select the `Trim Alignment`{.interpreted-text role="guilabel"} button in the upper-left of the Alignment viewer'.
 
 **B. Build phylogenetic tree**
 

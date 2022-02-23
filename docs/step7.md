@@ -16,55 +16,41 @@ software in an R-Shiny app.
 **Some things to remember about the platform**
 
 -   You must be a registered CyVerse user to use Green Line.
-
 -   The Green Line was designed to make RNA-Seq data analysis
-    \"simple\". However, we ask that users thoughtfully decide what
-    \"jobs\" they want to submit. **Each user is limited to a maximum of
+    "simple". However, we ask that users thoughtfully decide what
+    "jobs" they want to submit. **Each user is limited to a maximum of
     4 concurrent jobs running on Green Line**.
-
 -   A single Green Line project may take a week to process since HPC
     computing is subject to queues which hundreds of other jobs may be
     staging for. Additionally these systems undergo regular maintenance
     and are subject to periodic disruption.
 
-    > ::: note
-    > ::: title
-    > Note
-    > :::
-    >
-    > **New, faster Green Line**
-    >
-    > Green Line is now running on . This should greatly reduce queue
-    > times (The entire running time for this tutorial is about 60
-    > minutes). We have designed Green Line for a lower number of
-    > concurrent users (\<50), and still recommend teaching using jobs
-    > you have made public, and only running the entire workflow when
-    > you are working with novel data. Please let us know about your
-    > experience .
-    >
-    > ```{=html}
-    > <div class="video-container">
-    > <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    > </div>
-    > ```
-    > :::
-    >
-    > ::: note
-    > ::: title
-    > Note
-    > :::
-    >
-    > **Discontinuing support for Tuxedo workflow**
-    >
-    > The Tuxedo workflow previously implemented for the Green Line will
-    > be removed in **June 2019**. After that time you will no longer be
-    > able to use that workflow to analyze your data. Your data and
-    > previously analyzed results will still be available on the CyVerse
-    > Data Store. Until then, **you can still view and use the Tuexdo
-    > workflow** by toggling between Kallisto and Tuexdo by selecting
-    > the Workflow button in the Project Information menu at the bottom
-    > of the Green Line page.
-    > :::
+!!! Note
+    
+    **New, faster Green Line**
+    
+    Green Line is now running on . This should greatly reduce queue
+    times (The entire running time for this tutorial is about 60
+    minutes). We have designed Green Line for a lower number of
+    concurrent users (<50), and still recommend teaching using jobs
+    you have made public, and only running the entire workflow when
+    you are working with novel data. Please let us know about your
+    experience: [send feedback](https://dnasubway.cyverse.org/feedback.html).
+    
+    <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+!!! Note "Important"
+    
+    **Discontinuing support for Tuxedo workflow**
+    
+    The Tuxedo workflow previously implemented for the Green Line will
+    be removed in **June 2019**. After that time you will no longer be
+    able to use that workflow to analyze your data. Your data and
+    previously analyzed results will still be available on the CyVerse
+    Data Store. Until then, **you can still view and use the Tuexdo
+    workflow** by toggling between Kallisto and Tuexdo by selecting
+    the Workflow button in the Project Information menu at the bottom
+    of the Green Line page.
 
 ------------------------------------------------------------------------
 
