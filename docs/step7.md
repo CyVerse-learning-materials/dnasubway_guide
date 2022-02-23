@@ -229,7 +229,7 @@ Kallisto analyses.
             
             *"Zika infected hNPCs"* dataset: <br>
             We suggest the following names for this dataset:
-            | Left/Right Pair | Sample name |Condition |
+            | Left/Right Pair | Sample name | Condition |
             | --- | --- | --- |
             | SRR3191542_1.fastq.gz, SRR3191542_2.fastq.gz | Mock1-1 | Mock |
             | SRR3191543_1.fastq.gz, SRR3191543_1.fastq.gz | Mock2-1 | Mock |
@@ -243,220 +243,164 @@ Kallisto analyses.
             *"Zika infected hNPCs"* dataset: Under parameters **uncheck** the *Build pseudo-bam files* option.
 
 !!! Tip
+
         You can select some of the advanced options for your Kallisto job by clicking the "Parameters" link in the Quantification stop. See more about these advanced parameters in the [Kallisto manual](https://pachterlab.github.io/kallisto/manual).
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Green Line: Kallisto/Sleuth- Visualize data using IGV*
+## DNA Subway Green Line: Kallisto/Sleuth- Visualize data using IGV
 
-In the \"View Results\" steps you have access to alignment
+In the "View Results" steps you have access to alignment
 visualizations, data download, and interactive visualization of your
 differential expression results.
 
-> 1.  Click the \"View results\" step and choose one of the following
->     options:
+1.  Click the "View results" step and choose one of the following
+    options:
 
 **IVG - Integrated Genome Viewer**
 
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> IGV visualization will only be possible if you have built pseudo-bam
-> files in the Kallisto step.
-> :::
->
-> 1\. Click the icon in the \"IGV\" column to view a visualization of
-> your reads pseudoaligned to the reference transcriptome. You will need
-> to click the `&Make it public`{.interpreted-text role="guilabel"}
-> button (and possibly be re-directed to the CyVerse Discovery
-> Environment). After making the data \"public\" which allows DNA Subway
-> to access your files on the CyVerse Data Store, you must also select a
-> memory size to launch this Java application. If you are not sure of
-> which value to select, use the default 750MB option.
->
-> ::: warning
-> ::: title
-> Warning
-> :::
->
-> Using IGV requires Java software. Java is increasingly unsupported for
-> security reasons on the internet.
-> :::
->
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> **Java Help**
->
-> Java must be available and enabled in your Internet browser to use the
-> IGV function. Java frequently is the source of security
-> vulnerabilities and so its not uncommon to experience configuration
-> issues due to safety. Follow the tips below to configure Java for your
-> computer. Alternatively, you can use the Download link (see
-> instructions in the section below) to download your data (you will
-> need the .bam and .bam.bai files) and download and install yourself.
->
-> *Internet Browser*
->
-> We highly recommend using Firefox as your browser for DNA Subway.
->
-> -   Verify your Java availability for your browser:
-> -   Java must be in your browser
->
-> *Java Configuration*
->
-> -   Open the Java control panel on your computer. (On Mac, open System
->     Preferences \> Java. On PC, open Control Panel \> Programs \>
->     Java.)
-> -   Click the Security tab and check \"Enable Java in the browser\"
->     and set the security level for applications to \"high\". Add
->     \"<http://dnasubway.cyverse.org>\" and \"<http://gfx.dnalc.org>\"
->     to the \"Exception Site List\" in the Java Security tab.
-> :::
+!!! Tip
+
+        IGV visualization will only be possible if you have built pseudo-bam
+        files in the Kallisto step.
+
+1. Click the icon in the "IGV" column to view a visualization of
+your reads pseudoaligned to the reference transcriptome. You will need
+to click the `Make it public`{.interpreted-text role="guilabel"}
+button (and possibly be re-directed to the CyVerse Discovery
+Environment). After making the data "public" which allows DNA Subway
+to access your files on the CyVerse Data Store, you must also select a
+memory size to launch this Java application. If you are not sure of
+which value to select, use the default 750MB option.
+
+    !!! Warning
+
+            Using IGV requires Java software. Java is increasingly unsupported for
+            security reasons on the internet.
+
+        !!! Tip "**Java Help**"
+        Java must be available and enabled in your Internet browser to use the
+        IGV function. Java frequently is the source of security
+        vulnerabilities and so its not uncommon to experience configuration
+        issues due to safety. Follow the tips below to configure Java for your
+        computer. Alternatively, you can use the Download link (see
+        instructions in the section below) to download your data (you will
+        need the .bam and .bam.bai files) and download and install yourself.
+
+        *Internet Browser*
+        We highly recommend using Firefox as your browser for DNA Subway.
+        -   Verify your Java availability for your browser: [Java test](https://www.java.com/en/download/installed.jsp)
+        -   Java must be [enabled](https://java.com/en/download/help/enable_browser.xml) in your browser
+
+        *Java Configuration*
+        -   Open the Java control panel on your computer. (On Mac, open System
+            Preferences > Java. On PC, open Control Panel > Programs >
+            Java.)
+        -   Click the Security tab and check "Enable Java in the browser"
+            and set the security level for applications to "high". Add
+            "<http://dnasubway.cyverse.org>" and "<http://gfx.dnalc.org>"
+            to the "Exception Site List" in the Java Security tab.
+
 
 **Download Data - Abundance**
 
-> 1.  Click the folder icon to be redirected to the CyVerse Discovery
->     Environment (you may be required to log in). You will be directed
->     to all outputs from you Kallisto analysis. You may preview them in
->     the Discovery Environment or use the path listed to download the
->     files using Cyberduck (see ). A tab-separated file of abundances
->     for each sequence pair is available at the download link.
+1.  Click the folder icon to be redirected to the CyVerse Discovery
+    Environment (you may be required to log in). You will be directed
+    to all outputs from you Kallisto analysis. You may preview them in
+    the Discovery Environment or use the path listed to download the
+    files using Cyberduck (see [Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/)). A tab-separated file of abundances
+    for each sequence pair is available at the download link.
 
-## *DNA Subway Green Line: Kallisto/Sleuth- Visualize data using Sleuth*
+------------------------------------------------------------------------
+
+## DNA Subway Green Line: Kallisto/Sleuth- Visualize data using Sleuth
 
 **Differential analysis - Shiny App**
 
-> 1.  Click the \"Sleuth R Shiny\" link to launch an interactive window
->     which contains data and graphics from your analysis.
->
->     **R Shiny App Walkthrough**
->
->     The R Shiny App allows you to explore your differential expression
->     results as generated by the . We will cover highlights to for each
->     menu in the app.
->
->     > ::: tip
->     > ::: title
->     > Tip
->     > :::
->     >
->     > It can take a few minutes for data to be transferred to the R
->     > Shiny server after the quantification step completes. If R Shiny
->     > does not load, try again in a few minutes. If you still have an
->     > issue, use the link and include your project number in the
->     > feedback form.
->     > :::
->
->     **Results Menu**
->
->     ![sleuth_results_1](./img/dna_subway/sleuth_results_1.png){width="800px"
->     height="400px"}
->
->     This menu is an interactive table of your results. You can choose
->     which columns to display in the table using the checkboxes on the
->     left of the screen. Several important values selected by default
->     include:
->
-> > -   **Target_id**: This is the name of the transcript (gene) from
-> >     the selected reference transcriptome.
-> >
-> > -   **qval**: This is a corrected (for multiple testing) p-value
-> >     indicating the significance test of differential abundance.
-> >     Lower numbers indicate greater significance.
-> >
-> > -   **b**: This is an estimate of the fold change between the
-> >     conditions
-> >
-> > -   **ext_gene**: If available, these are gene names pulled from
-> >     Ensemble
-> >
-> >     > ::: tip
-> >     > ::: title
-> >     > Tip
-> >     > :::
-> >     >
-> >     > Click the `&Download`{.interpreted-text role="guilabel"}
-> >     > button to download these results.
-> >     > :::
-> >
-> > > **Bootstrap**
-> > >
-> > > ![sleuth_bootstrap_1](./img/dna_subway/sleuth_bootstrap_1.png){width="800px"
-> > > height="400px"}
-> > >
-> > > This menu will display a box plot that indicates the difference in
-> > > expression between conditions. The box plots themselves indicate
-> > > variation between replicates as estimated by bootstrap sampling of
-> > > the reads. A dropbox enables you to select any transcript.
-> > > Clicking the \"Show genes\" will load alternative gene names if
-> > > available.
-> > >
-> > > > ::: tip
-> > > > ::: title
-> > > > Tip
-> > > > :::
-> > > >
-> > > > Right-click a graph to download this and other images
-> > > > :::
-> > >
-> > > **PCA**
-> > >
-> > > ![sleuth_pca_1](./img/dna_subway/sleuth_pca_1.png){width="800px"
-> > > height="400px"}
-> > >
-> > > This graph displays principle components of each of the
-> > > conditions/replicates. In general replicates of the same condition
-> > > should cluster closely together.
-> > >
-> > > **Volcano Plot**
-> > >
-> > > ![sleuth_volcano_1](./img/dna_subway/sleuth_volcano_1.png){width="800px"
-> > > height="400px"}
-> > >
-> > > This scatter plot displays all transcripts colored by significance
-> > > of differential abundance. You may also use menu on the left of
-> > > the screen to highlight specific genes/transcripts or previously
-> > > set filters from the results menu.
-> > >
-> > > **Loadings**
-> > >
-> > > ![sleuth_loadings_1](./img/dna_subway/sleuth_loadings_1.png){width="800px"
-> > > height="400px"}
-> > >
-> > > This barplot indicates which genes/transcripts explain most of the
-> > > variance computed in the principle components analysis.
-> > >
-> > > **Heatmap**
-> > >
-> > > ![sleuth_heatmap_1](./img/dna_subway/sleuth_heatmap_1.png){width="800px"
-> > > height="400px"}
-> > >
-> > > This heatmap gives a measure of the similarity between the
-> > > possible comparison of the samples and their replicates.
+1.  Click the "Sleuth R Shiny" link to launch an interactive window
+    which contains data and graphics from your analysis.
+
+    **R Shiny App Walkthrough**
+        The R Shiny App allows you to explore your differential expression
+        results as generated by the . We will cover highlights to for each
+        menu in the app.
+
+        ??? tip "data transfer timings"
+
+                It can take a few minutes for data to be transferred to the R
+                Shiny server after the quantification step completes. If R Shiny
+                does not load, try again in a few minutes. If you still have an
+                issue, use the link and include your project number in the
+                feedback form.
+
+    **Results Menu**
+        ![sleuth_results_1](./assets/dna_subway/sleuth_results_1.png){width="800px" height="400px"}
+
+        This menu is an interactive table of your results. You can choose
+        which columns to display in the table using the checkboxes on the
+        left of the screen. Several important values selected by default
+        include:
+
+        - **Target_id**: This is the name of the transcript (gene) from the selected reference transcriptome.
+        - **qval**: This is a corrected (for multiple testing) p-value indicating the significance test of differential abundance. Lower numbers indicate greater significance.
+        - **b**: This is an estimate of the fold change between the conditions
+        - **ext_gene**: If available, these are gene names pulled from Ensemble
+
+        !!! Tip
+
+                Click the `Download`{.interpreted-text role="guilabel"} button to download these results.
+
+    **Bootstrap**
+        ![sleuth_bootstrap_1](./assets/dna_subway/sleuth_bootstrap_1.png){width="800px" height="400px"}
+
+        This menu will display a box plot that indicates the difference in
+        expression between conditions. The box plots themselves indicate
+        variation between replicates as estimated by bootstrap sampling of
+        the reads. A dropbox enables you to select any transcript.
+        Clicking the "Show genes" will load alternative gene names if
+        available.
+
+        !!! Tip
+
+                Right-click a graph to download this and other images
+
+    **PCA**
+        ![sleuth_pca_1](./assets/dna_subway/sleuth_pca_1.png){width="800px" height="400px"}
+
+        This graph displays principle components of each of the
+        conditions/replicates. In general replicates of the same condition
+        should cluster closely together.
+
+    **Volcano Plot**
+        ![sleuth_volcano_1](./img/dna_subway/sleuth_volcano_1.png){width="800px" height="400px"}
+
+        This scatter plot displays all transcripts colored by significance
+        of differential abundance. You may also use menu on the left of
+        the screen to highlight specific genes/transcripts or previously
+        set filters from the results menu.
+    
+    **Loadings**
+        ![sleuth_loadings_1](./img/dna_subway/sleuth_loadings_1.png){width="800px" height="400px"}
+
+        This barplot indicates which genes/transcripts explain most of the variance computed in the principle components analysis.
+ 
+    **Heatmap**
+        ![sleuth_heatmap_1](./img/dna_subway/sleuth_heatmap_1.png){width="800px" height="400px"}
+        
+        This heatmap gives a measure of the similarity between the possible comparison of the samples and their replicates.
 
 ------------------------------------------------------------------------
 
 **Summary**: Together, Kallisto and Sleuth are quick, powerful ways to
 analyze RNA-Seq data.
 
-### More help and additional information
-
-Post your question to the user forum:
-
-:   
-
 ------------------------------------------------------------------------
 
 **Fix or improve this documentation**
 
--   Search for an answer:
--   Ask us for help: click on the lower right-hand side of the page
--   Report an issue or submit a change:
--   Send feedback: [Tutorials@CyVerse.org](Tutorials@CyVerse.org)
+-   Search for an answer: [CyVerse Learning Center](https://cyverse-learning-materials.github.io/learning-materials-home)
+-   Ask us for help: click the Intercom icon ![Intercom](../assets/intercom.png){ width="25" } on the lower right-hand side of the page
+-   Report an issue or submit a change: [Github Repo](https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide)
+-   Send feedback: [learning@CyVerse.org](learning@CyVerse.org)
 
 ------------------------------------------------------------------------
