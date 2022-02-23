@@ -2,7 +2,7 @@
 
 !!! Danger "BETA RELEASE"
 
-        The Purple line is in beta release. Please send feedback to [DNALC Admin](mailto:dnalcadmin@cshl.edu)
+        The Purple line is in beta release. Please send feedback to [DNALC Admin](mailto:dnalcadmin@cshl.edu).
 
 The Purple Line provides the capability for analysis of microbiome and
 eDNA (environmental DNA) by implementing a simplified version of the [QIIME 2](https://qiime2.org/)
@@ -170,49 +170,28 @@ must be fixed.
 
 See [DNA Subway Purple Line - Metadata and QC](#dna-subway-purple-line---metadata-and-qc) section C.
 
-## *DNA Subway Purple Line - Create a Microbiome Analysis Project*
+## DNA Subway Purple Line - Create a Microbiome Analysis Project
 
 **A. Create a project in Subway**
 
-> 1.  Log-in to DNA Subway (unregistered users may NOT use Purple Line,
->     register for a CyVerse account at )
-> 2.  Click the purple square (\"Microbiome Analysis\") to begin a
->     project.
-> 3.  For \'Select Project Type\' select either **Single End Reads** or
->     **Paired End Reads**
->
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > Select **Single End Reads**
-> > :::
->
-> 4.  For \'Select File Format\' select the format the corresponds to
->     your sequence metadata.
->
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > Select **Illumina Casava 1.8**
-> > :::
-> >
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > Typically, microbiome/eDNA will be in the form of multiplexed FastQ
-> > sequences. We support the following formats:
-> >
-> > -   
-> > :::
->
-> 5.  Enter a project title, and description; click
->     `&Continue`{.interpreted-text role="guilabel"}.
+1.  Log-in to DNA Subway (unregistered users may NOT use Purple Line,
+    register for a CyVerse account at user.cyverse.org).
+2.  Click the purple square ("Microbiome Analysis") to begin a
+    project.
+3.  For 'Select Project Type' select either **Single End Reads** or
+    **Paired End Reads**
+
+    !!! Warning "Sample Data"
+            *"ubiome-test-data"* dataset: Select **Single End Reads**
+4.  For 'Select File Format' select the format the corresponds to
+     your sequence metadata.
+    !!! Warning "Sample Data"
+            *"ubiome-test-data"* dataset: Select **Illumina Casava 1.8**
+    !!! Tip
+            Typically, microbiome/eDNA will be in the form of multiplexed FastQ sequences. We support the following formats:
+            
+            - Illumina Casava 1.8  
+5.  Enter a project title, and description; click `Continue`{.interpreted-text role="guilabel"}.
 
 **B. Upload read data to CyVerse Data Store**
 
@@ -220,14 +199,13 @@ The sequence read files used in these experiments are too large to
 upload using the Subway interface. You must upload your files (either
 .fastq or .fastq.gz) directly to the CyVerse Data Store:
 
-> 1.  Upload your
->     -   FASTQ sequence reads
->     -   Sample metadata file (.tsv or .txt formatted according to ) to
->         the CyVerse Data Store using Cyberduck. See instructions: .
->
-> > (Optional: You can edit and change metadata using the Subway
-> > interface in the [Manage data]{.title-ref} step once the project is
-> > created.)
+1.  Upload your
+    -   FASTQ sequence reads;
+    -   Sample metadata file (.tsv or .txt formatted according to [QIIME 2 Metadata documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/)) to
+        the CyVerse Data Store using Cyberduck. See instructions: [CyVerse Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/).
+(Optional: You can edit and change metadata using the Subway
+interface in the [Manage data]{.title-ref} step once the project is
+created.)
 
 ------------------------------------------------------------------------
 

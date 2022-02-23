@@ -39,7 +39,7 @@ software in an R-Shiny app.
 !!! Danger "Important: Discontinued Support for Tuxedo Workflow"
     
     The Tuxedo workflow previously implemented for the Green Line will
-    has been remove in **June 2019**. Data and previously analyzed results will still be available on the CyVerse Data Store, however it is not possible to execute new analyses which include Tuxuedo.
+    has been removed in **June 2019**. Data and previously analyzed results will still be available on the CyVerse Data Store, however it is not possible to execute new analyses which include Tuxuedo.
 
 ------------------------------------------------------------------------
 
