@@ -1,12 +1,11 @@
 # Walkthrough of DNA Subway Purple Line (beta testing documentation)
 
-!!! Danger "Important"
+!!! Danger "BETA RELEASE"
 
-        **Beta Release:** Purple line is in beta release. Please send feedback
-        to [DNALC Admin](mailto:dnalcadmin@cshl.edu)
+        The Purple line is in beta release. Please send feedback to [DNALC Admin](mailto:dnalcadmin@cshl.edu)
 
 The Purple Line provides the capability for analysis of microbiome and
-eDNA (environmental DNA) by implementing a simplified version of the
+eDNA (environmental DNA) by implementing a simplified version of the [QIIME 2](https://qiime2.org/)
 (pronounced "chime two") workflow. Using the Purple Line, you can
 analyze uploaded high throughput sequencing reads to identify species in
 microbial or environmental DNA samples.
@@ -21,7 +20,7 @@ different samples. The analysis requires specialized software, such as
 QIIME 2.
 
 The Purple Line integrates sequence data and metadata imported from
-CyVerse\'s Data Store, demultiplexing of samples, quality control, and
+CyVerse's Data Store, demultiplexing of samples, quality control, and
 taxonomic identification and quantitation. Once sequences are analyzed,
 the results can be visualized to allow comparisons between samples and
 different conditions summarized in the metadata.
@@ -29,7 +28,7 @@ different conditions summarized in the metadata.
 **Some things to remember about the platform**
 
 -   You must be a registered CyVerse user to use Purple Line (register
-    for a CyVerse account at )
+    for a CyVerse account at user.cyverse.org).
 -   The Purple line was designed to make microbiome/eDNA data analysis
     "simple". However, we ask that users very carefully and
     thoughtfully decide what "jobs" they want to submit.
@@ -37,9 +36,9 @@ different conditions summarized in the metadata.
     computing is subject to queues which may support hundreds of other
     jobs. These systems also undergo regular maintenance and are subject
     to periodic disruption.
--   DNA Subway implements the software. This software is in continual
+-   DNA Subway implements the [QIIME 2](https://qiime2.org/) software. This software is in continual
     development. Our version may not be the most current, and our
-    documentation and explanation is not meant to replace the full .
+    documentation and explanation is not meant to replace the full [QIIME 2 documentation](https://docs.qiime2.org/2018.8/).
 -   We have made design decisions to create a straightforward
     classroom-friendly workflow. While this Subway Line does not have
     all possible features of QIIME 2, we purpose to cover important
@@ -47,9 +46,7 @@ different conditions summarized in the metadata.
 
 ------------------------------------------------------------------------
 
-!!! Warning "Sample Data"
-
-        **How to use provided sample data**
+!!! Warning "Sample Data: How to use provided sample data"
         
         In this guide, we will use a microbiome dataset (*"ubiome-test-data"*) collected from various
         water sources in Montana (down-sampled and de-identified).Where
@@ -65,10 +62,10 @@ metadata file that describes the data contained in these sequencing
 files. This metadata must conform to strict guidelines, or analyses will
 fail. QIIME 2 metadata is stored in a TSV (tab-separated values) file.
 These files typically have a .tsv or .txt file extension, though it
-doesn\'t matter to QIIME 2 what file extension is used. TSV files are
+doesn't matter to QIIME 2 what file extension is used. TSV files are
 simple text files used to store tabular data, and the format is
 supported by many types of software, such as editing, importing, and
-exporting from spreadsheet programs and databases. Thus, it\'s usually
+exporting from spreadsheet programs and databases. Thus, it's usually
 straightforward to manipulate QIIME 2 metadata using the software of
 your choosing. If in doubt, we recommend using a spreadsheet program
 such as Microsoft Excel or Google Sheets to edit and export your
