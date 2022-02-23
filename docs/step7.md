@@ -232,10 +232,10 @@ Kallisto analyses.
 
             | Left/Right Pair | Sample name | Condition |
             | --- | --- | --- |
-            | SRR3191542_1.fastq.gz <br> SRR3191542_2.fastq.gz | Mock1-1 | Mock |
-            | SRR3191543_1.fastq.gz <br> SRR3191543_1.fastq.gz | Mock2-1 | Mock |
-            | SRR3191544_1.fastq.gz <br> SRR3191544_2.fastq.gz | ZIKV1-1 | Zika |
-            | SRR3191545_1.fastq.gz <br> SRR3191545_2.fastq.gz | ZIKV2-1 | Zika |
+            | SRR3191542_1.fastq.gz SRR3191542_2.fastq.gz | Mock1-1 | Mock |
+            | SRR3191543_1.fastq.gz SRR3191543_1.fastq.gz | Mock2-1 | Mock |
+            | SRR3191544_1.fastq.gz SRR3191544_2.fastq.gz | ZIKV1-1 | Zika |
+            | SRR3191545_1.fastq.gz SRR3191545_2.fastq.gz | ZIKV2-1 | Zika |
 
 2.  After naming the samples and conditions, click the `Submit`{.interpreted-text role="guilabel"} button to submit a job. Typically, within \~1 minute you will be provided with a job number. The job will be entered into the queue at the TACC Stampede supercomputing system. You can come back and click the Quantification stop to see the status of the job. The indication for the quantification stop will show "R" (running) while the job is running.
     
@@ -279,8 +279,7 @@ which value to select, use the default 750MB option.
             Using IGV requires Java software. Java is increasingly unsupported for
             security reasons on the internet.
 
-        !!! Tip "**Java Help**"
-
+        !!! Tip "Java Help"
                 Java must be available and enabled in your Internet browser to use the
                 IGV function. Java frequently is the source of security
                 vulnerabilities and so its not uncommon to experience configuration
@@ -328,14 +327,14 @@ Click the "Sleuth R Shiny" link to launch an interactive window which contains d
     menu in the app.
 
 ??? tip "data transfer timings"
-        It can take a few minutes for data to be transferred to the R
-        Shiny server after the quantification step completes. If R Shiny
-        does not load, try again in a few minutes. If you still have an
-        issue, use the link and include your project number in the
-        feedback form.
+    It can take a few minutes for data to be transferred to the R
+    Shiny server after the quantification step completes. If R Shiny
+    does not load, try again in a few minutes. If you still have an
+    issue, use the link and include your project number in the
+    feedback form.
 
 **Results Menu**
-    ![sleuth_results_1](./assets/dna_subway/sleuth_results_1.png){width="800px" height="400px"}
+![sleuth_results_1](./assets/dna_subway/sleuth_results_1.png){width="800px" height="400px"}
 
 This menu is an interactive table of your results. You can choose
 which columns to display in the table using the checkboxes on the
@@ -352,7 +351,7 @@ include:
         Click the `Download`{.interpreted-text role="guilabel"} button to download these results.
 
 **Bootstrap**
-    ![sleuth_bootstrap_1](./assets/dna_subway/sleuth_bootstrap_1.png){width="800px" height="400px"}
+![sleuth_bootstrap_1](./assets/dna_subway/sleuth_bootstrap_1.png){width="800px" height="400px"}
 
 This menu will display a box plot that indicates the difference in
 expression between conditions. The box plots themselves indicate
@@ -366,28 +365,24 @@ available.
         Right-click a graph to download this and other images
 
 **PCA**
-    ![sleuth_pca_1](./assets/dna_subway/sleuth_pca_1.png){width="800px" height="400px"}
-
+![sleuth_pca_1](./assets/dna_subway/sleuth_pca_1.png){width="800px" height="400px"}
 This graph displays principle components of each of the
 conditions/replicates. In general replicates of the same condition
 should cluster closely together.
 
 **Volcano Plot**
-    ![sleuth_volcano_1](./assets/dna_subway/sleuth_volcano_1.png){width="800px" height="400px"}
-
+![sleuth_volcano_1](./assets/dna_subway/sleuth_volcano_1.png){width="800px" height="400px"}
 This scatter plot displays all transcripts colored by significance
 of differential abundance. You may also use menu on the left of
 the screen to highlight specific genes/transcripts or previously
 set filters from the results menu.
 
 **Loadings**
-    ![sleuth_loadings_1](./assets/dna_subway/sleuth_loadings_1.png){width="800px" height="400px"}
-
+![sleuth_loadings_1](./assets/dna_subway/sleuth_loadings_1.png){width="800px" height="400px"}
 This barplot indicates which genes/transcripts explain most of the variance computed in the principle components analysis.
 
 **Heatmap**
-    ![sleuth_heatmap_1](./assets/dna_subway/sleuth_heatmap_1.png){width="800px" height="400px"}
-    
+![sleuth_heatmap_1](./assets/dna_subway/sleuth_heatmap_1.png){width="800px" height="400px"}
 This heatmap gives a measure of the similarity between the possible comparison of the samples and their replicates.
 
 ------------------------------------------------------------------------
