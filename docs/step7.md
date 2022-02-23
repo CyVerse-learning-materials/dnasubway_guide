@@ -39,7 +39,7 @@ software in an R-Shiny app.
     
     <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-!!! Note "Important"
+!!! Danger "Important"
     
     **Discontinuing support for Tuxedo workflow**
     
@@ -54,102 +54,64 @@ software in an R-Shiny app.
 
 ------------------------------------------------------------------------
 
-> ::: admonition
-> Sample data
->
-> **How to use provided sample data**
->
-> In this guide, we will use an RNA-Seq dataset (*\"Zika infected
-> hNPCs\"*). This experiment compared human neuroprogenetor cells
-> (hNPCs) infected with the Zika virus to non-infected hNPCs. You can
-> read more about the experimental conditions and methods in this .
-> Where appropriate, a note (in this orange colored background) in the
-> instructions will indicate which options to select to make use of this
-> provided dataset.
->
-> **Sample data citation**: Yi L, Pimentel H, Pachter L (2017) Zika
-> infection of neural progenitor cells perturbs transcription in
-> neurodevelopmental pathways. PLOS ONE 12(4): e0175744. .
->
-> **Video Course**
->
-> Here is a video series on analyzing data with DNA Subway using the
-> above Zika dataset and lesson:
->
-> > ```{=html}
-> > <div class="video-container">
-> > <iframe width="560" height="315" align="center"
-> > src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTHLTsiCTT8tnA2ZAfMM5AWb"
-> > frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-> > gyroscope; picture-in-picture" allowfullscreen></iframe>
-> > </div>
-> > ```
-> :::
+!!! Warning "Sample Data"
+        
+        **How to use provided sample data**
 
-## *DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Abundance*
+        In this guide, we will use an RNA-Seq dataset (*"Zika infected
+        hNPCs"*). This experiment compared human neuroprogenetor cells
+        (hNPCs) infected with the Zika virus to non-infected hNPCs. You can
+        read more about the experimental conditions and methods in this [reference](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744).
+        Where appropriate, a note (in this orange colored background) in the
+        instructions will indicate which options to select to make use of this
+        provided dataset.
+
+        **Sample data citation**: Yi L, Pimentel H, Pachter L (2017) Zika
+        infection of neural progenitor cells perturbs transcription in
+        neurodevelopmental pathways. PLOS ONE 12(4): e0175744. [reference](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744).
+
+        **Video Course**
+
+        Here is a video series on analyzing data with DNA Subway using the above Zika dataset and lesson:
+
+        <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTHLTsiCTT8tnA2ZAfMM5AWb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Abundance
 
 **A. Create a project in Subway**
 
-> 1.  Log-in to - unregistered users may NOT use Green Line.
-> 2.  Click on the Green \"Next Generation Sequencing\" square to start
->     a Green Line project.
-> 3.  For \'Select Project Type\' select either \"Single End Reads\" or
->     \"Paired End Reads\".
->
-> > ::: admonition
-> > Sample data
-> >
-> > *\"Zika infected hNPCs\"* dataset:
-> >
-> > Select **Paired End Reads**
-> > :::
->
-> 4.  For \'Select an Organism\' select a species and genome build.
->
-> > ::: admonition
-> > Sample data
-> >
-> > *\"Zika infected hNPCs\"* dataset:
-> >
-> > Select **Homo sapiens - Ensembl 78 GrCh38**
-> > :::
-> >
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > If you don\'t see a desired species/genome to have it added
-> > :::
->
-> 5.  Enter a project title, and description; click \'Continue\'
+1.  Log-in to - unregistered users may NOT use Green Line.
+2.  Click on the Green "Next Generation Sequencing" square to start
+    a Green Line project.
+3.  For 'Select Project Type' select either "Single End Reads" or
+    "Paired End Reads".
+
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: Select **Paired End Reads**
+
+4.  For 'Select an Organism' select a species and genome build.
+
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: Select **Homo sapiens - Ensembl 78 GrCh38**
+5.  Enter a project title, and description; click 'Continue'.
+
+    !!! Tip
+        If you don't see a desired species/genome to have it added
 
 **B. Upload Read Data to CyVerse Data Store** The sequence read files
 used in these experiments are too large to upload using the Subway
 internet interface. You must upload your files (either .fastq or
 .fastq.gz) directly to the CyVerse Data Store.
 
-> 1.  Upload your reads to the CyVerse Data Store using Cyberduck. See
->     instructions:
->
->     ::: tip
->     ::: title
->     Tip
->     :::
->
->     This step is not directly connected with DNA Subway. You can use
->     any data uploaded to the CyVerse Data Store.
->     :::
->
-> > ::: note
-> > ::: title
-> > Note
-> > :::
-> >
-> > There is a limit of 6GB per file for samples on Green Line. For
-> > larger file sizes, you may wish to use the Kallisto tools in the
-> > CyVerse Discovery Environment. See the for more information.
-> > :::
+1.  Upload your reads to the CyVerse Data Store using Cyberduck. See instructions: [Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/)
+
+!!! Note
+        This step is not directly connected with DNA Subway. You can use any data uploaded to the CyVerse Data Store.
+
+!!! Warning "Data Limit"
+        There is a limit of 6GB per file for samples on Green Line. For larger file sizes, you may wish to use the Kallisto tools in the CyVerse Discovery Environment. See the for more information.
 
 ------------------------------------------------------------------------
 
