@@ -53,15 +53,15 @@ not represented in published databases like GenBank.
         implementing a Barcoding CURE (course-based undergraduate research
         experience): [CURE-all: Large Scale Implementation of Authentic DNA Barcoding Research into First-Year Biology Curriculum](https://www.coursesource.org/courses/cure-all-large-scale-implementation-of-authentic-dna-barcoding-research-into-first-year).
 
-## *DNA Subway Blue Line - Create a Barcoding Project*
+## DNA Subway Blue Line - Create a Barcoding Project
 
-1. Log-in to [DNA Subway](https://dnasubway.cyverse.org/) - unregistered users may 'Enter as Guest'
+1. Log-in to [DNA Subway](https://dnasubway.cyverse.org/) - unregistered users may 'Enter as Guest'.
     !!! Note
         Only registered users submitting novel, high-quality sequences
         will be able to submit sequence to GenBank
 2. Choose a project type: <br>
-    **-**   Phylogenetics: build phylogenetic trees from any DNA, protein, or mtDNA sequence) <br>
-    **-**   Barcoding: DNA Barcoding for plants (rbcL), animals (COI), bacteria (16S), and fungi (ITS)
+    **- Phylogenetics**: build phylogenetic trees from any DNA, protein, or mtDNA sequence) <br>
+    **- Barcoding**: DNA Barcoding for plants (rbcL), animals (COI), bacteria (16S), and fungi (ITS).
     !!! Warning "Sample Data"
             
             *"Mosquito"* dataset: Select **COI**.
@@ -101,12 +101,14 @@ the sequence. The sequence will display an "R" to indicate the change.
 2.  Click 'Sequence Trimmer' again to examine to changes made in the sequence
 3.  Click 'Pair Builder.'
 4.  Select the check boxes next to the sequences that represent bidirectional reads of the same sequence set. Alternatively Select the 'Auto Pair' function and verify the pairs generated.
+    
     !!! Warning "Sample Data"
 
             *"Mosquito"* dataset:
             Click **Try Auto Pairing**. One pair of horsefly sequences and 4
             pairs of mosquito sequences will be created. Finally, click
             `Save`{.interpreted-text role="guilabel"}.
+
 5.  As necessary, Reverse Compliment sequences that were sequenced in
     the reverse orientation by clicking the 'F' next to the sequence
     name. The 'F' will become an 'R' to indicate the sequence has been
@@ -117,7 +119,7 @@ the sequence. The sequence will display an "R" to indicate the change.
 the 5' and/or 3' ends of the consensus sequence.
 
 1.  Click on "Trim Consensus." Once the job is ready to view, click
-    \"Trim Consensus\" again to view the results. Scroll left and
+    "Trim Consensus" again to view the results. Scroll left and
     right in the consensus editor window to identify what string of
     nucleotides from the consensus sequence you want to trim.
 2.  Click on the last consensus sequence nucleotide that you want to
@@ -140,16 +142,15 @@ check for published matches in GenBank.
 !!! Tip
         At the end of the BLAST results page, you can see the latest update to the DNA Subway BLAST database.
 
-
-1.  Click 'BLASTN\' then click the \'BLAST\' link to BLAST the
-    sequence of interest. When the search is completed a \'View\' link
+1.  Click 'BLASTN' then click the 'BLAST' link to BLAST the
+    sequence of interest. When the search is completed a 'View' link
     will appear.
 2.  Examine the BLAST matches for candidate identification. Clicking
     the species name given in the BLAST hit will also give additional
     information/photos of the listed species.
 3.  If desired, select the check box next to any hit, and click
     `&Add BLAST hits to project`{.interpreted-text role="guilabel"} to
-    add selected sequences to your project.
+    add selected sequences to your project. <br>
     ![blue_blast](./assets/dna_subway/blue_blast.png){width="400px" height="200px"}
 
     !!! Warning "Sample Data"
@@ -171,7 +172,7 @@ next step.
 1.  Click 'Reference Data.'
 
 2.  Select sequences of your choice.
-3.  Click `&Add ref data`{.interpreted-text role="guilabel"} to add
+3.  Click `Add ref data`{.interpreted-text role="guilabel"} to add
     the data to your project.
     
     !!! Warning "Sample Data"
@@ -186,24 +187,25 @@ next step.
 
 1.  Click 'Select Data.'
 2.  Select any and all sequences you wish to add to your tree.
+
     !!! Warning "Sample Data"
 
-            *"Mosquito"* dataset: We suggest first adding your \"user data\" and building an alignment and tree. You can return to this step later to build additional trees. Once Selected, click `&Save Selections`{.interpreted-text role="guilabel"}. Follow the rest of the steps in this section and section B to create your tree.
-3.  Click `&Save Selections`{.interpreted-text role="guilabel"} to select data
+            *"Mosquito"* dataset: We suggest first adding your \"user data\" and building an alignment and tree. You can return to this step later to build additional trees. Once Selected, click `Save Selections`{.interpreted-text role="guilabel"}. Follow the rest of the steps in this section and section B to create your tree.
+3.  Click `Save Selections`{.interpreted-text role="guilabel"} to select data
 4.  Click 'MUSCLE.' to run the MUSCLE program.
 5.  Click 'MUSCLE' again to open the sequence alignment window.
     ![blue_align](./assets/dna_subway/blue_align.png){width="400px" height="200px"}
-6.  Examine the alignment and then select the `&Trim Alignment`{.interpreted-text role="guilabel"} button in the upper-left of the Alignment viewer\'
+6.  Examine the alignment and then select the `Trim Alignment`{.interpreted-text role="guilabel"} button in the upper-left of the Alignment viewer\'
 
 **B. Build phylogenetic tree**
 
-1.  Click \'PHYLIP NJ\' and then click again to examine a
+1.  Click 'PHYLIP NJ' and then click again to examine a
     neighbor-joining tree
-    ![blue_nj](./img/dna_subway/blue_nj.png){width="400px" height="200px"}
+    ![blue_nj](./assets/dna_subway/blue_nj.png){width="400px" height="200px"}
 
-2.  Click \'PHYLIP ML\' and then click again to examine a
+2.  Click 'PHYLIP ML' and then click again to examine a
     maximum-likelihood tree
-    ![blue_ml](./img/dna_subway/blue_ml.png){width="400px" height="200px"}
+    ![blue_ml](./assets/dna_subway/blue_ml.png){width="400px" height="200px"}
 
     !!! Warning "Sample Data"
 
