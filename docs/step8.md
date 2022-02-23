@@ -1,19 +1,13 @@
-[Learning Center Home](http://learning.cyverse.org/)
-
 # Walkthrough of DNA Subway Purple Line (beta testing documentation)
 
-::: warning
-::: title
-Warning
-:::
+!!! Danger "Important"
 
-**Beta Release:** Purple line is in beta release. Please send feedback
-to [DNALC Admin](mailto:dnalcadmin@cshl.edu)
-:::
+        **Beta Release:** Purple line is in beta release. Please send feedback
+        to [DNALC Admin](mailto:dnalcadmin@cshl.edu)
 
 The Purple Line provides the capability for analysis of microbiome and
 eDNA (environmental DNA) by implementing a simplified version of the
-(pronounced \"chime two\") workflow. Using the Purple Line, you can
+(pronounced "chime two") workflow. Using the Purple Line, you can
 analyze uploaded high throughput sequencing reads to identify species in
 microbial or environmental DNA samples.
 
@@ -37,8 +31,8 @@ different conditions summarized in the metadata.
 -   You must be a registered CyVerse user to use Purple Line (register
     for a CyVerse account at )
 -   The Purple line was designed to make microbiome/eDNA data analysis
-    \"simple\". However, we ask that users very carefully and
-    thoughtfully decide what \"jobs\" they want to submit.
+    "simple". However, we ask that users very carefully and
+    thoughtfully decide what "jobs" they want to submit.
 -   A single Purple Line project may take hours to process since HPC
     computing is subject to queues which may support hundreds of other
     jobs. These systems also undergo regular maintenance and are subject
@@ -53,18 +47,17 @@ different conditions summarized in the metadata.
 
 ------------------------------------------------------------------------
 
-> ::: admonition
-> Sample data
->
-> **How to use provided sample data** In this guide, we will use a
-> microbiome dataset (*\"ubiome-test-data\"*) collected from various
-> water sources in Montana (down-sampled and de-identified).Where
-> appropriate, a note (in this orange colored background) in the
-> instructions will indicate which options to select to make use of this
-> provided dataset.
-> :::
+!!! Warning "Sample Data"
 
-## *DNA Subway Purple Line - Metadata file and Sequencing Prerequisites*
+        **How to use provided sample data**
+        
+        In this guide, we will use a microbiome dataset (*"ubiome-test-data"*) collected from various
+        water sources in Montana (down-sampled and de-identified).Where
+        appropriate, a note (in this orange colored background) in the
+        instructions will indicate which options to select to make use of this
+        provided dataset.
+
+## DNA Subway Purple Line - Metadata file and Sequencing Prerequisites
 
 If you are generating data for a project (i.e. sequencing samples), you
 will need to provide the sequencing data (fastq files) as well as a
@@ -90,113 +83,95 @@ parameters. The file must be validated (which you can do on your own or
 using Subway). If there are errors in your file (this is common), they
 must be fixed.
 
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> Here are a few reminders for formatting your metadata.
->
-> **Leading and trailing whitespace characters**
->
-> If any cell in the metadata contains leading or trailing whitespace
-> characters (e.g. spaces, tabs), those characters will be ignored when
-> the file is loaded. Thus, leading and trailing whitespace characters
-> are not significant, so cells containing the values \'gut\' and \' gut
-> \' are equivalent. This rule is applied before any other rules
-> described below
->
-> **ID column**
->
-> The first column MUST be the ID column name (i.e. ID header) and the
-> first line of this column should be #SampleID or one of a few
-> alternative.
->
-> > -   Case-insensitive: id; sampleid; sample id; sample-id; featureid;
-> >     feature id; feature-id.
-> > -   Case-sensitive: #SampleID; #Sample ID; #OTUID; #OTU ID;
-> >     sample_name
->
-> **Sample IDs**
->
-> For the sample IDs, there are some simple rules to comply with QIIME 2
-> requirements:
->
-> > -   IDs may consist of any Unicode characters, with the exception
-> >     that IDs must not start with the pound sign (#), as those rows
-> >     would be interpreted as comments and ignored. IDs cannot be
-> >     empty (i.e. they must consist of at least one character).
-> > -   IDs must be unique (exact string matching is performed to detect
-> >     duplicates).
-> > -   At least one ID must be present in the file.
-> > -   IDs cannot use any of the reserved ID column names (the sample
-> >     ID names, above).
-> > -   The ID column can optionally be followed by additional columns
-> >     defining metadata associated with each sample or feature ID.
-> >     Metadata files are not required to have additional metadata
-> >     columns, so a file containing only an ID column is a valid QIIME
-> >     2 metadata file.
->
-> **Column names**
->
-> > -   May consist of any Unicode characters.
-> > -   Cannot be empty (i.e. column names must consist of at least one
-> >     character).
-> > -   Must be unique (exact string matching is performed to detect
-> >     duplicates).
-> > -   Column names cannot use any of the reserved ID column names.
->
-> **Column values**
->
-> > -   May consist of any Unicode characters.
-> > -   Empty cells represent missing data. Note that cells consisting
-> >     solely of whitespace characters are also interpreted as missing
-> >     data.
->
-> QIIME 2 currently supports categorical and numeric metadata columns.
-> By default, QIIME 2 will attempt to infer the type of each metadata
-> column: if the column consists only of numbers or missing data, the
-> column is inferred to be numeric. Otherwise, if the column contains
-> any non-numeric values, the column is inferred to be categorical.
-> Missing data (i.e. empty cells) are supported in categorical columns
-> as well as numeric columns. For more details, and for how to define
-> the nature of the data when needed, see the .
-> :::
+!!! Tip
+
+        Here are a few reminders for formatting your metadata.
+
+        **Leading and trailing whitespace characters**
+        If any cell in the metadata contains leading or trailing whitespace
+        characters (e.g. spaces, tabs), those characters will be ignored when
+        the file is loaded. Thus, leading and trailing whitespace characters
+        are not significant, so cells containing the values 'gut' and ' gut' are equivalent. This rule is applied before any other rules
+        described below
+        **ID column**
+        The first column MUST be the ID column name (i.e. ID header) and the
+        first line of this column should be #SampleID or one of a few
+        alternative.
+        -   Case-insensitive: id; sampleid; sample id; sample-id; featureid;
+            feature id; feature-id.
+        -   Case-sensitive: #SampleID; #Sample ID; #OTUID; #OTU ID;
+            sample_name
+
+        **Sample IDs**
+
+        For the sample IDs, there are some simple rules to comply with QIIME 2
+        requirements:
+
+        -   IDs may consist of any Unicode characters, with the exception
+            that IDs must not start with the pound sign (#), as those rows
+            would be interpreted as comments and ignored. IDs cannot be
+            empty (i.e. they must consist of at least one character).
+        -   IDs must be unique (exact string matching is performed to detect
+            duplicates).
+        -   At least one ID must be present in the file.
+        -   IDs cannot use any of the reserved ID column names (the sample
+            ID names, above).
+        -   The ID column can optionally be followed by additional columns
+            defining metadata associated with each sample or feature ID.
+            Metadata files are not required to have additional metadata
+            columns, so a file containing only an ID column is a valid QIIME
+            2 metadata file.
+
+        **Column names**
+
+        -   May consist of any Unicode characters.
+        -   Cannot be empty (i.e. column names must consist of at least one
+            character).
+        -   Must be unique (exact string matching is performed to detect
+            duplicates).
+        -   Column names cannot use any of the reserved ID column names.
+
+        **Column values**
+
+        -   May consist of any Unicode characters.
+        -   Empty cells represent missing data. Note that cells consisting
+            solely of whitespace characters are also interpreted as missing
+            data.
+
+        QIIME 2 currently supports categorical and numeric metadata columns.
+        By default, QIIME 2 will attempt to infer the type of each metadata
+        column: if the column consists only of numbers or missing data, the
+        column is inferred to be numeric. Otherwise, if the column contains
+        any non-numeric values, the column is inferred to be categorical.
+        Missing data (i.e. empty cells) are supported in categorical columns
+        as well as numeric columns. For more details, and for how to define
+        the nature of the data when needed, see the [QIIME 2 metadata documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/).
 
 **Working with an existing metadata file**
 
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> If you have your own metadata file, it will still need to be validated
-> once uploaded to DNA Subway.
->
-> > Using a spreadsheet editor, create a metadata sheet that provides
-> > descriptions of the sequencing files used in your experiment. Export
-> > this file as a tab-delimited **.txt** or **.tsv** file. following
-> > the recommendations. (Optional: if you using your own metadata file
-> > you can validate it using DNA Subway and or online QIIME2 validator
-> > ).
-> :::
->
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> See an example metadata file used for our sample data here: . Click
-> the `&Download`{.interpreted-text role="guilabel"} button on the
-> linked page to download and examine the file. (**Note**: This is an
-> Excel version of the metadata file, you must save Excel files as .TSV
-> (tab-separated) to be compatible with the QIIME 2 workflow.)
-> :::
+!!! Tip
+
+    If you have your own metadata file, it will still need to be validated
+    once uploaded to DNA Subway.
+
+    Using a spreadsheet editor, create a metadata sheet that provides
+    descriptions of the sequencing files used in your experiment. Export
+    this file as a tab-delimited **.txt** or **.tsv** file. following
+    the QIIME 2 metadata documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) recommendations. (Optional: if you using your own metadata file you can validate it using DNA Subway and or online QIIME2 validator).
+
+
+!!! Tip
+
+    See an example metadata file used for our sample data here: . Click
+    the `Download`{.interpreted-text role="guilabel"} button on the
+    linked page to download and examine the file. (**Note**: This is an
+    Excel version of the metadata file, you must save Excel files as .TSV
+    (tab-separated) to be compatible with the QIIME 2 workflow.)
+
 
 **Creating a metadata file using DNA Subway**
 
-> See [DNA Subway Purple Line - Metadata and
-> QC](#dna-subway-purple-line---metadata-and-qc) section C
+See [DNA Subway Purple Line - Metadata and QC](#dna-subway-purple-line---metadata-and-qc) section C.
 
 ## *DNA Subway Purple Line - Create a Microbiome Analysis Project*
 

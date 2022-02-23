@@ -1,5 +1,3 @@
-[Learning Center Home](http://learning.cyverse.org/)
-
 # Walkthrough of DNA Subway Green Line: Kallisto/Sleuth RNA-Seq
 
 The Green Line runs within CyVerse DNA Subway and leverages powerful
@@ -156,7 +154,7 @@ for determining sequencing quality.
 
 1. Once files have been loaded, in the 'Manage Data' window, click the 'Run' link in the 'QC' column to run FastQC.
 
-    !!! Tip
+    !!! Note
 
             There is a limit of 4 concurrent jobs. These jobs should take less
             than 20 minutes to complete (depending on file size) and you may need
@@ -287,7 +285,8 @@ which value to select, use the default 750MB option.
             -   Verify your Java availability for your browser: [Java test](https://www.java.com/en/download/installed.jsp) <br>
             -   Java must be [enabled](https://java.com/en/download/help/enable_browser.xml) in your browser
 
-            *Java Configuration* <br>
+            *Java Configuration*
+
             -   Open the Java control panel on your computer. (On Mac, open System
                 Preferences > Java. On PC, open Control Panel > Programs >
                 Java.) <br>
