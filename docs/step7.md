@@ -115,158 +115,99 @@ internet interface. You must upload your files (either .fastq or
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Green Line: Kallisto/Sleuth - Manage Data and Check Quality with FASTQC*
+## DNA Subway Green Line: Kallisto/Sleuth - Manage Data and Check Quality with FASTQC
 
 **A. Select and pair files**
 
-> 1.  Click on the "Manage Data" step: this opens a Data store window
->     that says \"Select your FASTQ files from the Data Store\" (if you
->     are not logged in to CyVerse, it will ask you to do so).
->
-> 2.  Click on the folder that matches your CyVerse username and
->     Navigate to the folder where your sequencing files are located.
->
->     ::: admonition
->     Sample data
->
->     *\"Zika infected hNPCs\"* dataset:
->
->     Select **Sample Data**.
->     :::
->
-> 3.  Select the sequencing files you want to analyze (either .fastq or
->     .fastq.gz format).
->
->     ::: admonition
->     Sample data
->
->     *\"Zika infected hNPCs\"* dataset:
->
->     You will be presented with the following 8 files; **check-select
->     all of the files** and click the `&+ Add files`{.interpreted-text
->     role="guilabel"} button:
->
->     > -   SRR3191542_1.fastq.gz
->     > -   SRR3191542_2.fastq.gz
->     > -   SRR3191543_1.fastq.gz
->     > -   SRR3191543_2.fastq.gz
->     > -   SRR3191544_1.fastq.gz
->     > -   SRR3191544_2.fastq.gz
->     > -   SRR3191545_1.fastq.gz
->     > -   SRR3191545_2.fastq.gz
->
->     The SRR3191542 and SRR3191543 files are 2 replicates (paired-end)
->     of the uninfected cells and the SRR3191544 and SRR3191545 file are
->     from the Zika infected cells.
->     :::
->
-> 4.  If working with paired-end reads, click the
->     `&Pair Mode OFF`{.interpreted-text role="guilabel"} button to
->     toggle to on; check each pair of sequencing files to pair them.
->
->     ::: admonition
->     Sample data
->
->     *\"Zika infected hNPCs\"* dataset:
->
->     Right reads end in \"\_1\" and left reads end in \"\_2\". **Click
->     the** `&Pair Mode OFF`{.interpreted-text role="guilabel"}
->     **button** to turn pairing on, and **check-select each of the
->     paired samples** (e.g. SRR3191543_1.fastq.gz and
->     SRR3191543_2.fastq.gz).
->     :::
+1.  Click on the "Manage Data" step: this opens a Data store window
+    that says "Select your FASTQ files from the Data Store" (if you
+    are not logged in to CyVerse, it will ask you to do so).
+2.  Click on the folder that matches your CyVerse username and
+    Navigate to the folder where your sequencing files are located.
+
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: Select **Sample Data**.
+
+3.  Select the sequencing files you want to analyze (either .fastq or .fastq.gz format).
+
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: You will be presented with the following 8 files; **check-select all of the files** and click the `+ Add files`{.interpreted-text role="guilabel"} button:
+
+         -   SRR3191542_1.fastq.gz
+         -   SRR3191542_2.fastq.gz
+         -   SRR3191543_1.fastq.gz
+         -   SRR3191543_2.fastq.gz
+         -   SRR3191544_1.fastq.gz
+         -   SRR3191544_2.fastq.gz
+         -   SRR3191545_1.fastq.gz
+         -   SRR3191545_2.fastq.gz
+         
+         The SRR3191542 and SRR3191543 files are 2 replicates (paired-end) of the uninfected cells and the SRR3191544 and SRR3191545 file are from the Zika infected cells.
+
+
+4.  If working with paired-end reads, click the `Pair Mode OFF`{.interpreted-text role="guilabel"} button to toggle to on; check each pair of sequencing files to pair them.
+
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: Right reads end in \"\_1\" and left reads end in \"\_2\". **Click the** `Pair Mode OFF`{.interpreted-text role="guilabel"} **button** to turn pairing on, and **check-select each of the paired samples** (e.g. SRR3191543_1.fastq.gz and SRR3191543_2.fastq.gz).
 
 **B. Check sequencing quality with FastQC**
 
 It is important to only work with high quality data. is a popular tool
 for determining sequencing quality.
 
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> This step takes place in the same **Manage data** window as the steps
-> above.
-> :::
->
-> 1\. Once files have been loaded, in the \'Manage Data\' window, click
-> the \'Run\' link in the \'QC\' column to run FastQC.
->
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> There is a limit of 4 concurrent jobs. These jobs should take less
-> than 20 minutes to complete (depending on file size) and you may need
-> to let several jobs finish before proceeding. If you have previously
-> processed reads for quality, you can skip the FastQC step.
-> :::
->
-> 2.  One the jobs are complete, click the \'View\' link to view the
->     results.
->
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> You can see a description and explanation of the FastQC report on the
-> CyVerse Learning Center and a more detailed set of explanations on the
-> website.
-> :::
+!!! Tip
+        
+        This step takes place in the same **Manage data** window as the steps above.
+
+1. Once files have been loaded, in the 'Manage Data' window, click the 'Run' link in the 'QC' column to run FastQC.
+
+    !!! Tip
+
+            There is a limit of 4 concurrent jobs. These jobs should take less
+            than 20 minutes to complete (depending on file size) and you may need
+            to let several jobs finish before proceeding. If you have previously
+            processed reads for quality, you can skip the FastQC step.
+2.  One the jobs are complete, click the 'View' link to view the results.
+
+    !!! Tip
+
+            You can see a description and explanation of the FastQC report on the CyVerse Learning Center and a more detailed set of explanations on the website.
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Green Line: Kallisto/Sleuth - Trim and Filter Reads with FastX Toolkit*
+## DNA Subway Green Line: Kallisto/Sleuth - Trim and Filter Reads with FastX Toolkit
 
-Raw reads are first \"quality trimmed\" (remove poor quality bases off
-the end(s) of a read) and then are \"quality filtered\" (filter out
+Raw reads are first "quality trimmed" (remove poor quality bases off
+the end(s) of a read) and then are "quality filtered" (filter out
 entire poor quality reads) prior to aligning to the transcriptome. After
 trimming and filtering, FastQC is run on the trimmed/filtered files.
 
-> 1.  Click "FastX ToolKit" to open the FastX Toolkit panel for all your
->     data.
->
-> 2.  For each file, under \'Basic\', Click \'Run\' to filter the reads
->     using default parameters or click \'Advanced\' to run with desired
->     parameters; repeat this process for all the FASTQ files in your
->     dataset.
->
->     ::: admonition
->     Sample data
->
->     *\"Zika infected hNPCs\"* dataset:
->
->     The quality of the reads in this dataset is relatively good. You
->     can **skip the FastX Toolkit step for this dataset**.
->     :::
->
->     ::: tip
->     ::: title
->     Tip
->     :::
->
->     The \'Basic\' setting for FastX Toolkit uses the same settings as
->     the defaults in the \'Advanced\' run:
->
->     -   **quality_trimmer: minimum quality**: 20
->     -   **quality_trimmer: minimum trimmed read length**: 20
->     -   **quality_filter: minimum quality**: 20
->     -   **quality_filter: minimum quality**: 50
->     :::
->
-> 3.  Once the job completes, click the \'View\' link to view a
->     generated FastQC report.
->
-> 4.  Since you may trim reads multiple times to achieve the desired
->     quality of data record the job IDs (e.g. fx####) that you wish to
->     use in the subsequent steps.
+1.  Click "FastX ToolKit" to open the FastX Toolkit panel for all your data.
+
+2.  For each file, under 'Basic', Click 'Run' to filter the reads using default parameters or click 'Advanced' to run with desired parameters; repeat this process for all the FASTQ files in your dataset.
+
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: The quality of the reads in this dataset is relatively good. You can **skip the FastX Toolkit step for this dataset**.
+
+    !!! Tip
+            The 'Basic' setting for FastX Toolkit uses the same settings as
+            the defaults in the 'Advanced' run:
+
+         -   **quality_trimmer: minimum quality**: 20
+         -   **quality_trimmer: minimum trimmed read length**: 20
+         -   **quality_filter: minimum quality**: 20
+         -   **quality_filter: minimum quality**: 50
+
+3.  Once the job completes, click the \'View\' link to view a generated FastQC report.
+4.  Since you may trim reads multiple times to achieve the desired quality of data record the job IDs (e.g. fx####) that you wish to use in the subsequent steps.
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Green Line: Kallisto/Sleuth - Quantify reads with Kallisto*
+## DNA Subway Green Line: Kallisto/Sleuth - Quantify reads with Kallisto
 
 Kallisto uses a 'hash-based' pseudo alignment to deliver extremely fast
 matching of RNA-Seq reads against the transcriptome index (which was
@@ -275,73 +216,35 @@ must be run for each mapping of RNA-Seq reads to the index. In this
 tutorial, we have 12 fastQ files (6 pairs), so you will need to launch 6
 Kallisto analyses.
 
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> You can find a detailed video series on the science behind the
-> Kallisto software and pseudoalignment: .
-> :::
->
-> 1.  Click the \"Quantification\" step and enter a sample and condition
->     name for each of your samples. You will typically have several
->     replicates (at least 3 minimum) for each sample. For your
->     condition, our implementation of the Kallisto/Sleuth workflow
->     supports **two conditions**.
->
-> > ::: warning
-> > ::: title
-> > Warning
-> > :::
-> >
-> > When naming your samples and conditions, avoid spaces and special
-> > characters (e.g. !#\$%\^&/, etc.). Also be sure to be consistent
-> > with spelling.
-> > :::
-> >
-> > ::: admonition
-> > Sample data
-> >
-> > *\"Zika infected hNPCs\"* dataset:
-> >
-> > We suggest the following names for this dataset:
-> >
-> > >   Left/Right Pair                               Sample name   Condition
-> > >   --------------------------------------------- ------------- -----------
-> > >   SRR3191542_1.fastq.gz SRR3191542_2.fastq.gz   Mock1-1       Mock
-> > >   SRR3191543_1.fastq.gz SRR3191543_1.fastq.gz   Mock2-1       Mock
-> > >   SRR3191544_1.fastq.gz SRR3191544_2.fastq.gz   ZIKV1-1       Zika
-> > >   SRR3191545_1.fastq.gz SRR3191545_2.fastq.gz   ZIKV2-1       Zika
-> > :::
->
-> 2.  After naming the samples and conditions, click the
->     `&Submit`{.interpreted-text role="guilabel"} button to submit a
->     job. Typically, within \~1 minute you will be provided with a job
->     number. The job will be entered into the queue at the TACC
->     Stampede supercomputing system. You can come back and click the
->     Quantification stop to see the status of the job. The indication
->     for the quantification stop will show \"R\" (running) while the
->     job is running.
->
->     > ::: admonition
->     > Sample data
->     >
->     > *\"Zika infected hNPCs\"* dataset:
->     >
->     > Under parameters **uncheck** the *Build pseudo-bam files*
->     > option.
->     > :::
->
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > You can select some of the advanced options for your Kallisto job by
-> > clicking the \"Parameters\" link in the Quantification stop. See
-> > more about these advanced parameters in the .
-> > :::
+??? tip "The Science Behind Kallisto"
+        You can find a detailed video series on the science behind the Kallisto software and pseudoalignment: [YouTube](https://www.youtube.com/playlist?list=PL-0S9LiUi0vhjynujVZw34RKmUo6vPmVd).
+
+1.  Click the "Quantification" step and enter a sample and condition name for each of your samples. You will typically have several replicates (at least 3 minimum) for each sample. For your condition, our implementation of the Kallisto/Sleuth workflow supports **two conditions**.
+
+    !!! Warning
+            When naming your samples and conditions, avoid spaces and special
+            characters (e.g. !#\$%\^&/, etc.). Also be sure to be consistent with spelling.
+
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: <br>
+            We suggest the following names for this dataset:
+            | Left/Right Pair | Sample name |Condition |
+            | --- | --- | --- |
+            | SRR3191542_1.fastq.gz <br> SRR3191542_2.fastq.gz | Mock1-1 | Mock |
+            | SRR3191543_1.fastq.gz <br> SRR3191543_1.fastq.gz | Mock2-1 | Mock |
+            | SRR3191544_1.fastq.gz <br> SRR3191544_2.fastq.gz | ZIKV1-1 | Zika |
+            | SRR3191545_1.fastq.gz <br> SRR3191545_2.fastq.gz | ZIKV2-1 | Zika |
+
+2.  After naming the samples and conditions, click the `Submit`{.interpreted-text role="guilabel"} button to submit a job. Typically, within \~1 minute you will be provided with a job number. The job will be entered into the queue at the TACC Stampede supercomputing system. You can come back and click the Quantification stop to see the status of the job. The indication for the quantification stop will show "R" (running) while the job is running.
+    
+    !!! Warning "Sample Data"
+            
+            *"Zika infected hNPCs"* dataset: Under parameters **uncheck** the *Build pseudo-bam files* option.
+
+!!! Tip
+        You can select some of the advanced options for your Kallisto job by clicking the "Parameters" link in the Quantification stop. See more about these advanced parameters in the [Kallisto manual](https://pachterlab.github.io/kallisto/manual).
+
 
 ------------------------------------------------------------------------
 
