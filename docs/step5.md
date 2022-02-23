@@ -56,14 +56,12 @@ not represented in published databases like GenBank.
 ## *DNA Subway Blue Line - Create a Barcoding Project*
 
 1. Log-in to [DNA Subway](https://dnasubway.cyverse.org/) - unregistered users may 'Enter as Guest'
-
     !!! Note
         Only registered users submitting novel, high-quality sequences
         will be able to submit sequence to GenBank
 2. Choose a project type: <br>
-    -   Phylogenetics: build phylogenetic trees from any DNA, protein, or mtDNA sequence) <br>
+    **-**   Phylogenetics: build phylogenetic trees from any DNA, protein, or mtDNA sequence) <br>
     **-**   Barcoding: DNA Barcoding for plants (rbcL), animals (COI), bacteria (16S), and fungi (ITS)
-
     !!! Warning "Sample Data"
             
             *"Mosquito"* dataset: Select **COI**.
@@ -72,7 +70,6 @@ not represented in published databases like GenBank.
     a sequence in FASTA format, or selecting and importing a trace
     file from DNALC. If you do not have a file, you may select any of
     the available sample sequences.
-
     !!! Warning "Sample Data"
             
             *"Mosquito"* dataset:
@@ -104,18 +101,17 @@ the sequence. The sequence will display an "R" to indicate the change.
 2.  Click 'Sequence Trimmer' again to examine to changes made in the sequence
 3.  Click 'Pair Builder.'
 4.  Select the check boxes next to the sequences that represent bidirectional reads of the same sequence set. Alternatively Select the 'Auto Pair' function and verify the pairs generated.
-
     !!! Warning "Sample Data"
 
             *"Mosquito"* dataset:
             Click **Try Auto Pairing**. One pair of horsefly sequences and 4
             pairs of mosquito sequences will be created. Finally, click
-            `&Save`{.interpreted-text role="guilabel"}.
+            `Save`{.interpreted-text role="guilabel"}.
 5.  As necessary, Reverse Compliment sequences that were sequenced in
     the reverse orientation by clicking the 'F' next to the sequence
     name. The 'F' will become an 'R' to indicate the sequence has been
     reverse complimented.
-6.  Click `&Save`{.interpreted-text role="guilabel"} to save the created pairs.
+6.  Click `Save`{.interpreted-text role="guilabel"} to save the created pairs.
 
 **C. Build a consensus sequence** This step remove poor quality areas at
 the 5' and/or 3' ends of the consensus sequence.
@@ -127,7 +123,7 @@ the 5' and/or 3' ends of the consensus sequence.
 2.  Click on the last consensus sequence nucleotide that you want to
     trim. A red line will indicate what nucleotides will be removed
     from the consensus sequences.
-3.  Click `&Trim`{.interpreted-text role="guilabel"}. A new "Consensus
+3.  Click `Trim`{.interpreted-text role="guilabel"}. A new "Consensus
     Editor" window will pop up displaying the trimmed sequences.
     
     !!! Warning "Sample Data"
