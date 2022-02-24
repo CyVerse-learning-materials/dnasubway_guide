@@ -80,17 +80,18 @@ parameters. The file must be validated (which you can do on your own or
 using Subway). If there are errors in your file (this is common), they
 must be fixed.
 
-!!! Tip
-
-        Here are a few reminders for formatting your metadata.
+!!! Tip "Formatting Your Metadata"
 
         **Leading and trailing whitespace characters**
+
         If any cell in the metadata contains leading or trailing whitespace
         characters (e.g. spaces, tabs), those characters will be ignored when
         the file is loaded. Thus, leading and trailing whitespace characters
         are not significant, so cells containing the values 'gut' and ' gut' are equivalent. This rule is applied before any other rules
         described below
+
         **ID column**
+
         The first column MUST be the ID column name (i.e. ID header) and the
         first line of this column should be #SampleID or one of a few
         alternative.
@@ -154,12 +155,11 @@ must be fixed.
     Using a spreadsheet editor, create a metadata sheet that provides
     descriptions of the sequencing files used in your experiment. Export
     this file as a tab-delimited **.txt** or **.tsv** file. following
-    the QIIME 2 metadata documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) recommendations. (Optional: if you using your own metadata file you can validate it using DNA Subway and or online QIIME2 validator).
+    the QIIME 2 metadata documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) recommendations. (Optional: if you using your own metadata file you can validate it using DNA Subway and or online QIIME2 validator [Keemei](https://keemei.qiime2.org/)).
 
 !!! Tip
 
-    See an example metadata file used for our sample data here: . Click
-    the `Download`{.interpreted-text role="guilabel"} button on the
+    See an example metadata file used for our sample data here: [metadata file](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/platform_guides/dna_subway/purple_line/mappingfile.xlsx). Click the `Download`{.interpreted-text role="guilabel"} button on the
     linked page to download and examine the file. (**Note**: This is an
     Excel version of the metadata file, you must save Excel files as .TSV
     (tab-separated) to be compatible with the QIIME 2 workflow.)
@@ -173,7 +173,7 @@ See [DNA Subway Purple Line - Metadata and QC](#dna-subway-purple-line---metadat
 **A. Create a project in Subway**
 
 1.  Log-in to DNA Subway (unregistered users may NOT use Purple Line,
-    register for a CyVerse account at user.cyverse.org).
+    register for a CyVerse account at <user.cyverse.org>).
 2.  Click the purple square ("Microbiome Analysis") to begin a
     project.
 3.  For 'Select Project Type' select either **Single End Reads** or
@@ -201,8 +201,9 @@ upload using the Subway interface. You must upload your files (either
     -   FASTQ sequence reads;
     -   Sample metadata file (.tsv or .txt formatted according to [QIIME 2 Metadata documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/)) to
         the CyVerse Data Store using Cyberduck. See instructions: [CyVerse Data Store Guide](https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/).
+
 (Optional: You can edit and change metadata using the Subway
-interface in the [Manage data]{.title-ref} step once the project is
+interface in the [Manage data]step once the project is
 created.)
 
 ------------------------------------------------------------------------
@@ -221,7 +222,8 @@ created.)
 
     !!! Warning "Sample Data"
             *"ubiome-test-data"* dataset: Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data** and click `Add all FASTQ files in this directory`{.interpreted-text role="guilabel"}
-2.  To add your metadata file you may use one of three options:
+
+2\.  To add your metadata file you may use one of three options:
     -   *Add from CyVerse*: Add a metadata file you have uploaded to CyVerse Data store
     -   *Upload locally*: Directly upload a metadata file from your local computer
     -   *Create New*: Create a new metadata file using DNA Subway
@@ -274,17 +276,17 @@ created.)
             Click `Save`{.interpreted-text role="guilabel"} to save your
             metadata file, and close the window.
 
-            !!! Warning "Sample Data"
-                    *"ubiome-test-data"* dataset: <br>
-                    Click `Add from CyVerse`{.interpreted-text role="guilabel"}Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
-                    Select the **mappingfile_MT_corrected.tsv** and then click `Add selected files`{.interpreted-text role="guilabel"}.
-3.  As needed, you can edit or rename your metadata file. Before
+    !!! Warning "Sample Data"
+            *"ubiome-test-data"* dataset: <br>
+            Click `Add from CyVerse`{.interpreted-text role="guilabel"}Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
+            Select the **mappingfile_MT_corrected.tsv** and then click `Add selected files`{.interpreted-text role="guilabel"}.
+
+3\.  As needed, you can edit or rename your metadata file. Before
     proceeding, you must validate your metadata file. To validate,
     click the "validate" link to the right of the metadata file you
     wish to check. Once the validation completed, click
-    `Run`{.interpreted-text role="guilabel"} to proceed. If you have
-    errors, you will be presented with an `Edit`{.interpreted-text
-    role="guilabel"} button so that you can return to the file and
+    `Run` to proceed. If you have
+    errors, you will be presented with an `Edit` button so that you can return to the file and
     edit.
 
 **B. Demultiplex reads**
@@ -295,110 +297,77 @@ this was not done prior to running the Purple Line. For demultiplexing
 based on index sequences, the index sequences must be defined in the
 metadata file.
 
-> ::: note
-> ::: title
-> Note
-> :::
->
-> Even if your files were previously demultimplexed (as will generally
-> be the case with Illumina data) you must still complete this step to
-> have your sequence read files appropriately associated with metadata.
-> :::
->
-> 1\. Click the \'Demultiplex reads\' and choose a number of reads to sample.
->
-> :   When the job has completed click [Demultiplexing
->     Summary]{.title-ref} to view your results. In \'Random sequences
->     to sample for QC\', enter a value (1000 is recommended),
->
-> ::: admonition
-> Sample data
->
-> *\"ubiome-test-data\"* dataset:
->
-> Use the default of 1000 sequences
-> :::
->
-> 2\. When demultiplexing is complete, you will generate a file (.qzv) click
->
-> :   this link to view a visualization and statistics on the sequence
->     and metadata for this project.
->
->     ::: tip
->     ::: title
->     Tip
->     :::
->
->     Several jobs on Purple Line will take several minutes to an hour
->     to complete. Each time you launch one of these steps you will get
->     a Job ID. You can click the `&View job info`{.interpreted-text
->     role="guilabel"} button to see a detailed status and
->     diagnostic/error messages. If needed There is a [stop this
->     job]{.title-ref} link at the bottom of the info page to cancel a
->     job.
->
->     ::: note
->     ::: title
->     Note
->     :::
->
->     **QIIME2 Visualizations**
->     :::
->
->     One of the features of QIIME 2 are the variety of visualizations
->     provided at several analysis steps. Although this guide will not
->     cover every feature of every visualization, here are some
->     important points to note.
->
->     > -   **QIIME2 View**: DNA Subway uses the QIIME 2 View plugin to
->     >     display visualizations. Like the standalone QIIME 2
->     >     software, you can navigate menus, and interact with several
->     >     visualizations. Importantly, many files and visualizations
->     >     can be directly download for your use outside of DNA Subway,
->     >     including in report generation, or in your custom QIIME 2
->     >     analyses. You can view downloaded .qza or .qzv files at .
->     :::
->
->     ::: tip
->     ::: title
->     Tip
->     :::
->
->     **Quality Graphs Explained**
->
->     After demultiplexing, you will be presented with a visualization
->     that displays the following tables and graphs:
->
->     > **Overview Tab**
->     >
->     > > -   *Demultiplexed sequence counts summary*: For each of the
->     > >     fastq files (each of which may generally correspond to a
->     > >     single sample), you are presented with comparative
->     > >     statistics on the number of sequences present. This is
->     > >     followed by a histogram that plots number of sequences by
->     > >     the number of samples.
->     > > -   *Per-sample sequence counts*: These are the actual counts
->     > >     of sequences per sample as indicated by the sample names
->     > >     you provided in your metadata sheet.
->     >
->     > ![overview_tab](./img/dna_subway/overview_tab.gif){width="450px"
->     > height="250px"}
->     >
->     > **Interactive Quality Plot**
->     >
->     > This is an interactive plot that gives you an average quality
->     > (y-axis) by the position along the read (x-axis). This box plot
->     > is derived from a random sampling of a subset of sequences. The
->     > number of sequences sampled will be indicated in the plot
->     > caption. You can use your mouse drag and zoom in to regions on
->     > the plot. Double-click your mouse to zoom out.
->     >
->     > ![quality_plot](./img/dna_subway/quality_plot.gif){width="450px"
->     > height="250px"}
->     :::
->
-> 3\. Click the \"Interactive Quality Plot\" tab to view a histogram of sequence
->
+!!! Note
+        Even if your files were previously demultimplexed (as will generally
+        be the case with Illumina data) you must still complete this step to
+        have your sequence read files appropriately associated with metadata.
+
+1\. Click the 'Demultiplex reads' and choose a number of reads to sample. When the job has completed click *Demultiplexing Summary* to view your results. In 'Random sequences to sample for QC', enter a value (1000 is recommended),
+
+    !!! Warning "Sample Data"
+            *"ubiome-test-data"* dataset: Use the default of 1000 sequences
+
+2\. When demultiplexing is complete, you will generate a file (.qzv) click this link to view a visualization and statistics on the sequence and metadata for this project.
+
+!!! Tip
+
+        Several jobs on Purple Line will take several minutes to an hour
+        to complete. Each time you launch one of these steps you will get
+        a Job ID. You can click the `View job info`{.interpreted-text
+        role="guilabel"} button to see a detailed status and
+        diagnostic/error messages. If needed There is a [stop this
+        job]{.title-ref} link at the bottom of the info page to cancel a
+        job.
+
+        !!! Note
+
+                **QIIME2 Visualizations**
+
+                One of the features of QIIME 2 are the variety of visualizations
+                provided at several analysis steps. Although this guide will not
+                cover every feature of every visualization, here are some
+                important points to note.
+                <br>
+                **QIIME2 View**: DNA Subway uses the QIIME 2 View plugin to
+                display visualizations. Like the standalone QIIME 2
+                software, you can navigate menus, and interact with several
+                visualizations. Importantly, many files and visualizations
+                can be directly download for your use outside of DNA Subway,
+                including in report generation, or in your custom QIIME 2
+                analyses. You can view downloaded .qza or .qzv files at [view.qiime2.org](https://view.qiime2.org/).
+
+!!! Tip "Quality Graphs Explained"
+
+        After demultiplexing, you will be presented with a visualization
+        that displays the following tables and graphs:
+
+        **Overview Tab**
+        
+        -   *Demultiplexed sequence counts summary*: For each of the
+            fastq files (each of which may generally correspond to a
+            single sample), you are presented with comparative
+            statistics on the number of sequences present. This is
+            followed by a histogram that plots number of sequences by
+            the number of samples. <br>
+        -   *Per-sample sequence counts*: These are the actual counts
+            of sequences per sample as indicated by the sample names
+            you provided in your metadata sheet.
+            
+        ![overview_tab](./img/dna_subway/overview_tab.gif){width="450px" height="250px"}
+        
+        **Interactive Quality Plot**
+        
+        This is an interactive plot that gives you an average quality
+        (y-axis) by the position along the read (x-axis). This box plot
+        is derived from a random sampling of a subset of sequences. The
+        number of sequences sampled will be indicated in the plot
+        caption. You can use your mouse drag and zoom in to regions on
+        the plot. Double-click your mouse to zoom out.
+        
+        ![quality_plot](./img/dna_subway/quality_plot.gif){width="450px" height="250px"}
+
+3\. Click the \"Interactive Quality Plot\" tab to view a histogram of sequence
+
 > :   quality. Use this plot at the tip below to determine a location to
 >     trim.
 >
