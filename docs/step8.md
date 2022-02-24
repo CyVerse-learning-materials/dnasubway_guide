@@ -276,10 +276,10 @@ created.)
         Click `Save`{.interpreted-text role="guilabel"} to save your
         metadata file, and close the window.
 
-        !!! Warning "Sample Data"
-                *"ubiome-test-data"* dataset: <br>
-                Click `Add from CyVerse`{.interpreted-text role="guilabel"}Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
-                Select the **mappingfile_MT_corrected.tsv** and then click `Add selected files`{.interpreted-text role="guilabel"}.
+!!! Warning "Sample Data"
+        *"ubiome-test-data"* dataset: <br>
+        Click `Add from CyVerse`{.interpreted-text role="guilabel"}Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
+        Select the **mappingfile_MT_corrected.tsv** and then click `Add selected files`{.interpreted-text role="guilabel"}.
 
 3\.  As needed, you can edit or rename your metadata file. Before
     proceeding, you must validate your metadata file. To validate,
@@ -325,7 +325,7 @@ metadata file.
                 provided at several analysis steps. Although this guide will not
                 cover every feature of every visualization, here are some
                 important points to note.
-                <br>
+                
                 **QIIME2 View**: DNA Subway uses the QIIME 2 View plugin to
                 display visualizations. Like the standalone QIIME 2
                 software, you can navigate menus, and interact with several
@@ -491,7 +491,7 @@ searches may not return significant results.
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Purple Line - Alpha Rarefaction/Clustering Sequences*
+## DNA Subway Purple Line - Alpha Rarefaction/Clustering Sequences
 
 **A. Alpha rarefaction**
 
@@ -499,128 +499,103 @@ At this step, you can visualize summaries of the data. A feature table
 will generate summary statistics, including how many sequences are
 associated with each sample.
 
-> 1.  Click on \'Alpha rarefaction\'. Select \"run\" and designate the
->     minimum and maximum rarefaction depth. A minimum value should be
->     set at 1. The maximum value is specific to your data set. The
->     maximum value is specific to your data set. To determine what the
->     maximum value should be set to, open the \"Trim Table\" from the
->     \"DADA2\" step. You may not choose a value that is greater than
->     the maximum frequency per sample. In general, choosing a value
->     that is somewhere around the median frequency seems to work well,
->     but you may want to increase that value if the lines in the
->     resulting rarefaction plot don\'t appear to be leveling out, or
->     decrease that value if you seem to be losing many of your samples
->     due to low total frequencies closer to the minimum sampling depth
->     than the maximum sampling depth. Identify the maximum Sequence
->     Count value and enter that number as the maximum value. Click
->     `&Submit Job`{.interpreted-text role="guilabel"}.
->
-> > ::: note
-> > ::: title
-> > Note
-> > :::
-> >
-> > Since you may want to try Alpha rarefaction using different
-> > combinations of results from DADA2 trimming and your choice of
-> > rarefaction depths, your trim (DADA2) jobs are displayed on the
-> > left, and each new Alpha rarefaction setting will appear as a tab on
-> > the top.
-> >
-> > ![alpha_tabs](./img/dna_subway/alpha_tabs.gif){width="450px"
-> > height="250px"}
-> > :::
-> >
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > We recommend the following parameters:
-> >
-> > -   **Min. rarefaction depth**: 1
-> > -   **Max. rarefaction depth**: 2938
-> > :::
->
-> 2.  Under \'Results\' click on **Alpha Rarefaction Plot** to view the
->     results.
->
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > **Alpha rarefaction** generates an interactive plot of species
-> > diversity by sampling depth by the categorical samplings described
-> > in your sample metadata. You can use dropdown menus to change
-> > metrics/conditions displayed and also export data as a CSV file.
-> >
-> > ![alpha_plot](./img/dna_subway/alpha_plot.gif){width="450px"
-> > height="250px"}
-> > :::
+1.  Click on 'Alpha rarefaction'. Select "run" and designate the
+    minimum and maximum rarefaction depth. A minimum value should be
+    set at 1. The maximum value is specific to your data set. The
+    maximum value is specific to your data set. To determine what the
+    maximum value should be set to, open the "Trim Table" from the
+    "DADA2" step. You may not choose a value that is greater than
+    the maximum frequency per sample. In general, choosing a value
+    that is somewhere around the median frequency seems to work well,
+    but you may want to increase that value if the lines in the
+    resulting rarefaction plot don't appear to be leveling out, or
+    decrease that value if you seem to be losing many of your samples
+    due to low total frequencies closer to the minimum sampling depth
+    than the maximum sampling depth. Identify the maximum Sequence
+    Count value and enter that number as the maximum value. Click
+    `Submit Job`{.interpreted-text role="guilabel"}.
+
+!!! Note
+
+        Since you may want to try Alpha rarefaction using different
+        combinations of results from DADA2 trimming and your choice of
+        rarefaction depths, your trim (DADA2) jobs are displayed on the
+        left, and each new Alpha rarefaction setting will appear as a tab on
+        the top.
+
+        ![alpha_tabs](./assets/dna_subway/alpha_tabs.gif){width="450px" height="250px"}
+
+!!! Warning "Sample Data"
+        
+        *"ubiome-test-data"* dataset: 
+        We recommend the following parameters:
+        -   **Min. rarefaction depth**: 1 <br> 
+        -   **Max. rarefaction depth**: 2938
+
+2.  Under 'Results' click on **Alpha Rarefaction Plot** to view the results.
+
+!!! Tip
+
+        **Alpha rarefaction** generates an interactive plot of species
+        diversity by sampling depth by the categorical samplings described
+        in your sample metadata. You can use dropdown menus to change
+        metrics/conditions displayed and also export data as a CSV file.
+
+        ![alpha_plot](./assets/dna_subway/alpha_plot.gif){width="450px" height="250px"}
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Purple Line - Calculate Core Metrics/Alpha and Beta Diversity*
+## DNA Subway Purple Line - Calculate Core Metrics/Alpha and Beta Diversity
 
 At this stop, you will examine *Alpha Diversity* (the diversity of
 species/taxa present within a single sample) and *Beta Diversity* (a
 comparison of species/taxa diversity between two or more samples).
 
--   Alpha diversity answers the question - \"How many species are in a
-    sample?\"
--   Beta diversity answer the question - \"What are the differences in
-    species between samples?\"
+-   Alpha diversity answers the question - "How many species are in a
+    sample?"
+-   Beta diversity answer the question - "What are the differences in
+    species between samples?"
 
 **A. Calculate core metrics**
 
-> 1.  Click on \'Core metrics\' and then click the \"run\" link. Choose
->     a sampling depth based upon the \"Sampling depth\" tool (described
->     in Section D Step 1, in the *Trim Table* output; *Interactive
->     Sample Detail* tab). Choose an appropriate classifier (see
->     comments in the tip below) and click
->     `&Submit job`{.interpreted-text role="guilabel"}.
->
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > **Choosing Core metrics parameters**
-> >
-> > *Sampling Depth*
-> >
-> > In downstream steps, you will need to choose a sampling depth for
-> > your sample comparisons. You can choose by examining the table
-> > generated at the **Trim reads** step. In the *Trim Table* output,
-> > *Interactive Sample Detail* tab, use the \"Sampling depth\" tool to
-> > explore how many sequences can be sampled during the Core matrix
-> > computation. As you slide the bar to the right, more sequences are
-> > sampled, but samples that do not have this many sequences will be
-> > removed during analysis. The sampling depth affects the number of
-> > sequences that will be analyzed for taxonomy in later steps: as the
-> > sampling depth increases, a greater representation of the sequences
-> > will be analyzed. However, high sampling depth could exclude
-> > important samples, so a balance between depth and retaining samples
-> > in the analysis must be found.
-> >
-> > *Classifier* Choose a classifier pertaining to your experiment type.
-> >
-> > -   **Microbiome** choose **Greengenes (515F/806R)** or **Greengenes
-> >     (full sequences)** or **Sliva (16S rRNA)** classifier
-> > -   **eDNA** experiment with marine fishes you may elect to choose
-> >     the **Fish 12S/ecoPrimer** classifier
-> > :::
-> >
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > We recommend the following parameters:
-> >
-> > -   **Sampling Depth**: 3000
-> > -   **Classifier**: Grenegenes (full sequences)
-> > :::
+1.  Click on 'Core metrics' and then click the "run" link. Choose
+    a sampling depth based upon the "Sampling depth" tool (described
+    in Section D Step 1, in the *Trim Table* output; *Interactive
+    Sample Detail* tab). Choose an appropriate classifier (see
+    comments in the tip below) and click `Submit job`{.interpreted-text role="guilabel"}.
+
+!!! Tip "Choosing Core metrics parameters"
+
+        *Sampling Depth*
+
+        In downstream steps, you will need to choose a sampling depth for
+        your sample comparisons. You can choose by examining the table
+        generated at the **Trim reads** step. In the *Trim Table* output,
+        *Interactive Sample Detail* tab, use the "Sampling depth" tool to
+        explore how many sequences can be sampled during the Core matrix
+        computation. As you slide the bar to the right, more sequences are
+        sampled, but samples that do not have this many sequences will be
+        removed during analysis. The sampling depth affects the number of
+        sequences that will be analyzed for taxonomy in later steps: as the
+        sampling depth increases, a greater representation of the sequences
+        will be analyzed. However, high sampling depth could exclude
+        important samples, so a balance between depth and retaining samples
+        in the analysis must be found.
+
+        *Classifier* 
+        
+        Choose a classifier pertaining to your experiment type.
+
+        -   **Microbiome** choose **Greengenes (515F/806R)** or **Greengenes
+            (full sequences)** or **Sliva (16S rRNA)** classifier
+        -   **eDNA** experiment with marine fishes you may elect to choose
+            the **Fish 12S/ecoPrimer** classifier
+
+!!! Warning "Sample Data"
+            *"ubiome-test-data"* dataset: 
+            We recommend the following parameters:
+        -   **Sampling Depth**: 3000
+        -   **Classifier**: Grenegenes (full sequences)
 
 **B. Examine alpha and beta diversity**
 
@@ -631,7 +606,7 @@ comparison of species/taxa diversity between two or more samples).
 >
 >     > -   
 >     >
->     >     *Pielou\'s Evenness*
+>     >     *Pielou's Evenness*
 >     >
 >     >     :   -   Alpha Correlation: Measure of community evenness
 >     >             using correlation tests
@@ -640,7 +615,7 @@ comparison of species/taxa diversity between two or more samples).
 >     >
 >     > -   
 >     >
->     >     *Faith\'s Phylogenetic Diversity*
+>     >     *Faith's Phylogenetic Diversity*
 >     >
 >     >     :   -   Alpha Correlation: Faith Phylogenetic Diversity (a
 >     >             measure of community richness) with correlation
@@ -701,7 +676,7 @@ comparison of species/taxa diversity between two or more samples).
 >     and shape points, axes, and other parameters. You can also export
 >     images from this visualization.
 >
->     ![emperor_plots](./img/dna_subway/emperor_plots.gif){width="550px"
+>     ![emperor_plots](./assets/dna_subway/emperor_plots.gif){width="550px"
 >     height="300px"}
 >
 >     **Bioenv**
@@ -721,13 +696,13 @@ comparison of species/taxa diversity between two or more samples).
 > >     -   An interactive stacked bar plot of species diversity.
 > >         Dropdown menus allow you to color by seven taxonomic
 > >         levels 1) kingdom, 2) phylum,
-> >         3\) class, 4) order, 5), family, 6) genus, 7) species. Plots
+> >         3) class, 4) order, 5), family, 6) genus, 7) species. Plots
 > >         can be further arranged/filtered/sorted accoridng to
 > >         characteristics in the sample metadata. You may also
 > >         download images and data used to create the barpot
 > >         visualization.
 > >
-> >     > ![taxonomic_barplots](./img/dna_subway/taxonomic_barplots.gif){width="550px"
+> >     > ![taxonomic_barplots](./assets/dna_subway/taxonomic_barplots.gif){width="550px"
 > >     > height="300px"}
 > >
 > > -   *Taxonomy*
@@ -739,8 +714,8 @@ comparison of species/taxa diversity between two or more samples).
 
 **D. Calculate differential abundance**
 
-> 1.  Click on the \'Differential abundance\' stop. Then click on the
->     \"Submit new \"Differential abundance\" job\" link. Choose a
+> 1.  Click on the 'Differential abundance' stop. Then click on the
+>     "Submit new "Differential abundance" job" link. Choose a
 >     metadata category to group by, and a level of taxonomy to
 >     summarize by. Then click `&submit job`{.interpreted-text
 >     role="guilabel"}.
