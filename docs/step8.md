@@ -536,14 +536,14 @@ associated with each sample.
 
 2.  Under 'Results' click on **Alpha Rarefaction Plot** to view the results.
 
-??? tip "Navigating Alpha Rarefaction"
+??? tip "Navigating Alpha Rarefaction graphs"
 
-        **Alpha rarefaction** generates an interactive plot of species
-        diversity by sampling depth by the categorical samplings described
-        in your sample metadata. You can use dropdown menus to change
-        metrics/conditions displayed and also export data as a CSV file.
+    **Alpha rarefaction** generates an interactive plot of species
+    diversity by sampling depth by the categorical samplings described
+    in your sample metadata. You can use dropdown menus to change
+    metrics/conditions displayed and also export data as a CSV file.
 
-        ![alpha_plot](./assets/dna_subway/alpha_plot.gif){width="450px" height="250px"}
+    ![alpha_plot](./assets/dna_subway/alpha_plot.gif){width="450px" height="250px"}
 
 ------------------------------------------------------------------------
 
@@ -615,11 +615,13 @@ comparison of species/taxa diversity between two or more samples).
             
             - Group Significance: Analysis of differences between features across group
 
+
         - ***Faith's Phylogenetic Diversity***
 
             - Alpha Correlation: Faith Phylogenetic Diversity (a measure of community richness) with correlation tests
 
             - Group Significance: Faith Phylogenetic Diversity ( a measure of community richness)
+
 
     - **Beta Diversity:**
         
@@ -630,9 +632,11 @@ comparison of species/taxa diversity between two or more samples).
 
             -   Emperor: Interactive PCoA plot of Bray-Curtis metrics
 
+
         - ***Jaccard Distance***
 
             -   Emperor: Interactive PCoA plot calculated by [Jaccard](https://en.wikipedia.org/wiki/Jaccard_index) similarity index.
+
 
         - ***Unweighted UniFrac Distance***
 
@@ -641,6 +645,7 @@ comparison of species/taxa diversity between two or more samples).
             -   Bioenv: UniFrac test metrics
 
             -   Emperor: Unweighted interactive PCoA plot
+
 
         - ***Weighted UniFrac Distance*** 
         
