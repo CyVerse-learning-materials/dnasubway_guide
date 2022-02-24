@@ -529,7 +529,9 @@ associated with each sample.
         
         *"ubiome-test-data"* dataset: 
         We recommend the following parameters:
-        -   **Min. rarefaction depth**: 1 <br> 
+
+        -   **Min. rarefaction depth**: 1
+
         -   **Max. rarefaction depth**: 2938
 
 2.  Under 'Results' click on **Alpha Rarefaction Plot** to view the results.
@@ -593,171 +595,129 @@ comparison of species/taxa diversity between two or more samples).
 
 !!! Warning "Sample Data"
 
-            *"ubiome-test-data"* dataset: 
-            We recommend the following parameters:
+        *"ubiome-test-data"* dataset:
+        We recommend the following parameters:
+
         -   **Sampling Depth**: 3000
+
         -   **Classifier**: Grenegenes (full sequences)
 
 **B. Examine alpha and beta diversity**
 
-> 2.  When core metrics is complete, you should generate several
->     visualization results. Click each of the following to get access:
->
->     -   **Alpha Diversity:**
->
->     > -   
->     >
->     >     *Pielou's Evenness*
->     >
->     >     :   -   Alpha Correlation: Measure of community evenness
->     >             using correlation tests
->     >         -   Group Significance: Analysis of differences between
->     >             features across group
->     >
->     > -   
->     >
->     >     *Faith's Phylogenetic Diversity*
->     >
->     >     :   -   Alpha Correlation: Faith Phylogenetic Diversity (a
->     >             measure of community richness) with correlation
->     >             tests
->     >         -   Group Significance: Faith Phylogenetic Diversity ( a
->     >             measure of community richness)
->
->     -   **Beta Diversity:**
->
->     > -   
->     >
->     >     *Bray Curtis Distance*
->     >
->     >     :   is a metric for describing the dissimilarity of species
->     >         in an ecological sampling.
->     >
->     >         -   Bioenv: Bray-Curtis test metrics
->     >         -   Emperor: Interactive PCoA plot of Bray-Curtis
->     >             metrics
->     >
->     > -   
->     >
->     >     *Jaccard Distance*
->     >
->     >     :   -   Emperor: Interactive PCoA plot calculated by
->     >             similarity index.
->     >
->     > -   
->     >
->     >     *Unweighted UniFrac Distance*
->     >
->     >     :   is a metric for describing the similarity of a
->     >         biological community, taking into account the
->     >         relatedness of community members.
->     >
->     >         -   Bioenv: UniFrac test metrics
->     >         -   Emperor: Unweighted interactive PCoA plot
->     >
->     > -   *Weighted UniFrac Distance* Unweighted UniFrac removes the
->     >     effect of low-abundance features in the calculation of
->     >     principal components.
->     >
->     >     > -   Emperor: Weighted interactive PCoA plot of UniFrac.
->
->     ::: tip
->     ::: title
->     Tip
->     :::
->
->     **Emperor Plots**
->
->     These plots are all interactive three-dimensional plots of an
->     analysis using .
->
->     **Customization**
->
->     You can customize Emperor plots, including altering the color of
->     and shape points, axes, and other parameters. You can also export
->     images from this visualization.
->
->     ![emperor_plots](./assets/dna_subway/emperor_plots.gif){width="550px"
->     height="300px"}
->
->     **Bioenv**
->
->     These plots are tables of tests and descriptive metrics.
->     :::
+2.  When core metrics is complete, you should generate several
+    visualization results. Click each of the following to get access:
+
+    - **Alpha Diversity:**
+
+        - *Pielou's Evenness*
+
+            - Alpha Correlation: Measure of community evenness using correlation tests
+            - Group Significance: Analysis of differences between features across group
+
+        - *Faith's Phylogenetic Diversity*
+
+            - Alpha Correlation: Faith Phylogenetic Diversity (a measure of community richness) with correlation tests
+            - Group Significance: Faith Phylogenetic Diversity ( a measure of community richness)
+
+    - **Beta Diversity:**
+        
+        - *Bray-Curtis Distance*
+
+            [Bray-Curtis](https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity) is a metric for describing the dissimilarity of species in an ecological sampling.
+            -   Bioenv: Bray-Curtis test metrics
+            -   Emperor: Interactive PCoA plot of Bray-Curtis metrics
+
+        - *Jaccard Distance*
+            -   Emperor: Interactive PCoA plot calculated by [Jaccard](https://en.wikipedia.org/wiki/Jaccard_index) similarity index.
+
+        - *Unweighted UniFrac Distance*
+
+            [UniFrac](https://en.wikipedia.org/wiki/UniFrac) is a metric for describing the similarity of a biological community, taking into account the relatedness of community members.
+            -   Bioenv: UniFrac test metrics
+            -   Emperor: Unweighted interactive PCoA plot
+
+        - **Weighted UniFrac Distance** Unweighted UniFrac removes the effect of low-abundance features in the calculation of principal components.
+            - Emperor: Weighted interactive PCoA plot of UniFrac.
+
+!!! Tip
+        **Emperor Plots**
+
+            These plots are all interactive three-dimensional plots of an
+            analysis using [principal components](https://en.wikipedia.org/wiki/Principal_component_analysis).
+
+            **Customization**
+
+            You can customize Emperor plots, including altering the color of
+            and shape points, axes, and other parameters. You can also export
+            images from this visualization.
+
+            ![emperor_plots](./assets/dna_subway/emperor_plots.gif){width="550px" height="300px"}
+
+            **Bioenv**
+
+            These plots are tables of tests and descriptive metrics.
 
 **C. Taxonomic Diversity:**
 
-> Taxonomic diversity is at the heart of many analyses. We suggest
-> consulting the QIIME for a detailed explanation of how QIIME2
-> calculates taxonomy and additional features of QIIME2 you may wish to
-> explore beyond the functionalities DNA Subway has included.
->
-> > -   *Bar Plots*
-> >
-> >     -   An interactive stacked bar plot of species diversity.
-> >         Dropdown menus allow you to color by seven taxonomic
-> >         levels 1) kingdom, 2) phylum,
-> >         3) class, 4) order, 5), family, 6) genus, 7) species. Plots
-> >         can be further arranged/filtered/sorted accoridng to
-> >         characteristics in the sample metadata. You may also
-> >         download images and data used to create the barpot
-> >         visualization.
-> >
-> >     > ![taxonomic_barplots](./assets/dna_subway/taxonomic_barplots.gif){width="550px"
-> >     > height="300px"}
-> >
-> > -   *Taxonomy*
-> >
-> >     -   A table indicating the identified "features", their taxa,
-> >         and an indication of confidence.
-> >
-> > You can download and interact with any of the available plots.
+Taxonomic diversity is at the heart of many analyses. We suggest
+consulting the QIIME [taxonomy overview](https://docs.qiime2.org/2019.1/tutorials/overview/#taxonomy) for a detailed explanation of how QIIME2 calculates taxonomy and additional features of QIIME2 you may wish to
+explore beyond the functionalities DNA Subway has included.
+
+-   *Bar Plots*
+
+    -   An interactive stacked bar plot of species diversity.
+        Dropdown menus allow you to color by seven taxonomic
+        levels 1) kingdom, 2) phylum,
+        3) class, 4) order, 5), family, 6) genus, 7) species. Plots
+         can be further arranged/filtered/sorted accoridng to
+         characteristics in the sample metadata. You may also
+         download images and data used to create the barpot
+         visualization.
+
+     ![taxonomic_barplots](./assets/dna_subway/taxonomic_barplots.gif){width="550px" height="300px"}
+
+-   *Taxonomy*
+
+     -   A table indicating the identified "features", their taxa,
+         and an indication of confidence.
+
+You can download and interact with any of the available plots.
 
 **D. Calculate differential abundance**
 
-> 1.  Click on the 'Differential abundance' stop. Then click on the
->     "Submit new "Differential abundance" job" link. Choose a
->     metadata category to group by, and a level of taxonomy to
->     summarize by. Then click `&submit job`{.interpreted-text
->     role="guilabel"}.
->
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > We recommend the following parameters:
-> >
-> > -   **Group data by**: CollectionMethod
-> > -   **Level of taxonomy to summarize**: 5
-> > :::
-> >
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > Download the provided CSV files so that you can generate customized
-> > plots.
-> > :::
+1.  Click on the 'Differential abundance' stop. Then click on the
+    "Submit new "Differential abundance" job" link. Choose a
+    metadata category to group by, and a level of taxonomy to
+    summarize by. Then click `&submit job`{.interpreted-text
+    role="guilabel"}.
+
+!!! Warning "Sample Data"
+
+        *"ubiome-test-data"* dataset:
+        
+        We recommend the following parameters:
+
+        -   **Group data by**: CollectionMethod
+        
+        -   **Level of taxonomy to summarize**: 5
+
+!!! Tip
+    Download the provided CSV files so that you can generate customized plots.
+
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Purple Line - Visualize data with PiCrust and PhyloSeq*
+## DNA Subway Purple Line - Visualize data with PiCrust and PhyloSeq
 
 **Under Development**
 
 ------------------------------------------------------------------------
 
-### More help and additional information
-
-------------------------------------------------------------------------
-
 **Fix or improve this documentation**
 
--   Search for an answer:
--   Ask us for help: click on the lower right-hand side of the page
--   Report an issue or submit a change:
--   Send feedback: [Tutorials@CyVerse.org](Tutorials@CyVerse.org)
+-   Search for an answer: [CyVerse Learning Center](https://cyverse-learning-materials.github.io/learning-materials-home)
+-   Ask us for help: click the Intercom icon ![Intercom](../assets/intercom.png){ width="25" } on the lower right-hand side of the page
+-   Report an issue or submit a change: [Github Repo](https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide)
+-   Send feedback: [learning@CyVerse.org](learning@CyVerse.org)
 
 ------------------------------------------------------------------------
