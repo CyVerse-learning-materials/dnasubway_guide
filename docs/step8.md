@@ -224,57 +224,57 @@ created.)
             *"ubiome-test-data"* dataset: Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data** and click `Add all FASTQ files in this directory`{.interpreted-text role="guilabel"}
 
 2\.  To add your metadata file you may use one of three options:
-    -   *Add from CyVerse*: Add a metadata file you have uploaded to CyVerse Data store
-    -   *Upload locally*: Directly upload a metadata file from your local computer
-    -   *Create New*: Create a new metadata file using DNA Subway
+-   *Add from CyVerse*: Add a metadata file you have uploaded to CyVerse Data store
+-   *Upload locally*: Directly upload a metadata file from your local computer
+-   *Create New*: Create a new metadata file using DNA Subway
 
-    !!! Tip "Creating a metadata file using DNA Subway"
+!!! Tip "Creating a metadata file using DNA Subway"
 
-            You can create a metadata file using DNA Subway. Creating the file
-            step-by-step will help you to avoid metadata errors. Be sure you
-            have consulted the [QIIME 2 documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) so you can anticipate what the required fields
-            are. To use this feature under in the 'Manage data' step under
-            'Metadata Files' click `Create new`{.interpreted-text role="guilabel"}
+        You can create a metadata file using DNA Subway. Creating the file
+        step-by-step will help you to avoid metadata errors. Be sure you
+        have consulted the [QIIME 2 documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) so you can anticipate what the required fields
+        are. To use this feature under in the 'Manage data' step under
+        'Metadata Files' click `Create new`{.interpreted-text role="guilabel"}
 
-            **Sample IDs and adding/removing samples**
+        **Sample IDs and adding/removing samples**
 
-            These are unique IDs for each of your samples.
-            All metadata files must have a column called **#SampleID**. Click
-            `+Add samples`{.interpreted-text role="guilabel"} to add additional
-            rows. In the Subway form, these will be unique, arbitrary names
-            (roughly corresponding to well-positions on a 96-well microplate).
-            You can change these (including pasting in sample names from an
-            existing spreadsheet).
+        These are unique IDs for each of your samples.
+        All metadata files must have a column called **#SampleID**. Click
+        `+Add samples`{.interpreted-text role="guilabel"} to add additional
+        rows. In the Subway form, these will be unique, arbitrary names
+        (roughly corresponding to well-positions on a 96-well microplate).
+        You can change these (including pasting in sample names from an
+        existing spreadsheet).
 
-            ![metadata_add_samples](./assets/dna_subway/metadata_add_samples.gif){width="450px" height="250px"}
+        ![metadata_add_samples](./assets/dna_subway/metadata_add_samples.gif){width="450px" height="250px"}
 
-            Right-clicking on a row number allows you to remove or insert rows.
+        Right-clicking on a row number allows you to remove or insert rows.
 
-            ![metadata_rows](./assets/dna_subway/metadata_rows.gif){width="450px" height="250px"}
+        ![metadata_rows](./assets/dna_subway/metadata_rows.gif){width="450px" height="250px"}
 
-            **Adding columns, managing sample descriptions and data types**
+        **Adding columns, managing sample descriptions and data types**
 
-            The very **last** column must be a sample description. You can click
-            the arrow on the right of this column to add a new column (which
-            will be added to the left). Column names must be unique, must not be
-            empty, cannot contain whitespace, can contain a maximum of 32
-            characters, cannot match a reserved column name. Notice that when
-            you click on a column name it is colored -pink for columns that have
-            numeric data (e.g. measurements) and cyan for everything else (e.g.
-            categorical descriptions in the form of words (i.e. strings)).
-            Clicking a column name will allow you to change its type.
+        The very **last** column must be a sample description. You can click
+        the arrow on the right of this column to add a new column (which
+        will be added to the left). Column names must be unique, must not be
+        empty, cannot contain whitespace, can contain a maximum of 32
+        characters, cannot match a reserved column name. Notice that when
+        you click on a column name it is colored -pink for columns that have
+        numeric data (e.g. measurements) and cyan for everything else (e.g.
+        categorical descriptions in the form of words (i.e. strings)).
+        Clicking a column name will allow you to change its type.
 
-            ![metadata_add_column](./assets/dna_subway/metadata_add_column.gif){width="450px" height="250px"}
+        ![metadata_add_column](./assets/dna_subway/metadata_add_column.gif){width="450px" height="250px"}
 
-            **Handling errors**
+        **Handling errors**
 
-            If you violate one of the rules for metadata formatting, the entry
-            will turn red. Consult the help and or the [QIIME 2 documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) to correct the error.
+        If you violate one of the rules for metadata formatting, the entry
+        will turn red. Consult the help and or the [QIIME 2 documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) to correct the error.
 
-            ![metadata_error](./assets/dna_subway/metadata_error.gif){width="450px" height="250px"}
+        ![metadata_error](./assets/dna_subway/metadata_error.gif){width="450px" height="250px"}
 
-            Click `Save`{.interpreted-text role="guilabel"} to save your
-            metadata file, and close the window.
+        Click `Save`{.interpreted-text role="guilabel"} to save your
+        metadata file, and close the window.
 
     !!! Warning "Sample Data"
             *"ubiome-test-data"* dataset: <br>
@@ -284,8 +284,7 @@ created.)
 3\.  As needed, you can edit or rename your metadata file. Before
     proceeding, you must validate your metadata file. To validate,
     click the "validate" link to the right of the metadata file you
-    wish to check. Once the validation completed, click
-    `Run` to proceed. If you have
+    wish to check. Once the validation completed, click `Run` to proceed. If you have
     errors, you will be presented with an `Edit` button so that you can return to the file and
     edit.
 
@@ -304,8 +303,8 @@ metadata file.
 
 1\. Click the 'Demultiplex reads' and choose a number of reads to sample. When the job has completed click *Demultiplexing Summary* to view your results. In 'Random sequences to sample for QC', enter a value (1000 is recommended),
 
-    !!! Warning "Sample Data"
-            *"ubiome-test-data"* dataset: Use the default of 1000 sequences
+!!! Warning "Sample Data"
+        *"ubiome-test-data"* dataset: Use the default of 1000 sequences
 
 2\. When demultiplexing is complete, you will generate a file (.qzv) click this link to view a visualization and statistics on the sequence and metadata for this project.
 
@@ -352,8 +351,8 @@ metadata file.
         -   *Per-sample sequence counts*: These are the actual counts
             of sequences per sample as indicated by the sample names
             you provided in your metadata sheet.
-            
-        ![overview_tab](./img/dna_subway/overview_tab.gif){width="450px" height="250px"}
+
+        ![overview_tab](./assets/dna_subway/overview_tab.gif){width="450px" height="250px"}
         
         **Interactive Quality Plot**
         
@@ -364,59 +363,46 @@ metadata file.
         caption. You can use your mouse drag and zoom in to regions on
         the plot. Double-click your mouse to zoom out.
         
-        ![quality_plot](./img/dna_subway/quality_plot.gif){width="450px" height="250px"}
+        ![quality_plot](./assets/dna_subway/quality_plot.gif){width="450px" height="250px"}
 
-3\. Click the \"Interactive Quality Plot\" tab to view a histogram of sequence
+3\. Click the "Interactive Quality Plot" tab to view a histogram of sequence quality. Use this plot at the tip below to determine a location to trim.
 
-> :   quality. Use this plot at the tip below to determine a location to
->     trim.
->
-> ::: tip
-> ::: title
-> Tip
-> :::
->
-> **Tips on trimming for sequence quality**
->
-> On the Interactive Quality Plot you are shown an histogram, plotting
-> the average quality (X axis) vs. the position on the read (y axis) in
-> base pairs for a **subsample** of reads.
->
-> **Zooming to determine 3\' trim location**
->
-> Click and drag your mouse around a collection of base pair positions
-> you wish to examine. Clicking on a given histogram bar will also
-> generate a text report and metrics in the table below the chart. Using
-> these metrics, you can choose a position to trim on the right side
-> (e.g. 3\' end of the sequence read). The 5\' (left trim) is specific
-> to your choice of primers and sequencing adaptors (e.g. the sum of the
-> adaptor sequence you expect to be attached to the 5\' end of the
-> read). Poor quality metrics will generate a table colored in red, and
-> those base positions will also be colored red in the histogram.
-> Double-clicking will return the histogram to its original level of
-> zoom.
->
-> **Example plots**
->
-> It is important to maximize the length of the reads while minimizing
-> the use of low quality base calls. To this end, a good guideline is to
-> trim the right end of reads to a length where the 25th percentile is
-> at a quality score of 25 or more. However, the length of trimming will
-> depend on the quality of the sequence, so you may have to use a lower
-> quality threshold to retain enough sequence for informative sequence
-> searches and alignments. This may require multiple runs of the
-> analysis to find the optimal trim length for your data.
->
-> *Quality drops significantly at base 35*
->
-> ![histogram_poor](./img/dna_subway/histogram_poor.png){width="400px"
-> height="250px"}
->
-> *Improved quality sequence*
->
-> ![histogram_good](./img/dna_subway/histogram_good.png){width="400px"
-> height="250px"}
-> :::
+!!! Tip "Tips on trimming for sequence quality"
+
+        On the Interactive Quality Plot you are shown an histogram, plotting
+        the average quality (x axis) [Phred score](https://en.wikipedia.org/wiki/Phred_quality_score) vs. the position on the read (y axis) in base pairs for a **subsample** of reads.
+
+        **Zooming to determine 3' trim location**
+
+        Click and drag your mouse around a collection of base pair positions
+        you wish to examine. Clicking on a given histogram bar will also
+        generate a text report and metrics in the table below the chart. Using
+        these metrics, you can choose a position to trim on the right side
+        (e.g. 3' end of the sequence read). The 5' (left trim) is specific
+        to your choice of primers and sequencing adaptors (e.g. the sum of the
+        adaptor sequence you expect to be attached to the 5' end of the
+        read). Poor quality metrics will generate a table colored in red, and
+        those base positions will also be colored red in the histogram.
+        Double-clicking will return the histogram to its original level of
+        zoom.
+
+        **Example plots**
+        It is important to maximize the length of the reads while minimizing
+        the use of low quality base calls. To this end, a good guideline is to
+        trim the right end of reads to a length where the 25th percentile is
+        at a quality score of 25 or more. However, the length of trimming will
+        depend on the quality of the sequence, so you may have to use a lower
+        quality threshold to retain enough sequence for informative sequence
+        searches and alignments. This may require multiple runs of the
+        analysis to find the optimal trim length for your data.
+
+        *Quality drops significantly at base 35*
+
+        ![histogram_poor](./assets/dna_subway/histogram_poor.png){width="400px" height="250px"}
+
+        *Improved quality sequence*
+
+        ![histogram_good](./assets/dna_subway/histogram_good.png){width="400px" height="250px"}
 
 **C. Use DADA2 for Trimming and Error-correction of Reads**
 
@@ -424,106 +410,85 @@ It is important to only work with high quality data. This step will
 generate a sequence quality histogram which can be used to determine
 parameter for trimming.
 
-> 1.  Click \'DADA2\' and choose the metadata file corresponding to the
->     samples you wish to analyze. Then choose values for trimming of
->     the reads. For \"trimLeft\" (the position starting from the left
->     you wish to trim) and \"TruncLen\" (this is the position where
->     reads should be trimmed, truncating the 3\' end of the read. Reads
->     shorter than this length will be discarded). Finally, click
->     `&Trim reads`{.interpreted-text role="guilabel"}.
->
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > Based on the histogram for our sample, we recommend the following
-> > parameters:
-> >
-> > -   **trimLeft: 17** (this is specific to primers and adaptors in
-> >     this experiment)
-> > -   **TruncLen: 200** (this is where low quality sequence begins, in
-> >     this case because our sequence length is lower than the expected
-> >     read length)
-> > :::
+1.  Click 'DADA2' and choose the metadata file corresponding to the
+    samples you wish to analyze. Then choose values for trimming of
+    the reads. For "trimLeft" (the position starting from the left
+    you wish to trim) and "TruncLen" (this is the position where
+    reads should be trimmed, truncating the 3' end of the read. Reads
+    shorter than this length will be discarded). Finally, click
+    `Trim reads`{.interpreted-text role="guilabel"}.
+
+    !!! Warning "Sample Data"
+            *"ubiome-test-data"* dataset: Based on the histogram for our sample, we recommend the following parameters:
+
+            -   **trimLeft: 17** (this is specific to primers and adaptors in
+                this experiment)
+            -   **TruncLen: 200** (this is where low quality sequence begins, in
+                this case because our sequence length is lower than the expected
+                read length)
+
 
 **D. Check Results of Trimming** Once trimming is complete, the
 following outputs are expected:
 
-> 1.  Click on DADA2 and then click on the links in the *Results* table
->     to examine results.
->
-> -   **Trim Table** (*Metric summary*, *Frequency per sample*,
->     *Frequency per feature*, ): Summarizes the dataset post-trimming
->     including the number of samples and the number of features per
->     sample. The \"Interactive Sample Detail\" tab contains a sampling
->     depth tool that will be used in computation of the core matrix.
->
->     ::: note
->     ::: title
->     Note
->     :::
->
->     **You will use the maximum frequency value for the Alpha
->     rarefaction step** So you may wish to record this value now for
->     the DNA Subway \'Clustering sequences\' step.
->     :::
->
-> -   **Stats**: Sequencing statistics for each of the sample IDs
->     described in the original metadata file.
->
-> -   **Representative Sequences** (*Sequence Length Statistics*,
->     *Seven-Number Summary of Sequence Lengths*, *Sequence Table*):
->     This table contains a listing of features observed in the sequence
->     data, as well as the DNA sequence that defines a feature. Clicking
->     on the DNA sequence will submit that sequence for BLAST at NCBI in
->     a separate browser tab.
->
-> The feature table contains two columns output by DADA2. DADA2
-> (Divisive Amplicon Denoising Algorithm 2) determines what sequences
-> are in the samples. DADA2 filters the sequences and identifies
-> probable amplification or sequencing errors, filters out chimeric
-> reads, and can pair forward and reverse reads to create the best
-> representation of the sequences actually found in the samples and
-> eliminating erroneous sequences.
->
-> > -   **Feature ID**: A unique identifier for sequences.
-> > -   **Sequence**: A DNA Sequence associated with each identifier.
->
-> Clicking on any given sequence will initiate at BLAST search on the
-> NCBI website. Click \"View report\" on the BLAST search that opens in
-> a new web browser tab to obtain your results. Keep in mind that if
-> your sequences are short (due to read length or trimming) many BLAST
-> searches may not return significant results.
->
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > Although the term \"feature\" can (unfortunately) as used by the
-> > QIIME2 documentation, unless otherwise noted in this documentation
-> > it can be thought of as an OTU (); another substitution for the word
-> > species. OTU is a convenient and common terminology for referring to
-> > an unclassified or undetermined species. Ultimately, we are
-> > attempting to identify an organism from a sample of DNA which may
-> > not be informative enough to reach a definitive conclusion.
-> > :::
-> >
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > If you want to redo the DADA2 step with different parameters, click
-> > the \"New Job\" tab on the upper left of a DADA2 window to submit a
-> > new job. New jobs appear as tabs on Subway steps that are typically
-> > run several times. You can go back an see these jobs which are
-> > labeled with a job number.
-> >
-> > ![dada_tabs](./img/dna_subway/dada_tabs.gif){width="450px"
-> > height="250px"}
-> > :::
+1.  Click on DADA2 and then click on the links in the *Results* table
+    to examine results.
+
+-   **Trim Table** (*Metric summary*, *Frequency per sample*,
+    *Frequency per feature*): Summarizes the dataset post-trimming
+    including the number of samples and the number of features per
+    sample. The "Interactive Sample Detail" tab contains a sampling
+    depth tool that will be used in computation of the core matrix.
+
+    !!! Note
+
+            **You will use the maximum frequency value for the Alpha
+            rarefaction step** So you may wish to record this value now for
+            the DNA Subway 'Clustering sequences' step.
+
+-   **Stats**: Sequencing statistics for each of the sample IDs
+    described in the original metadata file.
+-   **Representative Sequences** (*Sequence Length Statistics*,
+    *Seven-Number Summary of Sequence Lengths*, *Sequence Table*):
+    This table contains a listing of features observed in the sequence
+    data, as well as the DNA sequence that defines a feature. Clicking
+    on the DNA sequence will submit that sequence for BLAST at NCBI in
+    a separate browser tab.
+
+The feature table contains two columns output by DADA2. DADA2
+(Divisive Amplicon Denoising Algorithm 2) determines what sequences
+are in the samples. DADA2 filters the sequences and identifies
+probable amplification or sequencing errors, filters out chimeric
+reads, and can pair forward and reverse reads to create the best
+representation of the sequences actually found in the samples and
+eliminating erroneous sequences.
+
+-   **Feature ID**: A unique identifier for sequences.
+-   **Sequence**: A DNA Sequence associated with each identifier.
+
+Clicking on any given sequence will initiate at BLAST search on the
+NCBI website. Click "View report" on the BLAST search that opens in
+a new web browser tab to obtain your results. Keep in mind that if
+your sequences are short (due to read length or trimming) many BLAST
+searches may not return significant results.
+
+!!! Tip
+        Although the term "feature" can (unfortunately) [have many meanings](https://forum.qiime2.org/t/what-is-a-feature-exactly/2201) as used by the
+        QIIME2 documentation, unless otherwise noted in this documentation
+        it can be thought of as an OTU ([Operational Taxonomic Uinit](https://en.wikipedia.org/wiki/Operational_taxonomic_unit)); another substitution for the word
+        species. OTU is a convenient and common terminology for referring to
+        an unclassified or undetermined species. Ultimately, we are
+        attempting to identify an organism from a sample of DNA which may
+        not be informative enough to reach a definitive conclusion.
+
+!!! Tip
+        If you want to redo the DADA2 step with different parameters, click
+        the "New Job" tab on the upper left of a DADA2 window to submit a
+        new job. New jobs appear as tabs on Subway steps that are typically
+        run several times. You can go back an see these jobs which are
+        labeled with a job number.
+
+        ![dada_tabs](./assets/dna_subway/dada_tabs.gif){width="450px" height="250px"}
 
 ------------------------------------------------------------------------
 
