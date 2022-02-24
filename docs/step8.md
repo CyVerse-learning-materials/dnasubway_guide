@@ -156,7 +156,6 @@ must be fixed.
     this file as a tab-delimited **.txt** or **.tsv** file. following
     the QIIME 2 metadata documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) recommendations. (Optional: if you using your own metadata file you can validate it using DNA Subway and or online QIIME2 validator).
 
-
 !!! Tip
 
     See an example metadata file used for our sample data here: . Click
@@ -164,7 +163,6 @@ must be fixed.
     linked page to download and examine the file. (**Note**: This is an
     Excel version of the metadata file, you must save Excel files as .TSV
     (tab-separated) to be compatible with the QIIME 2 workflow.)
-
 
 **Creating a metadata file using DNA Subway**
 
@@ -190,7 +188,7 @@ See [DNA Subway Purple Line - Metadata and QC](#dna-subway-purple-line---metadat
     !!! Tip
             Typically, microbiome/eDNA will be in the form of multiplexed FastQ sequences. We support the following formats:
             
-            - Illumina Casava 1.8  
+            - [Illumina Casava 1.8](http://illumina.bioinfo.ucr.edu/ht/documentation/data-analysis-docs/CASAVA-FASTQ.pdf/at_download/file)
 5.  Enter a project title, and description; click `Continue`{.interpreted-text role="guilabel"}.
 
 **B. Upload read data to CyVerse Data Store**
@@ -209,120 +207,85 @@ created.)
 
 ------------------------------------------------------------------------
 
-## *DNA Subway Purple Line - Metadata and QC*
+## DNA Subway Purple Line - Metadata and QC
 
 **A. Select files using Manage Data**
 
-> 1.  Click on the \'Manage data stop: this opens a window where you can
->     add your FASTQ and metadata files. Click
->     `&+Add from CyVerse`{.interpreted-text role="guilabel"} to add the
->     FASTQ files uploaded to the CyVerse Data Store. Select your files
->     and then click `&Add selected files`{.interpreted-text
->     role="guilabel"} or
->     `&Add all FASTQ files in this directory`{.interpreted-text
->     role="guilabel"} as appropriate.
->
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > Navigate to: Shared Data \> SEPA_microbiome_2016 \>
-> > **ubiome-test-data** and click
-> > `&Add all FASTQ files in this directory`{.interpreted-text
-> > role="guilabel"}
-> > :::
->
-> 2.  To add your metadata file you may use one of three options:
->
-> > -   *Add from CyVerse*: Add a metadata file you have uploaded to
-> >     CyVerse Data store
-> > -   *Upload locally*: Directly upload a metadata file from your
-> >     local computer
-> > -   *Create New*: Create a new metadata file using DNA Subway
-> >
-> > ::: tip
-> > ::: title
-> > Tip
-> > :::
-> >
-> > **Creating a metadata file using DNA Subway**
-> >
-> > You can create a metadata file using DNA Subway. Creating the file
-> > step-by-step will help you to avoid metadata errors. Be sure you
-> > have consulted the so you can anticipate what the required fields
-> > are. To use this feature under in the \'Manage data\' step under
-> > \'Metadata Files\' click `&Create new`{.interpreted-text
-> > role="guilabel"}
-> >
-> > **Sample IDs and adding/removing samples**
-> >
-> > These are unique IDs for each of your samples.
-> >
-> > All metadata files must have a column called **#SampleID**. Click
-> > `&+Add samples`{.interpreted-text role="guilabel"} to add additional
-> > rows. In the Subway form, these will be unique, arbitrary names
-> > (roughly corresponding to well-positions on a 96-well microplate).
-> > You can change these (including pasting in sample names from an
-> > existing spreadsheet).
-> >
-> > ![metadata_add_samples](./img/dna_subway/metadata_add_samples.gif){width="450px"
-> > height="250px"}
-> >
-> > Right-clicking on a row number allows you to remove or insert rows.
-> >
-> > ![metadata_rows](./img/dna_subway/metadata_rows.gif){width="450px"
-> > height="250px"}
-> >
-> > **Adding columns, managing sample descriptions and data types**
-> >
-> > The very **last** column must be a sample description. You can click
-> > the arrow on the right of this column to add a new column (which
-> > will be added to the left). Column names must be unique, must not be
-> > empty, cannot contain whitespace, can contain a maximum of 32
-> > characters, cannot match a reserved column name. Notice that when
-> > you click on a column name it is colored -pink for columns that have
-> > numeric data (e.g. measurements) and cyan for everything else (e.g.
-> > categorical descriptions in the form of words (i.e. strings)).
-> > Clicking a column name will allow you to change its type.
-> >
-> > ![metadata_add_column](./img/dna_subway/metadata_add_column.gif){width="450px"
-> > height="250px"}
-> >
-> > **Handling errors**
-> >
-> > If you violate one of the rules for metadata formatting, the entry
-> > will turn red. Consult the help and or the to correct the error.
-> >
-> > ![metadata_error](./img/dna_subway/metadata_error.gif){width="450px"
-> > height="250px"}
-> >
-> > Click `&Save`{.interpreted-text role="guilabel"} to save your
-> > metadata file, and close the window.
-> > :::
-> >
-> > ::: admonition
-> > Sample data
-> >
-> > *\"ubiome-test-data\"* dataset:
-> >
-> > Click `&Add from CyVerse`{.interpreted-text role="guilabel"}
-> >
-> > Navigate to: Shared Data \> SEPA_microbiome_2016 \>
-> > **ubiome-test-data**
-> >
-> > Select the **mappingfile_MT_corrected.tsv** and then click
-> > `&Add selected files`{.interpreted-text role="guilabel"}.
-> > :::
->
-> 3.  As needed, you can edit or rename your metadata file. Before
->     proceeding, you must validate your metadata file. To validate,
->     click the \"validate\" link to the right of the metadata file you
->     wish to check. Once the validation completed, click
->     `&Run`{.interpreted-text role="guilabel"} to proceed. If you have
->     errors, you will be presented with an `&Edit`{.interpreted-text
->     role="guilabel"} button so that you can return to the file and
->     edit.
+1.  Click on the 'Manage data stop: this opens a window where you can
+    add your FASTQ and metadata files. Click
+    `+Add from CyVerse`{.interpreted-text role="guilabel"} to add the
+    FASTQ files uploaded to the CyVerse Data Store. Select your files
+    and then click `Add selected files`{.interpreted-text
+    role="guilabel"} or `Add all FASTQ files in this directory`{.interpreted-text
+    role="guilabel"} as appropriate.
+
+    !!! Warning "Sample Data"
+            *"ubiome-test-data"* dataset: Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data** and click `Add all FASTQ files in this directory`{.interpreted-text role="guilabel"}
+2.  To add your metadata file you may use one of three options:
+    -   *Add from CyVerse*: Add a metadata file you have uploaded to CyVerse Data store
+    -   *Upload locally*: Directly upload a metadata file from your local computer
+    -   *Create New*: Create a new metadata file using DNA Subway
+
+    !!! Tip "Creating a metadata file using DNA Subway"
+
+            You can create a metadata file using DNA Subway. Creating the file
+            step-by-step will help you to avoid metadata errors. Be sure you
+            have consulted the [QIIME 2 documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) so you can anticipate what the required fields
+            are. To use this feature under in the 'Manage data' step under
+            'Metadata Files' click `Create new`{.interpreted-text role="guilabel"}
+
+            **Sample IDs and adding/removing samples**
+
+            These are unique IDs for each of your samples.
+            All metadata files must have a column called **#SampleID**. Click
+            `+Add samples`{.interpreted-text role="guilabel"} to add additional
+            rows. In the Subway form, these will be unique, arbitrary names
+            (roughly corresponding to well-positions on a 96-well microplate).
+            You can change these (including pasting in sample names from an
+            existing spreadsheet).
+
+            ![metadata_add_samples](./assets/dna_subway/metadata_add_samples.gif){width="450px" height="250px"}
+
+            Right-clicking on a row number allows you to remove or insert rows.
+
+            ![metadata_rows](./assets/dna_subway/metadata_rows.gif){width="450px" height="250px"}
+
+            **Adding columns, managing sample descriptions and data types**
+
+            The very **last** column must be a sample description. You can click
+            the arrow on the right of this column to add a new column (which
+            will be added to the left). Column names must be unique, must not be
+            empty, cannot contain whitespace, can contain a maximum of 32
+            characters, cannot match a reserved column name. Notice that when
+            you click on a column name it is colored -pink for columns that have
+            numeric data (e.g. measurements) and cyan for everything else (e.g.
+            categorical descriptions in the form of words (i.e. strings)).
+            Clicking a column name will allow you to change its type.
+
+            ![metadata_add_column](./assets/dna_subway/metadata_add_column.gif){width="450px" height="250px"}
+
+            **Handling errors**
+
+            If you violate one of the rules for metadata formatting, the entry
+            will turn red. Consult the help and or the [QIIME 2 documentation](https://docs.qiime2.org/2019.10/tutorials/metadata/) to correct the error.
+
+            ![metadata_error](./assets/dna_subway/metadata_error.gif){width="450px" height="250px"}
+
+            Click `Save`{.interpreted-text role="guilabel"} to save your
+            metadata file, and close the window.
+
+            !!! Warning "Sample Data"
+                    *"ubiome-test-data"* dataset: <br>
+                    Click `Add from CyVerse`{.interpreted-text role="guilabel"}Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
+                    Select the **mappingfile_MT_corrected.tsv** and then click `Add selected files`{.interpreted-text role="guilabel"}.
+3.  As needed, you can edit or rename your metadata file. Before
+    proceeding, you must validate your metadata file. To validate,
+    click the "validate" link to the right of the metadata file you
+    wish to check. Once the validation completed, click
+    `Run`{.interpreted-text role="guilabel"} to proceed. If you have
+    errors, you will be presented with an `Edit`{.interpreted-text
+    role="guilabel"} button so that you can return to the file and
+    edit.
 
 **B. Demultiplex reads**
 
