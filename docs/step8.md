@@ -166,7 +166,7 @@ must be fixed.
 
 **Creating a metadata file using DNA Subway**
 
-See [DNA Subway Purple Line - Metadata and QC](#dna-subway-purple-line---metadata-and-qc) section C.
+See [DNA Subway Purple Line - Metadata and QC]() section C.
 
 ## DNA Subway Purple Line - Create a Microbiome Analysis Project
 
@@ -276,10 +276,10 @@ created.)
         Click `Save`{.interpreted-text role="guilabel"} to save your
         metadata file, and close the window.
 
-    !!! Warning "Sample Data"
-            *"ubiome-test-data"* dataset: <br>
-            Click `Add from CyVerse`{.interpreted-text role="guilabel"}Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
-            Select the **mappingfile_MT_corrected.tsv** and then click `Add selected files`{.interpreted-text role="guilabel"}.
+        !!! Warning "Sample Data"
+                *"ubiome-test-data"* dataset: <br>
+                Click `Add from CyVerse`{.interpreted-text role="guilabel"}Navigate to: Shared Data > SEPA_microbiome_2016 > **ubiome-test-data**
+                Select the **mappingfile_MT_corrected.tsv** and then click `Add selected files`{.interpreted-text role="guilabel"}.
 
 3\.  As needed, you can edit or rename your metadata file. Before
     proceeding, you must validate your metadata file. To validate,
@@ -314,8 +314,7 @@ metadata file.
         to complete. Each time you launch one of these steps you will get
         a Job ID. You can click the `View job info`{.interpreted-text
         role="guilabel"} button to see a detailed status and
-        diagnostic/error messages. If needed There is a [stop this
-        job]{.title-ref} link at the bottom of the info page to cancel a
+        diagnostic/error messages. If needed There is a [stop this job]{.title-ref} link at the bottom of the info page to cancel a
         job.
 
         !!! Note
