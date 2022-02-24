@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/dnasubway_guide/step1/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>DNA Subway Basics and Logging in to Subway - DNA Subway</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "DNA Subway Basics and Logging in to Subway";
+    var mkdocs_page_input_path = "step1.md";
+    var mkdocs_page_url = "/dnasubway_guide/step1/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DNA Subway</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">DNA Subway Basics and Logging in to Subway</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#logging-into-dna-subway-as-a-registered-user">Logging into DNA Subway as a registered user</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logging-into-dna-subway-as-a-guest-user">Logging into DNA Subway as a guest user</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Accessing Saved Private and Public DNA Subway Projects</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Walkthrough of DNA Subway Red Line - Genome Annotation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Walkthrough of DNA Subway Blue Line - Sequence Detection</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step7/">Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step8/">Walkthrough of DNA Subway Purple Line (beta testing documentation)</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DNA Subway</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>DNA Subway Basics and Logging in to Subway</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide/edit/mkdocs/docs/step1.md"> Edit on CyVerse-learning-materials/dnasubway_guide/</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<h1 id="dna-subway-basics-and-logging-in-to-subway">DNA Subway Basics and Logging in to Subway<a class="headerlink" href="#dna-subway-basics-and-logging-in-to-subway" title="Permanent link">&para;</a></h1>
+<p>DNA Subway is designed to be a classroom-friendly approach to
+bioinformatics. Unlike most CyVerse platforms, you can even use Subway
+without registering for a CyVerse account. We do encourage you to
+register however, only work from registered users can be saved. DNA
+Subway uses the same open-source bioinformatics tools used by
+researchers. See a <a href="https://dnasubway.cyverse.org/about/resources.html">complete list of the
+tools</a> provided in
+the Subway pipelines.</p>
+<p><strong>Some things to remember about the platform</strong></p>
+<p><em>Registered user and Guest user account types</em></p>
+<ul>
+<li>DNA Subway access must be requested through the CyVerse user portal.
+    You can check if you already have access, or request access by
+    logging into the portal and visiting the <a href="https://user.cyverse.org/services/mine">My
+    Services</a> page. If DNA
+    Subway is not listed, click on
+    <a href="https://user.cyverse.org/services/available">Available</a> services to
+    request access.</li>
+<li>Guest users will not have their worked saved beyond a single DNA
+    Subway session. They are also disallowed from using one of the gene
+    predictors (FGenesH) in the genomic annotation pipeline (Red Line).</li>
+<li>We suggest that every student using DNA Subway obtain their own
+    account.</li>
+</ul>
+<p><em>Sample Datasets and reference data</em></p>
+<p>All Subway lines accept user data and also have sample data that can be
+immediately used to create a project.</p>
+<ul>
+<li><strong>Red Line - Genome Annotation:</strong> Samples of plant and animal
+    genomes that can be used in annotation projects</li>
+<li><strong>Yellow Line - TARGeT Search for transposons and other DNA
+    Sequences:</strong> Several model plant genomes</li>
+<li><strong>Blue Line - DNA Barcoding and Phylogenetics:</strong> Sample sequence
+    from plant, animal, fungal, and bacterial barcoding regions; human
+    mitochondrial DNA sequence</li>
+<li><strong>Green Line - RNA-Seq for differential expression:</strong> Sample
+    high-throughput reads from RNA-Seq experiments</li>
+</ul>
+<p>If there is a reference data set or sample sequence you would like
+added, you can contact CyVerse using the DNA Subway <a href="https://dnasubway.cyverse.org/feedback.html">Contact
+page</a></p>
+<p><em>Public and private projects</em> - DNA Subway projects are private by
+default, but can be shared by making them public. Public projects are
+searchable and are a great way to share data or present analysis for
+grading in a classroom project.</p>
+<hr />
+<h2 id="logging-into-dna-subway-as-a-registered-user"><em>Logging into DNA Subway as a registered user</em><a class="headerlink" href="#logging-into-dna-subway-as-a-registered-user" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Access the DNA Subway website at <a href="https://dnasubway.cyverse.org/">https://dnasubway.cyverse.org/</a></li>
+<li>
+<p>If you wish to use DNA Subway as a guest click 'Enter As Guest'</p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>When using DNA Subway as a guest, you will be able to work only on
+the Red, Yellow, and Blue lines. Additionally, some Red Line
+functionalities will be disabled. Finally, after logging out, or a
+period of inactivity (>~ 30 min) you work will be discarded.</p>
+</p>
+</div>
+</li>
+<li>
+<p>Enter your CyVerse username and CyVerse password.</p>
+</li>
+</ol>
+<h2 id="logging-into-dna-subway-as-a-guest-user"><em>Logging into DNA Subway as a guest user</em><a class="headerlink" href="#logging-into-dna-subway-as-a-guest-user" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Access the DNA Subway website at <a href="https://dnasubway.cyverse.org/">https://dnasubway.cyverse.org/</a>; click 'Enter as Guest'</li>
+</ol>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click the Intercom icon <img alt="Intercom" src="../assets/intercom.png" width="25" /> on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step2/" class="btn btn-neutral float-right" title="Accessing Saved Private and Public DNA Subway Projects">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

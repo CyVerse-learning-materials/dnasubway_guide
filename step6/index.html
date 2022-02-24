@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/dnasubway_guide/step6/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Step6 - DNA Subway</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Step6";
+    var mkdocs_page_input_path = "step6.md";
+    var mkdocs_page_url = "/dnasubway_guide/step6/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DNA Subway</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">DNA Subway Basics and Logging in to Subway</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Accessing Saved Private and Public DNA Subway Projects</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Walkthrough of DNA Subway Red Line - Genome Annotation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Walkthrough of DNA Subway Blue Line - Sequence Detection</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step7/">Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step8/">Walkthrough of DNA Subway Purple Line (beta testing documentation)</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DNA Subway</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Step6</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide/edit/mkdocs/docs/step6.md"> Edit on CyVerse-learning-materials/dnasubway_guide/</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<h1 id="walkthrough-of-dna-subway-green-line">Walkthrough of DNA Subway Green Line<a class="headerlink" href="#walkthrough-of-dna-subway-green-line" title="Permanent link">&para;</a></h1>
+<p>The Green line runs within CyVerse DNA Subway and was developed
+leverages powerful computing and data storage infrastructure and uses
+the <a href="https://www.tacc.utexas.edu/systems/stampede">Stampede</a>
+supercomputer cluster to provide a high performance analytical platform
+with a simple user interface suitable for both teaching and research.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Discontinuing support for Tuxedo workflow</strong>
+The Tuxedo workflow previously implemented for the Green Line will
+be removed in <strong>June 2019</strong>. After that time you will no longer be
+able to use that workflow to analyze your data. Your data and
+previously analyzed results will still be available on the CyVerse
+Data Store.</p>
+<p>Until then, <strong>you can still view and use the Tuexdo workflow</strong> by
+toggling between Kallisto and Tuexdo by selecting the Workflow
+button in the Project Information menu at the bottom of the Green
+Line page. See the next page on the new Kallisto/Sleuth Green Line
+workflow.</p>
+</div>
+<p><strong>Some things to remember about the platform</strong></p>
+<ul>
+<li>You must be a registered CyVerse user to use Green Line</li>
+<li>The Green line was designed to make RNA-Seq data analysis
+    \"simple\". However, we ask that users thoughtfully decide what
+    \"jobs\" they want to submit.</li>
+<li>A single Green Line project may take a week to process since HPC
+    computing is subject to queues which hundreds of other jobs may be
+    staging for. Additionally these systems undergo regular maintenance
+    and are subject to periodic disruption.</li>
+<li>DNA Subway implements the <a href="https://www.nature.com/nprot/journal/v7/n3/fig_tab/nprot.2012.016_F2.html">Tuxedo
+    Protocol</a>;
+    RNA-Seq is a rapidly evolving method, and we anticipate upgrades to
+    newer more efficient protocols. The important concepts behind
+    RNA-Seq are still embodied in the current Subway architecture.</li>
+</ul>
+<hr />
+<h2 id="dna-subway-green-line-create-an-rna-seq-project-to-examine-differential-expression"><em>DNA Subway Green Line - Create an RNA-Seq Project to Examine Differential Expression</em><a class="headerlink" href="#dna-subway-green-line-create-an-rna-seq-project-to-examine-differential-expression" title="Permanent link">&para;</a></h2>
+<p><strong>A. Create a project in Subway</strong></p>
+<blockquote>
+<ol>
+<li>
+<p>Log-in to <a href="https://dnasubway.cyverse.org/">DNA Subway</a> -
+    unregistered users may NOT use Green Line.</p>
+</li>
+<li>
+<p>Click on the Green \"Next Generation Sequencing\" square to start
+    a Green Line project.</p>
+</li>
+<li>
+<p>For \'Select Project Type\' select either Single End Reads or
+    Paired End Reads</p>
+</li>
+<li>
+<p>For \'Select an Organism\' select a species and genome build.</p>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<p>If you don\'t see a desired species/genome <a href="https://dnasubway.cyverse.org/feedback.html">contact
+us</a> to have it added
+:::</p>
+</li>
+<li>
+<p>Enter a project title, and description; click \'Continue\'</p>
+</li>
+</ol>
+</blockquote>
+<p><strong>B. Upload Read Data to CyVerse Data Store</strong> The sequence read files
+used in these experiments are too large to upload using the Subway
+internet interface. You must upload your files (either .fastq or
+.fastq.gz) directly to the CyVerse Data Store.</p>
+<blockquote>
+<ol>
+<li>Upload your reads to the CyVerse Data Store using Cyberduck. See
+    instructions: <a href="https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html">CyVerse Data Store
+    Guide</a></li>
+</ol>
+</blockquote>
+<hr />
+<h2 id="dna-subway-green-line-manage-data-and-check-quality-with-fastqc"><em>DNA Subway Green Line - Manage Data and Check Quality with FASTQC</em><a class="headerlink" href="#dna-subway-green-line-manage-data-and-check-quality-with-fastqc" title="Permanent link">&para;</a></h2>
+<p><strong>A. Select and pair files</strong></p>
+<blockquote>
+<ol>
+<li>Click on the "Manage Data" stop: this opens a Data store window
+    that says \"Select your FASTQ files from the Data Store\" (if you
+    are not logged in to CyVerse, it will ask you to do so)</li>
+<li>Click on the folder that matches your CyVerse username and
+    Navigate to the folder where your sequencing files are located.</li>
+<li>Select the sequencing files you want to analyze (either .fastq or
+    .fastq.gz format).</li>
+<li>If working with paired-end reads, click the \'Pair Mode\' button
+    to toggle to on; check each pair of sequencing files to pair them.</li>
+</ol>
+</blockquote>
+<p><strong>B. Check sequencing quality with FastQC</strong> It is important to only work
+with high quality data.
+<a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a> is a
+popular tool for determining sequencing quality.</p>
+<blockquote>
+<ol>
+<li>Once files have been loaded, in the \'Manage Data\' window, click
+    the \'Run\' link in the \'QC\' column to run FastQC.</li>
+<li>One the job is complete, click the \'View\' link to view
+    repeat_results</li>
+</ol>
+</blockquote>
+<hr />
+<h2 id="dna-subway-green-line-trim-and-filter-reads-with-fastx-toolkit"><em>DNA Subway Green Line - Trim and Filter Reads with FastX Toolkit</em><a class="headerlink" href="#dna-subway-green-line-trim-and-filter-reads-with-fastx-toolkit" title="Permanent link">&para;</a></h2>
+<p>Raw reads are first \"quality trimmed\" (remove poor quality bases off
+the end(s) of a read) and then are \"quality filtered\" (filter out
+entire poor quality reads) prior to aligning to the genome. After
+trimming and filtering, FastQC is run on the trimmed/filtered files.</p>
+<blockquote>
+<ol>
+<li>
+<p>Click "FastX ToolKit" to open the FastX Toolkit panel for all your
+    data.</p>
+</li>
+<li>
+<p>For each file, under \'Basic\', Click \'Run\' to filter the reads
+    using default parameters or click \'Advanced\' to run with desired
+    parameters; repeat this process for all the FASTQ files in your
+    dataset.</p>
+</li>
+<li>
+<p>Once the job completes, click the \'View\' link to view a
+    generated FastQC report.</p>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<ul>
+<li>Starting at this step, DNA Subway results are labeled with a
+    job ID (e.g. fx####). These jobs are available in a
+    \'DNASubway\' folder in the home directory of your CyVerse
+    Data Store.</li>
+<li>Starting at this step, you may see \'Basic\' and \'Advanced\'
+    options for analyses. Clicking the \'Advanced\' option allows
+    you to set parameters. The Parameters shown in the
+    \'Advanced\' step are the defaults used in the \'Basic\'
+    option.
+:::</li>
+</ul>
+</li>
+<li>
+<p>Since you may trim reads multiple times to achieve the desired
+    quality of data record the job IDs (e.g. fx####) that you wish to
+    use in the subsequent steps.</p>
+</li>
+</ol>
+</blockquote>
+<hr />
+<h2 id="dna-subway-green-line-map-reads-to-genome-with-tophat"><em>DNA Subway Green Line - Map Reads to Genome with TopHat</em><a class="headerlink" href="#dna-subway-green-line-map-reads-to-genome-with-tophat" title="Permanent link">&para;</a></h2>
+<p>TopHat is the first component of the Tuxedo Protocol. This program
+aligns individual RNA-Seq reads to a previously assembled "reference"
+genome using a component program called Bowtie. TopHat then uses
+information from the newly mapped reads to determine what the
+intron/exon boundaries are for mapped transcripts, determining their
+splice sites.</p>
+<p><strong>TopHat Basic</strong></p>
+<blockquote>
+<ol>
+<li>For each file, under \'Basic\', Click \'Run\' to begin the
+    alignment using default parameters. (The reads will be aligned to
+    the reference genome you selected when you created your project)</li>
+<li>Repeat this process for all the FASTQ files in your dataset.</li>
+</ol>
+</blockquote>
+<p><strong>TopHat Advanced</strong></p>
+<blockquote>
+<ol>
+<li>Click \'TopHat\' to open the TopHat panel for all your data.</li>
+<li>Under \'Advanced\' Click \'Run\'.</li>
+<li>Set the parameters as desired; Click \'Submit\' to begin the
+    alignment using default parameters. (The reads will be aligned to
+    the reference genome you selected when you created your project).</li>
+<li>Repeat this process for all the FASTQ files in your dataset.</li>
+</ol>
+<blockquote>
+<p>::: tip
+::: title
+Tip
+:::</p>
+<p>We generally recommend selecting the \'No novel junctions\' option
+unless you have very high-coverage data (e.g. >100 million reads
+for a ~3Gb genome).
+:::</p>
+</blockquote>
+</blockquote>
+<p>When this step completed you can view the summary mapping statistics, or
+view the aligned reads using the Integrated Genome Viewer (IGV).</p>
+<hr />
+<h2 id="dna-subway-green-line-assemble-transcripts-with-cufflinks"><em>DNA Subway Green Line - Assemble Transcripts with Cufflinks</em><a class="headerlink" href="#dna-subway-green-line-assemble-transcripts-with-cufflinks" title="Permanent link">&para;</a></h2>
+<p>Cufflinks assembles or "links" the RNA-Seq alignments into a set of
+transcripts which are best estimates (determined by parsimony) of your
+sample's actual transcripts. In other words, Cufflinks makes hypotheses
+about how related reads could be merged into transcripts. Cufflinks also
+makes estimates about the relative abundance of each transcript.</p>
+<blockquote>
+<p>::: note
+::: title
+Note
+:::</p>
+<p>This step is optional, and can be skipped
+:::</p>
+</blockquote>
+<p><strong>Cufflinks Basic</strong></p>
+<blockquote>
+<ol>
+<li>Click \'Cufflinks\' to open the Cufflinks panel for all your data.</li>
+<li>For each file, under \'Basic\', Click \'Run\' to begin the
+    assembly using default parameters. (The reads will be assembled
+    using the reference genome you selected when you created your
+    project).</li>
+<li>Repeat this process for all the FASTQ files in your dataset.</li>
+</ol>
+</blockquote>
+<p><strong>Cufflinks Advanced</strong></p>
+<blockquote>
+<ol>
+<li>Click \'Cufflinks\' to open the Cufflinks panel for all your data.</li>
+<li>Under \'Advanced\' Click \'Run\'</li>
+</ol>
+<dl>
+<dt>3. Set the parameters as desired; Click \'Submit\' to begin the assembly using</dt>
+<dd>
+<p>default parameters. (The reads will be aligned to the reference
+genome you selected when you created your project).</p>
+</dd>
+</dl>
+<ol>
+<li>Repeat this process for all the FASTQ files in your dataset.</li>
+</ol>
+</blockquote>
+<h2 id="dna-subway-green-line-examine-differential-expression-with-cuffdiff"><em>DNA Subway Green Line - Examine Differential Expression with CuffDiff</em><a class="headerlink" href="#dna-subway-green-line-examine-differential-expression-with-cuffdiff" title="Permanent link">&para;</a></h2>
+<p>Cuffdiff uses the Cufflinks output (and/or or reference genome) to
+calculate gene and transcript expression levels in one or more condition
+and tests them for significant differences. Depending on how many
+replicates and conditions you have, you may ultimately create several
+Cuffdiff jobs to test your desired combinations.</p>
+<blockquote>
+<ol>
+<li>Click \'Cuffdiff\' to open the Cuffdiff panel for all your data.</li>
+<li>Under \'Assign TopHat alignment files to samples and replicates\'
+    assign all of your samples (e.g. wild type, time point 1, control,
+    etc.) to a grouping (e.g. \'Sample 1\', \'Sample 2\', etc.)</li>
+<li>For each sample, select from the drop-down menu the TopHat job
+    (previously TopHat mapped reads) and their replicates that belong
+    with that sample group. (you may need to review the TopHat job
+    names from the TopHat step).</li>
+<li>Either click \'Submit\' (Basic) to run with default parameters, or
+    use the \'Advanced\' link to adjust parameters.</li>
+</ol>
+</blockquote>
+<p>For the result you wish to examine, click the graph icon to view a
+collection of graphs that illustrate differences in expression between
+samples. You can also view a table of the results, including expression
+levels and comparison for each annotated gene.</p>
+<h3 id="more-help-and-additional-information">More help and additional information<a class="headerlink" href="#more-help-and-additional-information" title="Permanent link">&para;</a></h3>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer:</li>
+<li>Ask us for help: click on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change:</li>
+<li>Send feedback: <a href="Tutorials@CyVerse.org">Tutorials@CyVerse.org</a></li>
+</ul>
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

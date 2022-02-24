@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/dnasubway_guide/step7/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq - DNA Subway</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq";
+    var mkdocs_page_input_path = "step7.md";
+    var mkdocs_page_url = "/dnasubway_guide/step7/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DNA Subway</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">DNA Subway Basics and Logging in to Subway</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Accessing Saved Private and Public DNA Subway Projects</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Walkthrough of DNA Subway Red Line - Genome Annotation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Walkthrough of DNA Subway Blue Line - Sequence Detection</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-green-line-kallistosleuth-create-an-rna-seq-project-to-examine-differential-abundance">DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Abundance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-green-line-kallistosleuth-manage-data-and-check-quality-with-fastqc">DNA Subway Green Line: Kallisto/Sleuth - Manage Data and Check Quality with FASTQC</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-green-line-kallistosleuth-trim-and-filter-reads-with-fastx-toolkit">DNA Subway Green Line: Kallisto/Sleuth - Trim and Filter Reads with FastX Toolkit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-green-line-kallistosleuth-quantify-reads-with-kallisto">DNA Subway Green Line: Kallisto/Sleuth - Quantify reads with Kallisto</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-green-line-kallistosleuth-visualize-data-using-igv">DNA Subway Green Line: Kallisto/Sleuth- Visualize data using IGV</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-green-line-kallistosleuth-visualize-data-using-sleuth">DNA Subway Green Line: Kallisto/Sleuth- Visualize data using Sleuth</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step8/">Walkthrough of DNA Subway Purple Line (beta testing documentation)</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DNA Subway</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide/edit/mkdocs/docs/step7.md"> Edit on CyVerse-learning-materials/dnasubway_guide/</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="walkthrough-of-dna-subway-green-line-kallistosleuth-rna-seq">Walkthrough of DNA Subway Green Line: Kallisto/Sleuth RNA-Seq<a class="headerlink" href="#walkthrough-of-dna-subway-green-line-kallistosleuth-rna-seq" title="Permanent link">&para;</a></h1>
+<p>The Green Line runs within CyVerse DNA Subway and leverages powerful
+computing and data storage infrastructure and uses the supercomputer
+cluster to provide a high performance analytical platform with a simple
+user interface suitable for both teaching and research. is a quick,
+highly-efficient software for quantifying transcript abundances in an
+RNA-Seq experiment. Even on a typical laptop, Kallisto can quantify 30
+million reads in less than 3 minutes. Integrated into CyVerse, you can
+take advantage of CyVerse DNA Subway to process your reads, do the
+Kallisto quantification, and analyze reads with the Kallisto companion
+software in an R-Shiny app.</p>
+<p><strong>Some things to remember about the platform</strong></p>
+<ul>
+<li>You must be a registered CyVerse user to use Green Line.</li>
+<li>The Green Line was designed to make RNA-Seq data analysis
+    "simple". However, we ask that users thoughtfully decide what
+    "jobs" they want to submit. <strong>Each user is limited to a maximum of
+    4 concurrent jobs running on Green Line</strong>.</li>
+<li>A single Green Line project may take a week to process since HPC
+    computing is subject to queues which hundreds of other jobs may be
+    staging for. Additionally these systems undergo regular maintenance
+    and are subject to periodic disruption.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>New, faster Green Line</strong></p>
+<p>Green Line is now running on <a href="https://jetstream-cloud.org/">Jestream Cloud</a>. This should greatly reduce queue times (The entire running time for this tutorial is about 60
+minutes). We have designed Green Line for a lower number of
+concurrent users (&lt;50), and still recommend teaching using jobs
+you have made public, and only running the entire workflow when
+you are working with novel data. Please let us know about your
+experience: <a href="https://dnasubway.cyverse.org/feedback.html">send feedback</a>.</p>
+<p><iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/XLBpway_jG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Important: Discontinued Support for Tuxedo Workflow</p>
+<p>The Tuxedo workflow previously implemented for the Green Line will
+has been removed in <strong>June 2019</strong>. Data and previously analyzed results will still be available on the CyVerse Data Store, however it is not possible to execute new analyses which include Tuxuedo.</p>
+</div>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><strong>How to use provided sample data</strong></p>
+<p>In this guide, we will use an RNA-Seq dataset (<em>"Zika infected
+hNPCs"</em>). This experiment compared human neuroprogenetor cells
+(hNPCs) infected with the Zika virus to non-infected hNPCs. You can
+read more about the experimental conditions and methods in this <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744">reference</a>.
+Where appropriate, a note (in this orange colored background) in the
+instructions will indicate which options to select to make use of this
+provided dataset.</p>
+<p><strong>Sample data citation</strong>: Yi L, Pimentel H, Pachter L (2017) Zika
+infection of neural progenitor cells perturbs transcription in
+neurodevelopmental pathways. PLOS ONE 12(4): e0175744. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175744">reference</a>.</p>
+<p><strong>Video Course</strong></p>
+<p>Here is a video series on analyzing data with DNA Subway using the above Zika dataset and lesson:</p>
+<p><iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/videoseries?list=PLRosqf3DDcTHLTsiCTT8tnA2ZAfMM5AWb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</p>
+</div>
+<h2 id="dna-subway-green-line-kallistosleuth-create-an-rna-seq-project-to-examine-differential-abundance">DNA Subway Green Line: Kallisto/Sleuth - Create an RNA-Seq Project to Examine Differential Abundance<a class="headerlink" href="#dna-subway-green-line-kallistosleuth-create-an-rna-seq-project-to-examine-differential-abundance" title="Permanent link">&para;</a></h2>
+<p><strong>A. Create a project in Subway</strong></p>
+<ol>
+<li>Log-in to - unregistered users may NOT use Green Line.</li>
+<li>Click on the Green "Next Generation Sequencing" square to start
+    a Green Line project.</li>
+<li>
+<p>For 'Select Project Type' select either "Single End Reads" or
+    "Paired End Reads".</p>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: Select <strong>Paired End Reads</strong></p>
+</p>
+</div>
+</li>
+</ol>
+<p>4.  For 'Select an Organism' select a species and genome build.</p>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: Select <strong>Homo sapiens - Ensembl 78 GrCh38</strong></p>
+</p>
+</div>
+<p>5.  Enter a project title, and description; click 'Continue'.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>If you don't see a desired species/genome <a href="https://dnasubway.cyverse.org/feedback.html">contact us</a> to have it added.</p>
+</p>
+</div>
+<p><strong>B. Upload Read Data to CyVerse Data Store</strong> The sequence read files
+used in these experiments are too large to upload using the Subway
+internet interface. You must upload your files (either .fastq or
+.fastq.gz) directly to the CyVerse Data Store.</p>
+<ol>
+<li>Upload your reads to the CyVerse Data Store using Cyberduck. See instructions: <a href="https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/">Data Store Guide</a>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note<p>This step is not directly connected with DNA Subway. You can use any data uploaded to the CyVerse Data Store.</p>
+</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Data Limit<p>There is a limit of 6GB per file for samples on Green Line. For larger file sizes, you may wish to use the Kallisto tools in the CyVerse Discovery Environment. See the for more information.</p>
+</p>
+</div>
+<hr />
+<h2 id="dna-subway-green-line-kallistosleuth-manage-data-and-check-quality-with-fastqc">DNA Subway Green Line: Kallisto/Sleuth - Manage Data and Check Quality with FASTQC<a class="headerlink" href="#dna-subway-green-line-kallistosleuth-manage-data-and-check-quality-with-fastqc" title="Permanent link">&para;</a></h2>
+<p><strong>A. Select and pair files</strong></p>
+<ol>
+<li>Click on the "Manage Data" step: this opens a Data store window
+    that says "Select your FASTQ files from the Data Store" (if you
+    are not logged in to CyVerse, it will ask you to do so).</li>
+<li>
+<p>Click on the folder that matches your CyVerse username and
+    Navigate to the folder where your sequencing files are located.</p>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: Select <strong>Sample Data</strong>.</p>
+</p>
+</div>
+</li>
+<li>
+<p>Select the sequencing files you want to analyze (either .fastq or .fastq.gz format).</p>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: You will be presented with the following 8 files; <strong>check-select all of the files</strong> and click the <code class="interpreted-text" role="guilabel">+ Add files</code> button:</p>
+</p>
+<ul>
+<li>SRR3191542_1.fastq.gz</li>
+<li>SRR3191542_2.fastq.gz</li>
+<li>SRR3191543_1.fastq.gz</li>
+<li>SRR3191543_2.fastq.gz</li>
+<li>SRR3191544_1.fastq.gz</li>
+<li>SRR3191544_2.fastq.gz</li>
+<li>SRR3191545_1.fastq.gz</li>
+<li>SRR3191545_2.fastq.gz</li>
+</ul>
+<p>The SRR3191542 and SRR3191543 files are 2 replicates (paired-end) of the uninfected cells and the SRR3191544 and SRR3191545 file are from the Zika infected cells.</p>
+</div>
+</li>
+<li>
+<p>If working with paired-end reads, click the <code class="interpreted-text" role="guilabel">Pair Mode OFF</code> button to toggle to on; check each pair of sequencing files to pair them.</p>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: Right reads end in "_1" and left reads end in "_2". <strong>Click the</strong> <code class="interpreted-text" role="guilabel">Pair Mode OFF</code> <strong>button</strong> to turn pairing on, and <strong>check-select each of the paired samples</strong> (e.g. SRR3191543_1.fastq.gz and SRR3191543_2.fastq.gz).</p>
+</p>
+</div>
+</li>
+</ol>
+<p><strong>B. Check sequencing quality with FastQC</strong></p>
+<p>It is important to only work with high quality data. is a popular tool
+for determining sequencing quality.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>This step takes place in the same <strong>Manage data</strong> window as the steps above.</p>
+</p>
+</div>
+<ol>
+<li>
+<p>Once files have been loaded, in the 'Manage Data' window, click the 'Run' link in the 'QC' column to run FastQC.</p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>There is a limit of 4 concurrent jobs. These jobs should take less
+than 20 minutes to complete (depending on file size) and you may need
+to let several jobs finish before proceeding. If you have previously
+processed reads for quality, you can skip the FastQC step.</p>
+</p>
+</div>
+</li>
+</ol>
+<p>2.  One the jobs are complete, click the 'View' link to view the results.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can see a description and explanation of the FastQC report on the CyVerse Learning Center and a more detailed set of explanations on the website.</p>
+</div>
+<hr />
+<h2 id="dna-subway-green-line-kallistosleuth-trim-and-filter-reads-with-fastx-toolkit">DNA Subway Green Line: Kallisto/Sleuth - Trim and Filter Reads with FastX Toolkit<a class="headerlink" href="#dna-subway-green-line-kallistosleuth-trim-and-filter-reads-with-fastx-toolkit" title="Permanent link">&para;</a></h2>
+<p>Raw reads are first "quality trimmed" (remove poor quality bases off
+the end(s) of a read) and then are "quality filtered" (filter out
+entire poor quality reads) prior to aligning to the transcriptome. After
+trimming and filtering, FastQC is run on the trimmed/filtered files.</p>
+<ol>
+<li>
+<p>Click "FastX ToolKit" to open the FastX Toolkit panel for all your data.</p>
+</li>
+<li>
+<p>For each file, under 'Basic', Click 'Run' to filter the reads using default parameters or click 'Advanced' to run with desired parameters; repeat this process for all the FASTQ files in your dataset.</p>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: The quality of the reads in this dataset is relatively good. You can <strong>skip the FastX Toolkit step for this dataset</strong>.</p>
+</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>The 'Basic' setting for FastX Toolkit uses the same settings as
+the defaults in the 'Advanced' run:</p>
+</p>
+<ul>
+<li><strong>quality_trimmer: minimum quality</strong>: 20</li>
+<li><strong>quality_trimmer: minimum trimmed read length</strong>: 20</li>
+<li><strong>quality_filter: minimum quality</strong>: 20</li>
+<li><strong>quality_filter: minimum quality</strong>: 50</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Once the job completes, click the 'View' link to view a generated FastQC report.</p>
+</li>
+<li>Since you may trim reads multiple times to achieve the desired quality of data record the job IDs (e.g. fx####) that you wish to use in the subsequent steps.</li>
+</ol>
+<hr />
+<h2 id="dna-subway-green-line-kallistosleuth-quantify-reads-with-kallisto">DNA Subway Green Line: Kallisto/Sleuth - Quantify reads with Kallisto<a class="headerlink" href="#dna-subway-green-line-kallistosleuth-quantify-reads-with-kallisto" title="Permanent link">&para;</a></h2>
+<p>Kallisto uses a 'hash-based' pseudo alignment to deliver extremely fast
+matching of RNA-Seq reads against the transcriptome index (which was
+selected when you created your Green Line project). A Kallisto analysis
+must be run for each mapping of RNA-Seq reads to the index. In this
+tutorial, we have 12 fastQ files (6 pairs), so you will need to launch 6
+Kallisto analyses.</p>
+<details class="tip">
+<summary>The Science Behind Kallisto</summary>
+<div class="highlight"><pre><span></span><code>You can find a detailed video series on the science behind the Kallisto software and pseudoalignment: [YouTube](https://www.youtube.com/playlist?list=PL-0S9LiUi0vhjynujVZw34RKmUo6vPmVd).
+</code></pre></div>
+</details>
+<ol>
+<li>
+<p>Click the "Quantification" step and enter a sample and condition name for each of your samples. You will typically have several replicates (at least 3 minimum) for each sample. For your condition, our implementation of the Kallisto/Sleuth workflow supports <strong>two conditions</strong>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Warning<p>When naming your samples and conditions, avoid spaces and special
+characters (e.g. !#$%^&amp;/, etc.). Also be sure to be consistent with spelling.</p>
+</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: <br>
+We suggest the following names for this dataset:</p>
+<table>
+<thead>
+<tr>
+<th>Left/Right Pair</th>
+<th>Sample name</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRR3191542_1.fastq.gz <br> SRR3191542_2.fastq.gz</td>
+<td>Mock1-1</td>
+<td>Mock</td>
+</tr>
+<tr>
+<td>SRR3191543_1.fastq.gz <br> SRR3191543_1.fastq.gz</td>
+<td>Mock2-1</td>
+<td>Mock</td>
+</tr>
+<tr>
+<td>SRR3191544_1.fastq.gz <br> SRR3191544_2.fastq.gz</td>
+<td>ZIKV1-1</td>
+<td>Zika</td>
+</tr>
+<tr>
+<td>SRR3191545_1.fastq.gz <br> SRR3191545_2.fastq.gz</td>
+<td>ZIKV2-1</td>
+<td>Zika</td>
+</tr>
+</tbody>
+</table>
+</p>
+</div>
+</li>
+<li>
+<p>After naming the samples and conditions, click the <code class="interpreted-text" role="guilabel">Submit</code> button to submit a job. Typically, within ~1 minute you will be provided with a job number. The job will be entered into the queue at the TACC Stampede supercomputing system. You can come back and click the Quantification stop to see the status of the job. The indication for the quantification stop will show "R" (running) while the job is running.</p>
+<div class="admonition warning">
+<p class="admonition-title">Sample Data<p><em>"Zika infected hNPCs"</em> dataset: Under parameters <strong>uncheck</strong> the <em>Build pseudo-bam files</em> option.</p>
+</p>
+</div>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>You can select some of the advanced options for your Kallisto job by clicking the "Parameters" link in the Quantification stop. See more about these advanced parameters in the <a href="https://pachterlab.github.io/kallisto/manual">Kallisto manual</a>.</p>
+</p>
+</div>
+<hr />
+<h2 id="dna-subway-green-line-kallistosleuth-visualize-data-using-igv">DNA Subway Green Line: Kallisto/Sleuth- Visualize data using IGV<a class="headerlink" href="#dna-subway-green-line-kallistosleuth-visualize-data-using-igv" title="Permanent link">&para;</a></h2>
+<p>In the "View Results" steps you have access to alignment
+visualizations, data download, and interactive visualization of your
+differential expression results.</p>
+<ol>
+<li>Click the "View results" step and choose one of the following
+    options:</li>
+</ol>
+<p><strong>IVG - Integrated Genome Viewer</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>IGV visualization will only be possible if you have built pseudo-bam
+files in the Kallisto step.</p>
+</p>
+</div>
+<p>Click the icon in the "IGV" column to view a visualization of
+your reads pseudoaligned to the reference transcriptome. You will need
+to click the <code class="interpreted-text" role="guilabel">Make it public</code>
+button (and possibly be re-directed to the CyVerse Discovery
+Environment). After making the data "public" which allows DNA Subway
+to access your files on the CyVerse Data Store, you must also select a
+memory size to launch this Java application. If you are not sure of
+which value to select, use the default 750MB option.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning<p>Using IGV requires Java software. Java is increasingly unsupported for
+security reasons on the internet.</p>
+</p>
+<div class="admonition tip">
+<p class="admonition-title">Java Help<p>Java must be available and enabled in your Internet browser to use the
+IGV function. Java frequently is the source of security
+vulnerabilities and so its not uncommon to experience configuration
+issues due to safety. Follow the tips below to configure Java for your
+computer. Alternatively, you can use the Download link (see
+instructions in the section below) to download your data (you will
+need the .bam and .bam.bai files) and download and install yourself.</p>
+<p><em>Internet Browser</em></p>
+<p>We highly recommend using Firefox as your browser for DNA Subway. <br>
+-   Verify your Java availability for your browser: <a href="https://www.java.com/en/download/installed.jsp">Java test</a> <br>
+-   Java must be <a href="https://java.com/en/download/help/enable_browser.xml">enabled</a> in your browser</p>
+<p><em>Java Configuration</em></p>
+<ul>
+<li>Open the Java control panel on your computer. (On Mac, open System
+    Preferences &gt; Java. On PC, open Control Panel &gt; Programs &gt;
+    Java.) <br></li>
+<li>Click the Security tab and check "Enable Java in the browser"
+    and set the security level for applications to "high". Add
+    "<a href="http://dnasubway.cyverse.org">http://dnasubway.cyverse.org</a>" and "<a href="http://gfx.dnalc.org">http://gfx.dnalc.org</a>"
+    to the "Exception Site List" in the Java Security tab.</li>
+</ul>
+</p>
+</div>
+</div>
+<p><strong>Download Data - Abundance</strong></p>
+<p>Click the folder icon to be redirected to the CyVerse Discovery
+Environment (you may be required to log in). You will be directed
+to all outputs from you Kallisto analysis. You may preview them in
+the Discovery Environment or use the path listed to download the
+files using Cyberduck (see <a href="https://cyverse-learning-materials.github.io/learning-materials-home/ds/intro/">Data Store Guide</a>). A tab-separated file of abundances
+for each sequence pair is available at the download link.</p>
+<hr />
+<h2 id="dna-subway-green-line-kallistosleuth-visualize-data-using-sleuth">DNA Subway Green Line: Kallisto/Sleuth- Visualize data using Sleuth<a class="headerlink" href="#dna-subway-green-line-kallistosleuth-visualize-data-using-sleuth" title="Permanent link">&para;</a></h2>
+<p><strong>Differential analysis - Shiny App</strong></p>
+<p>Click the "Sleuth R Shiny" link to launch an interactive window which contains data and graphics from your analysis.</p>
+<p><strong>R Shiny App Walkthrough</strong></p>
+<p>The R Shiny App allows you to explore your differential expression
+results as generated by the . We will cover highlights to for each
+menu in the app.</p>
+<details class="tip">
+<summary>Data Transfer Timings</summary>
+<p>It can take a few minutes for data to be transferred to the R
+Shiny server after the quantification step completes. If R Shiny
+does not load, try again in a few minutes. If you still have an
+issue, use the link and include your project number in the
+feedback form.</p>
+</details>
+<p><strong>Results Menu</strong></p>
+<p><img alt="sleuth_results_1" height="400px" src="../assets/dna_subway/sleuth_results_1.png" width="800px" /></p>
+<p>This menu is an interactive table of your results. You can choose
+which columns to display in the table using the checkboxes on the
+left of the screen. Several important values selected by default
+include:</p>
+<ul>
+<li><strong>Target_id</strong>: This is the name of the transcript (gene) from the selected reference transcriptome.</li>
+<li><strong>qval</strong>: This is a corrected (for multiple testing) p-value indicating the significance test of differential abundance. Lower numbers indicate greater significance.</li>
+<li><strong>b</strong>: This is an estimate of the fold change between the conditions</li>
+<li><strong>ext_gene</strong>: If available, these are gene names pulled from Ensemble</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>Click the <code class="interpreted-text" role="guilabel">Download</code> button to download these results.</p>
+</p>
+</div>
+<p><strong>Bootstrap</strong></p>
+<p><img alt="sleuth_bootstrap_1" height="400px" src="../assets/dna_subway/sleuth_bootstrap_1.png" width="800px" /></p>
+<p>This menu will display a box plot that indicates the difference in
+expression between conditions. The box plots themselves indicate
+variation between replicates as estimated by bootstrap sampling of
+the reads. A dropbox enables you to select any transcript.
+Clicking the "Show genes" will load alternative gene names if
+available.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>Right-click a graph to download this and other images.</p>
+</p>
+</div>
+<p><strong>PCA</strong></p>
+<p><img alt="sleuth_pca_1" height="400px" src="../assets/dna_subway/sleuth_pca_1.png" width="800px" /></p>
+<p>This graph displays principle components of each of the
+conditions/replicates. In general replicates of the same condition
+should cluster closely together.</p>
+<p><strong>Volcano Plot</strong></p>
+<p><img alt="sleuth_volcano_1" height="400px" src="../assets/dna_subway/sleuth_volcano_1.png" width="800px" /></p>
+<p>This scatter plot displays all transcripts colored by significance
+of differential abundance. You may also use menu on the left of
+the screen to highlight specific genes/transcripts or previously
+set filters from the results menu.</p>
+<p><strong>Loadings</strong></p>
+<p><img alt="sleuth_loadings_1" height="400px" src="../assets/dna_subway/sleuth_loadings_1.png" width="800px" /></p>
+<p>This barplot indicates which genes/transcripts explain most of the variance computed in the principle components analysis.</p>
+<p><strong>Heatmap</strong></p>
+<p><img alt="sleuth_heatmap_1" height="400px" src="../assets/dna_subway/sleuth_heatmap_1.png" width="800px" /></p>
+<p>This heatmap gives a measure of the similarity between the possible comparison of the samples and their replicates.</p>
+<hr />
+<p><strong>Summary</strong>: Together, Kallisto and Sleuth are quick, powerful ways to
+analyze RNA-Seq data.</p>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click the Intercom icon <img alt="Intercom" src="../assets/intercom.png" width="25" /> on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step8/" class="btn btn-neutral float-right" title="Walkthrough of DNA Subway Purple Line (beta testing documentation)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../step5/" class="btn btn-neutral" title="Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../step5/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step8/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

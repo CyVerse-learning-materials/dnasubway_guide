@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/dnasubway_guide/step4/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Walkthrough of DNA Subway Blue Line - Sequence Detection - DNA Subway</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Walkthrough of DNA Subway Blue Line - Sequence Detection";
+    var mkdocs_page_input_path = "step4.md";
+    var mkdocs_page_url = "/dnasubway_guide/step4/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DNA Subway</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">DNA Subway Basics and Logging in to Subway</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Accessing Saved Private and Public DNA Subway Projects</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step3/">Walkthrough of DNA Subway Red Line - Genome Annotation</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Walkthrough of DNA Subway Blue Line - Sequence Detection</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-yellow-line-create-a-yellow-line-project">DNA Subway Yellow Line - Create a Yellow Line Project</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-exercise-project-creation-mping-mite-element-to-search-plant-genomes-for-an-active-transposon">Example Exercise - Project Creation: mPing Mite element to search plant genomes for an active transposon</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-yellow-line-search-plant-genomes-with-target">DNA Subway Yellow Line - Search Plant Genomes with TARGeT</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-exercise-search-plant-genomes-mping-mite-element">Example Exercise - Search Plant Genomes: mPing Mite element</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step7/">Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step8/">Walkthrough of DNA Subway Purple Line (beta testing documentation)</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DNA Subway</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Walkthrough of DNA Subway Blue Line - Sequence Detection</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide/edit/mkdocs/docs/step4.md"> Edit on CyVerse-learning-materials/dnasubway_guide/</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="walkthrough-of-dna-subway-yellow-line-sequence-detection">Walkthrough of DNA Subway Yellow Line - Sequence Detection<a class="headerlink" href="#walkthrough-of-dna-subway-yellow-line-sequence-detection" title="Permanent link">&para;</a></h1>
+<p>Genome prospecting uses a query sequence (DNA or protein of up to 10,000
+base pairs/amino acids) to find related sequences in specific genomes or
+in a database. A major purpose of genome prospecting is to identify
+members of gene or transposon families. DNA Subway uses the TARGeT
+workflow, which integrates BLAST searches, multiple sequence alignments,
+and tree-drawing utilities. Yellow line uses TARGeT (Tree Analysis of
+Related Genes and Transposons) uses either a DNA or amino acid 'seed'
+query to: (i) automatically identify and retrieve gene family homologs
+from a genomic database, (ii) characterize gene structure and (iii)
+perform phylogenetic analysis. Due to its high speed, TARGeT is also
+able to characterize very large gene families, including transposable
+elements (TEs).
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2699529/">[citation]</a></p>
+<p><strong>Some things to remember about the platform</strong></p>
+<ul>
+<li>Yellow Line will return sequences that would normally be excluded
+    from a BLAST search of a genome (e.g. repetitive sequences,
+    transposons).</li>
+<li>Yellow Line is implemented only for plant genomes</li>
+</ul>
+<hr />
+<h2 id="dna-subway-yellow-line-create-a-yellow-line-project">DNA Subway Yellow Line - Create a Yellow Line Project<a class="headerlink" href="#dna-subway-yellow-line-create-a-yellow-line-project" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Log-in to <a href="https://dnasubway.cyverse.org/">DNA Subway</a> -
+    unregistered users may 'Enter as Guest'</li>
+<li>Click 'Prospect Genomes using TARGeT' (Yellow Square)</li>
+<li>
+<p>Select a sample sequence, or paste in a sequence to search for.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>DNA Subway Yellow Line is only implemented to search a limited set of plant genomes.</p>
+</div>
+</li>
+<li>
+<p>Provide your project with a title, then Click 'Continue'</p>
+</li>
+</ol>
+<h3 id="example-exercise-project-creation-mping-mite-element-to-search-plant-genomes-for-an-active-transposon">Example Exercise - Project Creation: mPing Mite element to search plant genomes for an active transposon<a class="headerlink" href="#example-exercise-project-creation-mping-mite-element-to-search-plant-genomes-for-an-active-transposon" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://www.nature.com/nature/journal/v421/n6919/full/nature01214.html">mPing MITE element</a>
+is an example of an active transposon in rice.
+<a href="http://www.dnaftb.org/32/animation.html">Transposons</a> are a major class
+of DNA elements that impact the function of the genome.</p>
+<ol>
+<li>Create a Yellow Line project following the steps above and using the mPing Mite Element (Oryza sativa/Rice)</li>
+</ol>
+<h2 id="dna-subway-yellow-line-search-plant-genomes-with-target">DNA Subway Yellow Line - Search Plant Genomes with TARGeT<a class="headerlink" href="#dna-subway-yellow-line-search-plant-genomes-with-target" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Click and select the genome(s) you wish to search and the click;
+    'Run' to search those genomes.</li>
+<li>Click the 'Alignment Viewer' button to view the results of the
+    search as a multiple alignment.</li>
+<li>Click the 'Tree Viewer' button to view a tree that will group
+    results by similarity.</li>
+</ol>
+<details class="tip">
+<summary>Viewer Tips</summary>
+<p><strong>Alignment Viewer</strong> Generates an alignment of all search results
+<img alt="yellow_alignment" height="150px" src="../assets/dna_subway/yellow_alignment.png" width="420px" />
+<strong>Tree Viewer</strong> Displays the results of sequence matches as a tree, grouped by sequence similarity
+<a height="300px" href="../assets/dna_subway/yellow_tree.png" width="420px">yellow_tree</a></p>
+</details>
+<details class="tip">
+<summary>Useful Definitions</summary>
+<ul>
+<li><strong>Transposons (DNA, Retroviral, LINES):</strong> Genetic elements which have the ability to be amplified and redistributed within a genome. </li>
+<li><strong>Non-autonomous transposons:</strong> Transposons which lack an active transposase gene, thus requiring help from another transposon to move. </li>
+<li><strong>Autonomous transposons:</strong> Transposons which have a functional transposase and can move within the genome.</li>
+</ul>
+</details>
+<h3 id="example-exercise-search-plant-genomes-mping-mite-element">Example Exercise - Search Plant Genomes: mPing Mite element<a class="headerlink" href="#example-exercise-search-plant-genomes-mping-mite-element" title="Permanent link">&para;</a></h3>
+<ol>
+<li>After loading the mPing Mite Element as the query, search the
+    Oryza Sativa genome, and examine the results in the Alignment and
+    Tree Viewers.</li>
+<li>Repeat this analysis with a new project using the Ping transposase
+    gene and the Ping Transposase protein.</li>
+</ol>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click the Intercom icon <img alt="Intercom" src="../assets/intercom.png" width="25" /> on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step5/" class="btn btn-neutral float-right" title="Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../step3/" class="btn btn-neutral" title="Walkthrough of DNA Subway Red Line - Genome Annotation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../step3/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step5/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

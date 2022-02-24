@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="CyVerse Science Team">
+  <link rel="canonical" href="https://CyVerse-learning-materials.io/dnasubway_guide/step3/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Walkthrough of DNA Subway Red Line - Genome Annotation - DNA Subway</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Walkthrough of DNA Subway Red Line - Genome Annotation";
+    var mkdocs_page_input_path = "step3.md";
+    var mkdocs_page_url = "/dnasubway_guide/step3/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DNA Subway</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step1/">DNA Subway Basics and Logging in to Subway</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step2/">Accessing Saved Private and Public DNA Subway Projects</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Walkthrough of DNA Subway Red Line - Genome Annotation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-red-line-create-an-annotation-project-with-apollo">DNA Subway Red Line - Create an Annotation Project with Apollo</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-exercise-project-creation-arabidopsis-chri">Example Exercise - Project Creation: Arabidopsis ChrI</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-red-line-find-and-mask-repetitive-dna">DNA Subway Red Line - Find and Mask Repetitive DNA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-exercise-repeat-masking-arabodopsis-chri">Example Exercise - Repeat Masking: Arabodopsis ChrI</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-red-line-making-gene-predictions">DNA Subway Red Line - Making Gene Predictions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-exercise-predict-genes-arabidopsis-chri">Example Exercise - Predict Genes: Arabidopsis ChrI</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-red-line-visualize-predicted-genes-in-a-genome-browser">DNA Subway Red Line - Visualize predicted genes in a Genome Browser</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-exercise-visualize-predicted-genes-arabidopsis-chri">Example Exercise - Visualize predicted genes: Arabidopsis ChrI</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-red-line-search-databases-using-blast">DNA Subway Red Line - Search Databases using BLAST</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-exercise-search-databases-using-blast-arabidopsis-chri">Example Exercise - Search Databases using BLAST: Arabidopsis ChrI</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-subway-red-line-build-gene-models-using-apollo">DNA Subway Red Line - Build Gene Models using Apollo</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#example-exercise-build-gene-models-using-apollo-arabodopsis-chri">Example Exercise - Build Gene Models using Apollo: Arabodopsis ChrI</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step4/">Walkthrough of DNA Subway Blue Line - Sequence Detection</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step5/">Walkthrough of DNA Subway Blue Line - DNA Barcoding and Phylogenetics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step7/">Walkthrough of DNA Subway Green Line - Kallisto/Sleuth RNA-Seq</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../step8/">Walkthrough of DNA Subway Purple Line (beta testing documentation)</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DNA Subway</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Walkthrough of DNA Subway Red Line - Genome Annotation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/CyVerse-learning-materials/dnasubway_guide/edit/mkdocs/docs/step3.md"> Edit on CyVerse-learning-materials/dnasubway_guide/</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="walkthrough-of-dna-subway-red-line-genome-annotation">Walkthrough of DNA Subway Red Line - Genome Annotation<a class="headerlink" href="#walkthrough-of-dna-subway-red-line-genome-annotation" title="Permanent link">&para;</a></h1>
+<p>Annotation adds features and information to a DNA sequence -- such as genes and their locations, structures, and functions.
+A good introduction to annotation can be found in the paper <a href="https://www.nature.com/nrg/journal/v13/n5/full/nrg3174.html">A beginner's guide to eukaryotic genome annotation</a>.
+We'll also suggest the DNA Subway's primer on <a href="https://dnasubway.cyverse.org/project/ngs/panel/1946#">annotation evidence</a>. 
+This guide contains an explanation of basic functions for this line, as wellas exercises that might be used in the classroom.
+<strong>Some things to remember about the platform</strong>
+    @@ -205,156 +164,115 @@ as exercises that might be used in the classroom.</p>
+<hr />
+<h2 id="dna-subway-red-line-create-an-annotation-project-with-apollo">DNA Subway Red Line - Create an Annotation Project with Apollo<a class="headerlink" href="#dna-subway-red-line-create-an-annotation-project-with-apollo" title="Permanent link">&para;</a></h2>
+<details class="tip">
+<summary>transition away from Java</summary>
+<p>DNA Subway is transitioning away from the original Java-based Apollo software as most popular web browsers will no longer support Java. The new Apollo is Java-free.</p>
+</details>
+<ol>
+<li>Log-in to <a href="https://dnasubway.cyverse.org/" target="+blank">DNA Subway</a> -
+    unregistered users may 'Enter as Guest'</li>
+<li>Click 'Annotate a genomic sequence.' (Red Square); select the
+    'Web Apollo' version</li>
+<li>
+<p>For 'Select Organism type' choose 'Animal' or 'Plant' and
+    then select the appropriate subtype.
+    The 'Select Organism' step will load appropriate sample
+    sequences and will also adjust the models used in the de novo gene
+    finding process.</p>
+</li>
+<li>
+<p>For 'Select Sequence Source' select a sample sequence.</p>
+</li>
+</ol>
+<details class="tip">
+<summary>Apollo support</summary>
+<p>Currently, the Java-free Apollo version of Subway does not support upload of a custom DNA Sequence. </p>
+<p>This feature is coming soon, but we will help you upload custom genomes/regions for your use in the classroom</p>
+</details>
+<ol>
+<li>(Optional) If you have a GFF file of annotated features, you may load these import these annotations from the Green Line, or from a
+    custom GFF file.</li>
+<li>Name your project and organism (required) and give a description if desired. Click 'Continue' to proceed.</li>
+</ol>
+<h3 id="example-exercise-project-creation-arabidopsis-chri">Example Exercise - Project Creation: Arabidopsis ChrI<a class="headerlink" href="#example-exercise-project-creation-arabidopsis-chri" title="Permanent link">&para;</a></h3>
+<p>In this and subsequent steps, we will annotate a 75KB section of Arabidopsis chromosome I.
+1.  Log-in to <a href="">DNA Subway</a> - unregistered users may 'Enter as Guest'.
+2.  Click 'Annotate a genomic sequence.' (Red Square); select the 'Web Apollo' version.
+3.  For 'Select Organism type' choose 'Plant' and then 'Dicotyledon'.
+4.  from 'Select a sample sequence' chose 'Arabidopsis thaliana (mouse-ear cress) chr1, 75.00 kb'.
+5.  Provide your project with a title, then Click 'Continue.'</p>
+<details class="tip">
+<summary>Sequence</summary>
+<p>You can view your DNA sequence by clicking the 'Sequence' link in the 'Project Information' tab at the bottom of the page.</p>
+</details>
+<hr />
+<h2 id="dna-subway-red-line-find-and-mask-repetitive-dna">DNA Subway Red Line - Find and Mask Repetitive DNA<a class="headerlink" href="#dna-subway-red-line-find-and-mask-repetitive-dna" title="Permanent link">&para;</a></h2>
+<p>One you have created a Red Line Project, you may begin the process of generating and assembling predictions and evidence that can be used to annotate genes.
+1.  Click 'RepeatMasker'
+2.  When 'RepeatMasker' turns 'green' and the icon displays a 'V' (view); click 'RepeatMasker' again to view results.
+    <img alt="repeat_results" height="200px" src="../assets/dna_subway/repeat_results.png" width="300px" /></p>
+<h2 id="example-exercise-repeat-masking-arabodopsis-chri"><strong>Example Exercise - Repeat Masking: Arabodopsis ChrI</strong><a class="headerlink" href="#example-exercise-repeat-masking-arabodopsis-chri" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Example Sequence:</strong> Arabidopsis thaliana (mouse-ear cress) ChrI, 75 kb</li>
+<li><strong>Tool(s):</strong> RepeatMasker</li>
+<li><strong>Concept(s):</strong> Non-coding DNA, sequence repeats, mobile genetic
+    elements (transposons)
+Following the RepeatMasking steps for the Arabidopsis ChrI sample above, answer the following <em>discussion questions</em>:</li>
+<li>How many hits were detected in your sample?</li>
+<li>RepeatMasker reports the length of the repetitive sequences
+    (Length) as well as the class (Attributes).</li>
+<li>What is the average length of sequences identified as "simple
+    repeats"?</li>
+<li>What is the average length of sequences identified as "low
+    complexity"?</li>
+<li>What is the total percentage of repetitive DNA in your sequence?
+    (Sum of the length of all repetitive sequence / sequence length
+    (75 kb)</li>
+</ul>
+<details class="tip">
+<summary>Some Useful Definitions for Repetitive Sequences</summary>
+<ul>
+<li>
+<p><strong>Simple repeats:</strong> 1-5bp repeats (e.g. repetitive dinucleotides 'AT' etc.)</p>
+</li>
+<li>
+<p><strong>Low Complexity DNA:</strong> Poly-purine/ poly-pyrimidine stretches, or regions of extremely high AT or GC content.</p>
+</li>
+<li>
+<p><strong>Processed Pseudogenes, SINES, Retrotranscripts:</strong> Non-functional RNAs present within genomic sequence.</p>
+</li>
+<li>
+<p><strong>Transposons (DNA, Retroviral, LINES):</strong> Genetic elements which have the ability to be amplified and redistributed within a genome.</p>
+</li>
+</ul>
+</details>
+<p><strong>Additional Investigation:</strong> In the results table under 'Attributes' each repeat sequence is labeled "RepeatMasker#-XXX" The '#' is the
+ordinal number of the hit, the XXX is the class of DNA element (e.g. "Simple_repeat" or "Low_complexity"). There are other types of
+repetitive elements such as transposons and pseudogenes (e.g. Helitron and COPIA) Use online resources to learn more: (<a href="http://gydb.org/index.php/Main_Page">http://gydb.org/index.php/Main_Page</a>).</p>
+<hr />
+<h2 id="dna-subway-red-line-making-gene-predictions">DNA Subway Red Line - Making Gene Predictions<a class="headerlink" href="#dna-subway-red-line-making-gene-predictions" title="Permanent link">&para;</a></h2>
+<p>De novo gene predictors can be run on a sample sequence to generate
+predictions of gene structure and location based solely on the sequence
+nucleotides.</p>
+<ol>
+<li>Click on one or more gene prediction tools under the 'Gene
+    Prediction' stop. to view the results table, click the gene
+    predictor again once the indicator displays 'V' (view).</li>
+</ol>
+<h3 id="example-exercise-predict-genes-arabidopsis-chri">Example Exercise - Predict Genes: Arabidopsis ChrI<a class="headerlink" href="#example-exercise-predict-genes-arabidopsis-chri" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Example Sequence:</strong> Arabidopsis thaliana (mouse-ear cress) ChrI,
+    75 kb</li>
+<li><strong>Tool(s):</strong> Augustus, FGenesH, Snap, tRNA Scan</li>
+<li><strong>Concept(s):</strong> Genomic DNA, Gene Structure, Canonical sequences</li>
+</ul>
+<p>Following the gene prediction steps for the Arabidopsis ChrI sample
+above, answer the following <em>discussion questions</em>:</p>
+<ol>
+<li>
+<p>Look at the 'Type' column in the gene prediction report.
+    Considering the Augustus results, find the 6<sup>th</sup> gene prediction
+    (hint: AUGUSTUS006;ID=g6) and then locate the first mention of the
+    term 'gene' and copy down the gene's 'start' (i.e. the starting
+    basepair). Note the number of times you see the term 'exon' (i.e.
+    number of exons predicted).</p>
+<table>
+<thead>
+<tr>
+<th>Gene Predictor</th>
+<th>Exon Start (bp)</th>
+<th>Exon Stop (bp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Augustus</td>
+<td>23456</td>
+<td>23684</td>
+</tr>
+<tr>
+<td>Augustus</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Augustus</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Augustus</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Augustus</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Based on the chart, did all the gene predictors yield genes
+    starting at the same location? Did all the gene predictions have
+    the same number of exons?</p>
+</li>
+<li>Looking at the number of results returned by tRNA Scan, why are
+    they so different from results made by other predictors? Are their
+    places in the genome where tRNAs are more or less densely
+    concentrated?</li>
+</ol>
+<p><strong>Additional Investigation:</strong> Look for the background link at the bottom
+of the DNA Subway home page and review the section entitled 'Gene
+Finding'.</p>
+<hr />
+<h2 id="dna-subway-red-line-visualize-predicted-genes-in-a-genome-browser">DNA Subway Red Line - Visualize predicted genes in a Genome Browser<a class="headerlink" href="#dna-subway-red-line-visualize-predicted-genes-in-a-genome-browser" title="Permanent link">&para;</a></h2>
+<p>A genome browser is an essential tool for visualization genomic data in
+context. The integrated JBrowse genome browser will allow you to see the
+visualized gene predictions generated so far.</p>
+<ol>
+<li>Click 'JBrowse' and allow browser to load.</li>
+<li>
+<p>Zoom into a region (for example, paste the region
+    <strong>1:3740638..3749063</strong> into the location window.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip<ul>
+<li>JBrowse will load multiple tracks of data. Since the entire genome is loaded, we recommend using the 'highlight a region' feature to help keep your place. You may also wish to record the
+coordinates you are viewing as shown in the coordinates window.</li>
+<li>You may also adjust the settings for a particular track by clicking on the track name.</li>
+<li>Right-click on any gene to view additional details about that gene.
+<img alt="jbrowse" height="250px" src="../assets/dna_subway/jbrowse.png" width="400px" /></li>
+</ul>
+</p>
+</div>
+</li>
+<li>
+<p>Examine gene details by double-clicking on a gene to select; then
+    right-click to open the 'View Details' menu.</p>
+</li>
+<li>To view more tracks, click on 'Full-Screen View' in the
+    upper-left of the JBrowse window to see any additional tracks
+    available.</li>
+</ol>
+<details class="tip">
+<summary>Useful Definitions</summary>
+<p><strong>Genome Browser:</strong> A GUI (Graphical User Interface) for viewing
+biological information. GBrowse (DNA Subway's Browser) is "designed to
+view genomes. It displays a graphical representation of a section of a
+genome, and shows the positions of genes and other functional elements.
+It can be configured to show both qualitative data such as the splicing
+structure of a gene, and quantitative data such as microarray expression
+levels." <a href="http://gmod.org/wiki/GBrowse_FAQ">[citation]</a></p>
+<p><strong>Track:</strong> The individual regions of the display where information
+imported into the browser. For each type (or source) of information,
+there is usually an associated track.</p>
+</details>
+<h3 id="example-exercise-visualize-predicted-genes-arabidopsis-chri">Example Exercise - Visualize predicted genes: Arabidopsis ChrI<a class="headerlink" href="#example-exercise-visualize-predicted-genes-arabidopsis-chri" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Example Sequence:</strong> Arabidopsis thaliana (mouse-ear cress) ChrI,
+    75 kb</li>
+<li><strong>Tool(s):</strong> Local Browser (JBrowse)</li>
+<li><strong>Concept(s):</strong> Gene orientation/structure, transposons, chromosome
+    organization</li>
+</ul>
+<p>Following the gene browser steps for the Arabidopsis ChrI sample above,
+answer the following <em>discussion questions</em> (the locations of the genes
+are given in parentheses and can be pasted into the browser):</p>
+<p><em>Considering the following genes:</em></p>
+<div class="highlight"><pre><span></span><code>-   BFN1-201 (1:3748591..3753070)
+-   SCAMP5-201 (1:3744556..3749035)
+-   STP1-201 (1:3776366..3780845)
+-   At1G11270.2 (1:3780041..3789000)
+</code></pre></div>
+<ol>
+<li>Do all the gene predictors agree with each other?</li>
+<li>Which gene predictions seem to match the Ensemble genes most closely?</li>
+</ol>
+<hr />
+<h2 id="dna-subway-red-line-search-databases-using-blast">DNA Subway Red Line - Search Databases using BLAST<a class="headerlink" href="#dna-subway-red-line-search-databases-using-blast" title="Permanent link">&para;</a></h2>
+<p>DNA Subway searches customized versions of UniGene and UniProt that
+contain only validated plant proteins, and are free of predicted or
+hypothetical proteins.</p>
+<ol>
+<li>Click 'BLASTN'; wait until the flashing icon displays 'V' (view)</li>
+<li>Click 'BLASTN' again to view the results.</li>
+<li>Click 'BLASTX'; wait until the flashing icon displays 'V' (view).</li>
+<li>Click 'BLASTX' again to view the results.</li>
+<li>Click on 'JBrowse' and then click 'Full-screen View' in the
+    upper-left.</li>
+<li>In the 'Available Tracks' menu, add the Blastn and Blastx
+    tracks.</li>
+</ol>
+<details class="tip">
+<summary>Useful Definitions</summary>
+<div class="highlight"><pre><span></span><code>**Some Useful Definitions**
+</code></pre></div>
+<ul>
+<li><strong>BLAST:</strong> Basic Local Alignment Search Tool (BLAST) is an
+    algorithm that search databases of biological sequence information
+    (e.g. DNA, RNA, or Protein sequence) and return matches. The
+    BLASTN program is specific to nucleotide data, and the BLASTX
+    algorithm works with sequence data translated into amino acid
+    sequences.</li>
+<li><strong>UniGene:</strong> A database of transcript data, "each UniGene entry is
+    a set of transcript sequences that appear to come from the same
+    transcription locus (gene or expressed pseudogene), together with
+    information on protein similarities, gene expression, cDNA clone
+    reagents, and genomic location."
+    <a href="http://www.ncbi.nlm.nih.gov/unigene">[citation]</a></li>
+<li><strong>cDNA:</strong> DNA produced by reverse transcribing mRNA using reverse
+    transcriptase. cDNAs are used to investigate mRNA within a
+    biological sample.</li>
+<li><strong>ESTs:</strong> "Small pieces of DNA sequence (usually 200 to 500
+    nucleotides long) that are generated by sequencing either one or
+    both ends of an expressed gene. The idea is to sequence bits of
+    DNA that represent genes expressed in certain cells, tissues, or
+    organs from different organisms."
+    <a href="http://www.ncbi.nlm.nih.gov/About/primer/est.html">[citation]</a></li>
+</ul>
+</details>
+<h3 id="example-exercise-search-databases-using-blast-arabidopsis-chri">Example Exercise - Search Databases using BLAST: Arabidopsis ChrI<a class="headerlink" href="#example-exercise-search-databases-using-blast-arabidopsis-chri" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Example Sequence:</strong> Arabidopsis thaliana (mouse-ear cress) ChrI,
+    75 kb</li>
+<li><strong>Tool(s):</strong> BLASTN, BLASTX, Upload Data</li>
+<li><strong>Concept(s):</strong> RNA, cDNAs, ESTs, Biological Databases</li>
+</ul>
+<p>Following the BLAST steps for the Arabidopsis ChrI sample above, answer
+the following <em>discussion questions</em> (the locations of the genes are
+given in parentheses and can be pasted into the browser):</p>
+<ol>
+<li>Both BLASTN and BLASTX returns the 'Length' of your resulting
+    matches. Do you notice differences in the average lengths of
+    BLASTN and BLASTX matches? Explain.</li>
+<li>Under 'Type' both BLASTN and BLASTX returns 'match' and
+    'match_part.' 'Match' is describing the overall length of a single
+    match, but individual significant matches may be fragmented, i.e.
+    'match_part.' Do BLASTN and BLASTX return 'match' and 'match_part'
+    results in different frequencies? Explain.</li>
+</ol>
+<hr />
+<h2 id="dna-subway-red-line-build-gene-models-using-apollo">DNA Subway Red Line - Build Gene Models using Apollo<a class="headerlink" href="#dna-subway-red-line-build-gene-models-using-apollo" title="Permanent link">&para;</a></h2>
+<p>Apollo is an extension of JBrowse which allows the user to build and
+edit gene models. Apollo has a number of features but in this tutorial,
+we will give brief intro covering the conceptual steps.</p>
+<p><strong>A. Import Blastn model to match for transcript length</strong> Blast searches
+are matched against UniGene(blastn) and UniProt(blasts). UniGen models
+are derived from cDNA and ESTs (transcriptome evidence) produced by
+experiment.</p>
+<ol>
+<li>Open Apollo and zoom into a region of interest (e.g. <strong>1:3793981..3802033</strong>)</li>
+<li>Ensure at least the following tracks are selected (on):<ul>
+<li>Augustus (and other gene predictors: FGenesH, SNAP, etc.)</li>
+<li>Blastn</li>
+</ul>
+</li>
+<li>Double-click on the Blastn result, and drag this transcript into
+    the yellow 'User-created Annotations' section.
+    <img alt="apollo_1" src="../assets/dna_subway/apollo_1.png" />{width="400px"
+    height="250px"}</li>
+</ol>
+<p><strong>B. Select a scaffold model</strong> Use transcriptome evidence (UniGene -
+BLASTN) to select the best possible gene model for a scaffold. If no
+gene model exists or significantly reflects the UniGene model, use the
+UniGene model itself as a scaffold.</p>
+<ol>
+<li>Drag a plausible model into the yellow 'User-created
+    Annotations' - in this case we will choose the Augustus model;
+    double-click the Augustus model to select the entire model and
+    drag into 'User-created Annotations'.</li>
+<li>Adjust the Augustus model to match the 5' and 3' configuration
+    of the blastn model<ul>
+<li>Delete the extraneous 5' exon (single-click to select;
+    right-click to delete)</li>
+<li>Adjust the new 5' end to match the length of the blastn-derived
+    transcript</li>
+<li>Adjust the 3' end of the Augustus-derived model (single-click
+    to select; use your cursor/mouse to adjust the model length) <img alt="apollo_2" height="250px" src="../assets/dna_subway/apollo_2.png" width="420px" /></li>
+</ul>
+</li>
+</ol>
+<p><strong>C. Edit model for splice sites and variants</strong> Protein and EST data can
+be used to examine possible alternative transcripts. Proteins give clues
+to the actual length of the translated protein at that locus and its
+reading frame. Like full length cDNAs, ESTs give valuable information on
+transcript diversity. ESTs are generated by high throughput methods, and
+although the data may be fragmentary, it may capture biologically
+relevant information about splice variants.</p>
+<ol>
+<li>
+<p>Turn on the blastx track</p>
+</li>
+<li>
+<p>Examine the additional evidence to consider making adjustments to
+    your Augustus-derived model. If you wish to make additional
+    isoforms of your gene:</p>
+<ul>
+<li>Double-click to select the entire Augustus-derived model</li>
+<li>Right-click on the model to duplicate</li>
+<li>Make adjustments to the model as desired 
+<img alt="apollo_3" height="250px" src="../assets/dna_subway/apollo_3.png" width="420px" /></li>
+</ul>
+</li>
+</ol>
+<p>You also have the option of adding additional <a href="https://en.wikipedia.org/wiki/Expressed_sequence_tag">EST evidence</a>. For the Arabodopsis 75KB section, we have prepared a selection of EST data. You
+will need to <strong>close Apollo to load this data</strong>.</p>
+<ol>
+<li>Download the Arabidopsis ESTs for this region to your computer
+    from <a href="https://de.cyverse.org/dl/d/A9BED6DE-83F3-4F38-A3FE-0AA0A9AF5D53/EST_Chr1_3729956..3804955.fasta">this link</a></li>
+<li>Click on 'Upload Data'; under "Add DNA data in FASTA format"
+    upload the EST file from the link in step 1.</li>
+<li>Click on 'User BLASTN' to align the ESTs to this section of the
+    Arabidopsis genome</li>
+<li>Open 'Web Apollo'. The "Blastn User" track should be loaded.
+    You may move this track to a convenient position on the browser
+    <img alt="apollo_5" height="280px" src="../assets/dna_subway/apollo_5.png" width="420px" /></li>
+</ol>
+<p>While EST evidence is always incomplete, these sequences can help you
+determine features of the gene model.</p>
+<details class="tip">
+<summary>Learn More about Gene Evidence</summary>
+<ul>
+<li>J.Craig Venter on <a href="http://dnaftb.dev.dnalc.org/39/av-2.html">ESTs</a></li>
+<li>"Dynamic Gene" <a href="http://dynamicgene.dnalc.org/evidence/evidence.html">Evidence animation</a> (requires Flash)</li>
+</ul>
+</details>
+<p><strong>D. Determine translation start/stop sites</strong> After making your
+adjustments, you can confirm that your gene model(s) represents the
+longest possible transcripts:</p>
+<ol>
+<li>Double-click the model; right-click and select 'Set longest ORF'</li>
+</ol>
+<p><strong>E. Compare gene model(s) with existing annotations</strong> After making your
+gene models you can compare them with existing annotations by turning on
+the 'Ensemble genes' track. In this case, our work confirms the first
+gene model made, but a potential isoform supported by blastx data is
+likely incorrect.</p>
+<p><img alt="apollo_4" height="150px" src="../assets/dna_subway/apollo_4.png" width="420px" /></p>
+<h3 id="example-exercise-build-gene-models-using-apollo-arabodopsis-chri"><strong>Example Exercise - Build Gene Models using Apollo: Arabodopsis ChrI</strong><a class="headerlink" href="#example-exercise-build-gene-models-using-apollo-arabodopsis-chri" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Example Sequence:</strong> Arabidopsis thaliana (mouse-ear cress) ChrI,
+    75 kb</li>
+<li><strong>Tool(s):</strong> Apollo</li>
+<li><strong>Concept(s):</strong> Synthesizing multiple lines of evidence</li>
+</ul>
+<p>Following the Apollo steps for the Arabidopsis ChrI sample above, answer
+the following <em>discussion questions</em> (the locations of the genes are
+given in parentheses and can be pasted into the browser):</p>
+<ol>
+<li>Try annotation of the following genes and take notes on your
+    annotation ( right-click on the gene model, open the 'Information
+    Editor' and scroll down to the comments section to enter
+    comments). How do your annotations compare with the Ensembl
+    annotations?
+    <em>Genes to try:</em><ul>
+<li>AT1G11270.2 (1:3781511..3790520)</li>
+<li>STP1-201 (1:3776261..3785270)</li>
+<li>T28P6.11-201 (1:3762877..3764678)</li>
+</ul>
+</li>
+</ol>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer: <a href="https://cyverse-learning-materials.github.io/learning-materials-home">CyVerse Learning Center</a></li>
+<li>Ask us for help: click the Intercom icon <img alt="Intercom" src="../assets/intercom.png" width="25" /> on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change: <a href="https://github.com/CyVerse-learning-materials/learning-materials-home/edit/mkdocs/docs/dna_subway_guide">Github Repo</a></li>
+<li>Send feedback: <a href="learning@CyVerse.org">learning@CyVerse.org</a></li>
+</ul>
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../step4/" class="btn btn-neutral float-right" title="Walkthrough of DNA Subway Blue Line - Sequence Detection">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../step2/" class="btn btn-neutral" title="Accessing Saved Private and Public DNA Subway Projects"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2022 CyVerse</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../step2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step4/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/intercom-learning.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
