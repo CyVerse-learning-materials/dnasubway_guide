@@ -474,7 +474,7 @@ searches may not return significant results.
 !!! Tip
         Although the term "feature" can (unfortunately) [have many meanings](https://forum.qiime2.org/t/what-is-a-feature-exactly/2201) as used by the
         QIIME2 documentation, unless otherwise noted in this documentation
-        it can be thought of as an OTU ([Operational Taxonomic Uinit](https://en.wikipedia.org/wiki/Operational_taxonomic_unit)); another substitution for the word
+        it can be thought of as an OTU ([Operational Taxonomic Unit](https://en.wikipedia.org/wiki/Operational_taxonomic_unit)); another substitution for the word
         species. OTU is a convenient and common terminology for referring to
         an unclassified or undetermined species. Ultimately, we are
         attempting to identify an organism from a sample of DNA which may
@@ -536,7 +536,7 @@ associated with each sample.
 
 2.  Under 'Results' click on **Alpha Rarefaction Plot** to view the results.
 
-!!! Tip
+??? tip "Navigating Alpha Rarefaction"
 
         **Alpha rarefaction** generates an interactive plot of species
         diversity by sampling depth by the categorical samplings described
@@ -609,53 +609,62 @@ comparison of species/taxa diversity between two or more samples).
 
     - **Alpha Diversity:**
 
-        - *Pielou's Evenness*
+        - ***Pielou's Evenness***
 
             - Alpha Correlation: Measure of community evenness using correlation tests
+            
             - Group Significance: Analysis of differences between features across group
 
-        - *Faith's Phylogenetic Diversity*
+        - ***Faith's Phylogenetic Diversity***
 
             - Alpha Correlation: Faith Phylogenetic Diversity (a measure of community richness) with correlation tests
+
             - Group Significance: Faith Phylogenetic Diversity ( a measure of community richness)
 
     - **Beta Diversity:**
         
-        - *Bray-Curtis Distance*
+        - ***Bray-Curtis Distance***
 
             [Bray-Curtis](https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity) is a metric for describing the dissimilarity of species in an ecological sampling.
             -   Bioenv: Bray-Curtis test metrics
+
             -   Emperor: Interactive PCoA plot of Bray-Curtis metrics
 
-        - *Jaccard Distance*
+        - ***Jaccard Distance***
+
             -   Emperor: Interactive PCoA plot calculated by [Jaccard](https://en.wikipedia.org/wiki/Jaccard_index) similarity index.
 
-        - *Unweighted UniFrac Distance*
+        - ***Unweighted UniFrac Distance***
 
             [UniFrac](https://en.wikipedia.org/wiki/UniFrac) is a metric for describing the similarity of a biological community, taking into account the relatedness of community members.
+
             -   Bioenv: UniFrac test metrics
+
             -   Emperor: Unweighted interactive PCoA plot
 
-        - **Weighted UniFrac Distance** Unweighted UniFrac removes the effect of low-abundance features in the calculation of principal components.
+        - ***Weighted UniFrac Distance*** 
+        
+            Unweighted UniFrac removes the effect of low-abundance features in the calculation of principal components.
+            
             - Emperor: Weighted interactive PCoA plot of UniFrac.
 
 !!! Tip
         **Emperor Plots**
 
-            These plots are all interactive three-dimensional plots of an
-            analysis using [principal components](https://en.wikipedia.org/wiki/Principal_component_analysis).
+        These plots are all interactive three-dimensional plots of an
+        analysis using [principal components](https://en.wikipedia.org/wiki/Principal_component_analysis).
 
-            **Customization**
+        **Customization**
 
-            You can customize Emperor plots, including altering the color of
-            and shape points, axes, and other parameters. You can also export
-            images from this visualization.
+        You can customize Emperor plots, including altering the color of
+        and shape points, axes, and other parameters. You can also export
+        images from this visualization.
 
-            ![emperor_plots](./assets/dna_subway/emperor_plots.gif){width="550px" height="300px"}
+        ![emperor_plots](./assets/dna_subway/emperor_plots.gif){width="550px" height="300px"}
 
-            **Bioenv**
+        **Bioenv**
 
-            These plots are tables of tests and descriptive metrics.
+        These plots are tables of tests and descriptive metrics.
 
 **C. Taxonomic Diversity:**
 
@@ -674,7 +683,7 @@ explore beyond the functionalities DNA Subway has included.
          download images and data used to create the barpot
          visualization.
 
-     ![taxonomic_barplots](./assets/dna_subway/taxonomic_barplots.gif){width="550px" height="300px"}
+        ![taxonomic_barplots](./assets/dna_subway/taxonomic_barplots.gif){width="550px" height="300px"}
 
 -   *Taxonomy*
 
@@ -702,6 +711,7 @@ You can download and interact with any of the available plots.
         -   **Level of taxonomy to summarize**: 5
 
 !!! Tip
+
     Download the provided CSV files so that you can generate customized plots.
 
 
